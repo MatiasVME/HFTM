@@ -32,6 +32,5 @@ func _process(delta):
 	var mouse_local_pos = camera.get_local_mouse_position()
 	
 	if Input.is_action_pressed("right_click"):
-		print("ok")
 		var i_pistol_bullet = pistol_bullet.instance()
 		i_pistol_bullet.fire(self, mouse_local_pos, delta)
