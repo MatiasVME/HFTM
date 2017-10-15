@@ -14,6 +14,10 @@ config/name="Humanity-For-The-Machine"
 run/main_scene="res://src/MainScreens/Splash.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ShotManager="*res://src/Singletons/ShotManager.tscn"
+
 [display]
 
 window/size/width=1280

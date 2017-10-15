@@ -1,7 +1,9 @@
 extends Area2D
 
-onready var camera = get_node("Camera")
-onready var img = get_node("Image")
+onready var camera = $Camera
+onready var img = $Image
+
+var pistol_bullet = preload("res://src/Actors/Shots/PistolBullet.tscn")
 
 const SPEED = 200
 
@@ -31,5 +33,5 @@ func _process(delta):
 	
 	if Input.is_action_pressed("right_click"):
 		print("ok")
-	#	var i_pistol_bullet = pistol_bullet.instance()
-	#	i_pistol_bullet.pistol_bullet(self, mouse_local_pos, delta)
+		var i_pistol_bullet = pistol_bullet.instance()
+		i_pistol_bullet.fire(self, mouse_local_pos, delta)
