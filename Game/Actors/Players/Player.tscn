@@ -33,6 +33,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Collision" type="CollisionShape2D" parent="."]
 
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform", "Z" ]
 
 [node name="Camera" type="Camera2D" parent="."]
 

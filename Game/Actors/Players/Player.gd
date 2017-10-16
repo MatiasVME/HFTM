@@ -7,19 +7,28 @@ var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 
 const SPEED = 200
 
+var world
+
 func _ready():
 	set_process(true)
+	
+	world = get_world_2d().get_direct_space_state()
 	
 func _process(delta):
 	var motion = Vector2()
 	
-	if Input.is_action_pressed("up"):
+	var result_up = world.intersect_point(get_position() + Vector2(0, -16))
+	var result_down = world.intersect_point(get_position() + Vector2(0, 16))
+	var result_left = world.intersect_point(get_position() + Vector2(-16, 0))
+	var result_right = world.intersect_point(get_position() + Vector2(16, 0))
+
+	if Input.is_action_pressed("up") and result_up.empty():
 		motion += Vector2(0, -1)
-	if Input.is_action_pressed("down"):
+	if Input.is_action_pressed("down") and result_down.empty():
 		motion += Vector2(0, 1)
-	if Input.is_action_pressed("left"):
+	if Input.is_action_pressed("left") and result_left.empty():
 		motion += Vector2(-1, 0)
-	if Input.is_action_pressed("right"):
+	if Input.is_action_pressed("right") and result_right.empty():
 		motion += Vector2(1, 0)
 	# zoom temporal
 	if Input.is_action_just_released("scroll_up"):
