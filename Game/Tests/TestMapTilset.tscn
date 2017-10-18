@@ -6,6 +6,8 @@
 
 [node name="TestMapTilset" type="Node2D"]
 
+_sections_unfolded = [ "Z" ]
+
 [node name="Start" parent="." instance=ExtResource( 1 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
