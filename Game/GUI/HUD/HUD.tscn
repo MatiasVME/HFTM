@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Game/GUI/HUD/StatsDisplay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Game/GUI/HUD/PhotosMini.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Game/GUI/HUD/Hotbar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game/GUI/HUD/HUD-Menu.tscn" type="PackedScene" id=4]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -21,6 +23,18 @@ _sections_unfolded = [ "Pause" ]
 [node name="PhotosMini" parent="." instance=ExtResource( 2 )]
 
 position = Vector2( 1106.63, 62.3486 )
+scale = Vector2( 1.5, 1.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Hotbar" parent="." instance=ExtResource( 3 )]
+
+position = Vector2( 463.591, 659.622 )
+scale = Vector2( 1.5, 1.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="HUD-Menu" parent="." instance=ExtResource( 4 )]
+
+position = Vector2( 1057.88, 496.473 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
 

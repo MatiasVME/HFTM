@@ -25,7 +25,7 @@ window/size/height=720
 window/size/test_width=800
 window/size/test_height=500
 window/stretch/mode="viewport"
-window/stretch/aspect="keep_width"
+window/stretch/aspect="keep"
 
 [gdnative]
 
