@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Game/GUI/HUD/heal.png" type="Texture" id=1]
+[ext_resource path="res://Game/GUI/HUD/tilia.png" type="Texture" id=2]
+[ext_resource path="res://Game/GUI/HUD/experience.png" type="Texture" id=3]
+[ext_resource path="res://Game/GUI/HUD/stats-background.png" type="Texture" id=4]
+
+[node name="Stats" type="Node2D"]
+
+[node name="heal" type="TextureProgress" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -27.0
+margin_top = -57.0
+margin_right = 130.0
+margin_bottom = -44.0
+rect_scale = Vector2( 1.01, 1.08 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 1 )
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Hint", "Rect", "Textures" ]
+
+[node name="tilia" type="TextureProgress" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -11.0
+margin_top = -13.0
+margin_right = 146.0
+rect_scale = Vector2( 1.01, 1.15 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 2 )
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Hint", "Rect", "Textures" ]
+
+[node name="experience" type="TextureProgress" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -28.0
+margin_top = 31.0
+margin_right = 129.0
+margin_bottom = 45.0
+rect_scale = Vector2( 1.01, 1.15 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 3 )
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Hint", "Rect", "Textures" ]
+
+[node name="background" type="Sprite" parent="."]
+
+texture = ExtResource( 4 )
+
+

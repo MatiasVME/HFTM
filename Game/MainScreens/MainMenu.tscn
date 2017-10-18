@@ -3,7 +3,6 @@
 [ext_resource path="res://Game/MainScreens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Game/Fonts/Ink_Tank/inktank.ttf" type="DynamicFontData" id=2]
 
-
 [sub_resource type="DynamicFont" id=1]
 
 size = 90
@@ -63,7 +62,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 323.0
+margin_right = 218.0
 margin_bottom = 97.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -72,14 +71,14 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Anchor" ]
 
-[node name="Start" type="Button" parent="GridContainer/MarginContainer"]
+[node name="Modes" type="Button" parent="GridContainer/MarginContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 323.0
+margin_left = 5.0
+margin_right = 215.0
 margin_bottom = 97.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -91,47 +90,9 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "Campaign"
+text = "Modes"
 flat = false
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
-
-[node name="MarginContainer2" type="MarginContainer" parent="GridContainer"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 101.0
-margin_right = 323.0
-margin_bottom = 198.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="Multiplayer" type="Button" parent="GridContainer/MarginContainer2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 323.0
-margin_bottom = 97.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Multiplayer"
-flat = false
-_sections_unfolded = [ "custom_fonts" ]
 
 [node name="MarginContainer3" type="MarginContainer" parent="GridContainer"]
 
@@ -139,9 +100,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 202.0
-margin_right = 323.0
-margin_bottom = 299.0
+margin_top = 101.0
+margin_right = 218.0
+margin_bottom = 198.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -155,7 +116,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 8.0
-margin_right = 323.0
+margin_right = 218.0
 margin_bottom = 97.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -177,9 +138,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 303.0
-margin_right = 323.0
-margin_bottom = 400.0
+margin_top = 202.0
+margin_right = 218.0
+margin_bottom = 299.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -193,7 +154,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 8.0
-margin_right = 323.0
+margin_right = 218.0
 margin_bottom = 97.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -215,9 +176,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 404.0
-margin_right = 323.0
-margin_bottom = 501.0
+margin_top = 303.0
+margin_right = 218.0
+margin_bottom = 400.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -231,7 +192,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 8.0
-margin_right = 323.0
+margin_right = 218.0
 margin_bottom = 97.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
