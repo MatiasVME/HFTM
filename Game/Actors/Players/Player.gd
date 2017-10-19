@@ -10,11 +10,11 @@ const SPEED = 200
 var world
 
 func _ready():
-	set_process(true)
+	set_physics_process(true)
 	
 	world = get_world_2d().get_direct_space_state()
 	
-func _process(delta):
+func _physics_process(delta):
 	var motion = Vector2()
 	
 	var result_up = world.intersect_point(get_position() + Vector2(0, -16))
