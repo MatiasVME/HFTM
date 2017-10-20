@@ -8,20 +8,18 @@
 custom_solver_bias = 0.0
 radius = 25.447
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pickable", "Transform", "Visibility", "Z" ]
+_sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pickable", "Transform", "Visibility", "Z", "collision" ]
 
 [node name="Image" type="Sprite" parent="."]
 
+editor/display_folded = true
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 

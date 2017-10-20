@@ -39,7 +39,7 @@ collision_bounce = 0.0
 collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
-tile_data = PoolIntArray( -65525, 566, 131076, 150, 262145, 564, 262159, 565, 458760, 149, 589827, 565, 589832, 564 )
+tile_data = PoolIntArray( -65525, 566, 131075, 569, 262145, 564, 262159, 565, 458760, 570, 589827, 565, 589832, 564 )
 _sections_unfolded = [ "Cell", "Z" ]
 
 [node name="ObjectsTop" type="TileMap" parent="."]

@@ -20,14 +20,14 @@ func _physics_process(delta):
 	
 	# por el momento
 
-	if Input.is_action_pressed("up") and result_up.empty():
+	if Input.is_action_pressed("up"):
 		direction.y = -1
-	elif Input.is_action_pressed("down") and result_down.empty():
+	elif Input.is_action_pressed("down"):
 		direction.y = 1
 
-	if Input.is_action_pressed("left") and result_left.empty():
+	if Input.is_action_pressed("left"):
 		direction.x = -1
-	elif Input.is_action_pressed("right") and result_right.empty():
+	elif Input.is_action_pressed("right"):
 		direction.x = 1
 	
 	if direction != Vector2():
@@ -48,7 +48,7 @@ func _physics_process(delta):
 	if speed == 0:
 		motion = Vector2()
 
-	self.position += motion
+	move_and_collide(motion)
 
 	if motion != Vector2():
 		target_angle = atan2(motion.x, motion.y) - PI / 2
