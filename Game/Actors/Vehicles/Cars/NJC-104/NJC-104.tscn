@@ -14,8 +14,8 @@ custom_solver_bias = 0.0
 radius = 100.747
 
 [node name="NJC-104" type="KinematicBody2D" groups=[
-"Car",
 "Vehicle",
+"Car",
 ]]
 
 input_pickable = false
@@ -36,7 +36,7 @@ texture = ExtResource( 2 )
 
 anchor_mode = 1
 rotating = false
-current = true
+current = false
 zoom = Vector2( 1, 1 )
 limit_left = -10000000
 limit_top = -10000000
@@ -69,7 +69,9 @@ position = Vector2( 0, -48.5162 )
 
 position = Vector2( 0, 48.5162 )
 
-[node name="EnterPlayerArea" type="Area2D" parent="."]
+[node name="EnterCarPlayerArea" type="Area2D" parent="." groups=[
+"EnterCarPlayerArea",
+]]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -79,7 +81,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 
-[node name="Collision" type="CollisionShape2D" parent="EnterPlayerArea"]
+[node name="Collision" type="CollisionShape2D" parent="EnterCarPlayerArea"]
 
 shape = SubResource( 2 )
 
