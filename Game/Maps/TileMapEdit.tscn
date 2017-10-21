@@ -525,22 +525,22 @@
 [ext_resource path="res://Game/Maps/Tiles/trunk-full.png" type="Texture" id=523]
 [ext_resource path="res://Game/Maps/Tiles/tree-full-2.png" type="Texture" id=524]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
 extents = Vector2( 27.203, 27.0751 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
 extents = Vector2( 17.6927, 18.113 )
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
 radius = 17.1098
@@ -655,7 +655,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water1/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Water2" type="Sprite" parent="."]
 
@@ -675,7 +675,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water2/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="tile_21" type="Sprite" parent="."]
 
@@ -1226,7 +1226,7 @@ _sections_unfolded = [ "Collision", "Linear", "Pickable" ]
 
 [node name="CollisionShape" type="CollisionShape2D" parent="Box1/RigidBody"]
 
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="Box2" type="Sprite" parent="."]
 
@@ -1258,7 +1258,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape" type="CollisionShape2D" parent="Box2/RigidBody"]
 
 position = Vector2( 0.358398, 0.35849 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="tile_131" type="Sprite" parent="."]
@@ -3269,7 +3269,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TreeFull1/StaticBody2D"]
 
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3298,7 +3298,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TreeFull2/StaticBody2D"]
 
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z" ]
 __meta__ = {
 "_edit_lock_": true

@@ -10,5 +10,6 @@
 [node name="NJC-104" parent="." instance=ExtResource( 2 )]
 
 position = Vector2( 292.198, 56.9217 )
+can_move = false
 
 

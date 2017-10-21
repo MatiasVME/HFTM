@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Game/Actors/Vehicles/Cars/NJC-104/NJC-104.gd" type="Script" id=1]
 [ext_resource path="res://Game/Actors/Vehicles/Cars/NJC-104/NJC-104.png" type="Texture" id=2]
@@ -8,7 +8,15 @@
 custom_solver_bias = 0.0
 extents = Vector2( 54.8848, 30.4405 )
 
-[node name="NJC-104" type="KinematicBody2D"]
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 100.747
+
+[node name="NJC-104" type="KinematicBody2D" groups=[
+"Car",
+"Vehicle",
+]]
 
 input_pickable = false
 collision_layer = 1
@@ -16,6 +24,9 @@ collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z", "collision" ]
+mass = 3
+max_speed = 600
+can_move = false
 
 [node name="Image" type="Sprite" parent="."]
 
@@ -45,13 +56,31 @@ editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Smoothing" ]
 
-[node name="PositionFront" type="Position2D" parent="."]
-
-position = Vector2( 0, -65.0153 )
-
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
 
 shape = SubResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z" ]
+
+[node name="LeftDoor" type="Position2D" parent="."]
+
+position = Vector2( 0, -48.5162 )
+
+[node name="RightDoor" type="Position2D" parent="."]
+
+position = Vector2( 0, 48.5162 )
+
+[node name="EnterPlayerArea" type="Area2D" parent="."]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision" type="CollisionShape2D" parent="EnterPlayerArea"]
+
+shape = SubResource( 2 )
 
 

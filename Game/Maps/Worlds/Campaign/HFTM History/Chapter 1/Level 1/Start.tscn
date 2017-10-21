@@ -60,6 +60,6 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 tile_data = PoolIntArray( 131083, 567, 327683, 567 )
-_sections_unfolded = [ "Cell", "Z" ]
+_sections_unfolded = [ "Cell", "Collision", "Occluder", "Z" ]
 
 
