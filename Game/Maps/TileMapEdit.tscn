@@ -525,22 +525,22 @@
 [ext_resource path="res://Game/Maps/Tiles/trunk-full.png" type="Texture" id=523]
 [ext_resource path="res://Game/Maps/Tiles/tree-full-2.png" type="Texture" id=524]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 27.203, 27.0751 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 17.6927, 18.113 )
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=4]
 
 custom_solver_bias = 0.0
 radius = 17.1098
@@ -572,37 +572,37 @@ texture = ExtResource( 3 )
 position = Vector2( 224, 32 )
 texture = ExtResource( 4 )
 
-[node name="tile_05" type="Sprite" parent="."]
+[node name="Dirt1" type="Sprite" parent="."]
 
 position = Vector2( 288, 32 )
 texture = ExtResource( 5 )
 
-[node name="tile_06" type="Sprite" parent="."]
+[node name="Dirt2" type="Sprite" parent="."]
 
 position = Vector2( 352, 32 )
 texture = ExtResource( 6 )
 
-[node name="tile_07" type="Sprite" parent="."]
+[node name="Concrete1" type="Sprite" parent="."]
 
 position = Vector2( 416, 32 )
 texture = ExtResource( 7 )
 
-[node name="tile_08" type="Sprite" parent="."]
+[node name="Concrete2" type="Sprite" parent="."]
 
 position = Vector2( 480, 32 )
 texture = ExtResource( 8 )
 
-[node name="tile_09" type="Sprite" parent="."]
+[node name="Concrete3" type="Sprite" parent="."]
 
 position = Vector2( 544, 32 )
 texture = ExtResource( 9 )
 
-[node name="tile_10" type="Sprite" parent="."]
+[node name="Concrete4" type="Sprite" parent="."]
 
 position = Vector2( 608, 32 )
 texture = ExtResource( 10 )
 
-[node name="tile_11" type="Sprite" parent="."]
+[node name="Concrete5" type="Sprite" parent="."]
 
 position = Vector2( 672, 32 )
 texture = ExtResource( 11 )
@@ -612,17 +612,17 @@ texture = ExtResource( 11 )
 position = Vector2( 736, 32 )
 texture = ExtResource( 12 )
 
-[node name="tile_13" type="Sprite" parent="."]
+[node name="Dirt3" type="Sprite" parent="."]
 
 position = Vector2( 800, 32 )
 texture = ExtResource( 13 )
 
-[node name="tile_14" type="Sprite" parent="."]
+[node name="Dirt4" type="Sprite" parent="."]
 
 position = Vector2( 864, 32 )
 texture = ExtResource( 14 )
 
-[node name="tile_16" type="Sprite" parent="."]
+[node name="Dirt5" type="Sprite" parent="."]
 
 position = Vector2( 928, 32 )
 texture = ExtResource( 15 )
@@ -655,7 +655,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water1/StaticBody2D"]
 
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Water2" type="Sprite" parent="."]
 
@@ -675,7 +675,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water2/StaticBody2D"]
 
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="tile_21" type="Sprite" parent="."]
 
@@ -1226,7 +1226,7 @@ _sections_unfolded = [ "Collision", "Linear", "Pickable" ]
 
 [node name="CollisionShape" type="CollisionShape2D" parent="Box1/RigidBody"]
 
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Box2" type="Sprite" parent="."]
 
@@ -1258,7 +1258,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape" type="CollisionShape2D" parent="Box2/RigidBody"]
 
 position = Vector2( 0.358398, 0.35849 )
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="tile_131" type="Sprite" parent="."]
@@ -3269,7 +3269,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TreeFull1/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3298,7 +3298,7 @@ _sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TreeFull2/StaticBody2D"]
 
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z" ]
 __meta__ = {
 "_edit_lock_": true

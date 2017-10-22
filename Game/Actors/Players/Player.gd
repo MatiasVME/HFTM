@@ -6,7 +6,7 @@ onready var touch_area = $TouchArea
 
 var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 
-const SPEED = 100
+const SPEED = 80
 const MOVEMENT = 2
 
 var is_in_area = false
