@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Game/Actors/NPC/MM-10/MM-10.gd" type="Script" id=1]
 [ext_resource path="res://Game/Actors/NPC/MM-10/Images/MM-10-1.png" type="Texture" id=2]
@@ -65,6 +65,16 @@ tracks/1/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.05, 1.05 ), Vector2( 1.092, 1.092 ) ]
 }
 
+[sub_resource type="CircleShape2D" id=4]
+
+custom_solver_bias = 0.0
+radius = 46.7046
+
+[sub_resource type="CircleShape2D" id=5]
+
+custom_solver_bias = 0.0
+radius = 280.0
+
 [node name="MM-10" type="KinematicBody2D"]
 
 input_pickable = false
@@ -97,5 +107,27 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 4 )
+
+[node name="DetectArea" type="Area2D" parent="."]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision" type="CollisionShape2D" parent="DetectArea"]
+
+shape = SubResource( 5 )
+
+[connection signal="body_entered" from="DetectArea" to="." method="_on_DetectArea_body_entered"]
+
+[connection signal="body_exited" from="DetectArea" to="." method="_on_DetectArea_body_exited"]
 
 

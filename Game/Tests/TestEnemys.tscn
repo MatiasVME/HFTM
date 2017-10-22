@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Game/Actors/NPC/MM-10/MM-10.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game/Actors/Players/Player.tscn" type="PackedScene" id=2]
+
+[node name="TestEnemys" type="Node2D"]
+
+[node name="MM-10" parent="." instance=ExtResource( 1 )]
+
+position = Vector2( 306.083, 276.155 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 877.632, 385.502 )
+
+

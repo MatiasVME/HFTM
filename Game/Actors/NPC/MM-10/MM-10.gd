@@ -6,15 +6,24 @@ onready var body = $Body
 
 export var test_mode = true
 
-enum State {IDLE, WALK, ATACK, AIM}
+enum State {IDLE, WALK, ATACK, AIM, AIM_ATACK}
 var state = State.IDLE
 
 var one_time = true
+
+var player_is_here = false
+var player = null
 
 func _ready():
 	set_process(true)
 
 func _process(delta):
+	
+	if player_is_here:
+		state = State.AIM
+	else:
+		state = State.IDLE
+	
 	states()
 	
 	# Test mode
@@ -35,6 +44,9 @@ func states():
 		body.rotation_deg = 0
 		anim.stop()
 		one_time = false
+	elif state == State.AIM:
+		body.look_at(player.global_position)
+		body.rotation_deg += 90
 
 func test_mode():
 	if Input.is_action_just_pressed("1"):
@@ -43,3 +55,15 @@ func test_mode():
 	elif Input.is_action_just_pressed("2"):
 		state = State.WALK
 		one_time = true
+
+func _on_DetectArea_body_entered( body ):
+	player = body
+	
+	if body is KinematicBody2D: 
+		if body.is_in_group("Player"):
+			player_is_here = true
+
+func _on_DetectArea_body_exited( body ):
+	if body is KinematicBody2D:
+		if body.is_in_group("Player"):
+			player_is_here = false
