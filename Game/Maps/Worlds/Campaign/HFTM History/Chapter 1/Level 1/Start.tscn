@@ -59,7 +59,7 @@ collision_bounce = 0.0
 collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
-tile_data = PoolIntArray( 131083, 567, 327683, 567 )
+tile_data = PoolIntArray( -2293758, 567, -2097141, 567, -1900547, 567, -1703935, 567, -1376245, 567, -1048572, 567, -458749, 567, -196599, 567, 131083, 567, 327683, 567 )
 _sections_unfolded = [ "Cell", "Collision", "Occluder", "Z" ]
 
 

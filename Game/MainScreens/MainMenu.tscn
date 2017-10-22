@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Game/MainScreens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Game/Backgrounds/MenuBackground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game/Fonts/Ink_Tank/inktank.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-normal.png" type="Texture" id=4]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-press.png" type="Texture" id=5]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-hover.png" type="Texture" id=6]
+[ext_resource path="res://Game/Fonts/Future/kenvector_future.ttf" type="DynamicFontData" id=7]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 
 size = 200
 use_mipmaps = false
@@ -12,12 +16,12 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 
-size = 90
+size = 32
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 3 )
+font_data = ExtResource( 7 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="MainMenu" type="Node2D"]
@@ -25,6 +29,8 @@ _sections_unfolded = [ "Font", "Settings" ]
 script = ExtResource( 1 )
 
 [node name="Background" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( -1.67029, 0 )
 
 [node name="Title" type="Label" parent="."]
 
@@ -35,13 +41,13 @@ anchor_bottom = 0.0
 margin_left = 1.0
 margin_top = 5.0
 margin_right = 1278.0
-margin_bottom = 244.0
+margin_bottom = 240.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "HFTM"
 align = 1
 valign = 1
@@ -50,177 +56,190 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Focus", "Hint", "Material", "Mouse", "Rect", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="Modes" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 519.0
-margin_top = 282.0
-margin_right = 737.0
-margin_bottom = 682.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-size_flags_horizontal = 1
-size_flags_vertical = 1
-columns = 1
-
-[node name="MarginContainer" type="MarginContainer" parent="GridContainer"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 218.0
-margin_bottom = 97.0
+margin_left = 537.0
+margin_top = 257.0
+margin_right = 727.0
+margin_bottom = 306.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Anchor" ]
-
-[node name="Modes" type="Button" parent="GridContainer/MarginContainer"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 218.0
-margin_bottom = 97.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+
+[node name="Label" type="Label" parent="Modes"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 190.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
 text = "Modes"
-flat = false
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
-[node name="MarginContainer3" type="MarginContainer" parent="GridContainer"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 101.0
-margin_right = 218.0
-margin_bottom = 198.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="Options" type="Button" parent="GridContainer/MarginContainer3"]
+[node name="Options" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 218.0
-margin_bottom = 97.0
+margin_left = 537.0
+margin_top = 310.0
+margin_right = 727.0
+margin_bottom = 359.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+
+[node name="Label2" type="Label" parent="Options"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 190.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
 text = "Options"
-flat = false
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="MarginContainer4" type="MarginContainer" parent="GridContainer"]
+[node name="Credits" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 202.0
-margin_right = 218.0
-margin_bottom = 299.0
+margin_left = 537.0
+margin_top = 363.0
+margin_right = 727.0
+margin_bottom = 412.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-
-[node name="Credits" type="Button" parent="GridContainer/MarginContainer4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 218.0
-margin_bottom = 97.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+
+[node name="Label3" type="Label" parent="Credits"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 190.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
 text = "Credits"
-flat = false
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="MarginContainer5" type="MarginContainer" parent="GridContainer"]
+[node name="Exit" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 303.0
-margin_right = 218.0
-margin_bottom = 400.0
+margin_left = 537.0
+margin_top = 416.0
+margin_right = 727.0
+margin_bottom = 465.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-
-[node name="Exit" type="Button" parent="GridContainer/MarginContainer5"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 8.0
-margin_right = 218.0
-margin_bottom = 97.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+
+[node name="Label" type="Label" parent="Exit"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 190.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
 text = "Exit"
-flat = false
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[connection signal="pressed" from="GridContainer/MarginContainer/Modes" to="." method="_on_Modes_pressed"]
-
-[connection signal="pressed" from="GridContainer/MarginContainer5/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="Modes" to="." method="_on_Modes_pressed"]
 
 
