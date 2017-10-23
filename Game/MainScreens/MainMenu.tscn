@@ -18,7 +18,7 @@ _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
 
-size = 32
+size = 28
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 7 )
@@ -126,7 +126,7 @@ texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
 
-[node name="Label2" type="Label" parent="Options"]
+[node name="Label" type="Label" parent="Options"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -172,7 +172,7 @@ texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
 
-[node name="Label3" type="Label" parent="Credits"]
+[node name="Label" type="Label" parent="Credits"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -224,7 +224,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 190.0
+margin_left = -2.0
+margin_right = 188.0
 margin_bottom = 49.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -241,5 +242,7 @@ max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
 [connection signal="pressed" from="Modes" to="." method="_on_Modes_pressed"]
+
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 
 
