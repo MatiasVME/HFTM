@@ -1,0 +1,151 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/metal-panel-green.png" type="Texture" id=1]
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/level.png" type="Texture" id=2]
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/experiencie-display.png" type="Texture" id=3]
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/stat.png" type="Texture" id=4]
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/button-stats-normal.png" type="Texture" id=5]
+[ext_resource path="res://Game/GUI/HUD/Stats/Images/button-stats-press.png" type="Texture" id=6]
+
+[node name="Stats" type="Node2D"]
+
+[node name="Panel" type="NinePatchRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 575.0
+margin_bottom = 700.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 1 )
+patch_margin_left = 33
+patch_margin_top = 33
+patch_margin_right = 33
+patch_margin_bottom = 33
+_sections_unfolded = [ "Patch Margin" ]
+
+[node name="Level" type="Sprite" parent="."]
+
+position = Vector2( 100, 125 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 2 )
+
+[node name="ExperienceDisplay" type="Sprite" parent="."]
+
+position = Vector2( 357.5, 125 )
+scale = Vector2( 2.02632, 1.6 )
+texture = ExtResource( 3 )
+
+[node name="Strength" type="Sprite" parent="."]
+
+position = Vector2( 150, 300 )
+scale = Vector2( 1.05263, 1.66667 )
+texture = ExtResource( 4 )
+
+[node name="StrengthButton" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 275.0
+margin_top = 275.0
+margin_right = 320.0
+margin_bottom = 324.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="DisplayAtack" type="Sprite" parent="."]
+
+position = Vector2( 451.875, 300 )
+scale = Vector2( 1.03289, 1.89333 )
+texture = ExtResource( 3 )
+
+[node name="Energy" type="Sprite" parent="."]
+
+position = Vector2( 150, 400 )
+scale = Vector2( 1.05263, 1.66667 )
+texture = ExtResource( 4 )
+
+[node name="EnergyButton" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 275.0
+margin_top = 375.0
+margin_right = 320.0
+margin_bottom = 424.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="DisplayTilia" type="Sprite" parent="."]
+
+position = Vector2( 450, 400 )
+scale = Vector2( 1.03289, 1.89333 )
+texture = ExtResource( 3 )
+
+[node name="Vitality" type="Sprite" parent="."]
+
+position = Vector2( 150, 500 )
+scale = Vector2( 1.05263, 1.66667 )
+texture = ExtResource( 4 )
+
+[node name="VitalityButton" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 275.0
+margin_top = 475.0
+margin_right = 320.0
+margin_bottom = 524.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="DisplayHP" type="Sprite" parent="."]
+
+position = Vector2( 450, 500 )
+scale = Vector2( 1.03289, 1.89333 )
+texture = ExtResource( 3 )
+
+
