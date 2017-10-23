@@ -26,8 +26,10 @@ func next_player(p_current_player_num, p_player_num_max):
 	if p_player_num_max > 1 and current_player_num > 0:
 		if p_current_player_num + 1 <= p_player_num_max:
 			current_player_num += 1
+			select_player(current_player_num)
 		else: 
 			current_player_num = 1
+			select_player(current_player_num)
 	if debug : print("current_player_num = ", self.current_player_num)
 
 # Players
@@ -43,9 +45,19 @@ func add_player(player):
 		if debug : print("players array is full: ", players)
 
 func select_player(num):
+	deselect_all_players()
+	
 	if num > 0 and num <= MAX_PLAYERS and camera != null:
 		current_player_num = num
 		camera.move_to(players[current_player_num - 1])
+		players[current_player_num - 1].is_selected = true
+
+func deselect_all_players():
+	if players.size() > 0:
+		print(get_tree().get_nodes_in_group("Player"))
+		for player in get_tree().get_nodes_in_group("Player"):
+			player.is_selected = false
+			print("player.is_selected: ", player.is_selected)
 
 # Vehicles
 

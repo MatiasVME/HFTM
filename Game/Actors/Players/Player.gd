@@ -11,11 +11,16 @@ const MOVEMENT = 2
 
 var is_in_area = false
 var current_area = null
-
-func _ready():
-	set_physics_process(true)
+# Si esta seleccionado se puede mover y etc
+var is_selected = false
 
 func _physics_process(delta):
+	if is_selected:
+		movement_input(delta)
+		use_input()
+		camera_related(delta)
+	
+func movement_input(delta):
 	var motion = MOVEMENT * SPEED * delta
 
 	if Input.is_action_pressed("up"):
@@ -26,29 +31,30 @@ func _physics_process(delta):
 		move_and_collide(Vector2(-motion, 0))
 	if Input.is_action_pressed("right"):
 		move_and_collide(Vector2(motion, 0))
-	
+
+func use_input():
 	if Input.is_action_just_pressed("use") and is_in_area:
 		if current_area is Area2D and current_area.get_groups().has("EnterCarPlayerArea"):
 			var car = current_area.get_parent()
 			car.can_move = true
 			car.get_node("Camera").current = true # need fix =0
 			self.queue_free()
-	
-	look_at_mouse()
-	fire(delta)
+			
+func camera_related(delta):
+	if camera == null:
+		camera = PlayerManager.get_camera()
+	else:
+		look_at_mouse()
+		fire(delta)
 
 func look_at_mouse():
-	var cam = PlayerManager.get_camera()
-	
-	if cam != null:
-		var mouse_global_pos = cam.get_global_mouse_position()
+	if camera != null:
+		var mouse_global_pos = camera.get_global_mouse_position()
 		img.look_at(mouse_global_pos)
 
 func fire(delta):
-	var cam = PlayerManager.get_camera()
-	
-	if cam != null:
-		var mouse_local_pos = cam.get_local_mouse_position()
+	if camera != null:
+		var mouse_local_pos = camera.get_local_mouse_position()
 		
 		if Input.is_action_pressed("right_click"):
 			var i_pistol_bullet = pistol_bullet.instance()

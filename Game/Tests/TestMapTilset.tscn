@@ -19,6 +19,10 @@ _sections_unfolded = [ "Z" ]
 
 position = Vector2( 1952, 1280 )
 
+[node name="Player2" parent="." instance=ExtResource( 3 )]
+
+position = Vector2( 1536, 1152 )
+
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
 [node name="NJC-104" parent="." instance=ExtResource( 5 )]
