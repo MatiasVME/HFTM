@@ -16,6 +16,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
+GameGlobals="*res://Game/Singletons/GameGlobals.gd"
+PlayerManager="*res://Game/Singletons/PlayerManager.gd"
 ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
 [display]
@@ -61,6 +63,8 @@ use=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","d
 4=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":52,"unicode":0,"echo":false,"script":null)
  ]
 5=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":53,"unicode":0,"echo":false,"script":null)
+ ]
+change_player=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"unicode":0,"echo":false,"script":null)
  ]
 
 [locale]
