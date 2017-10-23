@@ -27,4 +27,11 @@ editor_draw_drag_margin = false
 script = ExtResource( 1 )
 _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Smoothing", "Transform", "Visibility", "Z" ]
 
+[node name="Tween" type="Tween" parent="."]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
 

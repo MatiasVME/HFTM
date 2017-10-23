@@ -49,7 +49,7 @@ func select_player(num):
 	
 	if num > 0 and num <= MAX_PLAYERS and camera != null:
 		current_player_num = num
-		camera.move_to(players[current_player_num - 1])
+		camera.move_to_with_effect(players[current_player_num - 1])
 		players[current_player_num - 1].is_selected = true
 
 func deselect_all_players():
