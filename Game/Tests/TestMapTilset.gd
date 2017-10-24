@@ -5,6 +5,8 @@ onready var player2 = $Player2
 onready var camera = $MainCamera
 
 func _ready():
+	MusicManager.select_music(2)
+	MusicManager.play_music()
 	PlayerManager.set_camera(camera)
 	PlayerManager.add_player(player)
 	PlayerManager.add_player(player2)
