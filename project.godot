@@ -25,7 +25,6 @@ ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
 window/size/width=1280
 window/size/height=720
-window/size/fullscreen=true
 window/size/test_width=800
 window/size/test_height=500
 window/stretch/mode="viewport"

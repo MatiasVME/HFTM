@@ -4,6 +4,11 @@ export (float) var mass = 3
 export (float) var max_speed = 600
 export (bool) var can_move = false
 
+# Asientos que tiene el auto para contener players
+var seating_max = 0
+var seating_taken = 0
+var players = []
+
 var motion = Vector2()
 var target_motion = Vector2()
 var steering = Vector2()
@@ -24,7 +29,7 @@ func _physics_process(delta):
 		input_car()
 		move_car(delta)
 
-func input_car():	
+func input_car():
 	direction = Vector2()
 
 	if Input.is_action_pressed("up"):
@@ -61,3 +66,27 @@ func move_car(delta):
 	if motion != Vector2():
 		target_angle = atan2(motion.x, motion.y) - PI / 2
 		Skin.rotation = -target_angle
+
+func add_player(player):
+	if not player is KinematicBody2D:
+		if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
+		return false
+	
+	if seating_max > 0 and seating_taken < seating_max:
+		seating_taken += 1
+		players.append(player)
+		return true
+	else:
+		return false
+		
+func remove_player(player):
+	if not player is KinematicBody2D:
+		if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
+		return false
+	
+	if seating_taken > 0 and players.has(player):
+		seating_taken -= 1
+		players.remove(player)
+		return true
+	else:
+		return false

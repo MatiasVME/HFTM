@@ -12,6 +12,7 @@ var current_player_num = 0
 var can_action = false
 var players = []
 var camera = null setget set_camera, get_camera
+var vehicles = []
 
 const MAX_PLAYERS = 4
 
@@ -37,6 +38,7 @@ func next_player(p_current_player_num, p_player_num_max):
 func add_player(player):
 	if not player is KinematicBody2D:
 		if debug : print("player nos es un KinematicBody2D: ", player)
+		return
 	
 	if players.size() <= MAX_PLAYERS:
 		players.append(player)
@@ -60,7 +62,30 @@ func deselect_all_players():
 			print("player.is_selected: ", player.is_selected)
 
 # Vehicles
+func add_vehicle(vehicle):
+	if not vehicle is KinematicBody2D:
+		if debug : print("player nos es un KinematicBody2D: ", vehicle)
+		return
+	
+	vehicles.append(vehicle)
 
+func enter_vehicle(vehicle, player):
+	# buscar si el vehiculo fue añadido
+	if vehicles.has(vehicle):
+		if vehicle.add_player(player) and camera != null:
+			vehicle.can_move = true
+			player.disappear_player()
+			camera.move_to_with_effect(vehicle)
+			if debug : print("player añadido: ", player)
+		else:
+			if debug:
+				print("vehículo no añadido o camera es null")
+				print(vehicle)
+				print(camera)
+				
+	else:
+		if debug : print("el vehiculo no ha sido añadido: ", vehicle)
+	
 # Camera
 func set_camera(cam):
 	if cam is Camera2D:

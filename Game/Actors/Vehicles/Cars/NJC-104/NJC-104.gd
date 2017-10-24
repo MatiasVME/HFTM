@@ -5,6 +5,7 @@ func _ready():
 	Skin = $Image
 	mass = 3
 	max_speed = 700
+	seating_max = 2
 	
 #	set_process(true)
 	
