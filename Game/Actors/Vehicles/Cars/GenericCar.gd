@@ -71,10 +71,12 @@ func add_player(player):
 	if not player is KinematicBody2D:
 		if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
 		return false
-	
+		
 	if seating_max > 0 and seating_taken < seating_max:
 		seating_taken += 1
-		players.append(player)
+		var new_player = player.duplicate()
+		player.queue_free()
+		players.append(new_player)
 		return true
 	else:
 		return false
