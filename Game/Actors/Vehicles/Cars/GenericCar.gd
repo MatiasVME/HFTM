@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export (float) var mass = 3
 export (float) var max_speed = 600
-export (bool) var can_move = false
+export (bool) var is_selected = false
 
 # Asientos que tiene el auto para contener players
 var seating_max = 0
@@ -25,7 +25,7 @@ func _ready():
 	set_physics_process(true)
 
 func _physics_process(delta):
-	if can_move:
+	if is_selected:
 		input_car()
 		move_car(delta)
 

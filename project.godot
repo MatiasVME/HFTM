@@ -16,9 +16,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-MusicManager="*res://Game/Singletons/MusicManager.tscn"
 GameGlobals="*res://Game/Singletons/GameGlobals.gd"
-PlayerManager="*res://Game/Singletons/PlayerManager.gd"
+MusicManager="*res://Game/Singletons/MusicManager.tscn"
+FocusManager="*res://Game/Singletons/FocusManager.gd"
 ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
 [display]

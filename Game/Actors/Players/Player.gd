@@ -36,11 +36,11 @@ func use_input():
 	if Input.is_action_just_pressed("use") and is_in_area:
 		if current_area is Area2D and current_area.get_groups().has("EnterCarPlayerArea"):
 			var car = current_area.get_parent()
-			PlayerManager.enter_vehicle(car, self)
+			FocusManager.enter_vehicle(car, self)
 	
 func camera_related(delta):
 	if camera == null:
-		camera = PlayerManager.get_camera()
+		camera = FocusManager.get_camera()
 	else:
 		look_at_mouse()
 		fire(delta)
@@ -57,12 +57,6 @@ func fire(delta):
 		if Input.is_action_pressed("right_click"):
 			var i_pistol_bullet = pistol_bullet.instance()
 			i_pistol_bullet.fire(self, mouse_local_pos, delta)
-
-# esto se usa en caso de que se quiera ocultar el player por un momento
-# por ejemplo en el caso de que entre a un vehiculo, etc.
-func disappear_player():
-	self.visible = false
-	is_selected = false
 
 func _on_TouchArea_area_entered( area ):
 	is_in_area = true

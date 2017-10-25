@@ -8,12 +8,12 @@ onready var vehicle = $"NJC-104"
 func _ready():
 	MusicManager.select_music(2)
 	MusicManager.play_music()
-	PlayerManager.set_camera(camera)
-	PlayerManager.add_player(player)
-	PlayerManager.add_player(player2)
-	PlayerManager.select_player(1)
+	FocusManager.set_camera(camera)
+	FocusManager.add_player(player)
+	FocusManager.add_player(player2)
+	FocusManager.select_focus(1)
 	
-	PlayerManager.add_vehicle(vehicle)
+	FocusManager.add_vehicle(vehicle, false)
 	
 	# camera.set_look(player)
 	# player.set_camera(camera)
