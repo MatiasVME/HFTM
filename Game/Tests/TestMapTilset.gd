@@ -6,6 +6,10 @@ onready var camera = $MainCamera
 onready var vehicle = $"NJC-104"
 
 func _ready():
+	# en un futuro esto será automático
+	player.set_player_name("Pepito")
+	player2.set_player_name("Pedrito")
+	
 	MusicManager.select_music(2)
 	MusicManager.play_music()
 	FocusManager.set_camera(camera)

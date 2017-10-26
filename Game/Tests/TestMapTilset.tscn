@@ -23,7 +23,7 @@ position = Vector2( 1952, 1280 )
 
 [node name="Player2" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 1536, 1152 )
+position = Vector2( 512, 96 )
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
