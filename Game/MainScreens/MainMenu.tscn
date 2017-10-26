@@ -28,7 +28,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 
 script = ExtResource( 1 )
 
-[node name="Background" type="Sprite" parent="." instance=ExtResource( 2 )]
+[node name="Background" parent="." instance=ExtResource( 2 )]
 
 position = Vector2( -40.7235, -16.7371 )
 scale = Vector2( 1.05, 1.05 )
