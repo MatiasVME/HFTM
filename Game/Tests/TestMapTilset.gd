@@ -28,7 +28,13 @@ func _ready():
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
-		if HUD.get_node("Menu").is_visible():
-			HUD.get_node("Menu").visible = false
+		if HUD.get_node("MenuPause").is_visible():
+			HUD.get_node("MenuPause").visible = false
+			get_tree().set_pause(false)
 		else:
-			HUD.get_node("Menu").visible = true
+			HUD.get_node("MenuPause").visible = true
+			get_tree().set_pause(true)
+	
+func _exit_tree():
+	FocusManager.focus = []
+	get_tree().set_pause(false)

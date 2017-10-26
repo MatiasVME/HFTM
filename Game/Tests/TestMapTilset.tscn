@@ -11,7 +11,7 @@
 [node name="TestMapTilset" type="Node2D"]
 
 script = ExtResource( 1 )
-_sections_unfolded = [ "Z" ]
+_sections_unfolded = [ "Pause" ]
 
 [node name="Start" parent="." instance=ExtResource( 2 )]
 

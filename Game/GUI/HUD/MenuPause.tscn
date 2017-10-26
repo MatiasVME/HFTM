@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Game/GUI/HUD/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Game/GUI/HUD/MenuPause.gd" type="Script" id=1]
 [ext_resource path="res://Game/Fonts/Future/kenvector_future.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
@@ -11,10 +11,11 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Menu" type="Node2D"]
+[node name="MenuPause" type="Node2D"]
 
+pause_mode = 2
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Pause", "Transform", "Visibility" ]
 
 [node name="Button" type="Button" parent="."]
 
