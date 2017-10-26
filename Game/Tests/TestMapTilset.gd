@@ -20,6 +20,3 @@ func _ready():
 	FocusManager.select_focus(1)
 	
 	FocusManager.add_vehicle(vehicle, false)
-	
-	# camera.set_look(player)
-	# player.set_camera(camera)

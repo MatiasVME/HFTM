@@ -11,7 +11,7 @@
 [node name="TestMapTilset" type="Node2D"]
 
 script = ExtResource( 1 )
-_sections_unfolded = [ "Z" ]
+_sections_unfolded = [ "Pause", "Z" ]
 
 [node name="Start" parent="." instance=ExtResource( 2 )]
 
@@ -34,6 +34,7 @@ position = Vector2( 512, -96 )
 [node name="MM-10" parent="." instance=ExtResource( 6 )]
 
 position = Vector2( 928, -576 )
+_sections_unfolded = [ "Pause", "Transform" ]
 
 [node name="MainCamera" parent="." instance=ExtResource( 7 )]
 

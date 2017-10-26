@@ -89,15 +89,16 @@ func add_player(player):
 
 # Se usa este método antes de salir del vehículo
 func exit_vehicle():
-	print("players.size(): ", players.size())
 	if players.size() > 0:
 		var player = players[players.size() - 1]
 		
 		if not player is KinematicBody2D:
 			if GameGlobals.debug: print("player no es un KinematicBody2D: ", player)
 		
-		print("seating_taken: ", seating_taken)
-		print("players.has(player): ", players.has(player))
+		if GameGlobals.debug:
+			print("seating_taken: ", seating_taken)
+			print("players.has(player): ", players.has(player))
+		
 		if seating_taken > 0 and players.has(player):
 			seating_taken -= 1
 			
