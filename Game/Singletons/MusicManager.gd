@@ -8,7 +8,7 @@ enum Music {M_MELANCHOLIC = 1, M_SISTE_VIATOR}
 var current_music = null
 
 func _ready():
-	if current_music == null:
+	if current_music == null and GameGlobals.music_enable:
 		current_music = melancholic
 		current_music.play()
 

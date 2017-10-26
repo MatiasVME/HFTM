@@ -10,8 +10,10 @@ func _ready():
 	player.set_player_name("Pepito")
 	player2.set_player_name("Pedrito")
 	
-	MusicManager.select_music(2)
-	MusicManager.play_music()
+	if GameGlobals.music_enable:
+		MusicManager.select_music(2)
+		MusicManager.play_music()
+	
 	FocusManager.set_camera(camera)
 	FocusManager.add_player(player)
 	FocusManager.add_player(player2)

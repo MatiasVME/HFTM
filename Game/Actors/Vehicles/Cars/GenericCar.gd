@@ -74,7 +74,7 @@ func move_car(delta):
 
 func add_player(player):
 	if not player is KinematicBody2D:
-		if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
+		if GameGlobals.debug: print("player no es un KinematicBody2D: ", player)
 		return false
 		
 	if seating_max > 0 and seating_taken < seating_max:
@@ -94,14 +94,19 @@ func exit_vehicle():
 		var player = players[players.size() - 1]
 		
 		if not player is KinematicBody2D:
-			if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
+			if GameGlobals.debug: print("player no es un KinematicBody2D: ", player)
 		
 		print("seating_taken: ", seating_taken)
 		print("players.has(player): ", players.has(player))
 		if seating_taken > 0 and players.has(player):
 			seating_taken -= 1
+			
+			if players.size() == 1:
+				FocusManager.add_player(player, true, false)
+			else:
+				FocusManager.add_player(player)
+			
 			players.remove(players.find(player))
-			FocusManager.add_player(player)
 			FocusManager.remove_vehicle_focus(self)
 			FocusManager.last_focus()
 			is_selected = false
