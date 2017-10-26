@@ -4,6 +4,8 @@ onready var anim = $Animation
 onready var feets = $Feets
 onready var body = $Body
 
+var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
+
 export var test_mode = true
 
 enum State {IDLE, WALK, ATACK, AIM, AIM_ATACK}
@@ -20,17 +22,17 @@ func _ready():
 func _process(delta):
 	
 	if player_is_here:
-		state = State.AIM
+		state = State.AIM_ATACK
 	else:
 		state = State.IDLE
 	
-	states()
+	states(delta)
 	
 	# Test mode
 	if test_mode:
 		test_mode()
 	
-func states():
+func states(delta):
 	if state == State.IDLE and one_time:
 		anim.play("Idle1")
 		feets.frame = 0
@@ -47,6 +49,12 @@ func states():
 	elif state == State.AIM:
 		body.look_at(player.global_position)
 		body.rotation_deg += 90
+	elif state == State.AIM_ATACK:
+		body.look_at(player.global_position)
+		body.rotation_deg += 90
+		var i_canon_bullet = pistol_bullet.instance()
+		i_canon_bullet.enemyfire(self, player.global_position, delta)
+		
 
 func test_mode():
 	if Input.is_action_just_pressed("1"):
