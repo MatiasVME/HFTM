@@ -34,36 +34,43 @@ func next_focus():
 		else: 
 			current_focus_num = 1
 			select_focus(current_focus_num)
-	if debug : print("current_focus_num = ", self.current_focus_num)
+	if debug: 
+		print("current_focus_num: ", current_focus_num)
+		print("focus_num_max: ", focus_num_max)
 
 func last_focus():
 	print("focus: ", focus)
 	select_focus(focus.size(), false)
 
 # Players
+#
 
-func add_player(player, is_focusable = true):
+func add_player(player, is_focusable = true, add_one_focus = true):
 	if not player is KinematicBody2D:
-		if debug : print("player nos es un KinematicBody2D: ", player)
+		if debug: print("player nos es un KinematicBody2D: ", player)
 		return
 	
 	if focus.size() <= MAX_FOCUS and is_focusable:
 		focus.append(player)
-		focus_num_max += 1
 		players.append(player)
+		
+		if add_one_focus:
+			focus_num_max += 1
 	elif not is_focusable:
 		players.append(player)
 	else:
-		if debug : print("focus array is full: ", focus)
+		if debug: print("focus array is full: ", focus)
 
-func remove_player(player):
+func remove_player(player, remove_one_focus = false):
 	if not player is KinematicBody2D:
-		if debug : print("player nos es un KinematicBody2D: ", player)
+		if debug: print("player nos es un KinematicBody2D: ", player)
 		return
 		
 	players.remove(players.find(player))
 	focus.remove(focus.find(player))
-	focus_num_max -= 1
+	
+	if remove_one_focus:
+		focus_num_max -= 1
 
 # Selecciona el foco
 func select_focus(num, effect = true):
@@ -73,6 +80,8 @@ func select_focus(num, effect = true):
 	if num > 0 and num <= MAX_FOCUS and camera != null:
 		current_focus_num = num
 		if effect:
+			if debug: 
+				print("focus[]: ", focus)
 			camera.move_to_with_effect(focus[current_focus_num - 1])
 		else:
 			camera.move_to(focus[current_focus_num - 1])
@@ -88,21 +97,20 @@ func deselect_all_players():
 # Vehicles
 func add_vehicle(vehicle, is_focusable = false):
 	if not vehicle is KinematicBody2D:
-		if debug : print("vehicle nos es un KinematicBody2D: ", vehicle)
+		if debug: print("vehicle nos es un KinematicBody2D: ", vehicle)
 		return
 	
 	if focus.size() <= MAX_FOCUS and is_focusable:
 		focus.append(vehicle)
-		focus_num_max += 1
 		vehicles.append(vehicle)
 	elif not is_focusable:
 		vehicles.append(vehicle)
 	else:
-		if debug : print("focus array is full: ", focus)
+		if debug: print("focus array is full: ", focus)
 
 func remove_vehicle(vehicle):
 	if not vehicle is KinematicBody2D:
-		if debug : print("vehicle nos es un KinematicBody2D: ", vehicle)
+		if debug: print("vehicle nos es un KinematicBody2D: ", vehicle)
 		return
 		
 	vehicles.remove(vehicles.find(vehicle))
@@ -110,10 +118,12 @@ func remove_vehicle(vehicle):
 
 func remove_vehicle_focus(vehicle):
 	if not vehicle is KinematicBody2D:
-		if debug : print("vehicle nos es un KinematicBody2D: ", vehicle)
+		if debug: print("vehicle nos es un KinematicBody2D: ", vehicle)
 		return
 	
 	focus.remove(focus.find(vehicle))
+	
+	if debug: print("remove_vehicle_focus()-focus:", focus)
 
 # esta función va acá ya que es la camara la que hace focus al
 # vehículo.
@@ -139,36 +149,23 @@ func enter_vehicle(vehicle, player):
 				print(vehicle)
 				print(camera)
 	else:
-		if debug : print("el vehiculo no ha sido añadido: ", vehicle)
-
-# esta función va acá ya que es la camara la que hace focus al
-# vehículo.
-#func exit_vehicle(vehicle, player_name):
-#	var player = _get_player(player_name)
-#
-#	# valida si los parámetros son los correctos
-#	if vehicles.has(vehicle) and players.has(player):
-#		# ver cuantos players tiene vehículo para removerlo de focus o no
-#		vehicle.remove_player(player_name)
+		if debug: print("el vehiculo no ha sido añadido: ", vehicle)
 	
 func deselect_all_vehicles():
 	if vehicles.size() > 0:
 		for vehicles in get_tree().get_nodes_in_group("Vehicle"):
 			vehicles.is_selected = false
-			if debug : print("player.is_selected: ", vehicles.is_selected)
-
-#func _get_player(player_name):
-#	for player in players:
-#		if player.get_name() == player_name:
-#			return player
+			if debug: print("player.is_selected: ", vehicles.is_selected)
 
 # Camera
+#
+
 func set_camera(cam):
 	if cam is Camera2D:
 		camera = cam
-		if debug : print("Camera is set")
+		if debug: print("Camera is set")
 	else:
-		if debug : print("set_camera(cam) no esta recibiendo un Camera2D : ", camera)
+		if debug: print("set_camera(cam) no esta recibiendo un Camera2D : ", camera)
 	
 func get_camera():
 	return camera
