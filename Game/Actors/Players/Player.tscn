@@ -23,6 +23,7 @@ collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z", "collision" ]
+player_name = "none"
 
 [node name="Image" type="Sprite" parent="."]
 

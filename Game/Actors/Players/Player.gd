@@ -9,6 +9,8 @@ var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 const SPEED = 80
 const MOVEMENT = 2
 
+export (String) var player_name = "none" setget set_player_name, get_player_name
+
 var is_in_area = false
 var current_area = null
 # Si esta seleccionado se puede mover y etc
@@ -57,6 +59,12 @@ func fire(delta):
 		if Input.is_action_pressed("right_click"):
 			var i_pistol_bullet = pistol_bullet.instance()
 			i_pistol_bullet.fire(self, mouse_local_pos, delta)
+
+func set_player_name(name):
+	player_name = name
+
+func get_player_name():
+	return player_name
 
 func _on_TouchArea_area_entered( area ):
 	is_in_area = true

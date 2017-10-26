@@ -4,6 +4,11 @@ export (float) var mass = 3
 export (float) var max_speed = 600
 export (bool) var is_selected = false
 
+# A los vehículos se les tiene que setiar la escena en la cual estan
+# para que sepan donde posisionar sus player una vez que salen del
+# vehículo
+#var main_node = null setget set_main_node, get_main_node
+
 # Asientos que tiene el auto para contener players
 var seating_max = 0
 var seating_taken = 0
@@ -75,20 +80,31 @@ func add_player(player):
 	if seating_max > 0 and seating_taken < seating_max:
 		seating_taken += 1
 		var new_player = player.duplicate()
+		FocusManager.remove_player(player)
 		player.queue_free()
 		players.append(new_player)
 		return true
 	else:
 		return false
+
+# Se usa este método antes de salir del vehículo
+func exit_vehicle():
+	print("players.size(): ", players.size())
+	if players.size() > 0:
+		var player = players[players.size() - 1]
 		
-func remove_player(player):
-	if not player is KinematicBody2D:
-		if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
-		return false
-	
-	if seating_taken > 0 and players.has(player):
-		seating_taken -= 1
-		players.remove(player)
-		return true
-	else:
-		return false
+		if not player is KinematicBody2D:
+			if GameGlobals.debug : print("player no es un KinematicBody2D: ", player)
+		
+		print("seating_taken: ", seating_taken)
+		print("players.has(player): ", players.has(player))
+		if seating_taken > 0 and players.has(player):
+			seating_taken -= 1
+			players.remove(players.find(player))
+			FocusManager.add_player(player)
+			FocusManager.remove_vehicle_focus(self)
+			FocusManager.last_focus()
+			is_selected = false
+			return player
+
+#func set_main_node()
