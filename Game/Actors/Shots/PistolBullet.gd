@@ -9,11 +9,13 @@ func fire(this, mouse_pos, delta):
 		ShotManager.fire(20)
 		
 func enemyfire(enemy, player, delta):
+	var origin_bullet = enemy.get_node("Body/Canon1")
+	var player_pos = player.global_position
 	if ShotManager.can_fire:
 		enemy.get_parent().add_child(self)
 		self.add_to_group("Bullets")
 		self.set_position(enemy.get_node("Body/Canon1").get_global_position())
-		self.apply_impulse(Vector2(0,0), player * delta * 200)
+		self.set_axis_velocity(-player_pos.rotated(origin_bullet.global_position.angle_to_point(player_pos) + 0.6))
 		ShotManager.enemyfire(20)
 	
 

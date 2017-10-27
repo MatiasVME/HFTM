@@ -3,6 +3,7 @@ extends KinematicBody2D
 onready var anim = $Animation
 onready var feets = $Feets
 onready var body = $Body
+onready var Player = $Player
 
 var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 
@@ -26,13 +27,14 @@ func _process(delta):
 	else:
 		state = State.IDLE
 	
-	states(delta)
+	states(delta, player)
 	
 	# Test mode
 	if test_mode:
 		test_mode()
 	
-func states(delta):
+func states(delta, player):
+	var playerposition = player.global_position
 	if state == State.IDLE and one_time:
 		anim.play("Idle1")
 		feets.frame = 0
@@ -53,8 +55,7 @@ func states(delta):
 		body.look_at(player.global_position)
 		body.rotation_deg += 90
 		var i_canon_bullet = pistol_bullet.instance()
-		i_canon_bullet.enemyfire(self, player.global_position, delta)
-		
+		i_canon_bullet.enemyfire(self, player, delta)
 
 func test_mode():
 	if Input.is_action_just_pressed("1"):
