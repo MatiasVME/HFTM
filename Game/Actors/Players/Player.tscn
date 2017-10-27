@@ -27,7 +27,6 @@ player_name = "none"
 
 [node name="Image" type="Sprite" parent="."]
 
-editor/display_folded = true
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
@@ -43,6 +42,7 @@ _sections_unfolded = [ "Transform", "Z" ]
 
 [node name="TouchArea" type="Area2D" parent="."]
 
+editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

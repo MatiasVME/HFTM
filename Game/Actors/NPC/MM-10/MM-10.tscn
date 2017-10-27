@@ -97,6 +97,16 @@ frames = SubResource( 2 )
 animation = "body"
 _sections_unfolded = [ "Transform" ]
 
+[node name="Canon1" type="Position2D" parent="Body"]
+
+position = Vector2( -41, -43 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Canon2" type="Position2D" parent="Body"]
+
+position = Vector2( 41, -43 )
+_sections_unfolded = [ "Transform" ]
+
 [node name="Animation" type="AnimationPlayer" parent="."]
 
 playback_process_mode = 1
@@ -121,10 +131,16 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Collision" type="CollisionShape2D" parent="DetectArea"]
 
 shape = SubResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [connection signal="body_entered" from="DetectArea" to="." method="_on_DetectArea_body_entered"]
 

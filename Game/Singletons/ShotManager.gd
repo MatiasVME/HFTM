@@ -10,6 +10,10 @@ func fire(wait_ticks):
 	wait = wait_ticks * timer.get_wait_time()
 	can_fire = false
 
+func enemyfire(wait_ticks):
+	wait = wait_ticks * timer.get_wait_time()
+	can_fire = false
+
 func _on_Ticks_timeout():
 	acum_wait += timer.get_wait_time()
 	
