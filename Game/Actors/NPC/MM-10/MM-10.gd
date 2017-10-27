@@ -3,7 +3,6 @@ extends KinematicBody2D
 onready var anim = $Animation
 onready var feets = $Feets
 onready var body = $Body
-onready var Player = $Player
 
 var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 
@@ -27,14 +26,13 @@ func _process(delta):
 	else:
 		state = State.IDLE
 	
-	states(delta, player)
+	states(delta)
 	
 	# Test mode
 	if test_mode:
 		test_mode()
 	
-func states(delta, player):
-	var playerposition = player.global_position
+func states(delta):
 	if state == State.IDLE and one_time:
 		anim.play("Idle1")
 		feets.frame = 0
