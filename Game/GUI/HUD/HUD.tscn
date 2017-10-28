@@ -1,18 +1,18 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Game/GUI/HUD/HUD.gd" type="Script" id=1]
-[ext_resource path="res://Game/GUI/HUD/Inventory/Inventory.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Game/GUI/HUD/Stats/Stats.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Game/GUI/HUD/Bars.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Game/GUI/HUD/PhotosMini.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Game/GUI/HUD/Hotbar.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Game/GUI/HUD/HUD-Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Game/GUI/HUD/Bars.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Game/GUI/HUD/PhotosMini.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game/GUI/HUD/Hotbar.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Game/GUI/HUD/HUD-Menu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Game/GUI/HUD/Inventory/Inventory.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Game/GUI/HUD/Stats/Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Game/GUI/HUD/MenuPause.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Animation" id=7]
 
 resource_name = "bars_hide"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -21,7 +21,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 156.087, 80.5608 ), Vector2( 156.087, -83.0783 ) ]
@@ -30,7 +30,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=8]
 
 resource_name = "bars_show"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -39,7 +39,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 156.087, -83.0783 ), Vector2( 156.087, 78.0433 ) ]
@@ -48,7 +48,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=1]
 
 resource_name = "hotbar_hide"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -57,7 +57,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 463.591, 659.622 ), Vector2( 463.591, 723.464 ) ]
@@ -66,7 +66,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=2]
 
 resource_name = "hotbar_show"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -75,7 +75,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 463.591, 723.464 ), Vector2( 463.591, 657.067 ) ]
@@ -84,7 +84,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=3]
 
 resource_name = "hud_menu_hide"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -93,7 +93,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 1057.88, 496.473 ), Vector2( 1283.35, 496.473 ) ]
@@ -102,7 +102,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=4]
 
 resource_name = "hud_menu_show"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -111,7 +111,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 1283.35, 496.473 ), Vector2( 1054.54, 496.473 ) ]
@@ -120,7 +120,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=5]
 
 resource_name = "photos_mini_hide"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -129,7 +129,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 1106.63, 62.3486 ), Vector2( 1106.63, -63.179 ) ]
@@ -138,7 +138,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=6]
 
 resource_name = "photos_mini_show"
-length = 1.0
+length = 0.5
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -147,8 +147,8 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
 "update": 0,
 "values": [ Vector2( 1106.63, -63.179 ), Vector2( 1106.63, 53.7696 ) ]
 }
@@ -280,56 +280,86 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Inventory" parent="." instance=ExtResource( 2 )]
-
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -600, 0 )
-_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z" ]
-
-[node name="Stats" parent="." instance=ExtResource( 3 )]
-
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 1280, 0 )
-_sections_unfolded = [ "Material", "Visibility" ]
-
-[node name="Bars" parent="." instance=ExtResource( 4 )]
+[node name="Bars" parent="." instance=ExtResource( 2 )]
 
 position = Vector2( 156.087, -83.0783 )
 
-[node name="PhotosMini" parent="." instance=ExtResource( 5 )]
+[node name="PhotosMini" parent="." instance=ExtResource( 3 )]
 
 position = Vector2( 1106.63, -63.179 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Hotbar" parent="." instance=ExtResource( 6 )]
+[node name="Hotbar" parent="." instance=ExtResource( 4 )]
 
 position = Vector2( 463.591, 723.464 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="HUD-Menu" parent="." instance=ExtResource( 7 )]
+[node name="HUD-Menu" parent="." instance=ExtResource( 5 )]
 
 position = Vector2( 1283.35, 496.473 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Inventory" parent="." instance=ExtResource( 6 )]
+
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -600, 0 )
+_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z" ]
+
+[node name="Stats" parent="." instance=ExtResource( 7 )]
+
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1280, 0 )
+_sections_unfolded = [ "Material", "Visibility" ]
 
 [node name="MenuPause" parent="." instance=ExtResource( 8 )]
 
 visible = false
 position = Vector2( 350, 300 )
 
-[node name="Animation" type="AnimationPlayer" parent="."]
+[node name="AnimationBars" type="AnimationPlayer" parent="."]
 
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
 anims/bars_hide = SubResource( 7 )
 anims/bars_show = SubResource( 8 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="AnimationHotbar" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/hotbar_hide = SubResource( 1 )
 anims/hotbar_show = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="AnimationHUD-Menu" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/hud_menu_hide = SubResource( 3 )
 anims/hud_menu_show = SubResource( 4 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="AnimationPhotosMini" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/photos_mini_hide = SubResource( 5 )
 anims/photos_mini_show = SubResource( 6 )
 playback/active = true
