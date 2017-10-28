@@ -5,7 +5,7 @@
 [ext_resource path="res://Game/GUI/HUD/experience.png" type="Texture" id=3]
 [ext_resource path="res://Game/GUI/HUD/stats-background.png" type="Texture" id=4]
 
-[node name="Stats" type="Node2D"]
+[node name="Bars" type="Node2D"]
 
 [node name="heal" type="TextureProgress" parent="."]
 
@@ -102,5 +102,6 @@ _sections_unfolded = [ "Hint", "Rect", "Textures" ]
 [node name="background" type="Sprite" parent="."]
 
 texture = ExtResource( 4 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Pause", "Region", "Transform", "Visibility", "Z" ]
 
 

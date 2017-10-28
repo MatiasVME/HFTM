@@ -53,7 +53,7 @@ func states(delta):
 		body.look_at(player.global_position)
 		body.rotation_deg += 90
 		var i_canon_bullet = pistol_bullet.instance()
-		i_canon_bullet.enemyfire(self, player, delta)
+		i_canon_bullet.enemy_fire(self, player, delta)
 
 func test_mode():
 	if Input.is_action_just_pressed("1"):
