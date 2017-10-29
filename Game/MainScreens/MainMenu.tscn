@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Game/MainScreens/MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://Game/Backgrounds/MenuBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Game/Backgrounds/RandomBackground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game/Fonts/Ink_Tank/inktank.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Game/GUI/Buttons/blue-button-normal.png" type="Texture" id=4]
 [ext_resource path="res://Game/GUI/Buttons/blue-button-press.png" type="Texture" id=5]
@@ -30,11 +30,7 @@ pause_mode = 2
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Background" parent="." instance=ExtResource( 2 )]
-
-position = Vector2( -40.7235, -16.7371 )
-scale = Vector2( 1.05, 1.05 )
-_sections_unfolded = [ "Material", "Offset", "Transform", "Visibility" ]
+[node name="RandomBackground" parent="." instance=ExtResource( 2 )]
 
 [node name="Title" type="Label" parent="."]
 
