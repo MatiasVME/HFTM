@@ -3261,7 +3261,7 @@ _sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility
 
 z = -1
 texture = ExtResource( 524 )
-_sections_unfolded = [ "Z" ]
+_sections_unfolded = [ "Material", "Visibility", "Z" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TreeFull1"]
 

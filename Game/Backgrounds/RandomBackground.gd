@@ -65,7 +65,7 @@ func rand_img(_LVL):
 		LVL.L3:
 			load_texture_lvl3(randi() % 9)
 		LVL.RAND:
-			load_texture_rand(randi() % 7)
+			load_texture_rand(randi() % 6)
 
 func load_texture_lvl1(_LVL1):
 	match _LVL1:
@@ -196,6 +196,7 @@ func process_img(texture, _LVL = 0):
 
 func position_img(_texture, _img):
 	_img.texture = _texture
+	_img.modulate = Color(1, 1, 1, 0.65)
 	_img.position = Vector2(GameGlobals.RES_X / 2,
 			GameGlobals.RES_Y / 2)
 	
@@ -204,21 +205,30 @@ func animate(img, num_tween):
 	var ease_rand = randi() % 4
 	var rot_finish_rand = randi() % 1080 + 360
 	var time_rand = randi() % 20 + 10
+	var modulate_rand = Color(randf(), randf(), randf(), randf())
 	
 	match num_tween:
 		0 :
 			tween_lvl1.interpolate_property(img, "rotation_deg",
 					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl1.interpolate_property(img, "modulate",
+					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl1.start()
 		1 :
 			tween_lvl2.interpolate_property(img, "rotation_deg",
 					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl2.interpolate_property(img, "modulate",
+					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl2.start()
 		2 :
 			tween_lvl3.interpolate_property(img, "rotation_deg",
 					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl3.interpolate_property(img, "modulate",
+					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl3.start()
 		3 :
 			tween_rand.interpolate_property(img, "rotation_deg",
 					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_rand.interpolate_property(img, "modulate",
+					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_rand.start()
