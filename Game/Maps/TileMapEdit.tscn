@@ -1,529 +1,530 @@
-[gd_scene load_steps=529 format=2]
+[gd_scene load_steps=531 format=2]
 
-[ext_resource path="res://Game/Maps/Tiles/tile_01.png" type="Texture" id=1]
-[ext_resource path="res://Game/Maps/Tiles/tile_02.png" type="Texture" id=2]
-[ext_resource path="res://Game/Maps/Tiles/tile_03.png" type="Texture" id=3]
-[ext_resource path="res://Game/Maps/Tiles/tile_04.png" type="Texture" id=4]
-[ext_resource path="res://Game/Maps/Tiles/tile_05.png" type="Texture" id=5]
-[ext_resource path="res://Game/Maps/Tiles/tile_06.png" type="Texture" id=6]
-[ext_resource path="res://Game/Maps/Tiles/tile_07.png" type="Texture" id=7]
-[ext_resource path="res://Game/Maps/Tiles/tile_08.png" type="Texture" id=8]
-[ext_resource path="res://Game/Maps/Tiles/tile_09.png" type="Texture" id=9]
-[ext_resource path="res://Game/Maps/Tiles/tile_10.png" type="Texture" id=10]
-[ext_resource path="res://Game/Maps/Tiles/tile_11.png" type="Texture" id=11]
-[ext_resource path="res://Game/Maps/Tiles/tile_12.png" type="Texture" id=12]
-[ext_resource path="res://Game/Maps/Tiles/tile_13.png" type="Texture" id=13]
-[ext_resource path="res://Game/Maps/Tiles/tile_14.png" type="Texture" id=14]
-[ext_resource path="res://Game/Maps/Tiles/tile_16.png" type="Texture" id=15]
-[ext_resource path="res://Game/Maps/Tiles/tile_17.png" type="Texture" id=16]
-[ext_resource path="res://Game/Maps/Tiles/tile_18.png" type="Texture" id=17]
-[ext_resource path="res://Game/Maps/Tiles/tile_19.png" type="Texture" id=18]
-[ext_resource path="res://Game/Maps/Tiles/tile_20.png" type="Texture" id=19]
-[ext_resource path="res://Game/Maps/Tiles/tile_21.png" type="Texture" id=20]
-[ext_resource path="res://Game/Maps/Tiles/tile_22.png" type="Texture" id=21]
-[ext_resource path="res://Game/Maps/Tiles/tile_23.png" type="Texture" id=22]
-[ext_resource path="res://Game/Maps/Tiles/tile_24.png" type="Texture" id=23]
-[ext_resource path="res://Game/Maps/Tiles/tile_25.png" type="Texture" id=24]
-[ext_resource path="res://Game/Maps/Tiles/tile_26.png" type="Texture" id=25]
-[ext_resource path="res://Game/Maps/Tiles/tile_28.png" type="Texture" id=26]
-[ext_resource path="res://Game/Maps/Tiles/tile_29.png" type="Texture" id=27]
-[ext_resource path="res://Game/Maps/Tiles/tile_30.png" type="Texture" id=28]
-[ext_resource path="res://Game/Maps/Tiles/tile_31.png" type="Texture" id=29]
-[ext_resource path="res://Game/Maps/Tiles/tile_32.png" type="Texture" id=30]
-[ext_resource path="res://Game/Maps/Tiles/tile_33.png" type="Texture" id=31]
-[ext_resource path="res://Game/Maps/Tiles/tile_34.png" type="Texture" id=32]
-[ext_resource path="res://Game/Maps/Tiles/tile_35.png" type="Texture" id=33]
-[ext_resource path="res://Game/Maps/Tiles/tile_36.png" type="Texture" id=34]
-[ext_resource path="res://Game/Maps/Tiles/tile_37.png" type="Texture" id=35]
-[ext_resource path="res://Game/Maps/Tiles/tile_38.png" type="Texture" id=36]
-[ext_resource path="res://Game/Maps/Tiles/tile_39.png" type="Texture" id=37]
-[ext_resource path="res://Game/Maps/Tiles/tile_40.png" type="Texture" id=38]
-[ext_resource path="res://Game/Maps/Tiles/tile_41.png" type="Texture" id=39]
-[ext_resource path="res://Game/Maps/Tiles/tile_42.png" type="Texture" id=40]
-[ext_resource path="res://Game/Maps/Tiles/tile_43.png" type="Texture" id=41]
-[ext_resource path="res://Game/Maps/Tiles/tile_44.png" type="Texture" id=42]
-[ext_resource path="res://Game/Maps/Tiles/tile_45.png" type="Texture" id=43]
-[ext_resource path="res://Game/Maps/Tiles/tile_46.png" type="Texture" id=44]
-[ext_resource path="res://Game/Maps/Tiles/tile_47.png" type="Texture" id=45]
-[ext_resource path="res://Game/Maps/Tiles/tile_48.png" type="Texture" id=46]
-[ext_resource path="res://Game/Maps/Tiles/tile_49.png" type="Texture" id=47]
-[ext_resource path="res://Game/Maps/Tiles/tile_50.png" type="Texture" id=48]
-[ext_resource path="res://Game/Maps/Tiles/tile_51.png" type="Texture" id=49]
-[ext_resource path="res://Game/Maps/Tiles/tile_52.png" type="Texture" id=50]
-[ext_resource path="res://Game/Maps/Tiles/tile_53.png" type="Texture" id=51]
-[ext_resource path="res://Game/Maps/Tiles/tile_55.png" type="Texture" id=52]
-[ext_resource path="res://Game/Maps/Tiles/tile_56.png" type="Texture" id=53]
-[ext_resource path="res://Game/Maps/Tiles/tile_57.png" type="Texture" id=54]
-[ext_resource path="res://Game/Maps/Tiles/tile_58.png" type="Texture" id=55]
-[ext_resource path="res://Game/Maps/Tiles/tile_59.png" type="Texture" id=56]
-[ext_resource path="res://Game/Maps/Tiles/tile_60.png" type="Texture" id=57]
-[ext_resource path="res://Game/Maps/Tiles/tile_61.png" type="Texture" id=58]
-[ext_resource path="res://Game/Maps/Tiles/tile_62.png" type="Texture" id=59]
-[ext_resource path="res://Game/Maps/Tiles/tile_63.png" type="Texture" id=60]
-[ext_resource path="res://Game/Maps/Tiles/tile_64.png" type="Texture" id=61]
-[ext_resource path="res://Game/Maps/Tiles/tile_65.png" type="Texture" id=62]
-[ext_resource path="res://Game/Maps/Tiles/tile_66.png" type="Texture" id=63]
-[ext_resource path="res://Game/Maps/Tiles/tile_67.png" type="Texture" id=64]
-[ext_resource path="res://Game/Maps/Tiles/tile_68.png" type="Texture" id=65]
-[ext_resource path="res://Game/Maps/Tiles/tile_69.png" type="Texture" id=66]
-[ext_resource path="res://Game/Maps/Tiles/tile_70.png" type="Texture" id=67]
-[ext_resource path="res://Game/Maps/Tiles/tile_71.png" type="Texture" id=68]
-[ext_resource path="res://Game/Maps/Tiles/tile_72.png" type="Texture" id=69]
-[ext_resource path="res://Game/Maps/Tiles/tile_73.png" type="Texture" id=70]
-[ext_resource path="res://Game/Maps/Tiles/tile_74.png" type="Texture" id=71]
-[ext_resource path="res://Game/Maps/Tiles/tile_75.png" type="Texture" id=72]
-[ext_resource path="res://Game/Maps/Tiles/tile_76.png" type="Texture" id=73]
-[ext_resource path="res://Game/Maps/Tiles/tile_77.png" type="Texture" id=74]
-[ext_resource path="res://Game/Maps/Tiles/tile_78.png" type="Texture" id=75]
-[ext_resource path="res://Game/Maps/Tiles/tile_79.png" type="Texture" id=76]
-[ext_resource path="res://Game/Maps/Tiles/tile_80.png" type="Texture" id=77]
-[ext_resource path="res://Game/Maps/Tiles/tile_82.png" type="Texture" id=78]
-[ext_resource path="res://Game/Maps/Tiles/tile_83.png" type="Texture" id=79]
-[ext_resource path="res://Game/Maps/Tiles/tile_84.png" type="Texture" id=80]
-[ext_resource path="res://Game/Maps/Tiles/tile_85.png" type="Texture" id=81]
-[ext_resource path="res://Game/Maps/Tiles/tile_86.png" type="Texture" id=82]
-[ext_resource path="res://Game/Maps/Tiles/tile_87.png" type="Texture" id=83]
-[ext_resource path="res://Game/Maps/Tiles/tile_88.png" type="Texture" id=84]
-[ext_resource path="res://Game/Maps/Tiles/tile_89.png" type="Texture" id=85]
-[ext_resource path="res://Game/Maps/Tiles/tile_90.png" type="Texture" id=86]
-[ext_resource path="res://Game/Maps/Tiles/tile_91.png" type="Texture" id=87]
-[ext_resource path="res://Game/Maps/Tiles/tile_92.png" type="Texture" id=88]
-[ext_resource path="res://Game/Maps/Tiles/tile_93.png" type="Texture" id=89]
-[ext_resource path="res://Game/Maps/Tiles/tile_94.png" type="Texture" id=90]
-[ext_resource path="res://Game/Maps/Tiles/tile_95.png" type="Texture" id=91]
-[ext_resource path="res://Game/Maps/Tiles/tile_96.png" type="Texture" id=92]
-[ext_resource path="res://Game/Maps/Tiles/tile_97.png" type="Texture" id=93]
-[ext_resource path="res://Game/Maps/Tiles/tile_98.png" type="Texture" id=94]
-[ext_resource path="res://Game/Maps/Tiles/tile_99.png" type="Texture" id=95]
-[ext_resource path="res://Game/Maps/Tiles/tile_100.png" type="Texture" id=96]
-[ext_resource path="res://Game/Maps/Tiles/tile_101.png" type="Texture" id=97]
-[ext_resource path="res://Game/Maps/Tiles/tile_102.png" type="Texture" id=98]
-[ext_resource path="res://Game/Maps/Tiles/tile_103.png" type="Texture" id=99]
-[ext_resource path="res://Game/Maps/Tiles/tile_104.png" type="Texture" id=100]
-[ext_resource path="res://Game/Maps/Tiles/tile_105.png" type="Texture" id=101]
-[ext_resource path="res://Game/Maps/Tiles/tile_106.png" type="Texture" id=102]
-[ext_resource path="res://Game/Maps/Tiles/tile_107.png" type="Texture" id=103]
-[ext_resource path="res://Game/Maps/Tiles/tile_109.png" type="Texture" id=104]
-[ext_resource path="res://Game/Maps/Tiles/tile_110.png" type="Texture" id=105]
-[ext_resource path="res://Game/Maps/Tiles/tile_111.png" type="Texture" id=106]
-[ext_resource path="res://Game/Maps/Tiles/tile_112.png" type="Texture" id=107]
-[ext_resource path="res://Game/Maps/Tiles/tile_113.png" type="Texture" id=108]
-[ext_resource path="res://Game/Maps/Tiles/tile_114.png" type="Texture" id=109]
-[ext_resource path="res://Game/Maps/Tiles/tile_115.png" type="Texture" id=110]
-[ext_resource path="res://Game/Maps/Tiles/tile_116.png" type="Texture" id=111]
-[ext_resource path="res://Game/Maps/Tiles/tile_117.png" type="Texture" id=112]
-[ext_resource path="res://Game/Maps/Tiles/tile_118.png" type="Texture" id=113]
-[ext_resource path="res://Game/Maps/Tiles/tile_119.png" type="Texture" id=114]
-[ext_resource path="res://Game/Maps/Tiles/tile_120.png" type="Texture" id=115]
-[ext_resource path="res://Game/Maps/Tiles/tile_121.png" type="Texture" id=116]
-[ext_resource path="res://Game/Maps/Tiles/tile_122.png" type="Texture" id=117]
-[ext_resource path="res://Game/Maps/Tiles/tile_123.png" type="Texture" id=118]
-[ext_resource path="res://Game/Maps/Tiles/tile_124.png" type="Texture" id=119]
-[ext_resource path="res://Game/Maps/Tiles/tile_125.png" type="Texture" id=120]
-[ext_resource path="res://Game/Maps/Tiles/tile_126.png" type="Texture" id=121]
-[ext_resource path="res://Game/Maps/Tiles/tile_127.png" type="Texture" id=122]
-[ext_resource path="res://Game/Maps/Tiles/tile_128.png" type="Texture" id=123]
-[ext_resource path="res://Game/Maps/Tiles/tile_129.png" type="Texture" id=124]
-[ext_resource path="res://Game/Maps/Tiles/tile_130.png" type="Texture" id=125]
-[ext_resource path="res://Game/Maps/Tiles/tile_131.png" type="Texture" id=126]
-[ext_resource path="res://Game/Maps/Tiles/tile_132.png" type="Texture" id=127]
-[ext_resource path="res://Game/Maps/Tiles/tile_133.png" type="Texture" id=128]
-[ext_resource path="res://Game/Maps/Tiles/tile_134.png" type="Texture" id=129]
-[ext_resource path="res://Game/Maps/Tiles/tile_136.png" type="Texture" id=130]
-[ext_resource path="res://Game/Maps/Tiles/tile_137.png" type="Texture" id=131]
-[ext_resource path="res://Game/Maps/Tiles/tile_138.png" type="Texture" id=132]
-[ext_resource path="res://Game/Maps/Tiles/tile_139.png" type="Texture" id=133]
-[ext_resource path="res://Game/Maps/Tiles/tile_140.png" type="Texture" id=134]
-[ext_resource path="res://Game/Maps/Tiles/tile_141.png" type="Texture" id=135]
-[ext_resource path="res://Game/Maps/Tiles/tile_142.png" type="Texture" id=136]
-[ext_resource path="res://Game/Maps/Tiles/tile_143.png" type="Texture" id=137]
-[ext_resource path="res://Game/Maps/Tiles/tile_144.png" type="Texture" id=138]
-[ext_resource path="res://Game/Maps/Tiles/tile_145.png" type="Texture" id=139]
-[ext_resource path="res://Game/Maps/Tiles/tile_146.png" type="Texture" id=140]
-[ext_resource path="res://Game/Maps/Tiles/tile_147.png" type="Texture" id=141]
-[ext_resource path="res://Game/Maps/Tiles/tile_148.png" type="Texture" id=142]
-[ext_resource path="res://Game/Maps/Tiles/tile_149.png" type="Texture" id=143]
-[ext_resource path="res://Game/Maps/Tiles/tile_150.png" type="Texture" id=144]
-[ext_resource path="res://Game/Maps/Tiles/tile_151.png" type="Texture" id=145]
-[ext_resource path="res://Game/Maps/Tiles/tile_152.png" type="Texture" id=146]
-[ext_resource path="res://Game/Maps/Tiles/tile_153.png" type="Texture" id=147]
-[ext_resource path="res://Game/Maps/Tiles/tile_154.png" type="Texture" id=148]
-[ext_resource path="res://Game/Maps/Tiles/tile_155.png" type="Texture" id=149]
-[ext_resource path="res://Game/Maps/Tiles/tile_158.png" type="Texture" id=150]
-[ext_resource path="res://Game/Maps/Tiles/tile_159.png" type="Texture" id=151]
-[ext_resource path="res://Game/Maps/Tiles/tile_160.png" type="Texture" id=152]
-[ext_resource path="res://Game/Maps/Tiles/tile_161.png" type="Texture" id=153]
-[ext_resource path="res://Game/Maps/Tiles/tile_163.png" type="Texture" id=154]
-[ext_resource path="res://Game/Maps/Tiles/tile_164.png" type="Texture" id=155]
-[ext_resource path="res://Game/Maps/Tiles/tile_165.png" type="Texture" id=156]
-[ext_resource path="res://Game/Maps/Tiles/tile_166.png" type="Texture" id=157]
-[ext_resource path="res://Game/Maps/Tiles/tile_167.png" type="Texture" id=158]
-[ext_resource path="res://Game/Maps/Tiles/tile_168.png" type="Texture" id=159]
-[ext_resource path="res://Game/Maps/Tiles/tile_169.png" type="Texture" id=160]
-[ext_resource path="res://Game/Maps/Tiles/tile_170.png" type="Texture" id=161]
-[ext_resource path="res://Game/Maps/Tiles/tile_171.png" type="Texture" id=162]
-[ext_resource path="res://Game/Maps/Tiles/tile_172.png" type="Texture" id=163]
-[ext_resource path="res://Game/Maps/Tiles/tile_173.png" type="Texture" id=164]
-[ext_resource path="res://Game/Maps/Tiles/tile_174.png" type="Texture" id=165]
-[ext_resource path="res://Game/Maps/Tiles/tile_175.png" type="Texture" id=166]
-[ext_resource path="res://Game/Maps/Tiles/tile_176.png" type="Texture" id=167]
-[ext_resource path="res://Game/Maps/Tiles/tile_177.png" type="Texture" id=168]
-[ext_resource path="res://Game/Maps/Tiles/tile_178.png" type="Texture" id=169]
-[ext_resource path="res://Game/Maps/Tiles/tile_179.png" type="Texture" id=170]
-[ext_resource path="res://Game/Maps/Tiles/tile_180.png" type="Texture" id=171]
-[ext_resource path="res://Game/Maps/Tiles/tile_181.png" type="Texture" id=172]
-[ext_resource path="res://Game/Maps/Tiles/tile_182.png" type="Texture" id=173]
-[ext_resource path="res://Game/Maps/Tiles/tile_183.png" type="Texture" id=174]
-[ext_resource path="res://Game/Maps/Tiles/tile_184.png" type="Texture" id=175]
-[ext_resource path="res://Game/Maps/Tiles/tile_185.png" type="Texture" id=176]
-[ext_resource path="res://Game/Maps/Tiles/tile_186.png" type="Texture" id=177]
-[ext_resource path="res://Game/Maps/Tiles/tile_187.png" type="Texture" id=178]
-[ext_resource path="res://Game/Maps/Tiles/tile_188.png" type="Texture" id=179]
-[ext_resource path="res://Game/Maps/Tiles/tile_190.png" type="Texture" id=180]
-[ext_resource path="res://Game/Maps/Tiles/tile_191.png" type="Texture" id=181]
-[ext_resource path="res://Game/Maps/Tiles/tile_192.png" type="Texture" id=182]
-[ext_resource path="res://Game/Maps/Tiles/tile_193.png" type="Texture" id=183]
-[ext_resource path="res://Game/Maps/Tiles/tile_194.png" type="Texture" id=184]
-[ext_resource path="res://Game/Maps/Tiles/tile_195.png" type="Texture" id=185]
-[ext_resource path="res://Game/Maps/Tiles/tile_196.png" type="Texture" id=186]
-[ext_resource path="res://Game/Maps/Tiles/tile_197.png" type="Texture" id=187]
-[ext_resource path="res://Game/Maps/Tiles/tile_198.png" type="Texture" id=188]
-[ext_resource path="res://Game/Maps/Tiles/tile_199.png" type="Texture" id=189]
-[ext_resource path="res://Game/Maps/Tiles/tile_200.png" type="Texture" id=190]
-[ext_resource path="res://Game/Maps/Tiles/tile_201.png" type="Texture" id=191]
-[ext_resource path="res://Game/Maps/Tiles/tile_202.png" type="Texture" id=192]
-[ext_resource path="res://Game/Maps/Tiles/tile_203.png" type="Texture" id=193]
-[ext_resource path="res://Game/Maps/Tiles/tile_204.png" type="Texture" id=194]
-[ext_resource path="res://Game/Maps/Tiles/tile_205.png" type="Texture" id=195]
-[ext_resource path="res://Game/Maps/Tiles/tile_206.png" type="Texture" id=196]
-[ext_resource path="res://Game/Maps/Tiles/tile_207.png" type="Texture" id=197]
-[ext_resource path="res://Game/Maps/Tiles/tile_208.png" type="Texture" id=198]
-[ext_resource path="res://Game/Maps/Tiles/tile_209.png" type="Texture" id=199]
-[ext_resource path="res://Game/Maps/Tiles/tile_210.png" type="Texture" id=200]
-[ext_resource path="res://Game/Maps/Tiles/tile_211.png" type="Texture" id=201]
-[ext_resource path="res://Game/Maps/Tiles/tile_212.png" type="Texture" id=202]
-[ext_resource path="res://Game/Maps/Tiles/tile_213.png" type="Texture" id=203]
-[ext_resource path="res://Game/Maps/Tiles/tile_214.png" type="Texture" id=204]
-[ext_resource path="res://Game/Maps/Tiles/tile_215.png" type="Texture" id=205]
-[ext_resource path="res://Game/Maps/Tiles/tile_217.png" type="Texture" id=206]
-[ext_resource path="res://Game/Maps/Tiles/tile_218.png" type="Texture" id=207]
-[ext_resource path="res://Game/Maps/Tiles/tile_219.png" type="Texture" id=208]
-[ext_resource path="res://Game/Maps/Tiles/tile_220.png" type="Texture" id=209]
-[ext_resource path="res://Game/Maps/Tiles/tile_221.png" type="Texture" id=210]
-[ext_resource path="res://Game/Maps/Tiles/tile_222.png" type="Texture" id=211]
-[ext_resource path="res://Game/Maps/Tiles/tile_223.png" type="Texture" id=212]
-[ext_resource path="res://Game/Maps/Tiles/tile_224.png" type="Texture" id=213]
-[ext_resource path="res://Game/Maps/Tiles/tile_225.png" type="Texture" id=214]
-[ext_resource path="res://Game/Maps/Tiles/tile_226.png" type="Texture" id=215]
-[ext_resource path="res://Game/Maps/Tiles/tile_227.png" type="Texture" id=216]
-[ext_resource path="res://Game/Maps/Tiles/tile_228.png" type="Texture" id=217]
-[ext_resource path="res://Game/Maps/Tiles/tile_229.png" type="Texture" id=218]
-[ext_resource path="res://Game/Maps/Tiles/tile_230.png" type="Texture" id=219]
-[ext_resource path="res://Game/Maps/Tiles/tile_231.png" type="Texture" id=220]
-[ext_resource path="res://Game/Maps/Tiles/tile_232.png" type="Texture" id=221]
-[ext_resource path="res://Game/Maps/Tiles/tile_233.png" type="Texture" id=222]
-[ext_resource path="res://Game/Maps/Tiles/tile_234.png" type="Texture" id=223]
-[ext_resource path="res://Game/Maps/Tiles/tile_235.png" type="Texture" id=224]
-[ext_resource path="res://Game/Maps/Tiles/tile_236.png" type="Texture" id=225]
-[ext_resource path="res://Game/Maps/Tiles/tile_237.png" type="Texture" id=226]
-[ext_resource path="res://Game/Maps/Tiles/tile_238.png" type="Texture" id=227]
-[ext_resource path="res://Game/Maps/Tiles/tile_239.png" type="Texture" id=228]
-[ext_resource path="res://Game/Maps/Tiles/tile_240.png" type="Texture" id=229]
-[ext_resource path="res://Game/Maps/Tiles/tile_241.png" type="Texture" id=230]
-[ext_resource path="res://Game/Maps/Tiles/tile_242.png" type="Texture" id=231]
-[ext_resource path="res://Game/Maps/Tiles/tile_243.png" type="Texture" id=232]
-[ext_resource path="res://Game/Maps/Tiles/tile_244.png" type="Texture" id=233]
-[ext_resource path="res://Game/Maps/Tiles/tile_245.png" type="Texture" id=234]
-[ext_resource path="res://Game/Maps/Tiles/tile_246.png" type="Texture" id=235]
-[ext_resource path="res://Game/Maps/Tiles/tile_247.png" type="Texture" id=236]
-[ext_resource path="res://Game/Maps/Tiles/tile_248.png" type="Texture" id=237]
-[ext_resource path="res://Game/Maps/Tiles/tile_249.png" type="Texture" id=238]
-[ext_resource path="res://Game/Maps/Tiles/tile_250.png" type="Texture" id=239]
-[ext_resource path="res://Game/Maps/Tiles/tile_251.png" type="Texture" id=240]
-[ext_resource path="res://Game/Maps/Tiles/tile_252.png" type="Texture" id=241]
-[ext_resource path="res://Game/Maps/Tiles/tile_253.png" type="Texture" id=242]
-[ext_resource path="res://Game/Maps/Tiles/tile_254.png" type="Texture" id=243]
-[ext_resource path="res://Game/Maps/Tiles/tile_255.png" type="Texture" id=244]
-[ext_resource path="res://Game/Maps/Tiles/tile_256.png" type="Texture" id=245]
-[ext_resource path="res://Game/Maps/Tiles/tile_257.png" type="Texture" id=246]
-[ext_resource path="res://Game/Maps/Tiles/tile_258.png" type="Texture" id=247]
-[ext_resource path="res://Game/Maps/Tiles/tile_259.png" type="Texture" id=248]
-[ext_resource path="res://Game/Maps/Tiles/tile_260.png" type="Texture" id=249]
-[ext_resource path="res://Game/Maps/Tiles/tile_261.png" type="Texture" id=250]
-[ext_resource path="res://Game/Maps/Tiles/tile_262.png" type="Texture" id=251]
-[ext_resource path="res://Game/Maps/Tiles/tile_263.png" type="Texture" id=252]
-[ext_resource path="res://Game/Maps/Tiles/tile_264.png" type="Texture" id=253]
-[ext_resource path="res://Game/Maps/Tiles/tile_265.png" type="Texture" id=254]
-[ext_resource path="res://Game/Maps/Tiles/tile_266.png" type="Texture" id=255]
-[ext_resource path="res://Game/Maps/Tiles/tile_267.png" type="Texture" id=256]
-[ext_resource path="res://Game/Maps/Tiles/tile_268.png" type="Texture" id=257]
-[ext_resource path="res://Game/Maps/Tiles/tile_269.png" type="Texture" id=258]
-[ext_resource path="res://Game/Maps/Tiles/tile_270.png" type="Texture" id=259]
-[ext_resource path="res://Game/Maps/Tiles/tile_271.png" type="Texture" id=260]
-[ext_resource path="res://Game/Maps/Tiles/tile_272.png" type="Texture" id=261]
-[ext_resource path="res://Game/Maps/Tiles/tile_273.png" type="Texture" id=262]
-[ext_resource path="res://Game/Maps/Tiles/tile_274.png" type="Texture" id=263]
-[ext_resource path="res://Game/Maps/Tiles/tile_275.png" type="Texture" id=264]
-[ext_resource path="res://Game/Maps/Tiles/tile_276.png" type="Texture" id=265]
-[ext_resource path="res://Game/Maps/Tiles/tile_277.png" type="Texture" id=266]
-[ext_resource path="res://Game/Maps/Tiles/tile_278.png" type="Texture" id=267]
-[ext_resource path="res://Game/Maps/Tiles/tile_279.png" type="Texture" id=268]
-[ext_resource path="res://Game/Maps/Tiles/tile_280.png" type="Texture" id=269]
-[ext_resource path="res://Game/Maps/Tiles/tile_281.png" type="Texture" id=270]
-[ext_resource path="res://Game/Maps/Tiles/tile_282.png" type="Texture" id=271]
-[ext_resource path="res://Game/Maps/Tiles/tile_283.png" type="Texture" id=272]
-[ext_resource path="res://Game/Maps/Tiles/tile_284.png" type="Texture" id=273]
-[ext_resource path="res://Game/Maps/Tiles/tile_285.png" type="Texture" id=274]
-[ext_resource path="res://Game/Maps/Tiles/tile_286.png" type="Texture" id=275]
-[ext_resource path="res://Game/Maps/Tiles/tile_287.png" type="Texture" id=276]
-[ext_resource path="res://Game/Maps/Tiles/tile_288.png" type="Texture" id=277]
-[ext_resource path="res://Game/Maps/Tiles/tile_289.png" type="Texture" id=278]
-[ext_resource path="res://Game/Maps/Tiles/tile_290.png" type="Texture" id=279]
-[ext_resource path="res://Game/Maps/Tiles/tile_291.png" type="Texture" id=280]
-[ext_resource path="res://Game/Maps/Tiles/tile_292.png" type="Texture" id=281]
-[ext_resource path="res://Game/Maps/Tiles/tile_293.png" type="Texture" id=282]
-[ext_resource path="res://Game/Maps/Tiles/tile_294.png" type="Texture" id=283]
-[ext_resource path="res://Game/Maps/Tiles/tile_295.png" type="Texture" id=284]
-[ext_resource path="res://Game/Maps/Tiles/tile_296.png" type="Texture" id=285]
-[ext_resource path="res://Game/Maps/Tiles/tile_297.png" type="Texture" id=286]
-[ext_resource path="res://Game/Maps/Tiles/tile_298.png" type="Texture" id=287]
-[ext_resource path="res://Game/Maps/Tiles/tile_299.png" type="Texture" id=288]
-[ext_resource path="res://Game/Maps/Tiles/tile_300.png" type="Texture" id=289]
-[ext_resource path="res://Game/Maps/Tiles/tile_301.png" type="Texture" id=290]
-[ext_resource path="res://Game/Maps/Tiles/tile_302.png" type="Texture" id=291]
-[ext_resource path="res://Game/Maps/Tiles/tile_303.png" type="Texture" id=292]
-[ext_resource path="res://Game/Maps/Tiles/tile_304.png" type="Texture" id=293]
-[ext_resource path="res://Game/Maps/Tiles/tile_305.png" type="Texture" id=294]
-[ext_resource path="res://Game/Maps/Tiles/tile_306.png" type="Texture" id=295]
-[ext_resource path="res://Game/Maps/Tiles/tile_307.png" type="Texture" id=296]
-[ext_resource path="res://Game/Maps/Tiles/tile_308.png" type="Texture" id=297]
-[ext_resource path="res://Game/Maps/Tiles/tile_309.png" type="Texture" id=298]
-[ext_resource path="res://Game/Maps/Tiles/tile_310.png" type="Texture" id=299]
-[ext_resource path="res://Game/Maps/Tiles/tile_311.png" type="Texture" id=300]
-[ext_resource path="res://Game/Maps/Tiles/tile_312.png" type="Texture" id=301]
-[ext_resource path="res://Game/Maps/Tiles/tile_313.png" type="Texture" id=302]
-[ext_resource path="res://Game/Maps/Tiles/tile_314.png" type="Texture" id=303]
-[ext_resource path="res://Game/Maps/Tiles/tile_315.png" type="Texture" id=304]
-[ext_resource path="res://Game/Maps/Tiles/tile_316.png" type="Texture" id=305]
-[ext_resource path="res://Game/Maps/Tiles/tile_317.png" type="Texture" id=306]
-[ext_resource path="res://Game/Maps/Tiles/tile_318.png" type="Texture" id=307]
-[ext_resource path="res://Game/Maps/Tiles/tile_319.png" type="Texture" id=308]
-[ext_resource path="res://Game/Maps/Tiles/tile_320.png" type="Texture" id=309]
-[ext_resource path="res://Game/Maps/Tiles/tile_321.png" type="Texture" id=310]
-[ext_resource path="res://Game/Maps/Tiles/tile_322.png" type="Texture" id=311]
-[ext_resource path="res://Game/Maps/Tiles/tile_323.png" type="Texture" id=312]
-[ext_resource path="res://Game/Maps/Tiles/tile_324.png" type="Texture" id=313]
-[ext_resource path="res://Game/Maps/Tiles/tile_325.png" type="Texture" id=314]
-[ext_resource path="res://Game/Maps/Tiles/tile_326.png" type="Texture" id=315]
-[ext_resource path="res://Game/Maps/Tiles/tile_327.png" type="Texture" id=316]
-[ext_resource path="res://Game/Maps/Tiles/tile_328.png" type="Texture" id=317]
-[ext_resource path="res://Game/Maps/Tiles/tile_329.png" type="Texture" id=318]
-[ext_resource path="res://Game/Maps/Tiles/tile_330.png" type="Texture" id=319]
-[ext_resource path="res://Game/Maps/Tiles/tile_331.png" type="Texture" id=320]
-[ext_resource path="res://Game/Maps/Tiles/tile_332.png" type="Texture" id=321]
-[ext_resource path="res://Game/Maps/Tiles/tile_333.png" type="Texture" id=322]
-[ext_resource path="res://Game/Maps/Tiles/tile_334.png" type="Texture" id=323]
-[ext_resource path="res://Game/Maps/Tiles/tile_335.png" type="Texture" id=324]
-[ext_resource path="res://Game/Maps/Tiles/tile_336.png" type="Texture" id=325]
-[ext_resource path="res://Game/Maps/Tiles/tile_337.png" type="Texture" id=326]
-[ext_resource path="res://Game/Maps/Tiles/tile_338.png" type="Texture" id=327]
-[ext_resource path="res://Game/Maps/Tiles/tile_339.png" type="Texture" id=328]
-[ext_resource path="res://Game/Maps/Tiles/tile_340.png" type="Texture" id=329]
-[ext_resource path="res://Game/Maps/Tiles/tile_341.png" type="Texture" id=330]
-[ext_resource path="res://Game/Maps/Tiles/tile_342.png" type="Texture" id=331]
-[ext_resource path="res://Game/Maps/Tiles/tile_343.png" type="Texture" id=332]
-[ext_resource path="res://Game/Maps/Tiles/tile_344.png" type="Texture" id=333]
-[ext_resource path="res://Game/Maps/Tiles/tile_345.png" type="Texture" id=334]
-[ext_resource path="res://Game/Maps/Tiles/tile_346.png" type="Texture" id=335]
-[ext_resource path="res://Game/Maps/Tiles/tile_347.png" type="Texture" id=336]
-[ext_resource path="res://Game/Maps/Tiles/tile_348.png" type="Texture" id=337]
-[ext_resource path="res://Game/Maps/Tiles/tile_349.png" type="Texture" id=338]
-[ext_resource path="res://Game/Maps/Tiles/tile_350.png" type="Texture" id=339]
-[ext_resource path="res://Game/Maps/Tiles/tile_351.png" type="Texture" id=340]
-[ext_resource path="res://Game/Maps/Tiles/tile_352.png" type="Texture" id=341]
-[ext_resource path="res://Game/Maps/Tiles/tile_353.png" type="Texture" id=342]
-[ext_resource path="res://Game/Maps/Tiles/tile_354.png" type="Texture" id=343]
-[ext_resource path="res://Game/Maps/Tiles/tile_355.png" type="Texture" id=344]
-[ext_resource path="res://Game/Maps/Tiles/tile_356.png" type="Texture" id=345]
-[ext_resource path="res://Game/Maps/Tiles/tile_357.png" type="Texture" id=346]
-[ext_resource path="res://Game/Maps/Tiles/tile_358.png" type="Texture" id=347]
-[ext_resource path="res://Game/Maps/Tiles/tile_359.png" type="Texture" id=348]
-[ext_resource path="res://Game/Maps/Tiles/tile_360.png" type="Texture" id=349]
-[ext_resource path="res://Game/Maps/Tiles/tile_361.png" type="Texture" id=350]
-[ext_resource path="res://Game/Maps/Tiles/tile_362.png" type="Texture" id=351]
-[ext_resource path="res://Game/Maps/Tiles/tile_363.png" type="Texture" id=352]
-[ext_resource path="res://Game/Maps/Tiles/tile_364.png" type="Texture" id=353]
-[ext_resource path="res://Game/Maps/Tiles/tile_365.png" type="Texture" id=354]
-[ext_resource path="res://Game/Maps/Tiles/tile_366.png" type="Texture" id=355]
-[ext_resource path="res://Game/Maps/Tiles/tile_368.png" type="Texture" id=356]
-[ext_resource path="res://Game/Maps/Tiles/tile_369.png" type="Texture" id=357]
-[ext_resource path="res://Game/Maps/Tiles/tile_370.png" type="Texture" id=358]
-[ext_resource path="res://Game/Maps/Tiles/tile_371.png" type="Texture" id=359]
-[ext_resource path="res://Game/Maps/Tiles/tile_372.png" type="Texture" id=360]
-[ext_resource path="res://Game/Maps/Tiles/tile_373.png" type="Texture" id=361]
-[ext_resource path="res://Game/Maps/Tiles/tile_374.png" type="Texture" id=362]
-[ext_resource path="res://Game/Maps/Tiles/tile_375.png" type="Texture" id=363]
-[ext_resource path="res://Game/Maps/Tiles/tile_376.png" type="Texture" id=364]
-[ext_resource path="res://Game/Maps/Tiles/tile_377.png" type="Texture" id=365]
-[ext_resource path="res://Game/Maps/Tiles/tile_378.png" type="Texture" id=366]
-[ext_resource path="res://Game/Maps/Tiles/tile_367.png" type="Texture" id=367]
-[ext_resource path="res://Game/Maps/Tiles/tile_379.png" type="Texture" id=368]
-[ext_resource path="res://Game/Maps/Tiles/tile_380.png" type="Texture" id=369]
-[ext_resource path="res://Game/Maps/Tiles/tile_381.png" type="Texture" id=370]
-[ext_resource path="res://Game/Maps/Tiles/tile_382.png" type="Texture" id=371]
-[ext_resource path="res://Game/Maps/Tiles/tile_383.png" type="Texture" id=372]
-[ext_resource path="res://Game/Maps/Tiles/tile_384.png" type="Texture" id=373]
-[ext_resource path="res://Game/Maps/Tiles/tile_385.png" type="Texture" id=374]
-[ext_resource path="res://Game/Maps/Tiles/tile_386.png" type="Texture" id=375]
-[ext_resource path="res://Game/Maps/Tiles/tile_387.png" type="Texture" id=376]
-[ext_resource path="res://Game/Maps/Tiles/tile_388.png" type="Texture" id=377]
-[ext_resource path="res://Game/Maps/Tiles/tile_389.png" type="Texture" id=378]
-[ext_resource path="res://Game/Maps/Tiles/tile_390.png" type="Texture" id=379]
-[ext_resource path="res://Game/Maps/Tiles/tile_391.png" type="Texture" id=380]
-[ext_resource path="res://Game/Maps/Tiles/tile_392.png" type="Texture" id=381]
-[ext_resource path="res://Game/Maps/Tiles/tile_393.png" type="Texture" id=382]
-[ext_resource path="res://Game/Maps/Tiles/tile_394.png" type="Texture" id=383]
-[ext_resource path="res://Game/Maps/Tiles/tile_395.png" type="Texture" id=384]
-[ext_resource path="res://Game/Maps/Tiles/tile_396.png" type="Texture" id=385]
-[ext_resource path="res://Game/Maps/Tiles/tile_397.png" type="Texture" id=386]
-[ext_resource path="res://Game/Maps/Tiles/tile_398.png" type="Texture" id=387]
-[ext_resource path="res://Game/Maps/Tiles/tile_399.png" type="Texture" id=388]
-[ext_resource path="res://Game/Maps/Tiles/tile_400.png" type="Texture" id=389]
-[ext_resource path="res://Game/Maps/Tiles/tile_401.png" type="Texture" id=390]
-[ext_resource path="res://Game/Maps/Tiles/tile_402.png" type="Texture" id=391]
-[ext_resource path="res://Game/Maps/Tiles/tile_403.png" type="Texture" id=392]
-[ext_resource path="res://Game/Maps/Tiles/tile_404.png" type="Texture" id=393]
-[ext_resource path="res://Game/Maps/Tiles/tile_405.png" type="Texture" id=394]
-[ext_resource path="res://Game/Maps/Tiles/tile_406.png" type="Texture" id=395]
-[ext_resource path="res://Game/Maps/Tiles/tile_407.png" type="Texture" id=396]
-[ext_resource path="res://Game/Maps/Tiles/tile_408.png" type="Texture" id=397]
-[ext_resource path="res://Game/Maps/Tiles/tile_409.png" type="Texture" id=398]
-[ext_resource path="res://Game/Maps/Tiles/tile_410.png" type="Texture" id=399]
-[ext_resource path="res://Game/Maps/Tiles/tile_411.png" type="Texture" id=400]
-[ext_resource path="res://Game/Maps/Tiles/tile_412.png" type="Texture" id=401]
-[ext_resource path="res://Game/Maps/Tiles/tile_413.png" type="Texture" id=402]
-[ext_resource path="res://Game/Maps/Tiles/tile_414.png" type="Texture" id=403]
-[ext_resource path="res://Game/Maps/Tiles/tile_415.png" type="Texture" id=404]
-[ext_resource path="res://Game/Maps/Tiles/tile_416.png" type="Texture" id=405]
-[ext_resource path="res://Game/Maps/Tiles/tile_417.png" type="Texture" id=406]
-[ext_resource path="res://Game/Maps/Tiles/tile_418.png" type="Texture" id=407]
-[ext_resource path="res://Game/Maps/Tiles/tile_419.png" type="Texture" id=408]
-[ext_resource path="res://Game/Maps/Tiles/tile_420.png" type="Texture" id=409]
-[ext_resource path="res://Game/Maps/Tiles/tile_421.png" type="Texture" id=410]
-[ext_resource path="res://Game/Maps/Tiles/tile_422.png" type="Texture" id=411]
-[ext_resource path="res://Game/Maps/Tiles/tile_423.png" type="Texture" id=412]
-[ext_resource path="res://Game/Maps/Tiles/tile_424.png" type="Texture" id=413]
-[ext_resource path="res://Game/Maps/Tiles/tile_425.png" type="Texture" id=414]
-[ext_resource path="res://Game/Maps/Tiles/tile_426.png" type="Texture" id=415]
-[ext_resource path="res://Game/Maps/Tiles/tile_427.png" type="Texture" id=416]
-[ext_resource path="res://Game/Maps/Tiles/tile_428.png" type="Texture" id=417]
-[ext_resource path="res://Game/Maps/Tiles/tile_429.png" type="Texture" id=418]
-[ext_resource path="res://Game/Maps/Tiles/tile_430.png" type="Texture" id=419]
-[ext_resource path="res://Game/Maps/Tiles/tile_431.png" type="Texture" id=420]
-[ext_resource path="res://Game/Maps/Tiles/tile_432.png" type="Texture" id=421]
-[ext_resource path="res://Game/Maps/Tiles/tile_433.png" type="Texture" id=422]
-[ext_resource path="res://Game/Maps/Tiles/tile_434.png" type="Texture" id=423]
-[ext_resource path="res://Game/Maps/Tiles/tile_435.png" type="Texture" id=424]
-[ext_resource path="res://Game/Maps/Tiles/tile_436.png" type="Texture" id=425]
-[ext_resource path="res://Game/Maps/Tiles/tile_437.png" type="Texture" id=426]
-[ext_resource path="res://Game/Maps/Tiles/tile_438.png" type="Texture" id=427]
-[ext_resource path="res://Game/Maps/Tiles/tile_439.png" type="Texture" id=428]
-[ext_resource path="res://Game/Maps/Tiles/tile_440.png" type="Texture" id=429]
-[ext_resource path="res://Game/Maps/Tiles/tile_441.png" type="Texture" id=430]
-[ext_resource path="res://Game/Maps/Tiles/tile_442.png" type="Texture" id=431]
-[ext_resource path="res://Game/Maps/Tiles/tile_443.png" type="Texture" id=432]
-[ext_resource path="res://Game/Maps/Tiles/tile_444.png" type="Texture" id=433]
-[ext_resource path="res://Game/Maps/Tiles/tile_445.png" type="Texture" id=434]
-[ext_resource path="res://Game/Maps/Tiles/tile_446.png" type="Texture" id=435]
-[ext_resource path="res://Game/Maps/Tiles/tile_447.png" type="Texture" id=436]
-[ext_resource path="res://Game/Maps/Tiles/tile_448.png" type="Texture" id=437]
-[ext_resource path="res://Game/Maps/Tiles/tile_449.png" type="Texture" id=438]
-[ext_resource path="res://Game/Maps/Tiles/tile_450.png" type="Texture" id=439]
-[ext_resource path="res://Game/Maps/Tiles/tile_451.png" type="Texture" id=440]
-[ext_resource path="res://Game/Maps/Tiles/tile_452.png" type="Texture" id=441]
-[ext_resource path="res://Game/Maps/Tiles/tile_453.png" type="Texture" id=442]
-[ext_resource path="res://Game/Maps/Tiles/tile_454.png" type="Texture" id=443]
-[ext_resource path="res://Game/Maps/Tiles/tile_455.png" type="Texture" id=444]
-[ext_resource path="res://Game/Maps/Tiles/tile_456.png" type="Texture" id=445]
-[ext_resource path="res://Game/Maps/Tiles/tile_457.png" type="Texture" id=446]
-[ext_resource path="res://Game/Maps/Tiles/tile_460.png" type="Texture" id=447]
-[ext_resource path="res://Game/Maps/Tiles/tile_461.png" type="Texture" id=448]
-[ext_resource path="res://Game/Maps/Tiles/tile_462.png" type="Texture" id=449]
-[ext_resource path="res://Game/Maps/Tiles/tile_463.png" type="Texture" id=450]
-[ext_resource path="res://Game/Maps/Tiles/tile_464.png" type="Texture" id=451]
-[ext_resource path="res://Game/Maps/Tiles/tile_465.png" type="Texture" id=452]
-[ext_resource path="res://Game/Maps/Tiles/tile_466.png" type="Texture" id=453]
-[ext_resource path="res://Game/Maps/Tiles/tile_467.png" type="Texture" id=454]
-[ext_resource path="res://Game/Maps/Tiles/tile_468.png" type="Texture" id=455]
-[ext_resource path="res://Game/Maps/Tiles/tile_469.png" type="Texture" id=456]
-[ext_resource path="res://Game/Maps/Tiles/tile_470.png" type="Texture" id=457]
-[ext_resource path="res://Game/Maps/Tiles/tile_471.png" type="Texture" id=458]
-[ext_resource path="res://Game/Maps/Tiles/tile_472.png" type="Texture" id=459]
-[ext_resource path="res://Game/Maps/Tiles/tile_473.png" type="Texture" id=460]
-[ext_resource path="res://Game/Maps/Tiles/tile_474.png" type="Texture" id=461]
-[ext_resource path="res://Game/Maps/Tiles/tile_475.png" type="Texture" id=462]
-[ext_resource path="res://Game/Maps/Tiles/tile_476.png" type="Texture" id=463]
-[ext_resource path="res://Game/Maps/Tiles/tile_477.png" type="Texture" id=464]
-[ext_resource path="res://Game/Maps/Tiles/tile_478.png" type="Texture" id=465]
-[ext_resource path="res://Game/Maps/Tiles/tile_479.png" type="Texture" id=466]
-[ext_resource path="res://Game/Maps/Tiles/tile_480.png" type="Texture" id=467]
-[ext_resource path="res://Game/Maps/Tiles/tile_481.png" type="Texture" id=468]
-[ext_resource path="res://Game/Maps/Tiles/tile_482.png" type="Texture" id=469]
-[ext_resource path="res://Game/Maps/Tiles/tile_483.png" type="Texture" id=470]
-[ext_resource path="res://Game/Maps/Tiles/tile_484.png" type="Texture" id=471]
-[ext_resource path="res://Game/Maps/Tiles/tile_487.png" type="Texture" id=472]
-[ext_resource path="res://Game/Maps/Tiles/tile_488.png" type="Texture" id=473]
-[ext_resource path="res://Game/Maps/Tiles/tile_489.png" type="Texture" id=474]
-[ext_resource path="res://Game/Maps/Tiles/tile_490.png" type="Texture" id=475]
-[ext_resource path="res://Game/Maps/Tiles/tile_491.png" type="Texture" id=476]
-[ext_resource path="res://Game/Maps/Tiles/tile_492.png" type="Texture" id=477]
-[ext_resource path="res://Game/Maps/Tiles/tile_493.png" type="Texture" id=478]
-[ext_resource path="res://Game/Maps/Tiles/tile_494.png" type="Texture" id=479]
-[ext_resource path="res://Game/Maps/Tiles/tile_495.png" type="Texture" id=480]
-[ext_resource path="res://Game/Maps/Tiles/tile_496.png" type="Texture" id=481]
-[ext_resource path="res://Game/Maps/Tiles/tile_497.png" type="Texture" id=482]
-[ext_resource path="res://Game/Maps/Tiles/tile_498.png" type="Texture" id=483]
-[ext_resource path="res://Game/Maps/Tiles/tile_499.png" type="Texture" id=484]
-[ext_resource path="res://Game/Maps/Tiles/tile_500.png" type="Texture" id=485]
-[ext_resource path="res://Game/Maps/Tiles/tile_501.png" type="Texture" id=486]
-[ext_resource path="res://Game/Maps/Tiles/tile_502.png" type="Texture" id=487]
-[ext_resource path="res://Game/Maps/Tiles/tile_503.png" type="Texture" id=488]
-[ext_resource path="res://Game/Maps/Tiles/tile_504.png" type="Texture" id=489]
-[ext_resource path="res://Game/Maps/Tiles/tile_505.png" type="Texture" id=490]
-[ext_resource path="res://Game/Maps/Tiles/tile_506.png" type="Texture" id=491]
-[ext_resource path="res://Game/Maps/Tiles/tile_507.png" type="Texture" id=492]
-[ext_resource path="res://Game/Maps/Tiles/tile_508.png" type="Texture" id=493]
-[ext_resource path="res://Game/Maps/Tiles/tile_509.png" type="Texture" id=494]
-[ext_resource path="res://Game/Maps/Tiles/tile_510.png" type="Texture" id=495]
-[ext_resource path="res://Game/Maps/Tiles/tile_511.png" type="Texture" id=496]
-[ext_resource path="res://Game/Maps/Tiles/tile_514.png" type="Texture" id=497]
-[ext_resource path="res://Game/Maps/Tiles/tile_515.png" type="Texture" id=498]
-[ext_resource path="res://Game/Maps/Tiles/tile_516.png" type="Texture" id=499]
-[ext_resource path="res://Game/Maps/Tiles/tile_517.png" type="Texture" id=500]
-[ext_resource path="res://Game/Maps/Tiles/tile_518.png" type="Texture" id=501]
-[ext_resource path="res://Game/Maps/Tiles/tile_519.png" type="Texture" id=502]
-[ext_resource path="res://Game/Maps/Tiles/tile_520.png" type="Texture" id=503]
-[ext_resource path="res://Game/Maps/Tiles/tile_521.png" type="Texture" id=504]
-[ext_resource path="res://Game/Maps/Tiles/tile_522.png" type="Texture" id=505]
-[ext_resource path="res://Game/Maps/Tiles/tile_523.png" type="Texture" id=506]
-[ext_resource path="res://Game/Maps/Tiles/tile_524.png" type="Texture" id=507]
-[ext_resource path="res://Game/Maps/Tiles/tile_525.png" type="Texture" id=508]
-[ext_resource path="res://Game/Maps/Tiles/tile_526.png" type="Texture" id=509]
-[ext_resource path="res://Game/Maps/Tiles/tile_527.png" type="Texture" id=510]
-[ext_resource path="res://Game/Maps/Tiles/tile_528.png" type="Texture" id=511]
-[ext_resource path="res://Game/Maps/Tiles/tile_529.png" type="Texture" id=512]
-[ext_resource path="res://Game/Maps/Tiles/tile_530.png" type="Texture" id=513]
-[ext_resource path="res://Game/Maps/Tiles/tile_531.png" type="Texture" id=514]
-[ext_resource path="res://Game/Maps/Tiles/tile_532.png" type="Texture" id=515]
-[ext_resource path="res://Game/Maps/Tiles/tile_533.png" type="Texture" id=516]
-[ext_resource path="res://Game/Maps/Tiles/tile_534.png" type="Texture" id=517]
-[ext_resource path="res://Game/Maps/Tiles/tile_535.png" type="Texture" id=518]
-[ext_resource path="res://Game/Maps/Tiles/tile_536.png" type="Texture" id=519]
-[ext_resource path="res://Game/Maps/Tiles/tile_537.png" type="Texture" id=520]
-[ext_resource path="res://Game/Maps/Tiles/tile_538.png" type="Texture" id=521]
-[ext_resource path="res://Game/Maps/Tiles/tree-full-1.png" type="Texture" id=522]
-[ext_resource path="res://Game/Maps/Tiles/trunk-full.png" type="Texture" id=523]
-[ext_resource path="res://Game/Maps/Tiles/tree-full-2.png" type="Texture" id=524]
+[ext_resource path="res://Game/Maps/TileMapEdit.gd" type="Script" id=1]
+[ext_resource path="res://Game/Maps/Tiles/tile_01.png" type="Texture" id=2]
+[ext_resource path="res://Game/Maps/Tiles/tile_02.png" type="Texture" id=3]
+[ext_resource path="res://Game/Maps/Tiles/tile_03.png" type="Texture" id=4]
+[ext_resource path="res://Game/Maps/Tiles/tile_04.png" type="Texture" id=5]
+[ext_resource path="res://Game/Maps/Tiles/tile_05.png" type="Texture" id=6]
+[ext_resource path="res://Game/Maps/Tiles/tile_06.png" type="Texture" id=7]
+[ext_resource path="res://Game/Maps/Tiles/tile_07.png" type="Texture" id=8]
+[ext_resource path="res://Game/Maps/Tiles/tile_08.png" type="Texture" id=9]
+[ext_resource path="res://Game/Maps/Tiles/tile_09.png" type="Texture" id=10]
+[ext_resource path="res://Game/Maps/Tiles/tile_10.png" type="Texture" id=11]
+[ext_resource path="res://Game/Maps/Tiles/tile_11.png" type="Texture" id=12]
+[ext_resource path="res://Game/Maps/Tiles/tile_12.png" type="Texture" id=13]
+[ext_resource path="res://Game/Maps/Tiles/tile_13.png" type="Texture" id=14]
+[ext_resource path="res://Game/Maps/Tiles/tile_14.png" type="Texture" id=15]
+[ext_resource path="res://Game/Maps/Tiles/tile_16.png" type="Texture" id=16]
+[ext_resource path="res://Game/Maps/Tiles/tile_17.png" type="Texture" id=17]
+[ext_resource path="res://Game/Maps/Tiles/tile_18.png" type="Texture" id=18]
+[ext_resource path="res://Game/Maps/Tiles/tile_19.png" type="Texture" id=19]
+[ext_resource path="res://Game/Maps/Tiles/tile_20.png" type="Texture" id=20]
+[ext_resource path="res://Game/Maps/Tiles/tile_21.png" type="Texture" id=21]
+[ext_resource path="res://Game/Maps/Tiles/tile_22.png" type="Texture" id=22]
+[ext_resource path="res://Game/Maps/Tiles/tile_23.png" type="Texture" id=23]
+[ext_resource path="res://Game/Maps/Tiles/tile_24.png" type="Texture" id=24]
+[ext_resource path="res://Game/Maps/Tiles/tile_25.png" type="Texture" id=25]
+[ext_resource path="res://Game/Maps/Tiles/tile_26.png" type="Texture" id=26]
+[ext_resource path="res://Game/Maps/Tiles/tile_28.png" type="Texture" id=27]
+[ext_resource path="res://Game/Maps/Tiles/tile_29.png" type="Texture" id=28]
+[ext_resource path="res://Game/Maps/Tiles/tile_30.png" type="Texture" id=29]
+[ext_resource path="res://Game/Maps/Tiles/tile_31.png" type="Texture" id=30]
+[ext_resource path="res://Game/Maps/Tiles/tile_32.png" type="Texture" id=31]
+[ext_resource path="res://Game/Maps/Tiles/tile_33.png" type="Texture" id=32]
+[ext_resource path="res://Game/Maps/Tiles/tile_34.png" type="Texture" id=33]
+[ext_resource path="res://Game/Maps/Tiles/tile_35.png" type="Texture" id=34]
+[ext_resource path="res://Game/Maps/Tiles/tile_36.png" type="Texture" id=35]
+[ext_resource path="res://Game/Maps/Tiles/tile_37.png" type="Texture" id=36]
+[ext_resource path="res://Game/Maps/Tiles/tile_38.png" type="Texture" id=37]
+[ext_resource path="res://Game/Maps/Tiles/tile_39.png" type="Texture" id=38]
+[ext_resource path="res://Game/Maps/Tiles/tile_40.png" type="Texture" id=39]
+[ext_resource path="res://Game/Maps/Tiles/tile_41.png" type="Texture" id=40]
+[ext_resource path="res://Game/Maps/Tiles/tile_42.png" type="Texture" id=41]
+[ext_resource path="res://Game/Maps/Tiles/tile_43.png" type="Texture" id=42]
+[ext_resource path="res://Game/Maps/Tiles/tile_44.png" type="Texture" id=43]
+[ext_resource path="res://Game/Maps/Tiles/tile_45.png" type="Texture" id=44]
+[ext_resource path="res://Game/Maps/Tiles/tile_46.png" type="Texture" id=45]
+[ext_resource path="res://Game/Maps/Tiles/tile_47.png" type="Texture" id=46]
+[ext_resource path="res://Game/Maps/Tiles/tile_48.png" type="Texture" id=47]
+[ext_resource path="res://Game/Maps/Tiles/tile_49.png" type="Texture" id=48]
+[ext_resource path="res://Game/Maps/Tiles/tile_50.png" type="Texture" id=49]
+[ext_resource path="res://Game/Maps/Tiles/tile_51.png" type="Texture" id=50]
+[ext_resource path="res://Game/Maps/Tiles/tile_52.png" type="Texture" id=51]
+[ext_resource path="res://Game/Maps/Tiles/tile_53.png" type="Texture" id=52]
+[ext_resource path="res://Game/Maps/Tiles/tile_55.png" type="Texture" id=53]
+[ext_resource path="res://Game/Maps/Tiles/tile_56.png" type="Texture" id=54]
+[ext_resource path="res://Game/Maps/Tiles/tile_57.png" type="Texture" id=55]
+[ext_resource path="res://Game/Maps/Tiles/tile_58.png" type="Texture" id=56]
+[ext_resource path="res://Game/Maps/Tiles/tile_59.png" type="Texture" id=57]
+[ext_resource path="res://Game/Maps/Tiles/tile_60.png" type="Texture" id=58]
+[ext_resource path="res://Game/Maps/Tiles/tile_61.png" type="Texture" id=59]
+[ext_resource path="res://Game/Maps/Tiles/tile_62.png" type="Texture" id=60]
+[ext_resource path="res://Game/Maps/Tiles/tile_63.png" type="Texture" id=61]
+[ext_resource path="res://Game/Maps/Tiles/tile_64.png" type="Texture" id=62]
+[ext_resource path="res://Game/Maps/Tiles/tile_65.png" type="Texture" id=63]
+[ext_resource path="res://Game/Maps/Tiles/tile_66.png" type="Texture" id=64]
+[ext_resource path="res://Game/Maps/Tiles/tile_67.png" type="Texture" id=65]
+[ext_resource path="res://Game/Maps/Tiles/tile_68.png" type="Texture" id=66]
+[ext_resource path="res://Game/Maps/Tiles/tile_69.png" type="Texture" id=67]
+[ext_resource path="res://Game/Maps/Tiles/tile_70.png" type="Texture" id=68]
+[ext_resource path="res://Game/Maps/Tiles/tile_71.png" type="Texture" id=69]
+[ext_resource path="res://Game/Maps/Tiles/tile_72.png" type="Texture" id=70]
+[ext_resource path="res://Game/Maps/Tiles/tile_73.png" type="Texture" id=71]
+[ext_resource path="res://Game/Maps/Tiles/tile_74.png" type="Texture" id=72]
+[ext_resource path="res://Game/Maps/Tiles/tile_75.png" type="Texture" id=73]
+[ext_resource path="res://Game/Maps/Tiles/tile_76.png" type="Texture" id=74]
+[ext_resource path="res://Game/Maps/Tiles/tile_77.png" type="Texture" id=75]
+[ext_resource path="res://Game/Maps/Tiles/tile_78.png" type="Texture" id=76]
+[ext_resource path="res://Game/Maps/Tiles/tile_79.png" type="Texture" id=77]
+[ext_resource path="res://Game/Maps/Tiles/tile_80.png" type="Texture" id=78]
+[ext_resource path="res://Game/Maps/Tiles/tile_82.png" type="Texture" id=79]
+[ext_resource path="res://Game/Maps/Tiles/tile_83.png" type="Texture" id=80]
+[ext_resource path="res://Game/Maps/Tiles/tile_84.png" type="Texture" id=81]
+[ext_resource path="res://Game/Maps/Tiles/tile_85.png" type="Texture" id=82]
+[ext_resource path="res://Game/Maps/Tiles/tile_86.png" type="Texture" id=83]
+[ext_resource path="res://Game/Maps/Tiles/tile_87.png" type="Texture" id=84]
+[ext_resource path="res://Game/Maps/Tiles/tile_88.png" type="Texture" id=85]
+[ext_resource path="res://Game/Maps/Tiles/tile_89.png" type="Texture" id=86]
+[ext_resource path="res://Game/Maps/Tiles/tile_90.png" type="Texture" id=87]
+[ext_resource path="res://Game/Maps/Tiles/tile_91.png" type="Texture" id=88]
+[ext_resource path="res://Game/Maps/Tiles/tile_92.png" type="Texture" id=89]
+[ext_resource path="res://Game/Maps/Tiles/tile_93.png" type="Texture" id=90]
+[ext_resource path="res://Game/Maps/Tiles/tile_94.png" type="Texture" id=91]
+[ext_resource path="res://Game/Maps/Tiles/tile_95.png" type="Texture" id=92]
+[ext_resource path="res://Game/Maps/Tiles/tile_96.png" type="Texture" id=93]
+[ext_resource path="res://Game/Maps/Tiles/tile_97.png" type="Texture" id=94]
+[ext_resource path="res://Game/Maps/Tiles/tile_98.png" type="Texture" id=95]
+[ext_resource path="res://Game/Maps/Tiles/tile_99.png" type="Texture" id=96]
+[ext_resource path="res://Game/Maps/Tiles/tile_100.png" type="Texture" id=97]
+[ext_resource path="res://Game/Maps/Tiles/tile_101.png" type="Texture" id=98]
+[ext_resource path="res://Game/Maps/Tiles/tile_102.png" type="Texture" id=99]
+[ext_resource path="res://Game/Maps/Tiles/tile_103.png" type="Texture" id=100]
+[ext_resource path="res://Game/Maps/Tiles/tile_104.png" type="Texture" id=101]
+[ext_resource path="res://Game/Maps/Tiles/tile_105.png" type="Texture" id=102]
+[ext_resource path="res://Game/Maps/Tiles/tile_106.png" type="Texture" id=103]
+[ext_resource path="res://Game/Maps/Tiles/tile_107.png" type="Texture" id=104]
+[ext_resource path="res://Game/Maps/Tiles/tile_109.png" type="Texture" id=105]
+[ext_resource path="res://Game/Maps/Tiles/tile_110.png" type="Texture" id=106]
+[ext_resource path="res://Game/Maps/Tiles/tile_111.png" type="Texture" id=107]
+[ext_resource path="res://Game/Maps/Tiles/tile_112.png" type="Texture" id=108]
+[ext_resource path="res://Game/Maps/Tiles/tile_113.png" type="Texture" id=109]
+[ext_resource path="res://Game/Maps/Tiles/tile_114.png" type="Texture" id=110]
+[ext_resource path="res://Game/Maps/Tiles/tile_115.png" type="Texture" id=111]
+[ext_resource path="res://Game/Maps/Tiles/tile_116.png" type="Texture" id=112]
+[ext_resource path="res://Game/Maps/Tiles/tile_117.png" type="Texture" id=113]
+[ext_resource path="res://Game/Maps/Tiles/tile_118.png" type="Texture" id=114]
+[ext_resource path="res://Game/Maps/Tiles/tile_119.png" type="Texture" id=115]
+[ext_resource path="res://Game/Maps/Tiles/tile_120.png" type="Texture" id=116]
+[ext_resource path="res://Game/Maps/Tiles/tile_121.png" type="Texture" id=117]
+[ext_resource path="res://Game/Maps/Tiles/tile_122.png" type="Texture" id=118]
+[ext_resource path="res://Game/Maps/Tiles/tile_123.png" type="Texture" id=119]
+[ext_resource path="res://Game/Maps/Tiles/tile_124.png" type="Texture" id=120]
+[ext_resource path="res://Game/Maps/Tiles/tile_125.png" type="Texture" id=121]
+[ext_resource path="res://Game/Maps/Tiles/tile_126.png" type="Texture" id=122]
+[ext_resource path="res://Game/Maps/Tiles/tile_127.png" type="Texture" id=123]
+[ext_resource path="res://Game/Maps/Tiles/tile_128.png" type="Texture" id=124]
+[ext_resource path="res://Game/Maps/Tiles/tile_129.png" type="Texture" id=125]
+[ext_resource path="res://Game/Maps/Tiles/tile_130.png" type="Texture" id=126]
+[ext_resource path="res://Game/Maps/Tiles/tile_131.png" type="Texture" id=127]
+[ext_resource path="res://Game/Maps/Tiles/tile_132.png" type="Texture" id=128]
+[ext_resource path="res://Game/Maps/Tiles/tile_133.png" type="Texture" id=129]
+[ext_resource path="res://Game/Maps/Tiles/tile_134.png" type="Texture" id=130]
+[ext_resource path="res://Game/Maps/Tiles/tile_136.png" type="Texture" id=131]
+[ext_resource path="res://Game/Maps/Tiles/tile_137.png" type="Texture" id=132]
+[ext_resource path="res://Game/Maps/Tiles/tile_138.png" type="Texture" id=133]
+[ext_resource path="res://Game/Maps/Tiles/tile_139.png" type="Texture" id=134]
+[ext_resource path="res://Game/Maps/Tiles/tile_140.png" type="Texture" id=135]
+[ext_resource path="res://Game/Maps/Tiles/tile_141.png" type="Texture" id=136]
+[ext_resource path="res://Game/Maps/Tiles/tile_142.png" type="Texture" id=137]
+[ext_resource path="res://Game/Maps/Tiles/tile_143.png" type="Texture" id=138]
+[ext_resource path="res://Game/Maps/Tiles/tile_144.png" type="Texture" id=139]
+[ext_resource path="res://Game/Maps/Tiles/tile_145.png" type="Texture" id=140]
+[ext_resource path="res://Game/Maps/Tiles/tile_146.png" type="Texture" id=141]
+[ext_resource path="res://Game/Maps/Tiles/tile_147.png" type="Texture" id=142]
+[ext_resource path="res://Game/Maps/Tiles/tile_148.png" type="Texture" id=143]
+[ext_resource path="res://Game/Maps/Tiles/tile_149.png" type="Texture" id=144]
+[ext_resource path="res://Game/Maps/Tiles/tile_150.png" type="Texture" id=145]
+[ext_resource path="res://Game/Maps/Tiles/tile_151.png" type="Texture" id=146]
+[ext_resource path="res://Game/Maps/Tiles/tile_152.png" type="Texture" id=147]
+[ext_resource path="res://Game/Maps/Tiles/tile_153.png" type="Texture" id=148]
+[ext_resource path="res://Game/Maps/Tiles/tile_154.png" type="Texture" id=149]
+[ext_resource path="res://Game/Maps/Tiles/tile_155.png" type="Texture" id=150]
+[ext_resource path="res://Game/Maps/Tiles/tile_158.png" type="Texture" id=151]
+[ext_resource path="res://Game/Maps/Tiles/tile_159.png" type="Texture" id=152]
+[ext_resource path="res://Game/Maps/Tiles/tile_160.png" type="Texture" id=153]
+[ext_resource path="res://Game/Maps/Tiles/tile_161.png" type="Texture" id=154]
+[ext_resource path="res://Game/Maps/Tiles/tile_163.png" type="Texture" id=155]
+[ext_resource path="res://Game/Maps/Tiles/tile_164.png" type="Texture" id=156]
+[ext_resource path="res://Game/Maps/Tiles/tile_165.png" type="Texture" id=157]
+[ext_resource path="res://Game/Maps/Tiles/tile_166.png" type="Texture" id=158]
+[ext_resource path="res://Game/Maps/Tiles/tile_167.png" type="Texture" id=159]
+[ext_resource path="res://Game/Maps/Tiles/tile_168.png" type="Texture" id=160]
+[ext_resource path="res://Game/Maps/Tiles/tile_169.png" type="Texture" id=161]
+[ext_resource path="res://Game/Maps/Tiles/tile_170.png" type="Texture" id=162]
+[ext_resource path="res://Game/Maps/Tiles/tile_171.png" type="Texture" id=163]
+[ext_resource path="res://Game/Maps/Tiles/tile_172.png" type="Texture" id=164]
+[ext_resource path="res://Game/Maps/Tiles/tile_173.png" type="Texture" id=165]
+[ext_resource path="res://Game/Maps/Tiles/tile_174.png" type="Texture" id=166]
+[ext_resource path="res://Game/Maps/Tiles/tile_175.png" type="Texture" id=167]
+[ext_resource path="res://Game/Maps/Tiles/tile_176.png" type="Texture" id=168]
+[ext_resource path="res://Game/Maps/Tiles/tile_177.png" type="Texture" id=169]
+[ext_resource path="res://Game/Maps/Tiles/tile_178.png" type="Texture" id=170]
+[ext_resource path="res://Game/Maps/Tiles/tile_179.png" type="Texture" id=171]
+[ext_resource path="res://Game/Maps/Tiles/tile_180.png" type="Texture" id=172]
+[ext_resource path="res://Game/Maps/Tiles/tile_181.png" type="Texture" id=173]
+[ext_resource path="res://Game/Maps/Tiles/tile_182.png" type="Texture" id=174]
+[ext_resource path="res://Game/Maps/Tiles/tile_183.png" type="Texture" id=175]
+[ext_resource path="res://Game/Maps/Tiles/tile_184.png" type="Texture" id=176]
+[ext_resource path="res://Game/Maps/Tiles/tile_185.png" type="Texture" id=177]
+[ext_resource path="res://Game/Maps/Tiles/tile_186.png" type="Texture" id=178]
+[ext_resource path="res://Game/Maps/Tiles/tile_187.png" type="Texture" id=179]
+[ext_resource path="res://Game/Maps/Tiles/tile_188.png" type="Texture" id=180]
+[ext_resource path="res://Game/Maps/Tiles/tile_190.png" type="Texture" id=181]
+[ext_resource path="res://Game/Maps/Tiles/tile_191.png" type="Texture" id=182]
+[ext_resource path="res://Game/Maps/Tiles/tile_192.png" type="Texture" id=183]
+[ext_resource path="res://Game/Maps/Tiles/tile_193.png" type="Texture" id=184]
+[ext_resource path="res://Game/Maps/Tiles/tile_194.png" type="Texture" id=185]
+[ext_resource path="res://Game/Maps/Tiles/tile_195.png" type="Texture" id=186]
+[ext_resource path="res://Game/Maps/Tiles/tile_196.png" type="Texture" id=187]
+[ext_resource path="res://Game/Maps/Tiles/tile_197.png" type="Texture" id=188]
+[ext_resource path="res://Game/Maps/Tiles/tile_198.png" type="Texture" id=189]
+[ext_resource path="res://Game/Maps/Tiles/tile_199.png" type="Texture" id=190]
+[ext_resource path="res://Game/Maps/Tiles/tile_200.png" type="Texture" id=191]
+[ext_resource path="res://Game/Maps/Tiles/tile_201.png" type="Texture" id=192]
+[ext_resource path="res://Game/Maps/Tiles/tile_202.png" type="Texture" id=193]
+[ext_resource path="res://Game/Maps/Tiles/tile_203.png" type="Texture" id=194]
+[ext_resource path="res://Game/Maps/Tiles/tile_204.png" type="Texture" id=195]
+[ext_resource path="res://Game/Maps/Tiles/tile_205.png" type="Texture" id=196]
+[ext_resource path="res://Game/Maps/Tiles/tile_206.png" type="Texture" id=197]
+[ext_resource path="res://Game/Maps/Tiles/tile_207.png" type="Texture" id=198]
+[ext_resource path="res://Game/Maps/Tiles/tile_208.png" type="Texture" id=199]
+[ext_resource path="res://Game/Maps/Tiles/tile_209.png" type="Texture" id=200]
+[ext_resource path="res://Game/Maps/Tiles/tile_210.png" type="Texture" id=201]
+[ext_resource path="res://Game/Maps/Tiles/tile_211.png" type="Texture" id=202]
+[ext_resource path="res://Game/Maps/Tiles/tile_212.png" type="Texture" id=203]
+[ext_resource path="res://Game/Maps/Tiles/tile_213.png" type="Texture" id=204]
+[ext_resource path="res://Game/Maps/Tiles/tile_214.png" type="Texture" id=205]
+[ext_resource path="res://Game/Maps/Tiles/tile_215.png" type="Texture" id=206]
+[ext_resource path="res://Game/Maps/Tiles/tile_217.png" type="Texture" id=207]
+[ext_resource path="res://Game/Maps/Tiles/tile_218.png" type="Texture" id=208]
+[ext_resource path="res://Game/Maps/Tiles/tile_219.png" type="Texture" id=209]
+[ext_resource path="res://Game/Maps/Tiles/tile_220.png" type="Texture" id=210]
+[ext_resource path="res://Game/Maps/Tiles/tile_221.png" type="Texture" id=211]
+[ext_resource path="res://Game/Maps/Tiles/tile_222.png" type="Texture" id=212]
+[ext_resource path="res://Game/Maps/Tiles/tile_223.png" type="Texture" id=213]
+[ext_resource path="res://Game/Maps/Tiles/tile_224.png" type="Texture" id=214]
+[ext_resource path="res://Game/Maps/Tiles/tile_225.png" type="Texture" id=215]
+[ext_resource path="res://Game/Maps/Tiles/tile_226.png" type="Texture" id=216]
+[ext_resource path="res://Game/Maps/Tiles/tile_227.png" type="Texture" id=217]
+[ext_resource path="res://Game/Maps/Tiles/tile_228.png" type="Texture" id=218]
+[ext_resource path="res://Game/Maps/Tiles/tile_229.png" type="Texture" id=219]
+[ext_resource path="res://Game/Maps/Tiles/tile_230.png" type="Texture" id=220]
+[ext_resource path="res://Game/Maps/Tiles/tile_231.png" type="Texture" id=221]
+[ext_resource path="res://Game/Maps/Tiles/tile_232.png" type="Texture" id=222]
+[ext_resource path="res://Game/Maps/Tiles/tile_233.png" type="Texture" id=223]
+[ext_resource path="res://Game/Maps/Tiles/tile_234.png" type="Texture" id=224]
+[ext_resource path="res://Game/Maps/Tiles/tile_235.png" type="Texture" id=225]
+[ext_resource path="res://Game/Maps/Tiles/tile_236.png" type="Texture" id=226]
+[ext_resource path="res://Game/Maps/Tiles/tile_237.png" type="Texture" id=227]
+[ext_resource path="res://Game/Maps/Tiles/tile_238.png" type="Texture" id=228]
+[ext_resource path="res://Game/Maps/Tiles/tile_239.png" type="Texture" id=229]
+[ext_resource path="res://Game/Maps/Tiles/tile_240.png" type="Texture" id=230]
+[ext_resource path="res://Game/Maps/Tiles/tile_241.png" type="Texture" id=231]
+[ext_resource path="res://Game/Maps/Tiles/tile_242.png" type="Texture" id=232]
+[ext_resource path="res://Game/Maps/Tiles/tile_243.png" type="Texture" id=233]
+[ext_resource path="res://Game/Maps/Tiles/tile_244.png" type="Texture" id=234]
+[ext_resource path="res://Game/Maps/Tiles/tile_245.png" type="Texture" id=235]
+[ext_resource path="res://Game/Maps/Tiles/tile_246.png" type="Texture" id=236]
+[ext_resource path="res://Game/Maps/Tiles/tile_247.png" type="Texture" id=237]
+[ext_resource path="res://Game/Maps/Tiles/tile_248.png" type="Texture" id=238]
+[ext_resource path="res://Game/Maps/Tiles/tile_249.png" type="Texture" id=239]
+[ext_resource path="res://Game/Maps/Tiles/tile_250.png" type="Texture" id=240]
+[ext_resource path="res://Game/Maps/Tiles/tile_251.png" type="Texture" id=241]
+[ext_resource path="res://Game/Maps/Tiles/tile_252.png" type="Texture" id=242]
+[ext_resource path="res://Game/Maps/Tiles/tile_253.png" type="Texture" id=243]
+[ext_resource path="res://Game/Maps/Tiles/tile_254.png" type="Texture" id=244]
+[ext_resource path="res://Game/Maps/Tiles/tile_255.png" type="Texture" id=245]
+[ext_resource path="res://Game/Maps/Tiles/tile_256.png" type="Texture" id=246]
+[ext_resource path="res://Game/Maps/Tiles/tile_257.png" type="Texture" id=247]
+[ext_resource path="res://Game/Maps/Tiles/tile_258.png" type="Texture" id=248]
+[ext_resource path="res://Game/Maps/Tiles/tile_259.png" type="Texture" id=249]
+[ext_resource path="res://Game/Maps/Tiles/tile_260.png" type="Texture" id=250]
+[ext_resource path="res://Game/Maps/Tiles/tile_261.png" type="Texture" id=251]
+[ext_resource path="res://Game/Maps/Tiles/tile_262.png" type="Texture" id=252]
+[ext_resource path="res://Game/Maps/Tiles/tile_263.png" type="Texture" id=253]
+[ext_resource path="res://Game/Maps/Tiles/tile_264.png" type="Texture" id=254]
+[ext_resource path="res://Game/Maps/Tiles/tile_265.png" type="Texture" id=255]
+[ext_resource path="res://Game/Maps/Tiles/tile_266.png" type="Texture" id=256]
+[ext_resource path="res://Game/Maps/Tiles/tile_267.png" type="Texture" id=257]
+[ext_resource path="res://Game/Maps/Tiles/tile_268.png" type="Texture" id=258]
+[ext_resource path="res://Game/Maps/Tiles/tile_269.png" type="Texture" id=259]
+[ext_resource path="res://Game/Maps/Tiles/tile_270.png" type="Texture" id=260]
+[ext_resource path="res://Game/Maps/Tiles/tile_271.png" type="Texture" id=261]
+[ext_resource path="res://Game/Maps/Tiles/tile_272.png" type="Texture" id=262]
+[ext_resource path="res://Game/Maps/Tiles/tile_273.png" type="Texture" id=263]
+[ext_resource path="res://Game/Maps/Tiles/tile_274.png" type="Texture" id=264]
+[ext_resource path="res://Game/Maps/Tiles/tile_275.png" type="Texture" id=265]
+[ext_resource path="res://Game/Maps/Tiles/tile_276.png" type="Texture" id=266]
+[ext_resource path="res://Game/Maps/Tiles/tile_277.png" type="Texture" id=267]
+[ext_resource path="res://Game/Maps/Tiles/tile_278.png" type="Texture" id=268]
+[ext_resource path="res://Game/Maps/Tiles/tile_279.png" type="Texture" id=269]
+[ext_resource path="res://Game/Maps/Tiles/tile_280.png" type="Texture" id=270]
+[ext_resource path="res://Game/Maps/Tiles/tile_281.png" type="Texture" id=271]
+[ext_resource path="res://Game/Maps/Tiles/tile_282.png" type="Texture" id=272]
+[ext_resource path="res://Game/Maps/Tiles/tile_283.png" type="Texture" id=273]
+[ext_resource path="res://Game/Maps/Tiles/tile_284.png" type="Texture" id=274]
+[ext_resource path="res://Game/Maps/Tiles/tile_285.png" type="Texture" id=275]
+[ext_resource path="res://Game/Maps/Tiles/tile_286.png" type="Texture" id=276]
+[ext_resource path="res://Game/Maps/Tiles/tile_287.png" type="Texture" id=277]
+[ext_resource path="res://Game/Maps/Tiles/tile_288.png" type="Texture" id=278]
+[ext_resource path="res://Game/Maps/Tiles/tile_289.png" type="Texture" id=279]
+[ext_resource path="res://Game/Maps/Tiles/tile_290.png" type="Texture" id=280]
+[ext_resource path="res://Game/Maps/Tiles/tile_291.png" type="Texture" id=281]
+[ext_resource path="res://Game/Maps/Tiles/tile_292.png" type="Texture" id=282]
+[ext_resource path="res://Game/Maps/Tiles/tile_293.png" type="Texture" id=283]
+[ext_resource path="res://Game/Maps/Tiles/tile_294.png" type="Texture" id=284]
+[ext_resource path="res://Game/Maps/Tiles/tile_295.png" type="Texture" id=285]
+[ext_resource path="res://Game/Maps/Tiles/tile_296.png" type="Texture" id=286]
+[ext_resource path="res://Game/Maps/Tiles/tile_297.png" type="Texture" id=287]
+[ext_resource path="res://Game/Maps/Tiles/tile_298.png" type="Texture" id=288]
+[ext_resource path="res://Game/Maps/Tiles/tile_299.png" type="Texture" id=289]
+[ext_resource path="res://Game/Maps/Tiles/tile_300.png" type="Texture" id=290]
+[ext_resource path="res://Game/Maps/Tiles/tile_301.png" type="Texture" id=291]
+[ext_resource path="res://Game/Maps/Tiles/tile_302.png" type="Texture" id=292]
+[ext_resource path="res://Game/Maps/Tiles/tile_303.png" type="Texture" id=293]
+[ext_resource path="res://Game/Maps/Tiles/tile_304.png" type="Texture" id=294]
+[ext_resource path="res://Game/Maps/Tiles/tile_305.png" type="Texture" id=295]
+[ext_resource path="res://Game/Maps/Tiles/tile_306.png" type="Texture" id=296]
+[ext_resource path="res://Game/Maps/Tiles/tile_307.png" type="Texture" id=297]
+[ext_resource path="res://Game/Maps/Tiles/tile_308.png" type="Texture" id=298]
+[ext_resource path="res://Game/Maps/Tiles/tile_309.png" type="Texture" id=299]
+[ext_resource path="res://Game/Maps/Tiles/tile_310.png" type="Texture" id=300]
+[ext_resource path="res://Game/Maps/Tiles/tile_311.png" type="Texture" id=301]
+[ext_resource path="res://Game/Maps/Tiles/tile_312.png" type="Texture" id=302]
+[ext_resource path="res://Game/Maps/Tiles/tile_313.png" type="Texture" id=303]
+[ext_resource path="res://Game/Maps/Tiles/tile_314.png" type="Texture" id=304]
+[ext_resource path="res://Game/Maps/Tiles/tile_315.png" type="Texture" id=305]
+[ext_resource path="res://Game/Maps/Tiles/tile_316.png" type="Texture" id=306]
+[ext_resource path="res://Game/Maps/Tiles/tile_317.png" type="Texture" id=307]
+[ext_resource path="res://Game/Maps/Tiles/tile_318.png" type="Texture" id=308]
+[ext_resource path="res://Game/Maps/Tiles/tile_319.png" type="Texture" id=309]
+[ext_resource path="res://Game/Maps/Tiles/tile_320.png" type="Texture" id=310]
+[ext_resource path="res://Game/Maps/Tiles/tile_321.png" type="Texture" id=311]
+[ext_resource path="res://Game/Maps/Tiles/tile_322.png" type="Texture" id=312]
+[ext_resource path="res://Game/Maps/Tiles/tile_323.png" type="Texture" id=313]
+[ext_resource path="res://Game/Maps/Tiles/tile_324.png" type="Texture" id=314]
+[ext_resource path="res://Game/Maps/Tiles/tile_325.png" type="Texture" id=315]
+[ext_resource path="res://Game/Maps/Tiles/tile_326.png" type="Texture" id=316]
+[ext_resource path="res://Game/Maps/Tiles/tile_327.png" type="Texture" id=317]
+[ext_resource path="res://Game/Maps/Tiles/tile_328.png" type="Texture" id=318]
+[ext_resource path="res://Game/Maps/Tiles/tile_329.png" type="Texture" id=319]
+[ext_resource path="res://Game/Maps/Tiles/tile_330.png" type="Texture" id=320]
+[ext_resource path="res://Game/Maps/Tiles/tile_331.png" type="Texture" id=321]
+[ext_resource path="res://Game/Maps/Tiles/tile_332.png" type="Texture" id=322]
+[ext_resource path="res://Game/Maps/Tiles/tile_333.png" type="Texture" id=323]
+[ext_resource path="res://Game/Maps/Tiles/tile_334.png" type="Texture" id=324]
+[ext_resource path="res://Game/Maps/Tiles/tile_335.png" type="Texture" id=325]
+[ext_resource path="res://Game/Maps/Tiles/tile_336.png" type="Texture" id=326]
+[ext_resource path="res://Game/Maps/Tiles/tile_337.png" type="Texture" id=327]
+[ext_resource path="res://Game/Maps/Tiles/tile_338.png" type="Texture" id=328]
+[ext_resource path="res://Game/Maps/Tiles/tile_339.png" type="Texture" id=329]
+[ext_resource path="res://Game/Maps/Tiles/tile_340.png" type="Texture" id=330]
+[ext_resource path="res://Game/Maps/Tiles/tile_341.png" type="Texture" id=331]
+[ext_resource path="res://Game/Maps/Tiles/tile_342.png" type="Texture" id=332]
+[ext_resource path="res://Game/Maps/Tiles/tile_343.png" type="Texture" id=333]
+[ext_resource path="res://Game/Maps/Tiles/tile_344.png" type="Texture" id=334]
+[ext_resource path="res://Game/Maps/Tiles/tile_345.png" type="Texture" id=335]
+[ext_resource path="res://Game/Maps/Tiles/tile_346.png" type="Texture" id=336]
+[ext_resource path="res://Game/Maps/Tiles/tile_347.png" type="Texture" id=337]
+[ext_resource path="res://Game/Maps/Tiles/tile_348.png" type="Texture" id=338]
+[ext_resource path="res://Game/Maps/Tiles/tile_349.png" type="Texture" id=339]
+[ext_resource path="res://Game/Maps/Tiles/tile_350.png" type="Texture" id=340]
+[ext_resource path="res://Game/Maps/Tiles/tile_351.png" type="Texture" id=341]
+[ext_resource path="res://Game/Maps/Tiles/tile_352.png" type="Texture" id=342]
+[ext_resource path="res://Game/Maps/Tiles/tile_353.png" type="Texture" id=343]
+[ext_resource path="res://Game/Maps/Tiles/tile_354.png" type="Texture" id=344]
+[ext_resource path="res://Game/Maps/Tiles/tile_355.png" type="Texture" id=345]
+[ext_resource path="res://Game/Maps/Tiles/tile_356.png" type="Texture" id=346]
+[ext_resource path="res://Game/Maps/Tiles/tile_357.png" type="Texture" id=347]
+[ext_resource path="res://Game/Maps/Tiles/tile_358.png" type="Texture" id=348]
+[ext_resource path="res://Game/Maps/Tiles/tile_359.png" type="Texture" id=349]
+[ext_resource path="res://Game/Maps/Tiles/tile_360.png" type="Texture" id=350]
+[ext_resource path="res://Game/Maps/Tiles/tile_361.png" type="Texture" id=351]
+[ext_resource path="res://Game/Maps/Tiles/tile_362.png" type="Texture" id=352]
+[ext_resource path="res://Game/Maps/Tiles/tile_363.png" type="Texture" id=353]
+[ext_resource path="res://Game/Maps/Tiles/tile_364.png" type="Texture" id=354]
+[ext_resource path="res://Game/Maps/Tiles/tile_365.png" type="Texture" id=355]
+[ext_resource path="res://Game/Maps/Tiles/tile_366.png" type="Texture" id=356]
+[ext_resource path="res://Game/Maps/Tiles/tile_368.png" type="Texture" id=357]
+[ext_resource path="res://Game/Maps/Tiles/tile_369.png" type="Texture" id=358]
+[ext_resource path="res://Game/Maps/Tiles/tile_370.png" type="Texture" id=359]
+[ext_resource path="res://Game/Maps/Tiles/tile_371.png" type="Texture" id=360]
+[ext_resource path="res://Game/Maps/Tiles/tile_372.png" type="Texture" id=361]
+[ext_resource path="res://Game/Maps/Tiles/tile_373.png" type="Texture" id=362]
+[ext_resource path="res://Game/Maps/Tiles/tile_374.png" type="Texture" id=363]
+[ext_resource path="res://Game/Maps/Tiles/tile_375.png" type="Texture" id=364]
+[ext_resource path="res://Game/Maps/Tiles/tile_376.png" type="Texture" id=365]
+[ext_resource path="res://Game/Maps/Tiles/tile_377.png" type="Texture" id=366]
+[ext_resource path="res://Game/Maps/Tiles/tile_378.png" type="Texture" id=367]
+[ext_resource path="res://Game/Maps/Tiles/tile_367.png" type="Texture" id=368]
+[ext_resource path="res://Game/Maps/Tiles/tile_379.png" type="Texture" id=369]
+[ext_resource path="res://Game/Maps/Tiles/tile_380.png" type="Texture" id=370]
+[ext_resource path="res://Game/Maps/Tiles/tile_381.png" type="Texture" id=371]
+[ext_resource path="res://Game/Maps/Tiles/tile_382.png" type="Texture" id=372]
+[ext_resource path="res://Game/Maps/Tiles/tile_383.png" type="Texture" id=373]
+[ext_resource path="res://Game/Maps/Tiles/tile_384.png" type="Texture" id=374]
+[ext_resource path="res://Game/Maps/Tiles/tile_385.png" type="Texture" id=375]
+[ext_resource path="res://Game/Maps/Tiles/tile_386.png" type="Texture" id=376]
+[ext_resource path="res://Game/Maps/Tiles/tile_387.png" type="Texture" id=377]
+[ext_resource path="res://Game/Maps/Tiles/tile_388.png" type="Texture" id=378]
+[ext_resource path="res://Game/Maps/Tiles/tile_389.png" type="Texture" id=379]
+[ext_resource path="res://Game/Maps/Tiles/tile_390.png" type="Texture" id=380]
+[ext_resource path="res://Game/Maps/Tiles/tile_391.png" type="Texture" id=381]
+[ext_resource path="res://Game/Maps/Tiles/tile_392.png" type="Texture" id=382]
+[ext_resource path="res://Game/Maps/Tiles/tile_393.png" type="Texture" id=383]
+[ext_resource path="res://Game/Maps/Tiles/tile_394.png" type="Texture" id=384]
+[ext_resource path="res://Game/Maps/Tiles/tile_395.png" type="Texture" id=385]
+[ext_resource path="res://Game/Maps/Tiles/tile_396.png" type="Texture" id=386]
+[ext_resource path="res://Game/Maps/Tiles/tile_397.png" type="Texture" id=387]
+[ext_resource path="res://Game/Maps/Tiles/tile_398.png" type="Texture" id=388]
+[ext_resource path="res://Game/Maps/Tiles/tile_399.png" type="Texture" id=389]
+[ext_resource path="res://Game/Maps/Tiles/tile_400.png" type="Texture" id=390]
+[ext_resource path="res://Game/Maps/Tiles/tile_401.png" type="Texture" id=391]
+[ext_resource path="res://Game/Maps/Tiles/tile_402.png" type="Texture" id=392]
+[ext_resource path="res://Game/Maps/Tiles/tile_403.png" type="Texture" id=393]
+[ext_resource path="res://Game/Maps/Tiles/tile_404.png" type="Texture" id=394]
+[ext_resource path="res://Game/Maps/Tiles/tile_405.png" type="Texture" id=395]
+[ext_resource path="res://Game/Maps/Tiles/tile_406.png" type="Texture" id=396]
+[ext_resource path="res://Game/Maps/Tiles/tile_407.png" type="Texture" id=397]
+[ext_resource path="res://Game/Maps/Tiles/tile_408.png" type="Texture" id=398]
+[ext_resource path="res://Game/Maps/Tiles/tile_409.png" type="Texture" id=399]
+[ext_resource path="res://Game/Maps/Tiles/tile_410.png" type="Texture" id=400]
+[ext_resource path="res://Game/Maps/Tiles/tile_411.png" type="Texture" id=401]
+[ext_resource path="res://Game/Maps/Tiles/tile_412.png" type="Texture" id=402]
+[ext_resource path="res://Game/Maps/Tiles/tile_413.png" type="Texture" id=403]
+[ext_resource path="res://Game/Maps/Tiles/tile_414.png" type="Texture" id=404]
+[ext_resource path="res://Game/Maps/Tiles/tile_415.png" type="Texture" id=405]
+[ext_resource path="res://Game/Maps/Tiles/tile_416.png" type="Texture" id=406]
+[ext_resource path="res://Game/Maps/Tiles/tile_417.png" type="Texture" id=407]
+[ext_resource path="res://Game/Maps/Tiles/tile_418.png" type="Texture" id=408]
+[ext_resource path="res://Game/Maps/Tiles/tile_419.png" type="Texture" id=409]
+[ext_resource path="res://Game/Maps/Tiles/tile_420.png" type="Texture" id=410]
+[ext_resource path="res://Game/Maps/Tiles/tile_421.png" type="Texture" id=411]
+[ext_resource path="res://Game/Maps/Tiles/tile_422.png" type="Texture" id=412]
+[ext_resource path="res://Game/Maps/Tiles/tile_423.png" type="Texture" id=413]
+[ext_resource path="res://Game/Maps/Tiles/tile_424.png" type="Texture" id=414]
+[ext_resource path="res://Game/Maps/Tiles/tile_425.png" type="Texture" id=415]
+[ext_resource path="res://Game/Maps/Tiles/tile_426.png" type="Texture" id=416]
+[ext_resource path="res://Game/Maps/Tiles/tile_427.png" type="Texture" id=417]
+[ext_resource path="res://Game/Maps/Tiles/tile_428.png" type="Texture" id=418]
+[ext_resource path="res://Game/Maps/Tiles/tile_429.png" type="Texture" id=419]
+[ext_resource path="res://Game/Maps/Tiles/tile_430.png" type="Texture" id=420]
+[ext_resource path="res://Game/Maps/Tiles/tile_431.png" type="Texture" id=421]
+[ext_resource path="res://Game/Maps/Tiles/tile_432.png" type="Texture" id=422]
+[ext_resource path="res://Game/Maps/Tiles/tile_433.png" type="Texture" id=423]
+[ext_resource path="res://Game/Maps/Tiles/tile_434.png" type="Texture" id=424]
+[ext_resource path="res://Game/Maps/Tiles/tile_435.png" type="Texture" id=425]
+[ext_resource path="res://Game/Maps/Tiles/tile_436.png" type="Texture" id=426]
+[ext_resource path="res://Game/Maps/Tiles/tile_437.png" type="Texture" id=427]
+[ext_resource path="res://Game/Maps/Tiles/tile_438.png" type="Texture" id=428]
+[ext_resource path="res://Game/Maps/Tiles/tile_439.png" type="Texture" id=429]
+[ext_resource path="res://Game/Maps/Tiles/tile_440.png" type="Texture" id=430]
+[ext_resource path="res://Game/Maps/Tiles/tile_441.png" type="Texture" id=431]
+[ext_resource path="res://Game/Maps/Tiles/tile_442.png" type="Texture" id=432]
+[ext_resource path="res://Game/Maps/Tiles/tile_443.png" type="Texture" id=433]
+[ext_resource path="res://Game/Maps/Tiles/tile_444.png" type="Texture" id=434]
+[ext_resource path="res://Game/Maps/Tiles/tile_445.png" type="Texture" id=435]
+[ext_resource path="res://Game/Maps/Tiles/tile_446.png" type="Texture" id=436]
+[ext_resource path="res://Game/Maps/Tiles/tile_447.png" type="Texture" id=437]
+[ext_resource path="res://Game/Maps/Tiles/tile_448.png" type="Texture" id=438]
+[ext_resource path="res://Game/Maps/Tiles/tile_449.png" type="Texture" id=439]
+[ext_resource path="res://Game/Maps/Tiles/tile_450.png" type="Texture" id=440]
+[ext_resource path="res://Game/Maps/Tiles/tile_451.png" type="Texture" id=441]
+[ext_resource path="res://Game/Maps/Tiles/tile_452.png" type="Texture" id=442]
+[ext_resource path="res://Game/Maps/Tiles/tile_453.png" type="Texture" id=443]
+[ext_resource path="res://Game/Maps/Tiles/tile_454.png" type="Texture" id=444]
+[ext_resource path="res://Game/Maps/Tiles/tile_455.png" type="Texture" id=445]
+[ext_resource path="res://Game/Maps/Tiles/tile_456.png" type="Texture" id=446]
+[ext_resource path="res://Game/Maps/Tiles/tile_457.png" type="Texture" id=447]
+[ext_resource path="res://Game/Maps/Tiles/tile_460.png" type="Texture" id=448]
+[ext_resource path="res://Game/Maps/Tiles/tile_461.png" type="Texture" id=449]
+[ext_resource path="res://Game/Maps/Tiles/tile_462.png" type="Texture" id=450]
+[ext_resource path="res://Game/Maps/Tiles/tile_463.png" type="Texture" id=451]
+[ext_resource path="res://Game/Maps/Tiles/tile_464.png" type="Texture" id=452]
+[ext_resource path="res://Game/Maps/Tiles/tile_465.png" type="Texture" id=453]
+[ext_resource path="res://Game/Maps/Tiles/tile_466.png" type="Texture" id=454]
+[ext_resource path="res://Game/Maps/Tiles/tile_467.png" type="Texture" id=455]
+[ext_resource path="res://Game/Maps/Tiles/tile_468.png" type="Texture" id=456]
+[ext_resource path="res://Game/Maps/Tiles/tile_469.png" type="Texture" id=457]
+[ext_resource path="res://Game/Maps/Tiles/tile_470.png" type="Texture" id=458]
+[ext_resource path="res://Game/Maps/Tiles/tile_471.png" type="Texture" id=459]
+[ext_resource path="res://Game/Maps/Tiles/tile_472.png" type="Texture" id=460]
+[ext_resource path="res://Game/Maps/Tiles/tile_473.png" type="Texture" id=461]
+[ext_resource path="res://Game/Maps/Tiles/tile_474.png" type="Texture" id=462]
+[ext_resource path="res://Game/Maps/Tiles/tile_475.png" type="Texture" id=463]
+[ext_resource path="res://Game/Maps/Tiles/tile_476.png" type="Texture" id=464]
+[ext_resource path="res://Game/Maps/Tiles/tile_477.png" type="Texture" id=465]
+[ext_resource path="res://Game/Maps/Tiles/tile_478.png" type="Texture" id=466]
+[ext_resource path="res://Game/Maps/Tiles/tile_479.png" type="Texture" id=467]
+[ext_resource path="res://Game/Maps/Tiles/tile_480.png" type="Texture" id=468]
+[ext_resource path="res://Game/Maps/Tiles/tile_481.png" type="Texture" id=469]
+[ext_resource path="res://Game/Maps/Tiles/tile_482.png" type="Texture" id=470]
+[ext_resource path="res://Game/Maps/Tiles/tile_483.png" type="Texture" id=471]
+[ext_resource path="res://Game/Maps/Tiles/tile_484.png" type="Texture" id=472]
+[ext_resource path="res://Game/Maps/Tiles/tile_487.png" type="Texture" id=473]
+[ext_resource path="res://Game/Maps/Tiles/tile_488.png" type="Texture" id=474]
+[ext_resource path="res://Game/Maps/Tiles/tile_489.png" type="Texture" id=475]
+[ext_resource path="res://Game/Maps/Tiles/tile_490.png" type="Texture" id=476]
+[ext_resource path="res://Game/Maps/Tiles/tile_491.png" type="Texture" id=477]
+[ext_resource path="res://Game/Maps/Tiles/tile_492.png" type="Texture" id=478]
+[ext_resource path="res://Game/Maps/Tiles/tile_493.png" type="Texture" id=479]
+[ext_resource path="res://Game/Maps/Tiles/tile_494.png" type="Texture" id=480]
+[ext_resource path="res://Game/Maps/Tiles/tile_495.png" type="Texture" id=481]
+[ext_resource path="res://Game/Maps/Tiles/tile_496.png" type="Texture" id=482]
+[ext_resource path="res://Game/Maps/Tiles/tile_497.png" type="Texture" id=483]
+[ext_resource path="res://Game/Maps/Tiles/tile_498.png" type="Texture" id=484]
+[ext_resource path="res://Game/Maps/Tiles/tile_499.png" type="Texture" id=485]
+[ext_resource path="res://Game/Maps/Tiles/tile_500.png" type="Texture" id=486]
+[ext_resource path="res://Game/Maps/Tiles/tile_501.png" type="Texture" id=487]
+[ext_resource path="res://Game/Maps/Tiles/tile_502.png" type="Texture" id=488]
+[ext_resource path="res://Game/Maps/Tiles/tile_503.png" type="Texture" id=489]
+[ext_resource path="res://Game/Maps/Tiles/tile_504.png" type="Texture" id=490]
+[ext_resource path="res://Game/Maps/Tiles/tile_505.png" type="Texture" id=491]
+[ext_resource path="res://Game/Maps/Tiles/tile_506.png" type="Texture" id=492]
+[ext_resource path="res://Game/Maps/Tiles/tile_507.png" type="Texture" id=493]
+[ext_resource path="res://Game/Maps/Tiles/tile_508.png" type="Texture" id=494]
+[ext_resource path="res://Game/Maps/Tiles/tile_509.png" type="Texture" id=495]
+[ext_resource path="res://Game/Maps/Tiles/tile_510.png" type="Texture" id=496]
+[ext_resource path="res://Game/Maps/Tiles/tile_511.png" type="Texture" id=497]
+[ext_resource path="res://Game/Maps/Tiles/tile_514.png" type="Texture" id=498]
+[ext_resource path="res://Game/Maps/Tiles/tile_515.png" type="Texture" id=499]
+[ext_resource path="res://Game/Maps/Tiles/tile_516.png" type="Texture" id=500]
+[ext_resource path="res://Game/Maps/Tiles/tile_517.png" type="Texture" id=501]
+[ext_resource path="res://Game/Maps/Tiles/tile_518.png" type="Texture" id=502]
+[ext_resource path="res://Game/Maps/Tiles/tile_519.png" type="Texture" id=503]
+[ext_resource path="res://Game/Maps/Tiles/tile_520.png" type="Texture" id=504]
+[ext_resource path="res://Game/Maps/Tiles/tile_521.png" type="Texture" id=505]
+[ext_resource path="res://Game/Maps/Tiles/tile_522.png" type="Texture" id=506]
+[ext_resource path="res://Game/Maps/Tiles/tile_523.png" type="Texture" id=507]
+[ext_resource path="res://Game/Maps/Tiles/tile_524.png" type="Texture" id=508]
+[ext_resource path="res://Game/Maps/Tiles/tile_525.png" type="Texture" id=509]
+[ext_resource path="res://Game/Maps/Tiles/tile_526.png" type="Texture" id=510]
+[ext_resource path="res://Game/Maps/Tiles/tile_527.png" type="Texture" id=511]
+[ext_resource path="res://Game/Maps/Tiles/tile_528.png" type="Texture" id=512]
+[ext_resource path="res://Game/Maps/Tiles/tile_529.png" type="Texture" id=513]
+[ext_resource path="res://Game/Maps/Tiles/tile_530.png" type="Texture" id=514]
+[ext_resource path="res://Game/Maps/Tiles/tile_531.png" type="Texture" id=515]
+[ext_resource path="res://Game/Maps/Tiles/tile_532.png" type="Texture" id=516]
+[ext_resource path="res://Game/Maps/Tiles/tile_533.png" type="Texture" id=517]
+[ext_resource path="res://Game/Maps/Tiles/tile_534.png" type="Texture" id=518]
+[ext_resource path="res://Game/Maps/Tiles/tile_535.png" type="Texture" id=519]
+[ext_resource path="res://Game/Maps/Tiles/tile_536.png" type="Texture" id=520]
+[ext_resource path="res://Game/Maps/Tiles/tile_537.png" type="Texture" id=521]
+[ext_resource path="res://Game/Maps/Tiles/tile_538.png" type="Texture" id=522]
+[ext_resource path="res://Game/Maps/Tiles/tree-full-1.png" type="Texture" id=523]
+[ext_resource path="res://Game/Maps/Tiles/trunk-full.png" type="Texture" id=524]
+[ext_resource path="res://Game/Maps/Tiles/tree-full-2.png" type="Texture" id=525]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -545,8 +546,14 @@ extents = Vector2( 17.6927, 18.113 )
 custom_solver_bias = 0.0
 radius = 17.1098
 
+[sub_resource type="CircleShape2D" id=5]
+
+custom_solver_bias = 0.0
+radius = 64.0
+
 [node name="TileMapEdit" type="Node2D"]
 
+script = ExtResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z" ]
 __meta__ = {
 "_edit_lock_": true
@@ -555,92 +562,92 @@ __meta__ = {
 [node name="Grass1" type="Sprite" parent="."]
 
 position = Vector2( 32, 32 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 
 [node name="Grass2" type="Sprite" parent="."]
 
 position = Vector2( 96, 32 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="Grass3" type="Sprite" parent="."]
 
 position = Vector2( 160, 32 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="Grass4" type="Sprite" parent="."]
 
 position = Vector2( 224, 32 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="Dirt1" type="Sprite" parent="."]
 
 position = Vector2( 288, 32 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Dirt2" type="Sprite" parent="."]
 
 position = Vector2( 352, 32 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Concrete1" type="Sprite" parent="."]
 
 position = Vector2( 416, 32 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Concrete2" type="Sprite" parent="."]
 
 position = Vector2( 480, 32 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 
 [node name="Concrete3" type="Sprite" parent="."]
 
 position = Vector2( 544, 32 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 
 [node name="Concrete4" type="Sprite" parent="."]
 
 position = Vector2( 608, 32 )
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 
 [node name="Concrete5" type="Sprite" parent="."]
 
 position = Vector2( 672, 32 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="tile_12" type="Sprite" parent="."]
 
 position = Vector2( 736, 32 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="Dirt3" type="Sprite" parent="."]
 
 position = Vector2( 800, 32 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="Dirt4" type="Sprite" parent="."]
 
 position = Vector2( 864, 32 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="Dirt5" type="Sprite" parent="."]
 
 position = Vector2( 928, 32 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
 [node name="Grass5" type="Sprite" parent="."]
 
 position = Vector2( 992, 32 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="Grass6" type="Sprite" parent="."]
 
 position = Vector2( 1056, 32 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
 [node name="Water1" type="Sprite" parent="."]
 
 position = Vector2( 1120, 32 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Water1"]
 
@@ -660,7 +667,7 @@ shape = SubResource( 1 )
 [node name="Water2" type="Sprite" parent="."]
 
 position = Vector2( 1184, 32 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Water2"]
 
@@ -680,527 +687,527 @@ shape = SubResource( 1 )
 [node name="tile_21" type="Sprite" parent="."]
 
 position = Vector2( 1248, 32 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="tile_22" type="Sprite" parent="."]
 
 position = Vector2( 1312, 32 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 
 [node name="tile_23" type="Sprite" parent="."]
 
 position = Vector2( 1376, 32 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="tile_24" type="Sprite" parent="."]
 
 position = Vector2( 1440, 32 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="tile_25" type="Sprite" parent="."]
 
 position = Vector2( 1504, 32 )
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 
 [node name="tile_26" type="Sprite" parent="."]
 
 position = Vector2( 1568, 32 )
-texture = ExtResource( 25 )
+texture = ExtResource( 26 )
 
 [node name="tile_28" type="Sprite" parent="."]
 
 position = Vector2( 32, 96 )
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 
 [node name="tile_29" type="Sprite" parent="."]
 
 position = Vector2( 96, 96 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="tile_30" type="Sprite" parent="."]
 
 position = Vector2( 160, 96 )
-texture = ExtResource( 28 )
+texture = ExtResource( 29 )
 
 [node name="tile_31" type="Sprite" parent="."]
 
 position = Vector2( 224, 96 )
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
 
 [node name="tile_32" type="Sprite" parent="."]
 
 position = Vector2( 288, 96 )
-texture = ExtResource( 30 )
+texture = ExtResource( 31 )
 
 [node name="tile_33" type="Sprite" parent="."]
 
 position = Vector2( 352, 96 )
-texture = ExtResource( 31 )
+texture = ExtResource( 32 )
 
 [node name="tile_34" type="Sprite" parent="."]
 
 position = Vector2( 416, 96 )
-texture = ExtResource( 32 )
+texture = ExtResource( 33 )
 
 [node name="WhiteRoad1" type="Sprite" parent="."]
 
 position = Vector2( 480, 96 )
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 
 [node name="WhiteRoad2" type="Sprite" parent="."]
 
 position = Vector2( 544, 96 )
-texture = ExtResource( 34 )
+texture = ExtResource( 35 )
 
 [node name="WhiteRoad3" type="Sprite" parent="."]
 
 position = Vector2( 608, 96 )
-texture = ExtResource( 35 )
+texture = ExtResource( 36 )
 
 [node name="WhiteRoad4" type="Sprite" parent="."]
 
 position = Vector2( 672, 96 )
-texture = ExtResource( 36 )
+texture = ExtResource( 37 )
 
 [node name="WhiteRoad5" type="Sprite" parent="."]
 
 position = Vector2( 736, 96 )
-texture = ExtResource( 37 )
+texture = ExtResource( 38 )
 
 [node name="WhiteRoad6" type="Sprite" parent="."]
 
 position = Vector2( 800, 96 )
-texture = ExtResource( 38 )
+texture = ExtResource( 39 )
 
 [node name="WhiteRoad7" type="Sprite" parent="."]
 
 position = Vector2( 864, 96 )
-texture = ExtResource( 39 )
+texture = ExtResource( 40 )
 
 [node name="tile_42" type="Sprite" parent="."]
 
 position = Vector2( 928, 96 )
-texture = ExtResource( 40 )
+texture = ExtResource( 41 )
 
 [node name="tile_43" type="Sprite" parent="."]
 
 position = Vector2( 992, 96 )
-texture = ExtResource( 41 )
+texture = ExtResource( 42 )
 
 [node name="tile_44" type="Sprite" parent="."]
 
 position = Vector2( 1056, 96 )
-texture = ExtResource( 42 )
+texture = ExtResource( 43 )
 
 [node name="tile_45" type="Sprite" parent="."]
 
 position = Vector2( 1120, 96 )
-texture = ExtResource( 43 )
+texture = ExtResource( 44 )
 
 [node name="tile_46" type="Sprite" parent="."]
 
 position = Vector2( 1184, 96 )
-texture = ExtResource( 44 )
+texture = ExtResource( 45 )
 
 [node name="tile_47" type="Sprite" parent="."]
 
 position = Vector2( 1248, 96 )
-texture = ExtResource( 45 )
+texture = ExtResource( 46 )
 
 [node name="tile_48" type="Sprite" parent="."]
 
 position = Vector2( 1312, 96 )
-texture = ExtResource( 46 )
+texture = ExtResource( 47 )
 
 [node name="tile_49" type="Sprite" parent="."]
 
 position = Vector2( 1376, 96 )
-texture = ExtResource( 47 )
+texture = ExtResource( 48 )
 
 [node name="tile_50" type="Sprite" parent="."]
 
 position = Vector2( 1440, 96 )
-texture = ExtResource( 48 )
+texture = ExtResource( 49 )
 
 [node name="tile_51" type="Sprite" parent="."]
 
 position = Vector2( 1504, 96 )
-texture = ExtResource( 49 )
+texture = ExtResource( 50 )
 
 [node name="tile_52" type="Sprite" parent="."]
 
 position = Vector2( 1568, 96 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="tile_53" type="Sprite" parent="."]
 
 position = Vector2( 1632, 96 )
-texture = ExtResource( 51 )
+texture = ExtResource( 52 )
 
 [node name="tile_55" type="Sprite" parent="."]
 
 position = Vector2( 32, 160 )
-texture = ExtResource( 52 )
+texture = ExtResource( 53 )
 
 [node name="tile_56" type="Sprite" parent="."]
 
 position = Vector2( 96, 160 )
-texture = ExtResource( 53 )
+texture = ExtResource( 54 )
 
 [node name="tile_57" type="Sprite" parent="."]
 
 position = Vector2( 160, 160 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="tile_58" type="Sprite" parent="."]
 
 position = Vector2( 224, 160 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="tile_59" type="Sprite" parent="."]
 
 position = Vector2( 288, 160 )
-texture = ExtResource( 56 )
+texture = ExtResource( 57 )
 
 [node name="tile_60" type="Sprite" parent="."]
 
 position = Vector2( 352, 160 )
-texture = ExtResource( 57 )
+texture = ExtResource( 58 )
 
 [node name="tile_61" type="Sprite" parent="."]
 
 position = Vector2( 416, 160 )
-texture = ExtResource( 58 )
+texture = ExtResource( 59 )
 
 [node name="WhiteRoad8" type="Sprite" parent="."]
 
 position = Vector2( 480, 160 )
-texture = ExtResource( 59 )
+texture = ExtResource( 60 )
 
 [node name="WhiteRoad9" type="Sprite" parent="."]
 
 position = Vector2( 544, 160 )
-texture = ExtResource( 60 )
+texture = ExtResource( 61 )
 
 [node name="WhiteRoad10" type="Sprite" parent="."]
 
 position = Vector2( 608, 160 )
-texture = ExtResource( 61 )
+texture = ExtResource( 62 )
 
 [node name="WhiteRoad11" type="Sprite" parent="."]
 
 position = Vector2( 672, 160 )
-texture = ExtResource( 62 )
+texture = ExtResource( 63 )
 
 [node name="WhiteRoad12" type="Sprite" parent="."]
 
 position = Vector2( 736, 160 )
-texture = ExtResource( 63 )
+texture = ExtResource( 64 )
 
 [node name="WhiteRoad13" type="Sprite" parent="."]
 
 position = Vector2( 800, 160 )
-texture = ExtResource( 64 )
+texture = ExtResource( 65 )
 
 [node name="WhiteRoad14" type="Sprite" parent="."]
 
 position = Vector2( 864, 160 )
-texture = ExtResource( 65 )
+texture = ExtResource( 66 )
 
 [node name="tile_69" type="Sprite" parent="."]
 
 position = Vector2( 928, 160 )
-texture = ExtResource( 66 )
+texture = ExtResource( 67 )
 
 [node name="tile_70" type="Sprite" parent="."]
 
 position = Vector2( 992, 160 )
-texture = ExtResource( 67 )
+texture = ExtResource( 68 )
 
 [node name="tile_71" type="Sprite" parent="."]
 
 position = Vector2( 1056, 160 )
-texture = ExtResource( 68 )
+texture = ExtResource( 69 )
 
 [node name="tile_72" type="Sprite" parent="."]
 
 position = Vector2( 1120, 160 )
-texture = ExtResource( 69 )
+texture = ExtResource( 70 )
 
 [node name="tile_73" type="Sprite" parent="."]
 
 position = Vector2( 1184, 160 )
-texture = ExtResource( 70 )
+texture = ExtResource( 71 )
 
 [node name="tile_74" type="Sprite" parent="."]
 
 position = Vector2( 1248, 160 )
-texture = ExtResource( 71 )
+texture = ExtResource( 72 )
 
 [node name="tile_75" type="Sprite" parent="."]
 
 position = Vector2( 1312, 160 )
-texture = ExtResource( 72 )
+texture = ExtResource( 73 )
 
 [node name="tile_76" type="Sprite" parent="."]
 
 position = Vector2( 1376, 160 )
-texture = ExtResource( 73 )
+texture = ExtResource( 74 )
 
 [node name="tile_77" type="Sprite" parent="."]
 
 position = Vector2( 1440, 160 )
-texture = ExtResource( 74 )
+texture = ExtResource( 75 )
 
 [node name="tile_78" type="Sprite" parent="."]
 
 position = Vector2( 1504, 160 )
-texture = ExtResource( 75 )
+texture = ExtResource( 76 )
 
 [node name="tile_79" type="Sprite" parent="."]
 
 position = Vector2( 1568, 160 )
-texture = ExtResource( 76 )
+texture = ExtResource( 77 )
 
 [node name="tile_80" type="Sprite" parent="."]
 
 position = Vector2( 1632, 160 )
-texture = ExtResource( 77 )
+texture = ExtResource( 78 )
 
 [node name="tile_82" type="Sprite" parent="."]
 
 position = Vector2( 32, 224 )
-texture = ExtResource( 78 )
+texture = ExtResource( 79 )
 
 [node name="tile_83" type="Sprite" parent="."]
 
 position = Vector2( 96, 224 )
-texture = ExtResource( 79 )
+texture = ExtResource( 80 )
 
 [node name="tile_84" type="Sprite" parent="."]
 
 position = Vector2( 160, 224 )
-texture = ExtResource( 80 )
+texture = ExtResource( 81 )
 
 [node name="tile_85" type="Sprite" parent="."]
 
 position = Vector2( 224, 224 )
-texture = ExtResource( 81 )
+texture = ExtResource( 82 )
 
 [node name="tile_86" type="Sprite" parent="."]
 
 position = Vector2( 288, 224 )
-texture = ExtResource( 82 )
+texture = ExtResource( 83 )
 
 [node name="tile_87" type="Sprite" parent="."]
 
 position = Vector2( 352, 224 )
-texture = ExtResource( 83 )
+texture = ExtResource( 84 )
 
 [node name="tile_88" type="Sprite" parent="."]
 
 position = Vector2( 416, 224 )
-texture = ExtResource( 84 )
+texture = ExtResource( 85 )
 
 [node name="WhiteRoad15" type="Sprite" parent="."]
 
 position = Vector2( 480, 224 )
-texture = ExtResource( 85 )
+texture = ExtResource( 86 )
 
 [node name="WhiteRoad16" type="Sprite" parent="."]
 
 position = Vector2( 544, 224 )
-texture = ExtResource( 86 )
+texture = ExtResource( 87 )
 
 [node name="WhiteRoad17" type="Sprite" parent="."]
 
 position = Vector2( 608, 224 )
-texture = ExtResource( 87 )
+texture = ExtResource( 88 )
 
 [node name="WhiteRoad18" type="Sprite" parent="."]
 
 position = Vector2( 672, 224 )
-texture = ExtResource( 88 )
+texture = ExtResource( 89 )
 
 [node name="WhiteRoad19" type="Sprite" parent="."]
 
 position = Vector2( 736, 224 )
-texture = ExtResource( 89 )
+texture = ExtResource( 90 )
 
 [node name="WhiteRoad20" type="Sprite" parent="."]
 
 position = Vector2( 800, 224 )
-texture = ExtResource( 90 )
+texture = ExtResource( 91 )
 
 [node name="WhiteRoad21" type="Sprite" parent="."]
 
 position = Vector2( 864, 224 )
-texture = ExtResource( 91 )
+texture = ExtResource( 92 )
 
 [node name="tile_96" type="Sprite" parent="."]
 
 position = Vector2( 928, 224 )
-texture = ExtResource( 92 )
+texture = ExtResource( 93 )
 
 [node name="tile_97" type="Sprite" parent="."]
 
 position = Vector2( 992, 224 )
-texture = ExtResource( 93 )
+texture = ExtResource( 94 )
 
 [node name="tile_98" type="Sprite" parent="."]
 
 position = Vector2( 1056, 224 )
-texture = ExtResource( 94 )
+texture = ExtResource( 95 )
 
 [node name="tile_99" type="Sprite" parent="."]
 
 position = Vector2( 1120, 224 )
-texture = ExtResource( 95 )
+texture = ExtResource( 96 )
 
 [node name="tile_100" type="Sprite" parent="."]
 
 position = Vector2( 1184, 224 )
-texture = ExtResource( 96 )
+texture = ExtResource( 97 )
 
 [node name="tile_101" type="Sprite" parent="."]
 
 position = Vector2( 1248, 224 )
-texture = ExtResource( 97 )
+texture = ExtResource( 98 )
 
 [node name="tile_102" type="Sprite" parent="."]
 
 position = Vector2( 1312, 224 )
-texture = ExtResource( 98 )
+texture = ExtResource( 99 )
 
 [node name="tile_103" type="Sprite" parent="."]
 
 position = Vector2( 1376, 224 )
-texture = ExtResource( 99 )
+texture = ExtResource( 100 )
 
 [node name="tile_104" type="Sprite" parent="."]
 
 position = Vector2( 1440, 224 )
-texture = ExtResource( 100 )
+texture = ExtResource( 101 )
 
 [node name="tile_105" type="Sprite" parent="."]
 
 position = Vector2( 1504, 224 )
-texture = ExtResource( 101 )
+texture = ExtResource( 102 )
 
 [node name="tile_106" type="Sprite" parent="."]
 
 position = Vector2( 1568, 224 )
-texture = ExtResource( 102 )
+texture = ExtResource( 103 )
 
 [node name="tile_107" type="Sprite" parent="."]
 
 position = Vector2( 1632, 224 )
-texture = ExtResource( 103 )
+texture = ExtResource( 104 )
 
 [node name="tile_109" type="Sprite" parent="."]
 
 position = Vector2( 32, 288 )
-texture = ExtResource( 104 )
+texture = ExtResource( 105 )
 
 [node name="tile_110" type="Sprite" parent="."]
 
 position = Vector2( 96, 288 )
-texture = ExtResource( 105 )
+texture = ExtResource( 106 )
 
 [node name="tile_111" type="Sprite" parent="."]
 
 position = Vector2( 160, 288 )
-texture = ExtResource( 106 )
+texture = ExtResource( 107 )
 
 [node name="tile_112" type="Sprite" parent="."]
 
 position = Vector2( 224, 288 )
-texture = ExtResource( 107 )
+texture = ExtResource( 108 )
 
 [node name="tile_113" type="Sprite" parent="."]
 
 position = Vector2( 288, 288 )
-texture = ExtResource( 108 )
+texture = ExtResource( 109 )
 
 [node name="tile_114" type="Sprite" parent="."]
 
 position = Vector2( 352, 288 )
-texture = ExtResource( 109 )
+texture = ExtResource( 110 )
 
 [node name="tile_115" type="Sprite" parent="."]
 
 position = Vector2( 416, 288 )
-texture = ExtResource( 110 )
+texture = ExtResource( 111 )
 
 [node name="tile_116" type="Sprite" parent="."]
 
 position = Vector2( 480, 288 )
-texture = ExtResource( 111 )
+texture = ExtResource( 112 )
 
 [node name="tile_117" type="Sprite" parent="."]
 
 position = Vector2( 544, 288 )
-texture = ExtResource( 112 )
+texture = ExtResource( 113 )
 
 [node name="tile_118" type="Sprite" parent="."]
 
 position = Vector2( 608, 288 )
-texture = ExtResource( 113 )
+texture = ExtResource( 114 )
 
 [node name="tile_119" type="Sprite" parent="."]
 
 position = Vector2( 672, 288 )
-texture = ExtResource( 114 )
+texture = ExtResource( 115 )
 
 [node name="tile_120" type="Sprite" parent="."]
 
 position = Vector2( 736, 288 )
-texture = ExtResource( 115 )
+texture = ExtResource( 116 )
 
 [node name="tile_121" type="Sprite" parent="."]
 
 position = Vector2( 800, 288 )
-texture = ExtResource( 116 )
+texture = ExtResource( 117 )
 
 [node name="tile_122" type="Sprite" parent="."]
 
 position = Vector2( 864, 288 )
-texture = ExtResource( 117 )
+texture = ExtResource( 118 )
 
 [node name="tile_123" type="Sprite" parent="."]
 
 position = Vector2( 928, 288 )
-texture = ExtResource( 118 )
+texture = ExtResource( 119 )
 
 [node name="tile_124" type="Sprite" parent="."]
 
 position = Vector2( 992, 288 )
-texture = ExtResource( 119 )
+texture = ExtResource( 120 )
 
 [node name="tile_125" type="Sprite" parent="."]
 
 position = Vector2( 1056, 288 )
-texture = ExtResource( 120 )
+texture = ExtResource( 121 )
 
 [node name="tile_126" type="Sprite" parent="."]
 
 position = Vector2( 1120, 288 )
-texture = ExtResource( 121 )
+texture = ExtResource( 122 )
 
 [node name="tile_127" type="Sprite" parent="."]
 
 position = Vector2( 1184, 288 )
-texture = ExtResource( 122 )
+texture = ExtResource( 123 )
 
 [node name="tile_128" type="Sprite" parent="."]
 
 position = Vector2( 1248, 288 )
-texture = ExtResource( 123 )
+texture = ExtResource( 124 )
 
 [node name="Box1" type="Sprite" parent="."]
 
 position = Vector2( 1312, 288 )
-texture = ExtResource( 124 )
+texture = ExtResource( 125 )
 
 [node name="RigidBody" type="RigidBody2D" parent="Box1"]
 
@@ -1231,7 +1238,7 @@ shape = SubResource( 2 )
 [node name="Box2" type="Sprite" parent="."]
 
 position = Vector2( 1376, 288 )
-texture = ExtResource( 125 )
+texture = ExtResource( 126 )
 
 [node name="RigidBody" type="RigidBody2D" parent="Box2"]
 
@@ -1264,2000 +1271,2001 @@ _sections_unfolded = [ "Transform" ]
 [node name="tile_131" type="Sprite" parent="."]
 
 position = Vector2( 1440, 288 )
-texture = ExtResource( 126 )
+texture = ExtResource( 127 )
 
 [node name="tile_132" type="Sprite" parent="."]
 
 position = Vector2( 1504, 288 )
-texture = ExtResource( 127 )
+texture = ExtResource( 128 )
 
 [node name="tile_133" type="Sprite" parent="."]
 
 position = Vector2( 1568, 288 )
-texture = ExtResource( 128 )
+texture = ExtResource( 129 )
 
 [node name="tile_134" type="Sprite" parent="."]
 
 position = Vector2( 1632, 288 )
-texture = ExtResource( 129 )
+texture = ExtResource( 130 )
 
 [node name="tile_136" type="Sprite" parent="."]
 
 position = Vector2( 32, 352 )
-texture = ExtResource( 130 )
+texture = ExtResource( 131 )
 
 [node name="tile_137" type="Sprite" parent="."]
 
 position = Vector2( 96, 352 )
-texture = ExtResource( 131 )
+texture = ExtResource( 132 )
 
 [node name="tile_138" type="Sprite" parent="."]
 
 position = Vector2( 160, 352 )
-texture = ExtResource( 132 )
+texture = ExtResource( 133 )
 
 [node name="tile_139" type="Sprite" parent="."]
 
 position = Vector2( 224, 352 )
-texture = ExtResource( 133 )
+texture = ExtResource( 134 )
 
 [node name="tile_140" type="Sprite" parent="."]
 
 position = Vector2( 288, 352 )
-texture = ExtResource( 134 )
+texture = ExtResource( 135 )
 
 [node name="tile_141" type="Sprite" parent="."]
 
 position = Vector2( 352, 352 )
-texture = ExtResource( 135 )
+texture = ExtResource( 136 )
 
 [node name="tile_142" type="Sprite" parent="."]
 
 position = Vector2( 416, 352 )
-texture = ExtResource( 136 )
+texture = ExtResource( 137 )
 
 [node name="tile_143" type="Sprite" parent="."]
 
 position = Vector2( 480, 352 )
-texture = ExtResource( 137 )
+texture = ExtResource( 138 )
 
 [node name="tile_144" type="Sprite" parent="."]
 
 position = Vector2( 544, 352 )
-texture = ExtResource( 138 )
+texture = ExtResource( 139 )
 
 [node name="tile_145" type="Sprite" parent="."]
 
 position = Vector2( 608, 352 )
-texture = ExtResource( 139 )
+texture = ExtResource( 140 )
 
 [node name="tile_146" type="Sprite" parent="."]
 
 position = Vector2( 672, 352 )
-texture = ExtResource( 140 )
+texture = ExtResource( 141 )
 
 [node name="tile_147" type="Sprite" parent="."]
 
 position = Vector2( 736, 352 )
-texture = ExtResource( 141 )
+texture = ExtResource( 142 )
 
 [node name="tile_148" type="Sprite" parent="."]
 
 position = Vector2( 800, 352 )
-texture = ExtResource( 142 )
+texture = ExtResource( 143 )
 
 [node name="tile_149" type="Sprite" parent="."]
 
 position = Vector2( 864, 352 )
-texture = ExtResource( 143 )
+texture = ExtResource( 144 )
 
 [node name="tile_150" type="Sprite" parent="."]
 
 position = Vector2( 928, 352 )
-texture = ExtResource( 144 )
+texture = ExtResource( 145 )
 
 [node name="tile_151" type="Sprite" parent="."]
 
 position = Vector2( 992, 352 )
-texture = ExtResource( 145 )
+texture = ExtResource( 146 )
 
 [node name="tile_152" type="Sprite" parent="."]
 
 position = Vector2( 1056, 352 )
-texture = ExtResource( 146 )
+texture = ExtResource( 147 )
 
 [node name="tile_153" type="Sprite" parent="."]
 
 position = Vector2( 1120, 352 )
-texture = ExtResource( 147 )
+texture = ExtResource( 148 )
 
 [node name="tile_154" type="Sprite" parent="."]
 
 position = Vector2( 1184, 352 )
-texture = ExtResource( 148 )
+texture = ExtResource( 149 )
 
 [node name="tile_155" type="Sprite" parent="."]
 
 position = Vector2( 1248, 352 )
-texture = ExtResource( 149 )
+texture = ExtResource( 150 )
 
 [node name="tile_158" type="Sprite" parent="."]
 
 position = Vector2( 1312, 352 )
-texture = ExtResource( 150 )
+texture = ExtResource( 151 )
 
 [node name="tile_159" type="Sprite" parent="."]
 
 position = Vector2( 1376, 352 )
-texture = ExtResource( 151 )
+texture = ExtResource( 152 )
 
 [node name="tile_160" type="Sprite" parent="."]
 
 position = Vector2( 1440, 352 )
-texture = ExtResource( 152 )
+texture = ExtResource( 153 )
 
 [node name="tile_161" type="Sprite" parent="."]
 
 position = Vector2( 1504, 352 )
-texture = ExtResource( 153 )
+texture = ExtResource( 154 )
 
 [node name="tile_163" type="Sprite" parent="."]
 
 position = Vector2( 32, 416 )
-texture = ExtResource( 154 )
+texture = ExtResource( 155 )
 
 [node name="tile_164" type="Sprite" parent="."]
 
 position = Vector2( 96, 416 )
-texture = ExtResource( 155 )
+texture = ExtResource( 156 )
 
 [node name="tile_165" type="Sprite" parent="."]
 
 position = Vector2( 160, 416 )
-texture = ExtResource( 156 )
+texture = ExtResource( 157 )
 
 [node name="tile_166" type="Sprite" parent="."]
 
 position = Vector2( 224, 416 )
-texture = ExtResource( 157 )
+texture = ExtResource( 158 )
 
 [node name="tile_167" type="Sprite" parent="."]
 
 position = Vector2( 288, 416 )
-texture = ExtResource( 158 )
+texture = ExtResource( 159 )
 
 [node name="tile_168" type="Sprite" parent="."]
 
 position = Vector2( 352, 416 )
-texture = ExtResource( 159 )
+texture = ExtResource( 160 )
 
 [node name="tile_169" type="Sprite" parent="."]
 
 position = Vector2( 416, 416 )
-texture = ExtResource( 160 )
+texture = ExtResource( 161 )
 
 [node name="tile_170" type="Sprite" parent="."]
 
 position = Vector2( 480, 416 )
-texture = ExtResource( 161 )
+texture = ExtResource( 162 )
 
 [node name="tile_171" type="Sprite" parent="."]
 
 position = Vector2( 544, 416 )
-texture = ExtResource( 162 )
+texture = ExtResource( 163 )
 
 [node name="tile_172" type="Sprite" parent="."]
 
 position = Vector2( 608, 416 )
-texture = ExtResource( 163 )
+texture = ExtResource( 164 )
 
 [node name="tile_173" type="Sprite" parent="."]
 
 position = Vector2( 672, 416 )
-texture = ExtResource( 164 )
+texture = ExtResource( 165 )
 
 [node name="tile_174" type="Sprite" parent="."]
 
 position = Vector2( 736, 416 )
-texture = ExtResource( 165 )
+texture = ExtResource( 166 )
 
 [node name="tile_175" type="Sprite" parent="."]
 
 position = Vector2( 800, 416 )
-texture = ExtResource( 166 )
+texture = ExtResource( 167 )
 
 [node name="tile_176" type="Sprite" parent="."]
 
 position = Vector2( 864, 416 )
-texture = ExtResource( 167 )
+texture = ExtResource( 168 )
 
 [node name="tile_177" type="Sprite" parent="."]
 
 position = Vector2( 928, 416 )
-texture = ExtResource( 168 )
+texture = ExtResource( 169 )
 
 [node name="tile_178" type="Sprite" parent="."]
 
 position = Vector2( 992, 416 )
-texture = ExtResource( 169 )
+texture = ExtResource( 170 )
 
 [node name="tile_179" type="Sprite" parent="."]
 
 position = Vector2( 1056, 416 )
-texture = ExtResource( 170 )
+texture = ExtResource( 171 )
 
 [node name="tile_180" type="Sprite" parent="."]
 
 position = Vector2( 1120, 416 )
-texture = ExtResource( 171 )
+texture = ExtResource( 172 )
 
 [node name="Tree1" type="Sprite" parent="."]
 
 position = Vector2( 1184, 416 )
-texture = ExtResource( 172 )
+texture = ExtResource( 173 )
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Visibility" ]
 
 [node name="Tree2" type="Sprite" parent="."]
 
 position = Vector2( 1248, 416 )
-texture = ExtResource( 173 )
+texture = ExtResource( 174 )
 
 [node name="Tree5" type="Sprite" parent="."]
 
 position = Vector2( 1312, 416 )
-texture = ExtResource( 174 )
+texture = ExtResource( 175 )
 
 [node name="Tree7" type="Sprite" parent="."]
 
 position = Vector2( 1376, 416 )
-texture = ExtResource( 175 )
+texture = ExtResource( 176 )
 
 [node name="Tree8" type="Sprite" parent="."]
 
 position = Vector2( 1440, 416 )
-texture = ExtResource( 176 )
+texture = ExtResource( 177 )
 
 [node name="Tree11" type="Sprite" parent="."]
 
 position = Vector2( 1504, 416 )
-texture = ExtResource( 177 )
+texture = ExtResource( 178 )
 
 [node name="tile_187" type="Sprite" parent="."]
 
 position = Vector2( 1568, 416 )
-texture = ExtResource( 178 )
+texture = ExtResource( 179 )
 
 [node name="tile_188" type="Sprite" parent="."]
 
 position = Vector2( 1632, 416 )
-texture = ExtResource( 179 )
+texture = ExtResource( 180 )
 
 [node name="tile_190" type="Sprite" parent="."]
 
 position = Vector2( 32, 480 )
-texture = ExtResource( 180 )
+texture = ExtResource( 181 )
 
 [node name="tile_191" type="Sprite" parent="."]
 
 position = Vector2( 96, 480 )
-texture = ExtResource( 181 )
+texture = ExtResource( 182 )
 
 [node name="tile_192" type="Sprite" parent="."]
 
 position = Vector2( 160, 480 )
-texture = ExtResource( 182 )
+texture = ExtResource( 183 )
 
 [node name="tile_193" type="Sprite" parent="."]
 
 position = Vector2( 224, 480 )
-texture = ExtResource( 183 )
+texture = ExtResource( 184 )
 
 [node name="tile_194" type="Sprite" parent="."]
 
 position = Vector2( 288, 480 )
-texture = ExtResource( 184 )
+texture = ExtResource( 185 )
 
 [node name="tile_195" type="Sprite" parent="."]
 
 position = Vector2( 352, 480 )
-texture = ExtResource( 185 )
+texture = ExtResource( 186 )
 
 [node name="tile_196" type="Sprite" parent="."]
 
 position = Vector2( 416, 480 )
-texture = ExtResource( 186 )
+texture = ExtResource( 187 )
 
 [node name="tile_197" type="Sprite" parent="."]
 
 position = Vector2( 480, 480 )
-texture = ExtResource( 187 )
+texture = ExtResource( 188 )
 
 [node name="tile_198" type="Sprite" parent="."]
 
 position = Vector2( 544, 480 )
-texture = ExtResource( 188 )
+texture = ExtResource( 189 )
 
 [node name="tile_199" type="Sprite" parent="."]
 
 position = Vector2( 608, 480 )
-texture = ExtResource( 189 )
+texture = ExtResource( 190 )
 
 [node name="tile_200" type="Sprite" parent="."]
 
 position = Vector2( 672, 480 )
-texture = ExtResource( 190 )
+texture = ExtResource( 191 )
 
 [node name="tile_201" type="Sprite" parent="."]
 
 position = Vector2( 736, 480 )
-texture = ExtResource( 191 )
+texture = ExtResource( 192 )
 
 [node name="tile_202" type="Sprite" parent="."]
 
 position = Vector2( 800, 480 )
-texture = ExtResource( 192 )
+texture = ExtResource( 193 )
 
 [node name="tile_203" type="Sprite" parent="."]
 
 position = Vector2( 864, 480 )
-texture = ExtResource( 193 )
+texture = ExtResource( 194 )
 
 [node name="tile_204" type="Sprite" parent="."]
 
 position = Vector2( 928, 480 )
-texture = ExtResource( 194 )
+texture = ExtResource( 195 )
 
 [node name="tile_205" type="Sprite" parent="."]
 
 position = Vector2( 992, 480 )
-texture = ExtResource( 195 )
+texture = ExtResource( 196 )
 
 [node name="tile_206" type="Sprite" parent="."]
 
 position = Vector2( 1056, 480 )
-texture = ExtResource( 196 )
+texture = ExtResource( 197 )
 
 [node name="tile_207" type="Sprite" parent="."]
 
 position = Vector2( 1120, 480 )
-texture = ExtResource( 197 )
+texture = ExtResource( 198 )
 
 [node name="Tree3" type="Sprite" parent="."]
 
 position = Vector2( 1184, 480 )
-texture = ExtResource( 198 )
+texture = ExtResource( 199 )
 
 [node name="Tree4" type="Sprite" parent="."]
 
 position = Vector2( 1248, 480 )
-texture = ExtResource( 199 )
+texture = ExtResource( 200 )
 
 [node name="tile_210" type="Sprite" parent="."]
 
 position = Vector2( 1312, 480 )
-texture = ExtResource( 200 )
+texture = ExtResource( 201 )
 
 [node name="Tree9" type="Sprite" parent="."]
 
 position = Vector2( 1376, 480 )
-texture = ExtResource( 201 )
+texture = ExtResource( 202 )
 
 [node name="Tree10" type="Sprite" parent="."]
 
 position = Vector2( 1440, 480 )
-texture = ExtResource( 202 )
+texture = ExtResource( 203 )
 
 [node name="tile_213" type="Sprite" parent="."]
 
 position = Vector2( 1504, 480 )
-texture = ExtResource( 203 )
+texture = ExtResource( 204 )
 
 [node name="tile_214" type="Sprite" parent="."]
 
 position = Vector2( 1568, 480 )
-texture = ExtResource( 204 )
+texture = ExtResource( 205 )
 
 [node name="tile_215" type="Sprite" parent="."]
 
 position = Vector2( 1632, 480 )
-texture = ExtResource( 205 )
+texture = ExtResource( 206 )
 
 [node name="tile_217" type="Sprite" parent="."]
 
 position = Vector2( 32, 544 )
-texture = ExtResource( 206 )
+texture = ExtResource( 207 )
 
 [node name="tile_218" type="Sprite" parent="."]
 
 position = Vector2( 96, 544 )
-texture = ExtResource( 207 )
+texture = ExtResource( 208 )
 
 [node name="tile_219" type="Sprite" parent="."]
 
 position = Vector2( 160, 544 )
-texture = ExtResource( 208 )
+texture = ExtResource( 209 )
 
 [node name="tile_220" type="Sprite" parent="."]
 
 position = Vector2( 224, 544 )
-texture = ExtResource( 209 )
+texture = ExtResource( 210 )
 
 [node name="tile_221" type="Sprite" parent="."]
 
 position = Vector2( 288, 544 )
-texture = ExtResource( 210 )
+texture = ExtResource( 211 )
 
 [node name="tile_222" type="Sprite" parent="."]
 
 position = Vector2( 352, 544 )
-texture = ExtResource( 211 )
+texture = ExtResource( 212 )
 
 [node name="tile_223" type="Sprite" parent="."]
 
 position = Vector2( 416, 544 )
-texture = ExtResource( 212 )
+texture = ExtResource( 213 )
 
 [node name="tile_224" type="Sprite" parent="."]
 
 position = Vector2( 480, 544 )
-texture = ExtResource( 213 )
+texture = ExtResource( 214 )
 
 [node name="tile_225" type="Sprite" parent="."]
 
 position = Vector2( 544, 544 )
-texture = ExtResource( 214 )
+texture = ExtResource( 215 )
 
 [node name="tile_226" type="Sprite" parent="."]
 
 position = Vector2( 608, 544 )
-texture = ExtResource( 215 )
+texture = ExtResource( 216 )
 
 [node name="tile_227" type="Sprite" parent="."]
 
 position = Vector2( 672, 544 )
-texture = ExtResource( 216 )
+texture = ExtResource( 217 )
 
 [node name="tile_228" type="Sprite" parent="."]
 
 position = Vector2( 736, 544 )
-texture = ExtResource( 217 )
+texture = ExtResource( 218 )
 
 [node name="tile_229" type="Sprite" parent="."]
 
 position = Vector2( 800, 544 )
-texture = ExtResource( 218 )
+texture = ExtResource( 219 )
 
 [node name="tile_230" type="Sprite" parent="."]
 
 position = Vector2( 864, 544 )
-texture = ExtResource( 219 )
+texture = ExtResource( 220 )
 
 [node name="tile_231" type="Sprite" parent="."]
 
 position = Vector2( 928, 544 )
-texture = ExtResource( 220 )
+texture = ExtResource( 221 )
 
 [node name="tile_232" type="Sprite" parent="."]
 
 position = Vector2( 992, 544 )
-texture = ExtResource( 221 )
+texture = ExtResource( 222 )
 
 [node name="tile_233" type="Sprite" parent="."]
 
 position = Vector2( 1056, 544 )
-texture = ExtResource( 222 )
+texture = ExtResource( 223 )
 
 [node name="tile_234" type="Sprite" parent="."]
 
 position = Vector2( 1120, 544 )
-texture = ExtResource( 223 )
+texture = ExtResource( 224 )
 
 [node name="Tree6" type="Sprite" parent="."]
 
 position = Vector2( 1184, 544 )
-texture = ExtResource( 224 )
+texture = ExtResource( 225 )
 
 [node name="Tree12" type="Sprite" parent="."]
 
 position = Vector2( 1248, 544 )
-texture = ExtResource( 225 )
+texture = ExtResource( 226 )
 
 [node name="Rock1" type="Sprite" parent="."]
 
 position = Vector2( 1312, 544 )
-texture = ExtResource( 226 )
+texture = ExtResource( 227 )
 
 [node name="Rock2" type="Sprite" parent="."]
 
 position = Vector2( 1376, 544 )
-texture = ExtResource( 227 )
+texture = ExtResource( 228 )
 
 [node name="Rock3" type="Sprite" parent="."]
 
 position = Vector2( 1440, 544 )
-texture = ExtResource( 228 )
+texture = ExtResource( 229 )
 
 [node name="tile_240" type="Sprite" parent="."]
 
 position = Vector2( 1504, 544 )
-texture = ExtResource( 229 )
+texture = ExtResource( 230 )
 
 [node name="tile_241" type="Sprite" parent="."]
 
 position = Vector2( 1568, 544 )
-texture = ExtResource( 230 )
+texture = ExtResource( 231 )
 
 [node name="tile_242" type="Sprite" parent="."]
 
 position = Vector2( 1632, 544 )
-texture = ExtResource( 231 )
+texture = ExtResource( 232 )
 
 [node name="tile_243" type="Sprite" parent="."]
 
 position = Vector2( 1696, 544 )
-texture = ExtResource( 232 )
+texture = ExtResource( 233 )
 
 [node name="tile_244" type="Sprite" parent="."]
 
 position = Vector2( 32, 608 )
-texture = ExtResource( 233 )
+texture = ExtResource( 234 )
 
 [node name="tile_245" type="Sprite" parent="."]
 
 position = Vector2( 96, 608 )
-texture = ExtResource( 234 )
+texture = ExtResource( 235 )
 
 [node name="tile_246" type="Sprite" parent="."]
 
 position = Vector2( 160, 608 )
-texture = ExtResource( 235 )
+texture = ExtResource( 236 )
 
 [node name="tile_247" type="Sprite" parent="."]
 
 position = Vector2( 224, 608 )
-texture = ExtResource( 236 )
+texture = ExtResource( 237 )
 
 [node name="tile_248" type="Sprite" parent="."]
 
 position = Vector2( 288, 608 )
-texture = ExtResource( 237 )
+texture = ExtResource( 238 )
 
 [node name="tile_249" type="Sprite" parent="."]
 
 position = Vector2( 352, 608 )
-texture = ExtResource( 238 )
+texture = ExtResource( 239 )
 
 [node name="tile_250" type="Sprite" parent="."]
 
 position = Vector2( 416, 608 )
-texture = ExtResource( 239 )
+texture = ExtResource( 240 )
 
 [node name="tile_251" type="Sprite" parent="."]
 
 position = Vector2( 480, 608 )
-texture = ExtResource( 240 )
+texture = ExtResource( 241 )
 
 [node name="tile_252" type="Sprite" parent="."]
 
 position = Vector2( 544, 608 )
-texture = ExtResource( 241 )
+texture = ExtResource( 242 )
 
 [node name="tile_253" type="Sprite" parent="."]
 
 position = Vector2( 608, 608 )
-texture = ExtResource( 242 )
+texture = ExtResource( 243 )
 
 [node name="tile_254" type="Sprite" parent="."]
 
 position = Vector2( 672, 608 )
-texture = ExtResource( 243 )
+texture = ExtResource( 244 )
 
 [node name="tile_255" type="Sprite" parent="."]
 
 position = Vector2( 736, 608 )
-texture = ExtResource( 244 )
+texture = ExtResource( 245 )
 
 [node name="tile_256" type="Sprite" parent="."]
 
 position = Vector2( 800, 608 )
-texture = ExtResource( 245 )
+texture = ExtResource( 246 )
 
 [node name="tile_257" type="Sprite" parent="."]
 
 position = Vector2( 864, 608 )
-texture = ExtResource( 246 )
+texture = ExtResource( 247 )
 
 [node name="tile_258" type="Sprite" parent="."]
 
 position = Vector2( 928, 608 )
-texture = ExtResource( 247 )
+texture = ExtResource( 248 )
 
 [node name="tile_259" type="Sprite" parent="."]
 
 position = Vector2( 992, 608 )
-texture = ExtResource( 248 )
+texture = ExtResource( 249 )
 
 [node name="tile_260" type="Sprite" parent="."]
 
 position = Vector2( 1056, 608 )
-texture = ExtResource( 249 )
+texture = ExtResource( 250 )
 
 [node name="tile_261" type="Sprite" parent="."]
 
 position = Vector2( 1120, 608 )
-texture = ExtResource( 250 )
+texture = ExtResource( 251 )
 
 [node name="tile_262" type="Sprite" parent="."]
 
 position = Vector2( 1184, 608 )
-texture = ExtResource( 251 )
+texture = ExtResource( 252 )
 
 [node name="tile_263" type="Sprite" parent="."]
 
 position = Vector2( 1248, 608 )
-texture = ExtResource( 252 )
+texture = ExtResource( 253 )
 
 [node name="tile_264" type="Sprite" parent="."]
 
 position = Vector2( 1312, 608 )
-texture = ExtResource( 253 )
+texture = ExtResource( 254 )
 
 [node name="tile_265" type="Sprite" parent="."]
 
 position = Vector2( 1376, 608 )
-texture = ExtResource( 254 )
+texture = ExtResource( 255 )
 
 [node name="tile_266" type="Sprite" parent="."]
 
 position = Vector2( 1440, 608 )
-texture = ExtResource( 255 )
+texture = ExtResource( 256 )
 
 [node name="tile_267" type="Sprite" parent="."]
 
 position = Vector2( 1504, 608 )
-texture = ExtResource( 256 )
+texture = ExtResource( 257 )
 
 [node name="tile_268" type="Sprite" parent="."]
 
 position = Vector2( 1568, 608 )
-texture = ExtResource( 257 )
+texture = ExtResource( 258 )
 
 [node name="tile_269" type="Sprite" parent="."]
 
 position = Vector2( 1632, 608 )
-texture = ExtResource( 258 )
+texture = ExtResource( 259 )
 
 [node name="tile_270" type="Sprite" parent="."]
 
 position = Vector2( 1696, 608 )
-texture = ExtResource( 259 )
+texture = ExtResource( 260 )
 
 [node name="tile_271" type="Sprite" parent="."]
 
 position = Vector2( 32, 672 )
-texture = ExtResource( 260 )
+texture = ExtResource( 261 )
 
 [node name="tile_272" type="Sprite" parent="."]
 
 position = Vector2( 96, 672 )
-texture = ExtResource( 261 )
+texture = ExtResource( 262 )
 
 [node name="tile_273" type="Sprite" parent="."]
 
 position = Vector2( 160, 672 )
-texture = ExtResource( 262 )
+texture = ExtResource( 263 )
 
 [node name="tile_274" type="Sprite" parent="."]
 
 position = Vector2( 224, 672 )
-texture = ExtResource( 263 )
+texture = ExtResource( 264 )
 
 [node name="tile_275" type="Sprite" parent="."]
 
 position = Vector2( 288, 672 )
-texture = ExtResource( 264 )
+texture = ExtResource( 265 )
 
 [node name="tile_276" type="Sprite" parent="."]
 
 position = Vector2( 352, 672 )
-texture = ExtResource( 265 )
+texture = ExtResource( 266 )
 
 [node name="tile_277" type="Sprite" parent="."]
 
 position = Vector2( 416, 672 )
-texture = ExtResource( 266 )
+texture = ExtResource( 267 )
 
 [node name="tile_278" type="Sprite" parent="."]
 
 position = Vector2( 480, 672 )
-texture = ExtResource( 267 )
+texture = ExtResource( 268 )
 
 [node name="tile_279" type="Sprite" parent="."]
 
 position = Vector2( 544, 672 )
-texture = ExtResource( 268 )
+texture = ExtResource( 269 )
 
 [node name="tile_280" type="Sprite" parent="."]
 
 position = Vector2( 608, 672 )
-texture = ExtResource( 269 )
+texture = ExtResource( 270 )
 
 [node name="tile_281" type="Sprite" parent="."]
 
 position = Vector2( 672, 672 )
-texture = ExtResource( 270 )
+texture = ExtResource( 271 )
 
 [node name="tile_282" type="Sprite" parent="."]
 
 position = Vector2( 736, 672 )
-texture = ExtResource( 271 )
+texture = ExtResource( 272 )
 
 [node name="tile_283" type="Sprite" parent="."]
 
 position = Vector2( 800, 672 )
-texture = ExtResource( 272 )
+texture = ExtResource( 273 )
 
 [node name="tile_284" type="Sprite" parent="."]
 
 position = Vector2( 864, 672 )
-texture = ExtResource( 273 )
+texture = ExtResource( 274 )
 
 [node name="tile_285" type="Sprite" parent="."]
 
 position = Vector2( 928, 672 )
-texture = ExtResource( 274 )
+texture = ExtResource( 275 )
 
 [node name="tile_286" type="Sprite" parent="."]
 
 position = Vector2( 992, 672 )
-texture = ExtResource( 275 )
+texture = ExtResource( 276 )
 
 [node name="tile_287" type="Sprite" parent="."]
 
 position = Vector2( 1056, 672 )
-texture = ExtResource( 276 )
+texture = ExtResource( 277 )
 
 [node name="tile_288" type="Sprite" parent="."]
 
 position = Vector2( 1120, 672 )
-texture = ExtResource( 277 )
+texture = ExtResource( 278 )
 
 [node name="tile_289" type="Sprite" parent="."]
 
 position = Vector2( 1184, 672 )
-texture = ExtResource( 278 )
+texture = ExtResource( 279 )
 
 [node name="tile_290" type="Sprite" parent="."]
 
 position = Vector2( 1248, 672 )
-texture = ExtResource( 279 )
+texture = ExtResource( 280 )
 
 [node name="tile_291" type="Sprite" parent="."]
 
 position = Vector2( 1312, 672 )
-texture = ExtResource( 280 )
+texture = ExtResource( 281 )
 
 [node name="tile_292" type="Sprite" parent="."]
 
 position = Vector2( 1376, 672 )
-texture = ExtResource( 281 )
+texture = ExtResource( 282 )
 
 [node name="tile_293" type="Sprite" parent="."]
 
 position = Vector2( 1440, 672 )
-texture = ExtResource( 282 )
+texture = ExtResource( 283 )
 
 [node name="tile_294" type="Sprite" parent="."]
 
 position = Vector2( 1504, 672 )
-texture = ExtResource( 283 )
+texture = ExtResource( 284 )
 
 [node name="tile_295" type="Sprite" parent="."]
 
 position = Vector2( 1568, 672 )
-texture = ExtResource( 284 )
+texture = ExtResource( 285 )
 
 [node name="tile_296" type="Sprite" parent="."]
 
 position = Vector2( 1632, 672 )
-texture = ExtResource( 285 )
+texture = ExtResource( 286 )
 
 [node name="tile_297" type="Sprite" parent="."]
 
 position = Vector2( 1696, 672 )
-texture = ExtResource( 286 )
+texture = ExtResource( 287 )
 
 [node name="tile_298" type="Sprite" parent="."]
 
 position = Vector2( 32, 736 )
-texture = ExtResource( 287 )
+texture = ExtResource( 288 )
 
 [node name="tile_299" type="Sprite" parent="."]
 
 position = Vector2( 96, 736 )
-texture = ExtResource( 288 )
+texture = ExtResource( 289 )
 
 [node name="tile_300" type="Sprite" parent="."]
 
 position = Vector2( 160, 736 )
-texture = ExtResource( 289 )
+texture = ExtResource( 290 )
 
 [node name="tile_301" type="Sprite" parent="."]
 
 position = Vector2( 224, 736 )
-texture = ExtResource( 290 )
+texture = ExtResource( 291 )
 
 [node name="tile_302" type="Sprite" parent="."]
 
 position = Vector2( 288, 736 )
-texture = ExtResource( 291 )
+texture = ExtResource( 292 )
 
 [node name="tile_303" type="Sprite" parent="."]
 
 position = Vector2( 352, 736 )
-texture = ExtResource( 292 )
+texture = ExtResource( 293 )
 
 [node name="tile_304" type="Sprite" parent="."]
 
 position = Vector2( 416, 736 )
-texture = ExtResource( 293 )
+texture = ExtResource( 294 )
 
 [node name="tile_305" type="Sprite" parent="."]
 
 position = Vector2( 480, 736 )
-texture = ExtResource( 294 )
+texture = ExtResource( 295 )
 
 [node name="tile_306" type="Sprite" parent="."]
 
 position = Vector2( 544, 736 )
-texture = ExtResource( 295 )
+texture = ExtResource( 296 )
 
 [node name="tile_307" type="Sprite" parent="."]
 
 position = Vector2( 608, 736 )
-texture = ExtResource( 296 )
+texture = ExtResource( 297 )
 
 [node name="tile_308" type="Sprite" parent="."]
 
 position = Vector2( 672, 736 )
-texture = ExtResource( 297 )
+texture = ExtResource( 298 )
 
 [node name="tile_309" type="Sprite" parent="."]
 
 position = Vector2( 736, 736 )
-texture = ExtResource( 298 )
+texture = ExtResource( 299 )
 
 [node name="tile_310" type="Sprite" parent="."]
 
 position = Vector2( 800, 736 )
-texture = ExtResource( 299 )
+texture = ExtResource( 300 )
 
 [node name="tile_311" type="Sprite" parent="."]
 
 position = Vector2( 864, 736 )
-texture = ExtResource( 300 )
+texture = ExtResource( 301 )
 
 [node name="tile_312" type="Sprite" parent="."]
 
 position = Vector2( 928, 736 )
-texture = ExtResource( 301 )
+texture = ExtResource( 302 )
 
 [node name="tile_313" type="Sprite" parent="."]
 
 position = Vector2( 992, 736 )
-texture = ExtResource( 302 )
+texture = ExtResource( 303 )
 
 [node name="tile_314" type="Sprite" parent="."]
 
 position = Vector2( 1056, 736 )
-texture = ExtResource( 303 )
+texture = ExtResource( 304 )
 
 [node name="tile_315" type="Sprite" parent="."]
 
 position = Vector2( 1120, 736 )
-texture = ExtResource( 304 )
+texture = ExtResource( 305 )
 
 [node name="tile_316" type="Sprite" parent="."]
 
 position = Vector2( 1184, 736 )
-texture = ExtResource( 305 )
+texture = ExtResource( 306 )
 
 [node name="tile_317" type="Sprite" parent="."]
 
 position = Vector2( 1248, 736 )
-texture = ExtResource( 306 )
+texture = ExtResource( 307 )
 
 [node name="tile_318" type="Sprite" parent="."]
 
 position = Vector2( 1312, 736 )
-texture = ExtResource( 307 )
+texture = ExtResource( 308 )
 
 [node name="tile_319" type="Sprite" parent="."]
 
 position = Vector2( 1376, 736 )
-texture = ExtResource( 308 )
+texture = ExtResource( 309 )
 
 [node name="tile_320" type="Sprite" parent="."]
 
 position = Vector2( 1440, 736 )
-texture = ExtResource( 309 )
+texture = ExtResource( 310 )
 
 [node name="tile_321" type="Sprite" parent="."]
 
 position = Vector2( 1504, 736 )
-texture = ExtResource( 310 )
+texture = ExtResource( 311 )
 
 [node name="tile_322" type="Sprite" parent="."]
 
 position = Vector2( 1568, 736 )
-texture = ExtResource( 311 )
+texture = ExtResource( 312 )
 
 [node name="tile_323" type="Sprite" parent="."]
 
 position = Vector2( 1632, 736 )
-texture = ExtResource( 312 )
+texture = ExtResource( 313 )
 
 [node name="tile_324" type="Sprite" parent="."]
 
 position = Vector2( 1696, 736 )
-texture = ExtResource( 313 )
+texture = ExtResource( 314 )
 
 [node name="tile_325" type="Sprite" parent="."]
 
 position = Vector2( 32, 800 )
-texture = ExtResource( 314 )
+texture = ExtResource( 315 )
 
 [node name="tile_326" type="Sprite" parent="."]
 
 position = Vector2( 96, 800 )
-texture = ExtResource( 315 )
+texture = ExtResource( 316 )
 
 [node name="tile_327" type="Sprite" parent="."]
 
 position = Vector2( 160, 800 )
-texture = ExtResource( 316 )
+texture = ExtResource( 317 )
 
 [node name="tile_328" type="Sprite" parent="."]
 
 position = Vector2( 224, 800 )
-texture = ExtResource( 317 )
+texture = ExtResource( 318 )
 
 [node name="tile_329" type="Sprite" parent="."]
 
 position = Vector2( 288, 800 )
-texture = ExtResource( 318 )
+texture = ExtResource( 319 )
 
 [node name="tile_330" type="Sprite" parent="."]
 
 position = Vector2( 352, 800 )
-texture = ExtResource( 319 )
+texture = ExtResource( 320 )
 
 [node name="tile_331" type="Sprite" parent="."]
 
 position = Vector2( 416, 800 )
-texture = ExtResource( 320 )
+texture = ExtResource( 321 )
 
 [node name="tile_332" type="Sprite" parent="."]
 
 position = Vector2( 480, 800 )
-texture = ExtResource( 321 )
+texture = ExtResource( 322 )
 
 [node name="tile_333" type="Sprite" parent="."]
 
 position = Vector2( 544, 800 )
-texture = ExtResource( 322 )
+texture = ExtResource( 323 )
 
 [node name="tile_334" type="Sprite" parent="."]
 
 position = Vector2( 608, 800 )
-texture = ExtResource( 323 )
+texture = ExtResource( 324 )
 
 [node name="tile_335" type="Sprite" parent="."]
 
 position = Vector2( 672, 800 )
-texture = ExtResource( 324 )
+texture = ExtResource( 325 )
 
 [node name="tile_336" type="Sprite" parent="."]
 
 position = Vector2( 736, 800 )
-texture = ExtResource( 325 )
+texture = ExtResource( 326 )
 
 [node name="tile_337" type="Sprite" parent="."]
 
 position = Vector2( 800, 800 )
-texture = ExtResource( 326 )
+texture = ExtResource( 327 )
 
 [node name="tile_338" type="Sprite" parent="."]
 
 position = Vector2( 864, 800 )
-texture = ExtResource( 327 )
+texture = ExtResource( 328 )
 
 [node name="tile_339" type="Sprite" parent="."]
 
 position = Vector2( 928, 800 )
-texture = ExtResource( 328 )
+texture = ExtResource( 329 )
 
 [node name="tile_340" type="Sprite" parent="."]
 
 position = Vector2( 992, 800 )
-texture = ExtResource( 329 )
+texture = ExtResource( 330 )
 
 [node name="tile_341" type="Sprite" parent="."]
 
 position = Vector2( 1056, 800 )
-texture = ExtResource( 330 )
+texture = ExtResource( 331 )
 
 [node name="tile_342" type="Sprite" parent="."]
 
 position = Vector2( 1120, 800 )
-texture = ExtResource( 331 )
+texture = ExtResource( 332 )
 
 [node name="tile_343" type="Sprite" parent="."]
 
 position = Vector2( 1184, 800 )
-texture = ExtResource( 332 )
+texture = ExtResource( 333 )
 
 [node name="tile_344" type="Sprite" parent="."]
 
 position = Vector2( 1248, 800 )
-texture = ExtResource( 333 )
+texture = ExtResource( 334 )
 
 [node name="tile_345" type="Sprite" parent="."]
 
 position = Vector2( 1312, 800 )
-texture = ExtResource( 334 )
+texture = ExtResource( 335 )
 
 [node name="tile_346" type="Sprite" parent="."]
 
 position = Vector2( 1376, 800 )
-texture = ExtResource( 335 )
+texture = ExtResource( 336 )
 
 [node name="tile_347" type="Sprite" parent="."]
 
 position = Vector2( 1440, 800 )
-texture = ExtResource( 336 )
+texture = ExtResource( 337 )
 
 [node name="tile_348" type="Sprite" parent="."]
 
 position = Vector2( 1504, 800 )
-texture = ExtResource( 337 )
+texture = ExtResource( 338 )
 
 [node name="tile_349" type="Sprite" parent="."]
 
 position = Vector2( 1568, 800 )
-texture = ExtResource( 338 )
+texture = ExtResource( 339 )
 
 [node name="tile_350" type="Sprite" parent="."]
 
 position = Vector2( 1632, 800 )
-texture = ExtResource( 339 )
+texture = ExtResource( 340 )
 
 [node name="tile_351" type="Sprite" parent="."]
 
 position = Vector2( 1696, 800 )
-texture = ExtResource( 340 )
+texture = ExtResource( 341 )
 
 [node name="tile_352" type="Sprite" parent="."]
 
 position = Vector2( 32, 864 )
-texture = ExtResource( 341 )
+texture = ExtResource( 342 )
 
 [node name="tile_353" type="Sprite" parent="."]
 
 position = Vector2( 96, 864 )
-texture = ExtResource( 342 )
+texture = ExtResource( 343 )
 
 [node name="tile_354" type="Sprite" parent="."]
 
 position = Vector2( 160, 864 )
-texture = ExtResource( 343 )
+texture = ExtResource( 344 )
 
 [node name="tile_355" type="Sprite" parent="."]
 
 position = Vector2( 224, 864 )
-texture = ExtResource( 344 )
+texture = ExtResource( 345 )
 
 [node name="tile_356" type="Sprite" parent="."]
 
 position = Vector2( 288, 864 )
-texture = ExtResource( 345 )
+texture = ExtResource( 346 )
 
 [node name="tile_357" type="Sprite" parent="."]
 
 position = Vector2( 352, 864 )
-texture = ExtResource( 346 )
+texture = ExtResource( 347 )
 
 [node name="tile_358" type="Sprite" parent="."]
 
 position = Vector2( 416, 864 )
-texture = ExtResource( 347 )
+texture = ExtResource( 348 )
 
 [node name="tile_359" type="Sprite" parent="."]
 
 position = Vector2( 480, 864 )
-texture = ExtResource( 348 )
+texture = ExtResource( 349 )
 
 [node name="tile_360" type="Sprite" parent="."]
 
 position = Vector2( 544, 864 )
-texture = ExtResource( 349 )
+texture = ExtResource( 350 )
 
 [node name="tile_361" type="Sprite" parent="."]
 
 position = Vector2( 608, 864 )
-texture = ExtResource( 350 )
+texture = ExtResource( 351 )
 
 [node name="tile_362" type="Sprite" parent="."]
 
 position = Vector2( 672, 864 )
-texture = ExtResource( 351 )
+texture = ExtResource( 352 )
 
 [node name="tile_363" type="Sprite" parent="."]
 
 position = Vector2( 736, 864 )
-texture = ExtResource( 352 )
+texture = ExtResource( 353 )
 
 [node name="tile_364" type="Sprite" parent="."]
 
 position = Vector2( 800, 864 )
-texture = ExtResource( 353 )
+texture = ExtResource( 354 )
 
 [node name="tile_365" type="Sprite" parent="."]
 
 position = Vector2( 864, 864 )
-texture = ExtResource( 354 )
+texture = ExtResource( 355 )
 
 [node name="tile_366" type="Sprite" parent="."]
 
 position = Vector2( 928, 864 )
-texture = ExtResource( 355 )
+texture = ExtResource( 356 )
 
 [node name="tile_368" type="Sprite" parent="."]
 
 position = Vector2( 1056, 864 )
-texture = ExtResource( 356 )
+texture = ExtResource( 357 )
 
 [node name="tile_369" type="Sprite" parent="."]
 
 position = Vector2( 1120, 864 )
-texture = ExtResource( 357 )
+texture = ExtResource( 358 )
 
 [node name="tile_370" type="Sprite" parent="."]
 
 position = Vector2( 1184, 864 )
-texture = ExtResource( 358 )
+texture = ExtResource( 359 )
 
 [node name="tile_371" type="Sprite" parent="."]
 
 position = Vector2( 1248, 864 )
-texture = ExtResource( 359 )
+texture = ExtResource( 360 )
 
 [node name="tile_372" type="Sprite" parent="."]
 
 position = Vector2( 1312, 864 )
-texture = ExtResource( 360 )
+texture = ExtResource( 361 )
 
 [node name="tile_373" type="Sprite" parent="."]
 
 position = Vector2( 1376, 864 )
-texture = ExtResource( 361 )
+texture = ExtResource( 362 )
 
 [node name="tile_374" type="Sprite" parent="."]
 
 position = Vector2( 1440, 864 )
-texture = ExtResource( 362 )
+texture = ExtResource( 363 )
 
 [node name="tile_375" type="Sprite" parent="."]
 
 position = Vector2( 1504, 864 )
-texture = ExtResource( 363 )
+texture = ExtResource( 364 )
 
 [node name="tile_376" type="Sprite" parent="."]
 
 position = Vector2( 1568, 864 )
-texture = ExtResource( 364 )
+texture = ExtResource( 365 )
 
 [node name="tile_377" type="Sprite" parent="."]
 
 position = Vector2( 1632, 864 )
-texture = ExtResource( 365 )
+texture = ExtResource( 366 )
 
 [node name="tile_378" type="Sprite" parent="."]
 
 position = Vector2( 1696, 864 )
-texture = ExtResource( 366 )
+texture = ExtResource( 367 )
 
 [node name="tile_367" type="Sprite" parent="."]
 
 position = Vector2( 992, 864 )
-texture = ExtResource( 367 )
+texture = ExtResource( 368 )
 
 [node name="tile_379" type="Sprite" parent="."]
 
 position = Vector2( 32, 928 )
-texture = ExtResource( 368 )
+texture = ExtResource( 369 )
 
 [node name="tile_380" type="Sprite" parent="."]
 
 position = Vector2( 96, 928 )
-texture = ExtResource( 369 )
+texture = ExtResource( 370 )
 
 [node name="tile_381" type="Sprite" parent="."]
 
 position = Vector2( 160, 928 )
-texture = ExtResource( 370 )
+texture = ExtResource( 371 )
 
 [node name="tile_382" type="Sprite" parent="."]
 
 position = Vector2( 224, 928 )
-texture = ExtResource( 371 )
+texture = ExtResource( 372 )
 
 [node name="tile_383" type="Sprite" parent="."]
 
 position = Vector2( 288, 928 )
-texture = ExtResource( 372 )
+texture = ExtResource( 373 )
 
 [node name="tile_384" type="Sprite" parent="."]
 
 position = Vector2( 352, 928 )
-texture = ExtResource( 373 )
+texture = ExtResource( 374 )
 
 [node name="tile_385" type="Sprite" parent="."]
 
 position = Vector2( 416, 928 )
-texture = ExtResource( 374 )
+texture = ExtResource( 375 )
 
 [node name="tile_386" type="Sprite" parent="."]
 
 position = Vector2( 480, 928 )
-texture = ExtResource( 375 )
+texture = ExtResource( 376 )
 
 [node name="tile_387" type="Sprite" parent="."]
 
 position = Vector2( 544, 928 )
-texture = ExtResource( 376 )
+texture = ExtResource( 377 )
 
 [node name="tile_388" type="Sprite" parent="."]
 
 position = Vector2( 608, 928 )
-texture = ExtResource( 377 )
+texture = ExtResource( 378 )
 
 [node name="tile_389" type="Sprite" parent="."]
 
 position = Vector2( 672, 928 )
-texture = ExtResource( 378 )
+texture = ExtResource( 379 )
 
 [node name="tile_390" type="Sprite" parent="."]
 
 position = Vector2( 736, 928 )
-texture = ExtResource( 379 )
+texture = ExtResource( 380 )
 
 [node name="tile_391" type="Sprite" parent="."]
 
 position = Vector2( 800, 928 )
-texture = ExtResource( 380 )
+texture = ExtResource( 381 )
 
 [node name="tile_392" type="Sprite" parent="."]
 
 position = Vector2( 864, 928 )
-texture = ExtResource( 381 )
+texture = ExtResource( 382 )
 
 [node name="tile_393" type="Sprite" parent="."]
 
 position = Vector2( 928, 928 )
-texture = ExtResource( 382 )
+texture = ExtResource( 383 )
 
 [node name="tile_394" type="Sprite" parent="."]
 
 position = Vector2( 992, 928 )
-texture = ExtResource( 383 )
+texture = ExtResource( 384 )
 
 [node name="tile_395" type="Sprite" parent="."]
 
 position = Vector2( 1056, 928 )
-texture = ExtResource( 384 )
+texture = ExtResource( 385 )
 
 [node name="tile_396" type="Sprite" parent="."]
 
 position = Vector2( 1120, 928 )
-texture = ExtResource( 385 )
+texture = ExtResource( 386 )
 
 [node name="tile_397" type="Sprite" parent="."]
 
 position = Vector2( 1184, 928 )
-texture = ExtResource( 386 )
+texture = ExtResource( 387 )
 
 [node name="tile_398" type="Sprite" parent="."]
 
 position = Vector2( 1248, 928 )
-texture = ExtResource( 387 )
+texture = ExtResource( 388 )
 
 [node name="tile_399" type="Sprite" parent="."]
 
 position = Vector2( 1312, 928 )
-texture = ExtResource( 388 )
+texture = ExtResource( 389 )
 
 [node name="tile_400" type="Sprite" parent="."]
 
 position = Vector2( 1376, 928 )
-texture = ExtResource( 389 )
+texture = ExtResource( 390 )
 
 [node name="tile_401" type="Sprite" parent="."]
 
 position = Vector2( 1440, 928 )
-texture = ExtResource( 390 )
+texture = ExtResource( 391 )
 
 [node name="tile_402" type="Sprite" parent="."]
 
 position = Vector2( 1504, 928 )
-texture = ExtResource( 391 )
+texture = ExtResource( 392 )
 
 [node name="tile_403" type="Sprite" parent="."]
 
 position = Vector2( 1568, 928 )
-texture = ExtResource( 392 )
+texture = ExtResource( 393 )
 
 [node name="tile_404" type="Sprite" parent="."]
 
 position = Vector2( 1632, 928 )
-texture = ExtResource( 393 )
+texture = ExtResource( 394 )
 
 [node name="tile_405" type="Sprite" parent="."]
 
 position = Vector2( 1696, 928 )
-texture = ExtResource( 394 )
+texture = ExtResource( 395 )
 
 [node name="tile_406" type="Sprite" parent="."]
 
 position = Vector2( 32, 992 )
-texture = ExtResource( 395 )
+texture = ExtResource( 396 )
 
 [node name="tile_407" type="Sprite" parent="."]
 
 position = Vector2( 96, 992 )
-texture = ExtResource( 396 )
+texture = ExtResource( 397 )
 
 [node name="tile_408" type="Sprite" parent="."]
 
 position = Vector2( 160, 992 )
-texture = ExtResource( 397 )
+texture = ExtResource( 398 )
 
 [node name="tile_409" type="Sprite" parent="."]
 
 position = Vector2( 224, 992 )
-texture = ExtResource( 398 )
+texture = ExtResource( 399 )
 
 [node name="tile_410" type="Sprite" parent="."]
 
 position = Vector2( 288, 992 )
-texture = ExtResource( 399 )
+texture = ExtResource( 400 )
 
 [node name="tile_411" type="Sprite" parent="."]
 
 position = Vector2( 352, 992 )
-texture = ExtResource( 400 )
+texture = ExtResource( 401 )
 
 [node name="tile_412" type="Sprite" parent="."]
 
 position = Vector2( 416, 992 )
-texture = ExtResource( 401 )
+texture = ExtResource( 402 )
 
 [node name="tile_413" type="Sprite" parent="."]
 
 position = Vector2( 480, 992 )
-texture = ExtResource( 402 )
+texture = ExtResource( 403 )
 
 [node name="tile_414" type="Sprite" parent="."]
 
 position = Vector2( 544, 992 )
-texture = ExtResource( 403 )
+texture = ExtResource( 404 )
 
 [node name="tile_415" type="Sprite" parent="."]
 
 position = Vector2( 608, 992 )
-texture = ExtResource( 404 )
+texture = ExtResource( 405 )
 
 [node name="tile_416" type="Sprite" parent="."]
 
 position = Vector2( 672, 992 )
-texture = ExtResource( 405 )
+texture = ExtResource( 406 )
 
 [node name="tile_417" type="Sprite" parent="."]
 
 position = Vector2( 736, 992 )
-texture = ExtResource( 406 )
+texture = ExtResource( 407 )
 
 [node name="tile_418" type="Sprite" parent="."]
 
 position = Vector2( 800, 992 )
-texture = ExtResource( 407 )
+texture = ExtResource( 408 )
 
 [node name="tile_419" type="Sprite" parent="."]
 
 position = Vector2( 864, 992 )
-texture = ExtResource( 408 )
+texture = ExtResource( 409 )
 
 [node name="tile_420" type="Sprite" parent="."]
 
 position = Vector2( 928, 992 )
-texture = ExtResource( 409 )
+texture = ExtResource( 410 )
 
 [node name="tile_421" type="Sprite" parent="."]
 
 position = Vector2( 992, 992 )
-texture = ExtResource( 410 )
+texture = ExtResource( 411 )
 
 [node name="tile_422" type="Sprite" parent="."]
 
 position = Vector2( 1056, 992 )
-texture = ExtResource( 411 )
+texture = ExtResource( 412 )
 
 [node name="tile_423" type="Sprite" parent="."]
 
 position = Vector2( 1120, 992 )
-texture = ExtResource( 412 )
+texture = ExtResource( 413 )
 
 [node name="tile_424" type="Sprite" parent="."]
 
 position = Vector2( 1184, 992 )
-texture = ExtResource( 413 )
+texture = ExtResource( 414 )
 
 [node name="tile_425" type="Sprite" parent="."]
 
 position = Vector2( 1248, 992 )
-texture = ExtResource( 414 )
+texture = ExtResource( 415 )
 
 [node name="tile_426" type="Sprite" parent="."]
 
 position = Vector2( 1312, 992 )
-texture = ExtResource( 415 )
+texture = ExtResource( 416 )
 
 [node name="tile_427" type="Sprite" parent="."]
 
 position = Vector2( 1376, 992 )
-texture = ExtResource( 416 )
+texture = ExtResource( 417 )
 
 [node name="tile_428" type="Sprite" parent="."]
 
 position = Vector2( 1440, 992 )
-texture = ExtResource( 417 )
+texture = ExtResource( 418 )
 
 [node name="tile_429" type="Sprite" parent="."]
 
 position = Vector2( 1504, 992 )
-texture = ExtResource( 418 )
+texture = ExtResource( 419 )
 
 [node name="tile_430" type="Sprite" parent="."]
 
 position = Vector2( 1568, 992 )
-texture = ExtResource( 419 )
+texture = ExtResource( 420 )
 
 [node name="tile_431" type="Sprite" parent="."]
 
 position = Vector2( 1632, 992 )
-texture = ExtResource( 420 )
+texture = ExtResource( 421 )
 
 [node name="tile_432" type="Sprite" parent="."]
 
 position = Vector2( 1696, 992 )
-texture = ExtResource( 421 )
+texture = ExtResource( 422 )
 
 [node name="tile_433" type="Sprite" parent="."]
 
 position = Vector2( 32, 1056 )
-texture = ExtResource( 422 )
+texture = ExtResource( 423 )
 
 [node name="tile_434" type="Sprite" parent="."]
 
 position = Vector2( 96, 1056 )
-texture = ExtResource( 423 )
+texture = ExtResource( 424 )
 
 [node name="tile_435" type="Sprite" parent="."]
 
 position = Vector2( 160, 1056 )
-texture = ExtResource( 424 )
+texture = ExtResource( 425 )
 
 [node name="tile_436" type="Sprite" parent="."]
 
 position = Vector2( 224, 1056 )
-texture = ExtResource( 425 )
+texture = ExtResource( 426 )
 
 [node name="tile_437" type="Sprite" parent="."]
 
 position = Vector2( 288, 1056 )
-texture = ExtResource( 426 )
+texture = ExtResource( 427 )
 
 [node name="tile_438" type="Sprite" parent="."]
 
 position = Vector2( 352, 1056 )
-texture = ExtResource( 427 )
+texture = ExtResource( 428 )
 
 [node name="tile_439" type="Sprite" parent="."]
 
 position = Vector2( 416, 1056 )
-texture = ExtResource( 428 )
+texture = ExtResource( 429 )
 
 [node name="tile_440" type="Sprite" parent="."]
 
 position = Vector2( 480, 1056 )
-texture = ExtResource( 429 )
+texture = ExtResource( 430 )
 
 [node name="tile_441" type="Sprite" parent="."]
 
 position = Vector2( 544, 1056 )
-texture = ExtResource( 430 )
+texture = ExtResource( 431 )
 
 [node name="tile_442" type="Sprite" parent="."]
 
 position = Vector2( 608, 1056 )
-texture = ExtResource( 431 )
+texture = ExtResource( 432 )
 
 [node name="tile_443" type="Sprite" parent="."]
 
 position = Vector2( 672, 1056 )
-texture = ExtResource( 432 )
+texture = ExtResource( 433 )
 
 [node name="tile_444" type="Sprite" parent="."]
 
 position = Vector2( 736, 1056 )
-texture = ExtResource( 433 )
+texture = ExtResource( 434 )
 
 [node name="tile_445" type="Sprite" parent="."]
 
 position = Vector2( 800, 1056 )
-texture = ExtResource( 434 )
+texture = ExtResource( 435 )
 
 [node name="tile_446" type="Sprite" parent="."]
 
 position = Vector2( 864, 1056 )
-texture = ExtResource( 435 )
+texture = ExtResource( 436 )
 
 [node name="tile_447" type="Sprite" parent="."]
 
 position = Vector2( 928, 1056 )
-texture = ExtResource( 436 )
+texture = ExtResource( 437 )
 
 [node name="tile_448" type="Sprite" parent="."]
 
 position = Vector2( 992, 1056 )
-texture = ExtResource( 437 )
+texture = ExtResource( 438 )
 
 [node name="tile_449" type="Sprite" parent="."]
 
 position = Vector2( 1056, 1056 )
-texture = ExtResource( 438 )
+texture = ExtResource( 439 )
 
 [node name="tile_450" type="Sprite" parent="."]
 
 position = Vector2( 1120, 1056 )
-texture = ExtResource( 439 )
+texture = ExtResource( 440 )
 
 [node name="tile_451" type="Sprite" parent="."]
 
 position = Vector2( 1184, 1056 )
-texture = ExtResource( 440 )
+texture = ExtResource( 441 )
 
 [node name="tile_452" type="Sprite" parent="."]
 
 position = Vector2( 1248, 1056 )
-texture = ExtResource( 441 )
+texture = ExtResource( 442 )
 
 [node name="tile_453" type="Sprite" parent="."]
 
 position = Vector2( 1312, 1056 )
-texture = ExtResource( 442 )
+texture = ExtResource( 443 )
 
 [node name="tile_454" type="Sprite" parent="."]
 
 position = Vector2( 1376, 1056 )
-texture = ExtResource( 443 )
+texture = ExtResource( 444 )
 
 [node name="tile_455" type="Sprite" parent="."]
 
 position = Vector2( 1440, 1056 )
-texture = ExtResource( 444 )
+texture = ExtResource( 445 )
 
 [node name="tile_456" type="Sprite" parent="."]
 
 position = Vector2( 1504, 1056 )
-texture = ExtResource( 445 )
+texture = ExtResource( 446 )
 
 [node name="tile_457" type="Sprite" parent="."]
 
 position = Vector2( 1568, 1056 )
-texture = ExtResource( 446 )
+texture = ExtResource( 447 )
 
 [node name="tile_460" type="Sprite" parent="."]
 
 position = Vector2( 32, 1120 )
-texture = ExtResource( 447 )
+texture = ExtResource( 448 )
 
 [node name="tile_461" type="Sprite" parent="."]
 
 position = Vector2( 96, 1120 )
-texture = ExtResource( 448 )
+texture = ExtResource( 449 )
 
 [node name="tile_462" type="Sprite" parent="."]
 
 position = Vector2( 160, 1120 )
-texture = ExtResource( 449 )
+texture = ExtResource( 450 )
 
 [node name="tile_463" type="Sprite" parent="."]
 
 position = Vector2( 224, 1120 )
-texture = ExtResource( 450 )
+texture = ExtResource( 451 )
 
 [node name="tile_464" type="Sprite" parent="."]
 
 position = Vector2( 288, 1120 )
-texture = ExtResource( 451 )
+texture = ExtResource( 452 )
 
 [node name="tile_465" type="Sprite" parent="."]
 
 position = Vector2( 352, 1120 )
-texture = ExtResource( 452 )
+texture = ExtResource( 453 )
 
 [node name="tile_466" type="Sprite" parent="."]
 
 position = Vector2( 416, 1120 )
-texture = ExtResource( 453 )
+texture = ExtResource( 454 )
 
 [node name="tile_467" type="Sprite" parent="."]
 
 position = Vector2( 480, 1120 )
-texture = ExtResource( 454 )
+texture = ExtResource( 455 )
 
 [node name="tile_468" type="Sprite" parent="."]
 
 position = Vector2( 544, 1120 )
-texture = ExtResource( 455 )
+texture = ExtResource( 456 )
 
 [node name="tile_469" type="Sprite" parent="."]
 
 position = Vector2( 608, 1120 )
-texture = ExtResource( 456 )
+texture = ExtResource( 457 )
 
 [node name="tile_470" type="Sprite" parent="."]
 
 position = Vector2( 672, 1120 )
-texture = ExtResource( 457 )
+texture = ExtResource( 458 )
 
 [node name="tile_471" type="Sprite" parent="."]
 
 position = Vector2( 736, 1120 )
-texture = ExtResource( 458 )
+texture = ExtResource( 459 )
 
 [node name="tile_472" type="Sprite" parent="."]
 
 position = Vector2( 800, 1120 )
-texture = ExtResource( 459 )
+texture = ExtResource( 460 )
 
 [node name="tile_473" type="Sprite" parent="."]
 
 position = Vector2( 864, 1120 )
-texture = ExtResource( 460 )
+texture = ExtResource( 461 )
 
 [node name="tile_474" type="Sprite" parent="."]
 
 position = Vector2( 928, 1120 )
-texture = ExtResource( 461 )
+texture = ExtResource( 462 )
 
 [node name="tile_475" type="Sprite" parent="."]
 
 position = Vector2( 992, 1120 )
-texture = ExtResource( 462 )
+texture = ExtResource( 463 )
 
 [node name="tile_476" type="Sprite" parent="."]
 
 position = Vector2( 1056, 1120 )
-texture = ExtResource( 463 )
+texture = ExtResource( 464 )
 
 [node name="tile_477" type="Sprite" parent="."]
 
 position = Vector2( 1120, 1120 )
-texture = ExtResource( 464 )
+texture = ExtResource( 465 )
 
 [node name="tile_478" type="Sprite" parent="."]
 
 position = Vector2( 1184, 1120 )
-texture = ExtResource( 465 )
+texture = ExtResource( 466 )
 
 [node name="tile_479" type="Sprite" parent="."]
 
 position = Vector2( 1248, 1120 )
-texture = ExtResource( 466 )
+texture = ExtResource( 467 )
 
 [node name="tile_480" type="Sprite" parent="."]
 
 position = Vector2( 1312, 1120 )
-texture = ExtResource( 467 )
+texture = ExtResource( 468 )
 
 [node name="tile_481" type="Sprite" parent="."]
 
 position = Vector2( 1376, 1120 )
-texture = ExtResource( 468 )
+texture = ExtResource( 469 )
 
 [node name="tile_482" type="Sprite" parent="."]
 
 position = Vector2( 1440, 1120 )
-texture = ExtResource( 469 )
+texture = ExtResource( 470 )
 
 [node name="tile_483" type="Sprite" parent="."]
 
 position = Vector2( 1504, 1120 )
-texture = ExtResource( 470 )
+texture = ExtResource( 471 )
 
 [node name="tile_484" type="Sprite" parent="."]
 
 position = Vector2( 1568, 1120 )
-texture = ExtResource( 471 )
+texture = ExtResource( 472 )
 
 [node name="tile_487" type="Sprite" parent="."]
 
 position = Vector2( 32, 1184 )
-texture = ExtResource( 472 )
+texture = ExtResource( 473 )
 
 [node name="tile_488" type="Sprite" parent="."]
 
 position = Vector2( 96, 1184 )
-texture = ExtResource( 473 )
+texture = ExtResource( 474 )
 
 [node name="tile_489" type="Sprite" parent="."]
 
 position = Vector2( 160, 1184 )
-texture = ExtResource( 474 )
+texture = ExtResource( 475 )
 
 [node name="tile_490" type="Sprite" parent="."]
 
 position = Vector2( 224, 1184 )
-texture = ExtResource( 475 )
+texture = ExtResource( 476 )
 
 [node name="tile_491" type="Sprite" parent="."]
 
 position = Vector2( 288, 1184 )
-texture = ExtResource( 476 )
+texture = ExtResource( 477 )
 
 [node name="tile_492" type="Sprite" parent="."]
 
 position = Vector2( 352, 1184 )
-texture = ExtResource( 477 )
+texture = ExtResource( 478 )
 
 [node name="tile_493" type="Sprite" parent="."]
 
 position = Vector2( 416, 1184 )
-texture = ExtResource( 478 )
+texture = ExtResource( 479 )
 
 [node name="tile_494" type="Sprite" parent="."]
 
 position = Vector2( 480, 1184 )
-texture = ExtResource( 479 )
+texture = ExtResource( 480 )
 
 [node name="tile_495" type="Sprite" parent="."]
 
 position = Vector2( 544, 1184 )
-texture = ExtResource( 480 )
+texture = ExtResource( 481 )
 
 [node name="tile_496" type="Sprite" parent="."]
 
 position = Vector2( 608, 1184 )
-texture = ExtResource( 481 )
+texture = ExtResource( 482 )
 
 [node name="tile_497" type="Sprite" parent="."]
 
 position = Vector2( 672, 1184 )
-texture = ExtResource( 482 )
+texture = ExtResource( 483 )
 
 [node name="tile_498" type="Sprite" parent="."]
 
 position = Vector2( 736, 1184 )
-texture = ExtResource( 483 )
+texture = ExtResource( 484 )
 
 [node name="tile_499" type="Sprite" parent="."]
 
 position = Vector2( 800, 1184 )
-texture = ExtResource( 484 )
+texture = ExtResource( 485 )
 
 [node name="tile_500" type="Sprite" parent="."]
 
 position = Vector2( 864, 1184 )
-texture = ExtResource( 485 )
+texture = ExtResource( 486 )
 
 [node name="tile_501" type="Sprite" parent="."]
 
 position = Vector2( 928, 1184 )
-texture = ExtResource( 486 )
+texture = ExtResource( 487 )
 
 [node name="tile_502" type="Sprite" parent="."]
 
 position = Vector2( 992, 1184 )
-texture = ExtResource( 487 )
+texture = ExtResource( 488 )
 
 [node name="tile_503" type="Sprite" parent="."]
 
 position = Vector2( 1056, 1184 )
-texture = ExtResource( 488 )
+texture = ExtResource( 489 )
 
 [node name="tile_504" type="Sprite" parent="."]
 
 position = Vector2( 1120, 1184 )
-texture = ExtResource( 489 )
+texture = ExtResource( 490 )
 
 [node name="tile_505" type="Sprite" parent="."]
 
 position = Vector2( 1184, 1184 )
-texture = ExtResource( 490 )
+texture = ExtResource( 491 )
 
 [node name="tile_506" type="Sprite" parent="."]
 
 position = Vector2( 1248, 1184 )
-texture = ExtResource( 491 )
+texture = ExtResource( 492 )
 
 [node name="tile_507" type="Sprite" parent="."]
 
 position = Vector2( 1312, 1184 )
-texture = ExtResource( 492 )
+texture = ExtResource( 493 )
 
 [node name="tile_508" type="Sprite" parent="."]
 
 position = Vector2( 1376, 1184 )
-texture = ExtResource( 493 )
+texture = ExtResource( 494 )
 
 [node name="tile_509" type="Sprite" parent="."]
 
 position = Vector2( 1440, 1184 )
-texture = ExtResource( 494 )
+texture = ExtResource( 495 )
 
 [node name="tile_510" type="Sprite" parent="."]
 
 position = Vector2( 1504, 1184 )
-texture = ExtResource( 495 )
+texture = ExtResource( 496 )
 
 [node name="tile_511" type="Sprite" parent="."]
 
 position = Vector2( 1568, 1184 )
-texture = ExtResource( 496 )
+texture = ExtResource( 497 )
 
 [node name="tile_514" type="Sprite" parent="."]
 
 position = Vector2( 32, 1248 )
-texture = ExtResource( 497 )
+texture = ExtResource( 498 )
 
 [node name="tile_515" type="Sprite" parent="."]
 
 position = Vector2( 96, 1248 )
-texture = ExtResource( 498 )
+texture = ExtResource( 499 )
 
 [node name="tile_516" type="Sprite" parent="."]
 
 position = Vector2( 160, 1248 )
-texture = ExtResource( 499 )
+texture = ExtResource( 500 )
 
 [node name="tile_517" type="Sprite" parent="."]
 
 position = Vector2( 224, 1248 )
-texture = ExtResource( 500 )
+texture = ExtResource( 501 )
 
 [node name="tile_518" type="Sprite" parent="."]
 
 position = Vector2( 288, 1248 )
-texture = ExtResource( 501 )
+texture = ExtResource( 502 )
 
 [node name="tile_519" type="Sprite" parent="."]
 
 position = Vector2( 352, 1248 )
-texture = ExtResource( 502 )
+texture = ExtResource( 503 )
 
 [node name="tile_520" type="Sprite" parent="."]
 
 position = Vector2( 416, 1280 )
-texture = ExtResource( 503 )
+texture = ExtResource( 504 )
 
 [node name="tile_521" type="Sprite" parent="."]
 
 position = Vector2( 480, 1248 )
-texture = ExtResource( 504 )
+texture = ExtResource( 505 )
 
 [node name="tile_522" type="Sprite" parent="."]
 
 position = Vector2( 544, 1248 )
-texture = ExtResource( 505 )
+texture = ExtResource( 506 )
 
 [node name="tile_523" type="Sprite" parent="."]
 
 position = Vector2( 608, 1248 )
-texture = ExtResource( 506 )
+texture = ExtResource( 507 )
 
 [node name="tile_524" type="Sprite" parent="."]
 
 position = Vector2( 672, 1248 )
-texture = ExtResource( 507 )
+texture = ExtResource( 508 )
 
 [node name="tile_525" type="Sprite" parent="."]
 
 position = Vector2( 736, 1248 )
-texture = ExtResource( 508 )
+texture = ExtResource( 509 )
 
 [node name="tile_526" type="Sprite" parent="."]
 
 position = Vector2( 800, 1248 )
-texture = ExtResource( 509 )
+texture = ExtResource( 510 )
 
 [node name="tile_527" type="Sprite" parent="."]
 
 position = Vector2( 864, 1248 )
-texture = ExtResource( 510 )
+texture = ExtResource( 511 )
 
 [node name="tile_528" type="Sprite" parent="."]
 
 position = Vector2( 928, 1248 )
-texture = ExtResource( 511 )
+texture = ExtResource( 512 )
 
 [node name="tile_529" type="Sprite" parent="."]
 
 position = Vector2( 992, 1248 )
-texture = ExtResource( 512 )
+texture = ExtResource( 513 )
 
 [node name="tile_530" type="Sprite" parent="."]
 
 position = Vector2( 1056, 1248 )
-texture = ExtResource( 513 )
+texture = ExtResource( 514 )
 
 [node name="tile_531" type="Sprite" parent="."]
 
 position = Vector2( 1120, 1248 )
-texture = ExtResource( 514 )
+texture = ExtResource( 515 )
 
 [node name="tile_532" type="Sprite" parent="."]
 
 position = Vector2( 1184, 1248 )
-texture = ExtResource( 515 )
+texture = ExtResource( 516 )
 
 [node name="tile_533" type="Sprite" parent="."]
 
 position = Vector2( 1248, 1248 )
-texture = ExtResource( 516 )
+texture = ExtResource( 517 )
 
 [node name="tile_534" type="Sprite" parent="."]
 
 position = Vector2( 1312, 1248 )
-texture = ExtResource( 517 )
+texture = ExtResource( 518 )
 
 [node name="tile_535" type="Sprite" parent="."]
 
 position = Vector2( 1376, 1248 )
-texture = ExtResource( 518 )
+texture = ExtResource( 519 )
 
 [node name="tile_536" type="Sprite" parent="."]
 
 position = Vector2( 1440, 1248 )
-texture = ExtResource( 519 )
+texture = ExtResource( 520 )
 
 [node name="tile_537" type="Sprite" parent="."]
 
 position = Vector2( 1504, 1248 )
-texture = ExtResource( 520 )
+texture = ExtResource( 521 )
 
 [node name="tile_538" type="Sprite" parent="."]
 
 position = Vector2( 1568, 1248 )
-texture = ExtResource( 521 )
+texture = ExtResource( 522 )
 
 [node name="TreeFull1" type="Sprite" parent="."]
 
 position = Vector2( 1728, 64 )
 z = 4096
 z_as_relative = false
-texture = ExtResource( 522 )
-_sections_unfolded = [ "Z" ]
+texture = ExtResource( 523 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z" ]
 
 [node name="Trunk" type="Sprite" parent="TreeFull1"]
 
 z = -1
-texture = ExtResource( 523 )
+texture = ExtResource( 524 )
 _sections_unfolded = [ "Z" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TreeFull1"]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 3
 collision_mask = 3
@@ -3274,15 +3282,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="DetectArea" type="Area2D" parent="TreeFull1"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision" type="CollisionShape2D" parent="TreeFull1/DetectArea"]
+
+shape = SubResource( 5 )
+
 [node name="TreeFull2" type="Sprite" parent="."]
 
 position = Vector2( 1856, 64 )
-texture = ExtResource( 524 )
+texture = ExtResource( 525 )
 
 [node name="Trunk" type="Sprite" parent="TreeFull2"]
 
 z = -1
-texture = ExtResource( 523 )
+texture = ExtResource( 524 )
 _sections_unfolded = [ "Z" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TreeFull2"]
@@ -3303,5 +3325,28 @@ _sections_unfolded = [ "Material", "Transform", "Visibility", "Z" ]
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="DetectArea" type="Area2D" parent="TreeFull2"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision" type="CollisionShape2D" parent="TreeFull2/DetectArea"]
+
+shape = SubResource( 5 )
+
+[node name="Tween" type="Tween" parent="."]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[connection signal="body_entered" from="TreeFull1/DetectArea" to="." method="_on_DetectArea_body_entered"]
 
 

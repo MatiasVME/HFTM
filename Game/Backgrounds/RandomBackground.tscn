@@ -33,7 +33,28 @@ _sections_unfolded = [ "Offset", "Transform" ]
 position = Vector2( 640, 360 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Tween" type="Tween" parent="."]
+[node name="TweenLVL1" type="Tween" parent="."]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="TweenLVL2" type="Tween" parent="."]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="TweenLVL3" type="Tween" parent="."]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="TweenRand" type="Tween" parent="."]
 
 playback_process_mode = 1
 playback/active = false
