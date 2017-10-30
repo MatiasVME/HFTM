@@ -38,10 +38,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1.0
-margin_top = 5.0
-margin_right = 1278.0
-margin_bottom = 240.0
+margin_right = 1280.0
+margin_bottom = 260.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -56,9 +54,31 @@ valign = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Focus", "Hint", "Margin", "Material", "Mouse", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "Focus", "Hint", "Margin", "Material", "Mouse", "Rect", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Modes" type="TextureButton" parent="."]
+[node name="MenuContainer" type="Container" parent="."]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Modes" type="TextureButton" parent="MenuContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -81,15 +101,18 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Label" type="Label" parent="Modes"]
+[node name="Label" type="Label" parent="MenuContainer/Modes"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 190.0
-margin_bottom = 49.0
+margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -103,8 +126,11 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Options" type="TextureButton" parent="."]
+[node name="Options" type="TextureButton" parent="MenuContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -127,15 +153,18 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Label" type="Label" parent="Options"]
+[node name="Label" type="Label" parent="MenuContainer/Options"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 190.0
-margin_bottom = 49.0
+margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -149,8 +178,11 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Credits" type="TextureButton" parent="."]
+[node name="Credits" type="TextureButton" parent="MenuContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -173,15 +205,18 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Label" type="Label" parent="Credits"]
+[node name="Label" type="Label" parent="MenuContainer/Credits"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 190.0
-margin_bottom = 49.0
+margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -195,8 +230,11 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Exit" type="TextureButton" parent="."]
+[node name="Exit" type="TextureButton" parent="MenuContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -219,8 +257,11 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Label" type="Label" parent="Exit"]
+[node name="Label" type="Label" parent="MenuContainer/Exit"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -228,7 +269,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = -2.0
 margin_right = 188.0
-margin_bottom = 49.0
+margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -242,9 +283,12 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[connection signal="pressed" from="Modes" to="." method="_on_Modes_pressed"]
+[connection signal="pressed" from="MenuContainer/Modes" to="." method="_on_Modes_pressed"]
 
-[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="MenuContainer/Exit" to="." method="_on_Exit_pressed"]
 
 

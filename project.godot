@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 GameGlobals="*res://Game/Singletons/GameGlobals.gd"
 MusicManager="*res://Game/Singletons/MusicManager.tscn"
+ItemManager="*res://Game/Singletons/ItemManager.gd"
 FocusManager="*res://Game/Singletons/FocusManager.gd"
 ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
@@ -33,6 +34,27 @@ window/stretch/aspect="keep"
 [gdnative]
 
 singletons=[  ]
+
+[importer_defaults]
+
+texture={
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
 
 [input]
 

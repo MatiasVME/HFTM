@@ -196,7 +196,7 @@ func process_img(texture, _LVL = 0):
 
 func position_img(_texture, _img):
 	_img.texture = _texture
-	_img.modulate = Color(1, 1, 1, 0.65)
+	_img.modulate = Color(1, 1, 1, 0)
 	_img.position = Vector2(GameGlobals.RES_X / 2,
 			GameGlobals.RES_Y / 2)
 	
