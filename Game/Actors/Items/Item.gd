@@ -2,7 +2,7 @@ extends Node
 
 # Propiedades
 var name = "" setget set_name, get_name
-var texture = null setget set_texture, get_texture
+var texture setget set_texture, get_texture
 
 var price_buy = 0 setget set_price_buy, get_price_buy
 var price_sell = 0 setget set_price_sell, get_price_sell

@@ -6,7 +6,7 @@ onready var camera = $MainCamera
 onready var vehicle = $"NJC-104"
 onready var HUD = $HUD
 
-var item = preload("res://Game/Actors/Items/ItemFigure.tscn")
+onready var item = preload("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
 	set_process_input(true)
@@ -27,11 +27,9 @@ func _ready():
 	
 	# test items
 	var i_item = item.instance()
-	# print(ItemManager.get_gun("Test gun", 1))
+	self.add_child(i_item)
 	i_item.set_item(ItemManager.get_gun("Test gun", 1))
 	i_item.position = Vector2(700, 96)
-	self.add_child(i_item)
-	
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
