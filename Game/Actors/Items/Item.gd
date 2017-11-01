@@ -1,8 +1,8 @@
 extends Node
 
 # Propiedades
-var name = "" # Init
-var item_texture = null # Init
+var name = "" setget set_name, get_name
+var texture = null setget set_texture, get_texture
 
 var price_buy = 0 setget set_price_buy, get_price_buy
 var price_sell = 0 setget set_price_sell, get_price_sell
@@ -12,10 +12,6 @@ var level_drop = 0 setget set_level_drop, get_level_drop
 
 # Requerimientos para ser utilizado
 var requirements setget set_requirements, get_requirements
-
-func _init(_name, _item_texture):
-	name = _name
-	item_texture = _item_texture
 	
 func get_id():
 	return self.get_instance_id()
@@ -54,3 +50,16 @@ func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0, lev
 	
 func get_requirements():
 	return requirements
+
+func set_name(_name):
+	name = _name
+	
+func get_name():
+	return name
+
+func set_texture(_texture):
+	texture = _texture
+	print("textura seteada")
+
+func get_texture():
+	return texture
