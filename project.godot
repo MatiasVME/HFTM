@@ -20,6 +20,7 @@ GameGlobals="*res://Game/Singletons/GameGlobals.gd"
 MusicManager="*res://Game/Singletons/MusicManager.tscn"
 ItemManager="*res://Game/Singletons/ItemManager.gd"
 FocusManager="*res://Game/Singletons/FocusManager.gd"
+HUDManager="*res://Game/Singletons/HUDManager.gd"
 ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
 [display]

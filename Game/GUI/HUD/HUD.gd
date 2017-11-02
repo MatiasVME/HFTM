@@ -6,6 +6,7 @@ onready var animation_bars = $AnimationBars
 onready var animation_hud_menu = $"AnimationHUD-Menu"
 onready var animation_photos_mini = $AnimationPhotosMini
 onready var animation_hotbar = $AnimationHotbar
+onready var animation_info_player = $AnimationInfoPanel
 
 var bars_show = false
 var photos_mini_show = false
@@ -17,8 +18,15 @@ var stats_show = false
 enum HudElement {BARS, PHOTOS_MINI, HOTBAR, HUD_MENU}
 
 func _ready():
+	set_process(true)
 	set_process_input(true)
 	
+func _process(delta):
+	if HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_show":
+		info_panel_show()
+	elif not HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_hide":
+		info_panel_hide()
+
 func _input(event):
 	if event.is_action_pressed("inventory") and not animation_inventory.is_playing():
 		if not inventory_show:
@@ -89,3 +97,9 @@ func hud_menu_show_and_hide():
 		else:
 			animation_hud_menu.play("hud_menu_hide")
 			hud_menu_show = false
+			
+func info_panel_show():
+	animation_info_player.play("info_panel_show")
+
+func info_panel_hide():
+	animation_info_player.play("info_panel_hide")
