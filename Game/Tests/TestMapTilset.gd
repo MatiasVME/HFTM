@@ -29,7 +29,22 @@ func _ready():
 	var i_item = item.instance()
 	self.add_child(i_item)
 	i_item.set_item(ItemManager.get_gun("Test gun", 1))
-	i_item.position = Vector2(700, 96)
+	i_item.position = Vector2(700, 100)
+	
+	var i_item2 = item.instance()
+	self.add_child(i_item2)
+	i_item2.set_item(ItemManager.get_gun("Test gun2", 2))
+	i_item2.position = Vector2(700, 200)
+	
+	var i_item3 = item.instance()
+	self.add_child(i_item3)
+	i_item3.set_item(ItemManager.get_gun("Test gun3", 3))
+	i_item3.position = Vector2(700, 300)
+	
+	var i_item4 = item.instance()
+	self.add_child(i_item4)
+	i_item4.set_item(ItemManager.get_gun("Test gun3", 10))
+	i_item4.position = Vector2(700, 400)
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):

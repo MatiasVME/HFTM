@@ -12,7 +12,6 @@ var bullet_demand = 1 setget set_bullet_demand, get_bullet_demand
 var category = ItemManager.Category.UNSUCCESSFUL setget set_category, get_category
 var shot_type = ItemManager.ShotType.BULLET setget set_shot_type, get_shot_type
 
-	
 # Getters/Setters
 #
 

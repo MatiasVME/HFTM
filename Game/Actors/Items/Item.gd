@@ -44,7 +44,7 @@ func get_level_drop():
 	return level_drop
 	
 func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0, level = 0):
-	var class_requirements = load("res://Game/Actors/Items/ItemRequirements.gd")
+	var class_requirements = load("res://Game/Actors/Items/Attributes.gd")
 	requirements = class_requirements.new(strength, dexterity, vitality,
 			energy)
 	

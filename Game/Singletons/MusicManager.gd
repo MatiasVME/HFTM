@@ -8,6 +8,9 @@ enum Music {M_MELANCHOLIC = 1, M_SISTE_VIATOR}
 var current_music = null
 
 func select_music(p_music):
+	if not GameGlobals.music_enable:
+		return
+	
 	if current_music != null:
 		current_music.stop()
 	

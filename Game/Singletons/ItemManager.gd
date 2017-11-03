@@ -6,6 +6,9 @@ enum ItemType {WEAPON, ARMOR, BATERY, ACCESSORY, MUNITION}
 enum WeaponType {GUN, SHOTGUN, MACHINE_GUN, LASER}
 enum ShotType {BULLET, SLIME, FIRE, SHADY}
 
+# Para armaduras
+enum ArmorType {HELMET, SUIT, GLOVE_LEFT, GLOVE_RIGHT, BOOTS}
+
 enum Category {UNSUCCESSFUL, COMMON, POWERFUL, OVER_POWER, UNIQUE}
 
 var item

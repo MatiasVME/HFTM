@@ -1,6 +1,8 @@
 extends Node
 
-# Requerimientos para poder utilizar el item
+# Atributos que pueden ser utilizados como requerimientos o atributos
+# que proporciona un item, o atributos del jugador.
+
 var strength setget set_strength, get_strength
 var dexterity setget set_dexterity, get_dexterity
 var vitality setget set_vitality, get_vitality
