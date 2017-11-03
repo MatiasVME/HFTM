@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 GameGlobals="*res://Game/Singletons/GameGlobals.gd"
 MusicManager="*res://Game/Singletons/MusicManager.tscn"
+SoundManager="*res://Game/Sounds/SoundManager.tscn"
 ItemManager="*res://Game/Singletons/ItemManager.gd"
 FocusManager="*res://Game/Singletons/FocusManager.gd"
 HUDManager="*res://Game/Singletons/HUDManager.gd"
@@ -55,6 +56,10 @@ texture={
 "size_limit": 0,
 "stream": false,
 "svg/scale": 1.0
+}
+ogg_vorbis={
+"loop": false,
+"loop_offset": 0
 }
 
 [input]

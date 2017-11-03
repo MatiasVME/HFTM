@@ -20,8 +20,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 691.0
-margin_bottom = 232.0
+margin_right = 704.0
+margin_bottom = 160.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -36,30 +36,30 @@ _sections_unfolded = [ "Patch Margin" ]
 
 [node name="Item" type="Sprite" parent="."]
 
-position = Vector2( 80.0113, 130.914 )
-scale = Vector2( 0.3, 0.3 )
+position = Vector2( 76.0113, 92.914 )
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Grid" type="GridContainer" parent="."]
+[node name="MainGrid" type="GridContainer" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 153.0
-margin_top = 30.0
-margin_right = 209.0
-margin_bottom = 70.0
+margin_left = 160.0
+margin_top = 32.0
+margin_right = 704.0
+margin_bottom = 72.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
 columns = 4
-_sections_unfolded = [ "Anchor" ]
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags" ]
 
-[node name="NameTitle" type="Label" parent="Grid"]
+[node name="NameTitle" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -75,13 +75,13 @@ size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
 custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
-text = "Nombre:"
+text = "Name:"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts", "custom_styles" ]
 
-[node name="Name" type="Label" parent="Grid"]
+[node name="Name" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -104,7 +104,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="CategoryTitle" type="Label" parent="Grid"]
+[node name="CategoryTitle" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -127,7 +127,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="Category" type="Label" parent="Grid"]
+[node name="Category" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -150,7 +150,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="DamageTitle" type="Label" parent="Grid"]
+[node name="DamageTitle" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -173,7 +173,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="Damage" type="Label" parent="Grid"]
+[node name="Damage" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -197,7 +197,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="SpeedTitle" type="Label" parent="Grid"]
+[node name="SpeedTitle" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -221,7 +221,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="Speed" type="Label" parent="Grid"]
+[node name="Speed" type="Label" parent="MainGrid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -240,6 +240,234 @@ custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.707031, 0.102188, 0.102188, 1 )
 custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
 text = "44"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Requirements" type="Label" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 160.0
+margin_top = 86.0
+margin_right = 701.0
+margin_bottom = 104.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "Requirements"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="RequirementsGrid" type="GridContainer" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 160.0
+margin_top = 107.0
+margin_right = 704.0
+margin_bottom = 147.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 4
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags" ]
+
+[node name="StrengthTitle" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 106.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "Strength: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Strength" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_right = 146.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.707031, 0.102188, 0.102188, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "999"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="DexterityTitle" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_right = 263.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "Dexterity: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Dexterity" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 267.0
+margin_right = 303.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.707031, 0.102188, 0.102188, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "999"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="VitalityTitle" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 22.0
+margin_right = 106.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "Vitality: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Vitality" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_top = 22.0
+margin_right = 146.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.707031, 0.102188, 0.102188, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "999"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="EnergyTitle" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 22.0
+margin_right = 263.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.124786, 0.21149, 0.679688, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "Energy: "
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Energy" type="Label" parent="RequirementsGrid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 267.0
+margin_top = 22.0
+margin_right = 303.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.707031, 0.102188, 0.102188, 1 )
+custom_colors/font_color_shadow = Color( 0.375, 0.212402, 0.212402, 1 )
+text = "999"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1

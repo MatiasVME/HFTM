@@ -19,14 +19,15 @@ var last_step  = false # último paso para cambiar a la proxima escena
 
 func _ready():
 	set_process_input(true)
-	MusicManager.stop_music()
 	
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		next_step = true
 	if event.is_action_pressed("ui_cancel"):
-		MusicManager.select_music(MusicManager.Music.M_MELANCHOLIC)
-		MusicManager.play_music()
+		if GameGlobals.music_enable:
+			MusicManager.select_music(MusicManager.Music.M_MELANCHOLIC)
+			MusicManager.play_music()
+			
 		get_tree().change_scene("res://Game/MainScreens/MainMenu.tscn")
 
 func _on_Timer_timeout():
@@ -34,6 +35,9 @@ func _on_Timer_timeout():
 	
 	if i < intro_text[j].length():
 		i += 1
+		
+		if i % 2 == 0:
+			SoundManager.play_sound(SoundManager.Sound.WRITE)
 	
 	next_step()
 	

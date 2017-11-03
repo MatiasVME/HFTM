@@ -21,6 +21,8 @@ func _ready():
 	set_process(true)
 	set_process_input(true)
 	
+	HUDManager.set_hud(self)
+	
 func _process(delta):
 	if HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_show":
 		info_panel_show()
