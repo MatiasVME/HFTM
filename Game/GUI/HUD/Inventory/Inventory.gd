@@ -6,7 +6,13 @@ var owner = null setget set_owner, get_owner
 const COLUMNS = 11
 const ROWS = 5
 
-var inventory = [COLUMNS, ROWS]
+var inventory = [
+	[null, null, null, null, null, null, null, null, null, null, null],
+	[null, null, null, null, null, null, null, null, null, null, null],
+	[null, null, null, null, null, null, null, null, null, null, null],
+	[null, null, null, null, null, null, null, null, null, null, null],
+	[null, null, null, null, null, null, null, null, null, null, null]
+]
 
 func _ready():
 	print(inventory)
@@ -16,6 +22,7 @@ func add_item(item, pos_x, pos_y):
 		inventory[pos_x][pos_y] = item
 	else:
 		return -1
+	print(inventory)
 		
 func delete_item(pos_x, pos_y):
 	inventory[pos_x][pos_y] = null

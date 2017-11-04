@@ -21,16 +21,7 @@ var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd")
 var item = load("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
-	var i_player_inventory = player_inventory.new()
-	var i_inventory = inventory.new()
-	i_inventory.set_owner(self.get_player_name())
-	i_player_inventory.set_inventory(i_inventory)
-	
-	InventoryManager.add_inventory(i_inventory)
-	InventoryManager.select_inventory(0) # después hay que hacer que sea mas dinámico
-	
-	var i_item = item.instance()
-	i_player_inventory.add_item(i_item, 0, 0)
+	pass
 
 func _physics_process(delta):
 	if is_selected:

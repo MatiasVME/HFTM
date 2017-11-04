@@ -6,6 +6,8 @@ onready var camera = $MainCamera
 onready var vehicle = $"NJC-104"
 onready var HUD = $HUD
 
+onready var player_inventory = load("res://Game/Actors/Players/PlayerInventory.gd")
+onready var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd")
 onready var item = preload("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
@@ -45,6 +47,21 @@ func _ready():
 	self.add_child(i_item4)
 	i_item4.set_item(ItemManager.get_gun("Test gun3", 10))
 	i_item4.position = Vector2(700, 400)
+	
+	# test item in inventory
+	
+	var i_player_inventory = player_inventory.new()
+	var i_inventory = inventory.new()
+	i_inventory.set_owner(player.get_player_name())
+	print("owner: ", player.get_player_name())
+	i_player_inventory.set_inventory(i_inventory)
+
+	InventoryManager.add_inventory(i_inventory)
+	InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
+
+	var i_item5 = item.instance()
+	i_inventory.add_item(i_item5, 0, 0)
+	
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):

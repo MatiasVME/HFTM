@@ -321,4 +321,8 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
+[connection signal="pressed" from="MenuContainer/Modes" to="." method="_on_Modes_pressed"]
+
+[connection signal="pressed" from="MenuContainer/Exit" to="." method="_on_Exit_pressed"]
+
 
