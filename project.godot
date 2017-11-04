@@ -22,13 +22,13 @@ SoundManager="*res://Game/Sounds/SoundManager.tscn"
 ItemManager="*res://Game/Singletons/ItemManager.gd"
 FocusManager="*res://Game/Singletons/FocusManager.gd"
 HUDManager="*res://Game/Singletons/HUDManager.gd"
+InventoryManager="*res://Game/Singletons/InventoryManager.gd"
 ShotManager="*res://Game/Singletons/ShotManager.tscn"
 
 [display]
 
 window/size/width=1280
 window/size/height=720
-window/size/fullscreen=true
 window/size/test_width=800
 window/size/test_height=500
 window/stretch/mode="viewport"

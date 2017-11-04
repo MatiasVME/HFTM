@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Game/MainScreens/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Game/Backgrounds/RandomBackground.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Game/GUI/Buttons/blue-button-press.png" type="Texture" id=5]
 [ext_resource path="res://Game/GUI/Buttons/blue-button-hover.png" type="Texture" id=6]
 [ext_resource path="res://Game/Fonts/Future/kenvector_future.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Game/Fonts/Audiowide/Audiowide-Regular.ttf" type="DynamicFontData" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -23,6 +24,14 @@ use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 7 )
 _sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 22
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 8 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [node name="MainMenu" type="Node2D"]
 
@@ -287,8 +296,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[connection signal="pressed" from="MenuContainer/Modes" to="." method="_on_Modes_pressed"]
+[node name="Version" type="Label" parent="."]
 
-[connection signal="pressed" from="MenuContainer/Exit" to="." method="_on_Exit_pressed"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1066.0
+margin_top = 616.0
+margin_right = 1201.0
+margin_bottom = 644.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.652344, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.128906, 0.0105743, 0.0105743, 1 )
+text = "v9.999.999"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 

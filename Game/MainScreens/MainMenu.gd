@@ -1,5 +1,7 @@
 extends Node2D
 
+onready var version = $Version
+
 var cursor
 
 func _ready():
@@ -11,6 +13,7 @@ func _ready():
 	cursor = preload("res://Game/Cursor/crossair_black.png")
 	
 	Input.set_custom_mouse_cursor(cursor)
+	version.text = "v" + GameGlobals.version
 
 func _on_Exit_pressed():
 	get_tree().quit()

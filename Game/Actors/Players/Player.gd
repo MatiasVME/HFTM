@@ -16,6 +16,22 @@ var current_area = null
 # Si esta seleccionado se puede mover y etc
 var is_selected = false
 
+var player_inventory = load("res://Game/Actors/Players/PlayerInventory.gd")
+var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd")
+var item = load("res://Game/Actors/Items/ItemFigure.tscn")
+
+func _ready():
+	var i_player_inventory = player_inventory.new()
+	var i_inventory = inventory.new()
+	i_inventory.set_owner(self.get_player_name())
+	i_player_inventory.set_inventory(i_inventory)
+	
+	InventoryManager.add_inventory(i_inventory)
+	InventoryManager.select_inventory(0) # después hay que hacer que sea mas dinámico
+	
+	var i_item = item.instance()
+	i_player_inventory.add_item(i_item, 0, 0)
+
 func _physics_process(delta):
 	if is_selected:
 		movement_input(delta)
