@@ -56,16 +56,14 @@ func get_gun(name, _level_drop, id_img = null, _category = Category.UNSUCCESSFUL
 			img = load("res://Game/Actors/Items/Weapons/Gun/F-101/F-101.png")
 		2:
 			img = load("res://Game/Actors/Items/Weapons/Gun/D-101/D-101.png")
-	print("id_img: ", id_img)
 	
 	var i_weapon = weapon.new()
-	
 	i_weapon.set_name(name)
 	i_weapon.set_texture(img)
 	i_weapon.set_category(_category)
 	i_weapon.set_shot_type(_shot_type)
 	i_weapon.set_level_drop(_level_drop)
-	rand_requirements(i_weapon.get_level_drop() * 4, i_weapon)
+	rand_requirements(i_weapon.get_level_drop() * 5, i_weapon)
 	i_weapon.set_damage_max(calc_damage_max(WeaponType.GUN, _category,
 			_shot_type, i_weapon))
 	

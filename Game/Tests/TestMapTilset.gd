@@ -50,17 +50,17 @@ func _ready():
 	
 	# test item in inventory
 	
-	var i_player_inventory = player_inventory.new()
-	var i_inventory = inventory.new()
-	i_inventory.set_owner(player.get_player_name())
-	print("owner: ", player.get_player_name())
-	i_player_inventory.set_inventory(i_inventory)
-
-	InventoryManager.add_inventory(i_inventory)
-	InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
-
-	var i_item5 = item.instance()
-	i_inventory.add_item(i_item5, 0, 0)
+#	var i_player_inventory = player_inventory.new()
+#	var i_inventory = inventory.new()
+#	i_inventory.set_owner(player.get_player_name())
+#	i_player_inventory.set_inventory(i_inventory)
+#
+#	InventoryManager.add_inventory(i_inventory)
+#	InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
+#
+#	var i_item5 = item.instance()
+#	i_inventory.add_item(i_item5, 0, 0)
+	#i_item5.set_item(ItemManager.get_gun("Test gun4", 10))
 	
 	
 func _input(event):

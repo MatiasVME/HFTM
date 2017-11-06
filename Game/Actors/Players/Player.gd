@@ -16,12 +16,14 @@ var current_area = null
 # Si esta seleccionado se puede mover y etc
 var is_selected = false
 
-var player_inventory = load("res://Game/Actors/Players/PlayerInventory.gd")
-var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd")
+var player_inventory = load("res://Game/Actors/Players/PlayerInventory.gd").new()
+var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd").new()
 var item = load("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
-	pass
+	player_inventory.set_inventory(inventory)
+	InventoryManager.add_inventory(inventory)
+	#InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
 
 func _physics_process(delta):
 	if is_selected:
@@ -69,6 +71,7 @@ func fire(delta):
 
 func set_player_name(name):
 	player_name = name
+	inventory.set_owner(name)
 
 func get_player_name():
 	return player_name
