@@ -30,7 +30,11 @@ func _process(delta):
 			item_img_in_mouse = null
 			self.get_owner().remove_child(item_img_in_mouse)
 			drag_state = DragState.NONE
-			print("ok")
+
+func add_item(item, srt_cords):
+	if item != null:
+		var texture = item.get_node("ItemImg").texture
+		panel_grid.get_node(srt_cords).texture_normal = item.get_node("ItemImg").texture
 
 # Añade los item de inventario (Sólo se tiene que ejecutar una sola vez)
 func add_inventory_items(current_inventory):
@@ -38,42 +42,58 @@ func add_inventory_items(current_inventory):
 	add_item(current_inventory.get_item(0,1), "0-1")
 	add_item(current_inventory.get_item(0,2), "0-2")
 	add_item(current_inventory.get_item(0,3), "0-3")
+	add_item(current_inventory.get_item(0,4), "0-4")
+	add_item(current_inventory.get_item(0,5), "0-5")
+	add_item(current_inventory.get_item(0,6), "0-6")
+	add_item(current_inventory.get_item(0,7), "0-7")
+	add_item(current_inventory.get_item(0,8), "0-8")
+	add_item(current_inventory.get_item(0,9), "0-9")
+	add_item(current_inventory.get_item(0,10), "0-10")
 	
-func add_item(item, srt_cords):
-	if item != null:
-		var texture = item.get_node("ItemImg").texture
-		panel_grid.get_node(srt_cords).texture_normal = item.get_node("ItemImg").texture
-
-#func move_inventory_items(current_inventory):
-#	if current_inventory != null:
-#		if current_inventory.get_item(0,0) != null:
-#			print("moviendo... ", current_inventory.get_item(0,0).global_position)
-#
-func item_click(item, srt_cords):
-	var img_item = Sprite.new()
+	add_item(current_inventory.get_item(1,0), "1-0")
+	add_item(current_inventory.get_item(1,1), "1-1")
+	add_item(current_inventory.get_item(1,2), "1-2")
+	add_item(current_inventory.get_item(1,3), "1-3")
+	add_item(current_inventory.get_item(1,4), "1-4")
+	add_item(current_inventory.get_item(1,5), "1-5")
+	add_item(current_inventory.get_item(1,6), "1-6")
+	add_item(current_inventory.get_item(1,7), "1-7")
+	add_item(current_inventory.get_item(1,8), "1-8")
+	add_item(current_inventory.get_item(1,9), "1-9")
+	add_item(current_inventory.get_item(1,10), "1-10")
 	
-	img_item.texture = panel_grid.get_node(srt_cords).texture_normal
-	img_item.scale = Vector2(0.2, 0.2)
-	self.get_owner().add_child(img_item)
+	add_item(current_inventory.get_item(2,0), "2-0")
+	add_item(current_inventory.get_item(2,1), "2-1")
+	add_item(current_inventory.get_item(2,2), "2-2")
+	add_item(current_inventory.get_item(2,3), "2-3")
+	add_item(current_inventory.get_item(2,4), "2-4")
+	add_item(current_inventory.get_item(2,5), "2-5")
+	add_item(current_inventory.get_item(2,6), "2-6")
+	add_item(current_inventory.get_item(2,7), "2-7")
+	add_item(current_inventory.get_item(2,8), "2-8")
+	add_item(current_inventory.get_item(2,9), "2-9")
+	add_item(current_inventory.get_item(2,10), "2-10")
 	
-	item_img_in_mouse = img_item
-	item_in_mouse = item
+	add_item(current_inventory.get_item(3,0), "3-0")
+	add_item(current_inventory.get_item(3,1), "3-1")
+	add_item(current_inventory.get_item(3,2), "3-2")
+	add_item(current_inventory.get_item(3,3), "3-3")
+	add_item(current_inventory.get_item(3,4), "3-4")
+	add_item(current_inventory.get_item(3,5), "3-5")
+	add_item(current_inventory.get_item(3,6), "3-6")
+	add_item(current_inventory.get_item(3,7), "3-7")
+	add_item(current_inventory.get_item(3,8), "3-8")
+	add_item(current_inventory.get_item(3,9), "3-9")
+	add_item(current_inventory.get_item(3,10), "3-10")
 	
-	panel_grid.get_node(srt_cords).texture_normal = null
-
-func _on_00_button_down():
-	var current_inventory = InventoryManager.get_current_inventory()
-	
-	if current_inventory != null:
-		item_click(current_inventory.get_item(0,0), "0-0")
-
-func _on_00_mouse_entered():
-	pass
-	
-func _on_01_mouse_entered():
-	pass
-
-
-func _on_00_gui_input( ev ):
-	if ev.is_action_just_released("left_click"):
-		print("hello")
+	add_item(current_inventory.get_item(4,0), "4-0")
+	add_item(current_inventory.get_item(4,1), "4-1")
+	add_item(current_inventory.get_item(4,2), "4-2")
+	add_item(current_inventory.get_item(4,3), "4-3")
+	add_item(current_inventory.get_item(4,4), "4-4")
+	add_item(current_inventory.get_item(4,5), "4-5")
+	add_item(current_inventory.get_item(4,6), "4-6")
+	add_item(current_inventory.get_item(4,7), "4-7")
+	add_item(current_inventory.get_item(4,8), "4-8")
+	add_item(current_inventory.get_item(4,9), "4-9")
+	add_item(current_inventory.get_item(4,10), "4-10")

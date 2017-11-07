@@ -59,7 +59,6 @@ func get_name():
 
 func set_texture(_texture):
 	texture = _texture
-	print("textura seteada")
 
 func get_texture():
 	return texture

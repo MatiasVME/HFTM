@@ -30,6 +30,7 @@ func add_item_next_position(_item):
 		while j < inventory[i].size():
 			if inventory[i][j] == null:
 				inventory[i][j] = _item
+				
 				if GameGlobals.debug: print("se va a añadió el item: ", _item)
 				print(inventory)
 				return true
