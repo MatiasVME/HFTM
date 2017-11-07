@@ -3,6 +3,9 @@ extends Node
 var current_inventory = null setget set_current_inventory, get_current_inventory
 var inventories = []
 
+# Variable para almacenar el slot anterior a tomar el item
+var prev_slot = null
+
 func add_inventory(inventory):
 	if not exist_name(inventory.get_owner()):
 		inventories.append(inventory)

@@ -88,6 +88,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-2" type="TextureButton" parent="Panel/Grid"]
@@ -109,6 +110,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-3" type="TextureButton" parent="Panel/Grid"]
@@ -130,6 +132,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-4" type="TextureButton" parent="Panel/Grid"]
@@ -151,6 +154,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-5" type="TextureButton" parent="Panel/Grid"]
@@ -172,6 +176,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-6" type="TextureButton" parent="Panel/Grid"]
@@ -193,6 +198,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-7" type="TextureButton" parent="Panel/Grid"]
@@ -214,6 +220,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-8" type="TextureButton" parent="Panel/Grid"]
@@ -235,6 +242,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-9" type="TextureButton" parent="Panel/Grid"]
@@ -256,6 +264,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="0-10" type="TextureButton" parent="Panel/Grid"]
@@ -277,6 +286,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="1-0" type="TextureButton" parent="Panel/Grid"]
@@ -298,6 +308,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="1-1" type="TextureButton" parent="Panel/Grid"]
@@ -320,6 +331,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 expand = true
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="1-2" type="TextureButton" parent="Panel/Grid"]
