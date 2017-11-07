@@ -1,7 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game/Actors/Items/ItemFigure.gd" type="Script" id=1]
 [ext_resource path="res://Game/Actors/Items/ItemBackground.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=4]
+
+custom_solver_bias = 0.0
+radius = 285.718
 
 [sub_resource type="Animation" id=1]
 
@@ -44,13 +49,37 @@ tracks/0/keys = {
 custom_solver_bias = 0.0
 radius = 258.144
 
-[node name="ItemFigure" type="Node2D" groups=[
+[node name="ItemFigure" type="RigidBody2D" groups=[
 "Item",
 ]]
 
 scale = Vector2( 0.15, 0.15 )
+input_pickable = false
+collision_layer = 4
+collision_mask = 4
+mode = 0
+mass = 0.05
+friction = 0.0
+bounce = 1.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform", "Visibility", "Z" ]
+_sections_unfolded = [ "Angular", "Collision", "Linear", "Transform", "Visibility", "Z" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+scale = Vector2( 0.15, 0.15 )
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="ItemBackground" type="Sprite" parent="."]
 

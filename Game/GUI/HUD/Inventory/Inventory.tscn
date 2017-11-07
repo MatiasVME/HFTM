@@ -2,12 +2,8 @@
 
 [ext_resource path="res://Game/GUI/HUD/Inventory/InventoryPanel.gd" type="Script" id=1]
 [ext_resource path="res://Game/GUI/HUD/Inventory/Images/metal-panel-blue.png" type="Texture" id=2]
-[ext_resource path="res://Game/GUI/HUD/Inventory/InventoryTileSet.res" type="TileSet" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 25, 25 )
+[ext_resource path="res://Game/GUI/HUD/Inventory/Slot.gd" type="Script" id=3]
+[ext_resource path="res://Game/GUI/HUD/Inventory/InventoryTileSet.res" type="TileSet" id=4]
 
 [node name="Inventory" type="Node2D"]
 
@@ -15,7 +11,6 @@ script = ExtResource( 1 )
 
 [node name="Panel" type="NinePatchRect" parent="."]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -43,7 +38,8 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 350.0
-margin_bottom = 11659.0
+margin_right = 550.0
+margin_bottom = 600.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -59,12 +55,34 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 46.0
-margin_bottom = 50.0
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+script = ExtResource( 3 )
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Textures" ]
+
+[node name="0-1" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_right = 96.0
+margin_bottom = 46.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -72,24 +90,7 @@ group = null
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-1" type="Control" parent="Panel/Grid"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 50.0
-margin_right = 96.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
-
-[node name="0-2" type="Control" parent="Panel/Grid"]
+[node name="0-2" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -97,16 +98,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 100.0
 margin_right = 146.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-3" type="Control" parent="Panel/Grid"]
+[node name="0-3" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -114,16 +119,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 150.0
 margin_right = 196.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-4" type="Control" parent="Panel/Grid"]
+[node name="0-4" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -131,16 +140,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 200.0
 margin_right = 246.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-5" type="Control" parent="Panel/Grid"]
+[node name="0-5" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -148,16 +161,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 250.0
 margin_right = 296.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-6" type="Control" parent="Panel/Grid"]
+[node name="0-6" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -165,16 +182,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 300.0
 margin_right = 346.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-7" type="Control" parent="Panel/Grid"]
+[node name="0-7" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -182,16 +203,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 350.0
 margin_right = 396.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-8" type="Control" parent="Panel/Grid"]
+[node name="0-8" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -199,16 +224,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 400.0
 margin_right = 446.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-9" type="Control" parent="Panel/Grid"]
+[node name="0-9" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -216,16 +245,20 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 450.0
 margin_right = 496.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="0-10" type="Control" parent="Panel/Grid"]
+[node name="0-10" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -233,216 +266,987 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 500.0
 margin_right = 546.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-0" type="Control" parent="Panel/Grid"]
+[node name="1-0" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 46.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-1" type="Control" parent="Panel/Grid"]
+[node name="1-1" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 50.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 96.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-2" type="Control" parent="Panel/Grid"]
+[node name="1-2" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 100.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 146.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-3" type="Control" parent="Panel/Grid"]
+[node name="1-3" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 150.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 196.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-4" type="Control" parent="Panel/Grid"]
+[node name="1-4" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 200.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 246.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-5" type="Control" parent="Panel/Grid"]
+[node name="1-5" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 250.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 296.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-6" type="Control" parent="Panel/Grid"]
+[node name="1-6" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 300.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 346.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-7" type="Control" parent="Panel/Grid"]
+[node name="1-7" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 350.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 396.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-8" type="Control" parent="Panel/Grid"]
+[node name="1-8" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 400.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 446.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-9" type="Control" parent="Panel/Grid"]
+[node name="1-9" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 450.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 496.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="1-10" type="Control" parent="Panel/Grid"]
+[node name="1-10" type="TextureButton" parent="Panel/Grid"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 500.0
-margin_top = 54.0
+margin_top = 50.0
 margin_right = 546.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 46, 50 )
+margin_bottom = 96.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-0" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 100.0
+margin_right = 46.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-1" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 96.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-2" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 146.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-3" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 100.0
+margin_right = 196.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-4" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 246.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-5" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 250.0
+margin_top = 100.0
+margin_right = 296.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-6" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 346.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-7" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 350.0
+margin_top = 100.0
+margin_right = 396.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-8" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 400.0
+margin_top = 100.0
+margin_right = 446.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-9" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 450.0
+margin_top = 100.0
+margin_right = 496.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="2-10" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_top = 100.0
+margin_right = 546.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-0" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 150.0
+margin_right = 46.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-1" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 150.0
+margin_right = 96.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-2" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 150.0
+margin_right = 146.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-3" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 150.0
+margin_right = 196.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-4" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 150.0
+margin_right = 246.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-5" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 250.0
+margin_top = 150.0
+margin_right = 296.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-6" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 150.0
+margin_right = 346.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-7" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 350.0
+margin_top = 150.0
+margin_right = 396.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-8" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 400.0
+margin_top = 150.0
+margin_right = 446.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-9" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 450.0
+margin_top = 150.0
+margin_right = 496.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="3-10" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_top = 150.0
+margin_right = 546.0
+margin_bottom = 196.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-0" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 200.0
+margin_right = 46.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-1" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 200.0
+margin_right = 96.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-2" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 200.0
+margin_right = 146.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-3" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = 200.0
+margin_right = 196.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-4" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 200.0
+margin_right = 246.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-5" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 250.0
+margin_top = 200.0
+margin_right = 296.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-6" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 200.0
+margin_right = 346.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-7" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 350.0
+margin_top = 200.0
+margin_right = 396.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-8" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 400.0
+margin_top = 200.0
+margin_right = 446.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-9" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 450.0
+margin_top = 200.0
+margin_right = 496.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="4-10" type="TextureButton" parent="Panel/Grid"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_top = 200.0
+margin_right = 546.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Slots" type="TileMap" parent="."]
 
 mode = 0
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 25, 25 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -457,29 +1261,5 @@ collision_mask = 1
 occluder_light_mask = 1
 tile_data = PoolIntArray( 196615, 2, 327695, 2, 327697, 2, 327699, 2, 393222, 1, 458755, 2, 458763, 2, 458767, 2, 458769, 2, 458771, 2, 589839, 2, 589841, 2, 589843, 2, 720903, 2, 983041, 2, 983043, 2, 983045, 2, 983047, 2, 983049, 2, 983051, 2, 983053, 2, 983055, 2, 983057, 2, 983059, 2, 983061, 2, 1114113, 2, 1114115, 2, 1114117, 2, 1114119, 2, 1114121, 2, 1114123, 2, 1114125, 2, 1114127, 2, 1114129, 2, 1114131, 2, 1114133, 2, 1245185, 2, 1245187, 2, 1245189, 2, 1245191, 2, 1245193, 2, 1245195, 2, 1245197, 2, 1245199, 2, 1245201, 2, 1245203, 2, 1245205, 2, 1376257, 2, 1376259, 2, 1376261, 2, 1376263, 2, 1376265, 2, 1376267, 2, 1376269, 2, 1376271, 2, 1376273, 2, 1376275, 2, 1376277, 2, 1507329, 2, 1507331, 2, 1507333, 2, 1507335, 2, 1507337, 2, 1507339, 2, 1507341, 2, 1507343, 2, 1507345, 2, 1507347, 2, 1507349, 2, 1703943, 2, 1703945, 2, 1703947, 2, 1703949, 2, 1703951, 2 )
 _sections_unfolded = [ "Cell" ]
-
-[node name="Inventory" type="Node2D" parent="."]
-
-editor/display_folded = true
-visible = false
-
-[node name="0-0" type="Node2D" parent="Inventory"]
-
-position = Vector2( 50, 400 )
-_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z" ]
-
-[node name="Area" type="Area2D" parent="Inventory/0-0"]
-
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="Collision" type="CollisionShape2D" parent="Inventory/0-0/Area"]
-
-shape = SubResource( 1 )
 
 

@@ -24,6 +24,7 @@ func _ready():
 	FocusManager.add_player(player)
 	FocusManager.add_player(player2)
 	FocusManager.select_focus(1)
+	FocusManager.next_focus()
 	
 	FocusManager.add_vehicle(vehicle, false)
 	
@@ -36,32 +37,22 @@ func _ready():
 	var i_item2 = item.instance()
 	self.add_child(i_item2)
 	i_item2.set_item(ItemManager.get_gun("Test gun2", 2))
-	i_item2.position = Vector2(700, 200)
+	i_item2.position = Vector2(700, 105)
 	
 	var i_item3 = item.instance()
 	self.add_child(i_item3)
 	i_item3.set_item(ItemManager.get_gun("Test gun3", 3))
-	i_item3.position = Vector2(700, 300)
+	i_item3.position = Vector2(700, 100)
 	
 	var i_item4 = item.instance()
 	self.add_child(i_item4)
 	i_item4.set_item(ItemManager.get_gun("Test gun3", 10))
-	i_item4.position = Vector2(700, 400)
+	i_item4.position = Vector2(700, 100)
 	
-	# test item in inventory
-	
-#	var i_player_inventory = player_inventory.new()
-#	var i_inventory = inventory.new()
-#	i_inventory.set_owner(player.get_player_name())
-#	i_player_inventory.set_inventory(i_inventory)
-#
-#	InventoryManager.add_inventory(i_inventory)
-#	InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
-#
-#	var i_item5 = item.instance()
-#	i_inventory.add_item(i_item5, 0, 0)
-	#i_item5.set_item(ItemManager.get_gun("Test gun4", 10))
-	
+	var i_item6 = item.instance()
+	self.add_child(i_item6)
+	i_item6.set_item(ItemManager.get_gun("Test gun3", 10))
+	i_item6.position = Vector2(700, 100)
 	
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):

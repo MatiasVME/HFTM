@@ -9,7 +9,7 @@ func add_inventory(inventory):
 		if GameGlobals.debug: print("Se añadió el inventario: ", inventory)
 	else:
 		if GameGlobals.debug: print("El inventario ya fue añadido")
-	#disculpa, me fui un rato, como fue? mira esto pasa, saque el debug del f9
+
 	# Saber si es el primer inventario añadido
 	if inventories.size() == 1:
 		# Si lo es, se setea a 0 el primer inventario

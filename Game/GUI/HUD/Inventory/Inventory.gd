@@ -57,5 +57,7 @@ func get_owner():
 	return owner
 	
 func get_item(pos_x, pos_y):
-	if GameGlobals.debug: print("item: ", inventory[pos_x][pos_y])
 	return inventory[pos_x][pos_y]
+	
+func get_inventory():
+	return inventory

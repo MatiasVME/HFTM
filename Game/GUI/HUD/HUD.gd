@@ -17,8 +17,8 @@ var hud_menu_show = false
 var inventory_show = false
 var stats_show = false
 
-# Inventario anterior
-var prev_inventory = null
+# Inventario anterior (hash)
+var prev_inventory_hash = null
 
 enum HudElement {BARS, PHOTOS_MINI, HOTBAR, HUD_MENU}
 
@@ -34,8 +34,8 @@ func _process(delta):
 	elif not HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_hide":
 		info_panel_hide()
 		
-	if animation_inventory.is_playing():
-		inventory.move_inventory_items(InventoryManager.get_current_inventory())
+#	if animation_inventory.is_playing():
+#		inventory.move_inventory_items(InventoryManager.get_current_inventory())
 
 func _input(event):
 	if event.is_action_pressed("inventory") and not animation_inventory.is_playing():
@@ -43,9 +43,11 @@ func _input(event):
 			inventory_show = true
 			animation_inventory.play("inventory_show")
 			
-			if prev_inventory != InventoryManager.get_current_inventory():
+			var inventory_hash = InventoryManager.get_current_inventory().get_inventory().hash()
+			
+			if prev_inventory_hash != inventory_hash:
 				inventory.add_inventory_items(InventoryManager.get_current_inventory())
-				prev_inventory = InventoryManager.get_current_inventory()
+				prev_inventory_hash = inventory_hash
 		else:
 			inventory_show = false
 			animation_inventory.play("inventory_hide")
