@@ -5,7 +5,9 @@
 [ext_resource path="res://Game/GUI/HUD/Inventory/Slot.gd" type="Script" id=3]
 [ext_resource path="res://Game/GUI/HUD/Inventory/InventoryTileSet.res" type="TileSet" id=4]
 
-[node name="Inventory" type="Node2D"]
+[node name="Inventory" type="Node2D" groups=[
+"InventoryPanel",
+]]
 
 script = ExtResource( 1 )
 

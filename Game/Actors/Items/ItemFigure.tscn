@@ -1,16 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Game/Actors/Items/ItemFigure.gd" type="Script" id=1]
 [ext_resource path="res://Game/Actors/Items/ItemBackground.png" type="Texture" id=2]
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 285.718
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=2]
 
-resource_name = "idle"
 length = 1.5
 loop = true
 step = 0.1
@@ -26,9 +25,26 @@ tracks/0/keys = {
 "values": [ Vector2( 0.15, 0.15 ), Vector2( 0.2, 0.2 ), Vector2( 0.15, 0.15 ) ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=5]
 
-resource_name = "take"
+resource_name = "show"
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 0.15, 0.15 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
 length = 0.3
 loop = false
 step = 0.1
@@ -44,7 +60,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0.15, 0.15 ), Vector2( 1e-05, 1e-05 ) ]
 }
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=4]
 
 custom_solver_bias = 0.0
 radius = 258.144
@@ -75,10 +91,10 @@ angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Angular", "Collision", "Linear", "Transform", "Visibility", "Z" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Collision" type="CollisionShape2D" parent="."]
 
 scale = Vector2( 0.15, 0.15 )
-shape = SubResource( 4 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="ItemBackground" type="Sprite" parent="."]
@@ -93,8 +109,9 @@ _sections_unfolded = [ "Animation", "Material", "Visibility" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/idle = SubResource( 1 )
-anims/take = SubResource( 2 )
+anims/idle = SubResource( 2 )
+anims/show = SubResource( 5 )
+anims/take = SubResource( 3 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -102,7 +119,6 @@ autoplay = "idle"
 
 [node name="Area" type="Area2D" parent="."]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -113,7 +129,8 @@ audio_bus_name = "Master"
 
 [node name="Collision" type="CollisionShape2D" parent="Area"]
 
-shape = SubResource( 3 )
+visible = false
+shape = SubResource( 4 )
 
 [connection signal="mouse_entered" from="Area" to="." method="_on_Area_mouse_entered"]
 

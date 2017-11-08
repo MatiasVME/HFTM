@@ -1,14 +1,15 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Game/GUI/HUD/HUD.gd" type="Script" id=1]
-[ext_resource path="res://Game/GUI/HUD/Bars.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Game/GUI/HUD/PhotosMini.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Game/GUI/HUD/InfoPanel/InfoPanel.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Game/GUI/HUD/Hotbar.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Game/GUI/HUD/HUD-Menu.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Game/GUI/HUD/Inventory/Inventory.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Game/GUI/HUD/Stats/Stats.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Game/GUI/HUD/MenuPause.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Game/GUI/HUD/DropOut.gd" type="Script" id=2]
+[ext_resource path="res://Game/GUI/HUD/Bars.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game/GUI/HUD/PhotosMini.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Game/GUI/HUD/InfoPanel/InfoPanel.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Game/GUI/HUD/Hotbar.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Game/GUI/HUD/HUD-Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Game/GUI/HUD/Inventory/Inventory.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Game/GUI/HUD/Stats/Stats.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Game/GUI/HUD/MenuPause.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -333,47 +334,62 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Bars" parent="." instance=ExtResource( 2 )]
+[node name="DropOut" type="Control" parent="."]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 2 )
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Material", "Mouse", "Pause", "Rect", "Size Flags", "Theme", "Visibility" ]
+
+[node name="Bars" parent="." instance=ExtResource( 3 )]
 
 position = Vector2( 156.087, -83.0783 )
 
-[node name="PhotosMini" parent="." instance=ExtResource( 3 )]
+[node name="PhotosMini" parent="." instance=ExtResource( 4 )]
 
 position = Vector2( 1106.63, -63.179 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="InfoPanel" parent="." instance=ExtResource( 4 )]
+[node name="InfoPanel" parent="." instance=ExtResource( 5 )]
 
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -690, 490 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="Hotbar" parent="." instance=ExtResource( 5 )]
+[node name="Hotbar" parent="." instance=ExtResource( 6 )]
 
 position = Vector2( 463.591, 723.464 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="HUD-Menu" parent="." instance=ExtResource( 6 )]
+[node name="HUD-Menu" parent="." instance=ExtResource( 7 )]
 
 position = Vector2( 1283.35, 496.473 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="Inventory" parent="." instance=ExtResource( 7 )]
+[node name="Inventory" parent="." instance=ExtResource( 8 )]
 
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 1280, 0 )
 _sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z" ]
 
-[node name="Stats" parent="." instance=ExtResource( 8 )]
+[node name="Stats" parent="." instance=ExtResource( 9 )]
 
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -600, 0 )
 _sections_unfolded = [ "Material", "Visibility" ]
 
-[node name="MenuPause" parent="." instance=ExtResource( 9 )]
+[node name="MenuPause" parent="." instance=ExtResource( 10 )]
 
 visible = false
 position = Vector2( 350, 300 )

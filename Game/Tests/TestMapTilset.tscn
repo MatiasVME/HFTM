@@ -8,7 +8,9 @@
 [ext_resource path="res://Game/Actors/NPC/MM-10/MM-10.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Game/Camera/MainCamera.tscn" type="PackedScene" id=7]
 
-[node name="TestMapTilset" type="Node2D"]
+[node name="TestMapTilset" type="Node2D" groups=[
+"Map",
+]]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause", "Z" ]

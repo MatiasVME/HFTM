@@ -2,42 +2,19 @@ extends Node2D
 
 onready var panel_grid = $"Panel/Grid"
 
-var item_in_mouse = null
-var item_img_in_mouse = null
-
-enum DragState {NONE, DRAG, DROP}
-var drag_state = DragState.NONE
-
-var current_button = null
-var prev_button = null
-
 func _ready():
 	set_process(true)
 	
 func _process(delta):
-	if item_img_in_mouse != null:
-		item_img_in_mouse.global_position = self.get_global_mouse_position()
-		drag_state = DragState.DRAG
-		
-	if drag_state == DragState.DRAG and current_button != null:
-		var button = panel_grid.get_node(current_button)
-		current_button = null
-
-		if Input.is_action_just_released("left_click") and button.texture_normal == null:
-			
-			button.texture_normal = item_img_in_mouse.texture
-
-			item_img_in_mouse = null
-			self.get_owner().remove_child(item_img_in_mouse)
-			drag_state = DragState.NONE
-
-func add_item(item, srt_cords):
-	if item != null:
-		var texture = item.get_node("ItemImg").texture
-		panel_grid.get_node(srt_cords).texture_normal = item.get_node("ItemImg").texture
+	# TODO: Ver si un item fue añadido al inventario y hacer una animación al
+	# al momento de añadirlo.
+	
+	pass
 
 # Añade los item de inventario (Sólo se tiene que ejecutar una sola vez)
 func add_inventory_items(current_inventory):
+	# Esto se podría optimizar a futuro
+	
 	add_item(current_inventory.get_item(0,0), "0-0")
 	add_item(current_inventory.get_item(0,1), "0-1")
 	add_item(current_inventory.get_item(0,2), "0-2")
@@ -97,3 +74,9 @@ func add_inventory_items(current_inventory):
 	add_item(current_inventory.get_item(4,8), "4-8")
 	add_item(current_inventory.get_item(4,9), "4-9")
 	add_item(current_inventory.get_item(4,10), "4-10")
+
+# Método que añade un item al inventario dependiendo de sus coordenadas
+func add_item(item, srt_cords):
+	if item != null:
+		var texture = item.get_node("ItemImg").texture
+		panel_grid.get_node(srt_cords).texture_normal = item.get_node("ItemImg").texture

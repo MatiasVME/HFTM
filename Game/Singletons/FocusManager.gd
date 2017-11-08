@@ -39,7 +39,6 @@ func next_focus():
 		print("focus_num_max: ", focus_num_max)
 
 func last_focus():
-	print("focus: ", focus)
 	select_focus(focus.size(), false)
 
 # Players
@@ -71,6 +70,9 @@ func remove_player(player, remove_one_focus = false):
 	
 	if remove_one_focus:
 		focus_num_max -= 1
+
+func get_current_focus():
+	return focus[current_focus_num - 1]
 
 # Selecciona el foco
 func select_focus(num, effect = true):

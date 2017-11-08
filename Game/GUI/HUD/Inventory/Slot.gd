@@ -2,6 +2,7 @@ extends TextureButton
 
 func get_drag_data(position):
 	InventoryManager.prev_slot = self
+	HUDManager.get_hud().get_node("DropOut").visible = true
 	
 	if self.texture_normal != null:
 		var button = TextureButton.new()
@@ -26,13 +27,14 @@ func can_drop_data(position, data):
 			var cords = InventoryManager.prev_slot.get_item_cords(InventoryManager.prev_slot.get_name())
 			InventoryManager.prev_slot.texture_normal = data.get_node("ItemImg").texture
 			InventoryManager.get_current_inventory().add_item(data, cords.x, cords.y)
-		
+			
 		return false
 	
 func drop_data(position, data):
 	var cords = get_item_cords(self.get_name())
 	self.texture_normal = data.get_node("ItemImg").texture
 	InventoryManager.get_current_inventory().add_item(data, cords.x, cords.y)
+	
 
 func get_item_cords(node_name):
 	match node_name:
