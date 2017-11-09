@@ -42,24 +42,4 @@ occluder_light_mask = 1
 tile_data = PoolIntArray( -3276784, 227, -2883578, 226, -1441776, 226, -983033, 227, -458735, 225, 7, 227, 131097, 225, 327678, 226, 786433, 225, 1114128, 227, 1507355, 226 )
 _sections_unfolded = [ "Cell", "Z" ]
 
-[node name="ObjectsTop" type="TileMap" parent="."]
-
-z = 1
-mode = 0
-tile_set = ExtResource( 1 )
-cell_size = Vector2( 64, 64 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
-tile_data = PoolIntArray( -3604474, 521, -3276786, 521, -2555898, 521, -2228219, 521, -2228210, 521, -1703929, 521, -1048562, 521, -458745, 521, -65515, 521, 327684, 521, 327696, 521, 720905, 521, 720925, 521, 983061, 521 )
-_sections_unfolded = [ "Cell", "Collision", "Occluder", "Z" ]
-
 

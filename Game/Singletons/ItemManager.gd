@@ -51,11 +51,11 @@ func get_gun(name, _level_drop, id_img = null, _category = Category.UNSUCCESSFUL
 	
 	match id_img:
 		0:
-			img = load("res://Game/Actors/Items/Weapons/Gun/G-101/G-101.png")
+			img = load("res://Game/Actors/Items/Weapons/Gun/G-101/G-101-Mini.png")
 		1:
-			img = load("res://Game/Actors/Items/Weapons/Gun/F-101/F-101.png")
+			img = load("res://Game/Actors/Items/Weapons/Gun/F-101/F-101-Mini.png")
 		2:
-			img = load("res://Game/Actors/Items/Weapons/Gun/D-101/D-101.png")
+			img = load("res://Game/Actors/Items/Weapons/Gun/D-101/D-101-Mini.png")
 	
 	var i_weapon = weapon.new()
 	i_weapon.set_name(name)

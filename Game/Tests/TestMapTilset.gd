@@ -12,6 +12,7 @@ onready var item = preload("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
 	set_process_input(true)
+	
 	# en un futuro esto será automático
 	player.set_player_name("Pepito")
 	player2.set_player_name("Pedrito")
@@ -53,7 +54,7 @@ func _ready():
 	self.add_child(i_item6)
 	i_item6.set_item(ItemManager.get_gun("Test gun3", 10))
 	i_item6.position = Vector2(700, 100)
-	
+
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		if HUD.get_node("MenuPause").is_visible():
