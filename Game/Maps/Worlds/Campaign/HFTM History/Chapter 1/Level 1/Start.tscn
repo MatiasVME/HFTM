@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Game/Maps/Ambient.res" type="TileSet" id=1]
+[ext_resource path="res://Game/Actors/Stage/Trees/NormalTree/NormalTree.tscn" type="PackedScene" id=2]
 
 [node name="Start" type="Node2D"]
 
@@ -41,5 +42,49 @@ collision_mask = 1
 occluder_light_mask = 1
 tile_data = PoolIntArray( -3276784, 227, -2883578, 226, -1441776, 226, -983033, 227, -458735, 225, 7, 227, 131097, 225, 327678, 226, 786433, 225, 1114128, 227, 1507355, 226 )
 _sections_unfolded = [ "Cell", "Z" ]
+
+[node name="NormalTree" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 224, 352 )
+
+[node name="NormalTree2" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 704, 736 )
+
+[node name="NormalTree3" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 1216, 352 )
+
+[node name="NormalTree4" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 1472, 960 )
+
+[node name="NormalTree5" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 480, -512 )
+
+[node name="NormalTree6" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 352, -1312 )
+
+[node name="NormalTree7" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 960, -928 )
+
+[node name="NormalTree8" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 512, -1792 )
+
+[node name="NormalTree9" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 928, -2272 )
+
+[node name="NormalTree10" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 352, -2976 )
+
+[node name="NormalTree11" parent="." instance=ExtResource( 2 )]
+
+position = Vector2( 992, -3488 )
 
 
