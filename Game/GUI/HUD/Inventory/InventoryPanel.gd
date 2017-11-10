@@ -80,3 +80,5 @@ func add_item(item, srt_cords):
 	if item != null:
 		var texture = item.get_node("ItemImg").texture
 		panel_grid.get_node(srt_cords).texture_normal = item.get_node("ItemImg").texture
+	else:
+		panel_grid.get_node(srt_cords).texture_normal = null

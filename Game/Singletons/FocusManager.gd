@@ -88,6 +88,10 @@ func select_focus(num, effect = true):
 		else:
 			camera.move_to(focus[current_focus_num - 1])
 		focus[current_focus_num - 1].is_selected = true
+		
+	InventoryManager.set_current_inventory(num - 1)
+	# Need fix inventory :(
+	print(InventoryManager.get_current_inventory().get_inventory()) 
 
 func deselect_all_players():
 	if players.size() > 0:

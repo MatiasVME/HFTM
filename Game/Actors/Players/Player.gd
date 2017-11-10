@@ -1,3 +1,5 @@
+# Player.gd
+
 extends KinematicBody2D
 
 onready var camera = null
@@ -9,7 +11,7 @@ var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 const SPEED = 80
 const MOVEMENT = 2
 
-export (String) var player_name = "none" setget set_player_name, get_player_name
+export (String) var player_name = null setget set_player_name, get_player_name
 
 var is_in_area = false
 var current_area = null
@@ -21,9 +23,10 @@ var inventory = load("res://Game/GUI/HUD/Inventory/Inventory.gd").new()
 var item = load("res://Game/Actors/Items/ItemFigure.tscn")
 
 func _ready():
-	player_inventory.set_inventory(inventory)
-	InventoryManager.add_inventory(inventory)
+#	player_inventory.set_inventory(inventory)
+#	InventoryManager.add_inventory(inventory)
 	#InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
+	pass
 
 func _physics_process(delta):
 	if is_selected:
@@ -69,12 +72,24 @@ func fire(delta):
 			var i_pistol_bullet = pistol_bullet.instance()
 			i_pistol_bullet.fire(self, mouse_local_pos, delta)
 
+func create_inventory():
+	if player_name != null:
+		player_inventory.set_inventory(inventory)
+		InventoryManager.add_inventory(inventory)
+	else:
+		if GameGlobals.debug: print("Para crear un inventario del player se tiene que saber el nombre del jugador primero: ", 
+				player_name)
+
+# Setters/Getters
+
 func set_player_name(name):
 	player_name = name
 	inventory.set_owner(name)
 
 func get_player_name():
 	return player_name
+
+# Eventos
 
 func _on_TouchArea_area_entered( area ):
 	is_in_area = true

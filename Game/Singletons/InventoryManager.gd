@@ -6,6 +6,10 @@ var inventories = []
 # Variable para almacenar el slot anterior a tomar el item
 var prev_slot = null
 
+# Es para saber si se a cambiado el inventories o no
+var has_changed = false
+
+# Se le debe añadir una instancia de Inventory.gd
 func add_inventory(inventory):
 	if not exist_name(inventory.get_owner()):
 		inventories.append(inventory)
@@ -17,6 +21,13 @@ func add_inventory(inventory):
 	if inventories.size() == 1:
 		# Si lo es, se setea a 0 el primer inventario
 		set_current_inventory(0)
+		
+	if GameGlobals.debug:
+		print("Inventories: ", inventories)
+		for inventory in inventories:
+			print("Inventory: ", inventory.get_owner())
+			
+	has_changed = true
 
 func exist_name(name):
 	for inventory in inventories:
@@ -24,6 +35,16 @@ func exist_name(name):
 			return true
 
 	return false
+
+# Es para saber si se a cambiado de inventario o no. La variable
+# has_changed cambia a false una vez que se consulta este método.
+
+func has_changed():
+	if has_changed:
+		has_changed = false
+		return true
+	else:
+		return false
 
 # Setters/Getters
 #
@@ -34,6 +55,8 @@ func set_current_inventory(num):
 		if GameGlobals.debug: print("current_inventory: ", current_inventory)
 	else:
 		if GameGlobals.debug: print("No existe inventario con ese número: ", num)
+
+	has_changed = true
 
 func get_current_inventory():
 	return current_inventory

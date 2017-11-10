@@ -16,6 +16,8 @@ func _ready():
 	# en un futuro esto será automático
 	player.set_player_name("Pepito")
 	player2.set_player_name("Pedrito")
+	player.create_inventory()
+	player2.create_inventory()
 	
 	if GameGlobals.music_enable:
 		MusicManager.select_music(2)
