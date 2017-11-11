@@ -1,7 +1,7 @@
 extends Node
 
 var version = "0.3.0"
-var debug = true
+var debug = false
 var music_enable = false
 var sound_enable = true
 

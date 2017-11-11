@@ -11,16 +11,11 @@ func _ready():
 	seating_max = 2
 	
 	set_process_input(true)
-#	set_process(true)
+
 
 func _input(event):
 	if event.is_action_pressed("use") and is_selected:
 		exit_left_door()
-
-#func _process(delta):
-#	if Input.is_action_pressed("up") or Input.is_action_pressed("down") or Input.is_action_pressed("left") or Input.is_action_pressed("right"):
-#		if !$Sound.playing and can_move:
-#			$Sound.playing = true
 
 func exit_left_door():
 	var player = exit_vehicle()

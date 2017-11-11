@@ -70,7 +70,7 @@ func move_car(delta):
 
 	if motion != Vector2():
 		target_angle = atan2(motion.x, motion.y) - PI / 2
-		Skin.rotation = -target_angle
+		self.rotation = -target_angle
 
 func add_player(player):
 	if not player is KinematicBody2D:
