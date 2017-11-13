@@ -1,0 +1,183 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Game/MainScreens/Accounts.gd" type="Script" id=1]
+[ext_resource path="res://Game/Backgrounds/bg-color.png" type="Texture" id=2]
+[ext_resource path="res://Game/Fonts/Audiowide/Audiowide-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Game/MainScreens/AccountsPanel/NewAccountPanel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-normal.png" type="Texture" id=5]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-press.png" type="Texture" id=6]
+[ext_resource path="res://Game/GUI/Buttons/blue-button-hover.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 64
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Accounts" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="."]
+
+scale = Vector2( 12.8, 7.2 )
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="VBox" type="VBoxContainer" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+
+[node name="AccountsTitle" type="Label" parent="VBox"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 81.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "Accounts"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Control" type="Control" parent="VBox"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 85.0
+margin_right = 1280.0
+margin_bottom = 667.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+_sections_unfolded = [ "Anchor", "Margin", "Size Flags" ]
+
+[node name="Scroll" type="ScrollContainer" parent="VBox/Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+scroll_horizontal = true
+scroll_vertical = true
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="VBox" type="VBoxContainer" parent="VBox/Control/Scroll"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 582.0
+rect_min_size = Vector2( 100, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 0
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags" ]
+
+[node name="NewAccountPanel" parent="VBox/Control/Scroll/VBox" instance=ExtResource( 4 )]
+
+editor/display_folded = true
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 390.0
+margin_top = 211.0
+margin_right = 890.0
+margin_bottom = 371.0
+rect_min_size = Vector2( 500, 160 )
+rect_clip_content = true
+size_flags_horizontal = 6
+size_flags_vertical = 6
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags" ]
+
+[node name="Back" type="TextureButton" parent="VBox"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 545.0
+margin_top = 671.0
+margin_right = 735.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+_sections_unfolded = [ "Size Flags", "Textures" ]
+
+[node name="Label" type="Label" parent="VBox/Back"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[connection signal="pressed" from="VBox/Control/Scroll/VBox/NewAccountPanel/Panel/VBox/OK" to="." method="_on_OK_pressed"]
+
+
+[editable path="VBox/Control/Scroll/VBox/NewAccountPanel"]

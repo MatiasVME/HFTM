@@ -209,26 +209,26 @@ func animate(img, num_tween):
 	
 	match num_tween:
 		0 :
-			tween_lvl1.interpolate_property(img, "rotation_deg",
-					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl1.interpolate_property(img, "rotation_degrees", 
+					img.rotation_degrees, rot_finish_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl1.interpolate_property(img, "modulate",
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl1.start()
 		1 :
-			tween_lvl2.interpolate_property(img, "rotation_deg",
-					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl2.interpolate_property(img, "rotation_degrees",
+					img.rotation_degrees, rot_finish_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl2.interpolate_property(img, "modulate",
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl2.start()
 		2 :
-			tween_lvl3.interpolate_property(img, "rotation_deg",
-					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_lvl3.interpolate_property(img, "rotation_degrees",
+					img.rotation_degrees, rot_finish_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl3.interpolate_property(img, "modulate",
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_lvl3.start()
 		3 :
-			tween_rand.interpolate_property(img, "rotation_deg",
-					img.rotation_deg, rot_finish_rand, time_rand, trans_rand, ease_rand)
+			tween_rand.interpolate_property(img, "rotation_degrees",
+					img.rotation_degrees, rot_finish_rand, time_rand, trans_rand, ease_rand)
 			tween_rand.interpolate_property(img, "modulate",
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_rand.start()

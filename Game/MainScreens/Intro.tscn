@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Game/Intro/Intro.gd" type="Script" id=1]
+[ext_resource path="res://Game/MainScreens/Intro.gd" type="Script" id=1]
 [ext_resource path="res://Game/Backgrounds/bg-color.png" type="Texture" id=2]
 [ext_resource path="res://Game/Fonts/Future/kenvector_future.ttf" type="DynamicFontData" id=3]
 

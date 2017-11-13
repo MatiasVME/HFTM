@@ -43,15 +43,15 @@ func states(delta):
 	elif state == State.WALK and one_time:
 		feets.playing = true
 		body.playing = true
-		body.rotation_deg = 0
+		body.rotation_degrees = 0
 		anim.stop()
 		one_time = false
 	elif state == State.AIM:
 		body.look_at(player.global_position)
-		body.rotation_deg += 90
+		body.rotation_degree += 90
 	elif state == State.AIM_ATACK:
 		body.look_at(player.global_position)
-		body.rotation_deg += 90
+		body.rotation_degrees += 90
 		var i_canon_bullet = pistol_bullet.instance()
 		i_canon_bullet.enemy_fire(self, player, delta)
 
