@@ -12,12 +12,9 @@ var type = Type.DISK
 var temporal_password = "y~mu_L!6$qq9o119y1W("
 
 const ACCOUNTS_NAME_PATH = "user://accounts.bin"
-var accounts_is_loaded = false
 var accounts = [] setget , get_accounts
 
-
 # Generic data path
-var g_data_path = "user://account_.bin"
 var data_amount = get_data_amount()
 
 func _ready():
@@ -30,10 +27,9 @@ func option_disk():
 	
 	if accounts_file_data.file_exists(ACCOUNTS_NAME_PATH):	
 		load_accounts_data()
-		print("existe fichero accounts")
 	else:
 		save_accounts_data()
-		print("no existe fichero accounts")
+		load_accounts_data()
 
 # Implementar en un futuro
 func option_online():
@@ -45,8 +41,6 @@ func save_accounts_data():
 			File.WRITE, temporal_password)
 	file.store_var(accounts)
 	file.close()
-	
-	accounts_is_loaded = false
 
 func load_accounts_data():
 	var file = File.new()
@@ -61,18 +55,33 @@ func load_accounts_data():
 	if accounts.size() >= 1:
 		for account in accounts:
 			print(account)
-			
-	accounts_is_loaded = true
 
 func create_account(name):
-	if accounts_is_loaded:
-		accounts.append(name)
-		save_accounts_data()
-	else:
-		if GameGlobals.debug: print("El fichero aún no esta cargado")
+	accounts.append(name)
+	save_accounts_data()
+	create_new_data(name)
+
+# Crea la nueva data y la guarda
+func create_new_data(account_name):
+	var data_account = create_data_account(account_name)
 	
-func create_new_data():
-	pass
+	if account_name != "accounts":
+		var path = "user://" + account_name + ".bin"
+		var file = File.new()
+		var err = file.open_encrypted_with_pass(path, 
+			File.WRITE, temporal_password)
+		file.store_var(data_account)
+		file.close()
+	else:
+		if GameGlobals.debug: print("account_name no puede llamarse: ", account_name)
+
+func create_data_account(owner):
+	var data_account = {
+		Owner = owner,
+		Players = []
+	}
+	
+	return data_account
 
 # Implementar en un futuro
 func change_option(type):
@@ -85,5 +94,21 @@ func get_accounts():
 	return accounts
 
 func get_data_amount():
-	var file_data = File.new()
+#	var file_data = File.new()
+	pass
+
+# Esta función es para obtener la data de una cuenta en específico
+# para uso mas recurrente es mejor utilizar get_current_account_data.
+# Pero si se desea saber la data de otras cuentas es se puede utilizar
+# este método.
+func get_account_data(account_name):
+	var file = File.new()
+	var path = "user://" + account_name + ".bin"
 	
+	if file.file_exists(path):
+		var err = file.open_encrypted_with_pass(path, 
+				File.READ, temporal_password)
+		var account_data = file.get_var()
+		file.close()
+		
+		return account_data

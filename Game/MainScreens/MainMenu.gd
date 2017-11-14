@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 onready var version = $Version
 onready var animation = $Animation
@@ -6,10 +6,10 @@ onready var animation = $Animation
 var cursor
 
 func _ready():
-	$"MenuContainer/Modes/Label".text = tr("MENU_MODES")
-	$"MenuContainer/Options/Label".text = tr("MENU_OPTIONS")
-	$"MenuContainer/Credits/Label".text = tr("MENU_CREDITS")
-	$"MenuContainer/Exit/Label".text = tr("MENU_EXIT")
+	$"VBox/Modes/Label".text = tr("MENU_MODES")
+	$"VBox/Options/Label".text = tr("MENU_OPTIONS")
+	$"VBox/Credits/Label".text = tr("MENU_CREDITS")
+	$"VBox/Exit/Label".text = tr("MENU_EXIT")
 	
 	$"Modes/ModesTitle".text = tr("MODES_TITLE")
 	$"Modes/ModesSolo".text = tr("MODES_SUBTITLE_SOLO")
