@@ -119,7 +119,6 @@ _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags
 
 [node name="NewAccountPanel" parent="VBox/Control/Scroll/VBox" instance=ExtResource( 4 )]
 
-editor/display_folded = true
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 390.0
