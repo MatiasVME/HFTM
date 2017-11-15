@@ -17,7 +17,6 @@ config/icon="res://icon.png"
 [autoload]
 
 GameGlobals="*res://Game/Singletons/GameGlobals.gd"
-AccountsManager="*res://Game/Singletons/AccountsManager.gd"
 MusicManager="*res://Game/Singletons/MusicManager.tscn"
 SoundManager="*res://Game/Sounds/SoundManager.tscn"
 ItemManager="*res://Game/Singletons/ItemManager.gd"

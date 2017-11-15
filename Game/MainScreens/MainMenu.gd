@@ -39,3 +39,6 @@ func _on_Back_pressed():
 
 func _on_Campaign_pressed():
 	get_tree().change_scene("res://Game/Tests/TestMapTilset.tscn")
+
+func _on_Account_pressed():
+	get_tree().change_scene("res://Game/MainScreens/Accounts.tscn")

@@ -26,23 +26,23 @@ func option_disk():
 	var accounts_file_data = File.new()
 	
 	if accounts_file_data.file_exists(ACCOUNTS_NAME_PATH):	
-		load_accounts_data()
+		load_accounts()
 	else:
-		save_accounts_data()
-		load_accounts_data()
+		save_accounts()
+		load_accounts()
 
 # Implementar en un futuro
 func option_online():
 	pass
 
-func save_accounts_data():
+func save_accounts():
 	var file = File.new()
 	var err = file.open_encrypted_with_pass(ACCOUNTS_NAME_PATH, 
 			File.WRITE, temporal_password)
 	file.store_var(accounts)
 	file.close()
 
-func load_accounts_data():
+func load_accounts():
 	var file = File.new()
 	var err = file.open_encrypted_with_pass(ACCOUNTS_NAME_PATH, 
 			File.READ, temporal_password)
@@ -58,7 +58,7 @@ func load_accounts_data():
 
 func create_account(name):
 	accounts.append(name)
-	save_accounts_data()
+	save_accounts()
 	create_new_data(name)
 
 # Crea la nueva data y la guarda
@@ -83,6 +83,26 @@ func create_data_account(owner):
 	
 	return data_account
 
+func delete_account(name):
+	if not accounts.has(name):
+		if GameGlobals.debug: print("No se encuentra %s para ser borrado" % name)
+		return
+	
+	delete_account_data(name)
+	
+	accounts.remove(accounts.find(name))
+	save_accounts()
+	
+func delete_account_data(name):
+	var directory = Directory.new()
+	var path = "user://" + name + ".bin"
+	
+	if not directory.file_exists(path):
+		if GameGlobals.debug: print("No se puede eliminar ", name, " ya que no existe el path: ", path)
+		return
+
+	var err = directory.remove(path)
+
 # Implementar en un futuro
 func change_option(type):
 	pass
@@ -97,7 +117,7 @@ func get_data_amount():
 #	var file_data = File.new()
 	pass
 
-# Esta función es para obtener la data de una cuenta en específico
+# Este método es para obtener la data de una cuenta en específico
 # para uso mas recurrente es mejor utilizar get_current_account_data.
 # Pero si se desea saber la data de otras cuentas es se puede utilizar
 # este método.
