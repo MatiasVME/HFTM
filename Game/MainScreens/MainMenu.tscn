@@ -243,6 +243,7 @@ _sections_unfolded = [ "Anchor", "Focus", "Hint", "Margin", "Material", "Mouse",
 
 [node name="VBox" type="VBoxContainer" parent="."]
 
+editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -526,7 +527,6 @@ __meta__ = {
 
 [node name="Modes" type="Node2D" parent="."]
 
-editor/display_folded = true
 _sections_unfolded = [ "Visibility" ]
 __meta__ = {
 "_edit_lock_": true
@@ -987,10 +987,8 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1066.0
-margin_top = 616.0
-margin_right = 1201.0
-margin_bottom = 644.0
+margin_left = -135.0
+margin_top = -28.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1022,6 +1020,8 @@ autoplay = ""
 [connection signal="pressed" from="VBox/Account" to="." method="_on_Account_pressed"]
 
 [connection signal="pressed" from="VBox/Exit" to="." method="_on_Exit_pressed"]
+
+[connection signal="pressed" from="Modes/Campaign" to="." method="_on_Campaign_pressed"]
 
 [connection signal="pressed" from="Modes/Back" to="." method="_on_Back_pressed"]
 

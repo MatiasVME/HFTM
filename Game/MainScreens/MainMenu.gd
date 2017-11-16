@@ -22,6 +22,7 @@ func _ready():
 	$"Modes/AventureMultiplayer/Label".text = tr("MODES_AVENTURE")
 	$"Modes/DefenceMultiplayer/Label".text = tr("MODES_DEFENCE")
 	$"Modes/Back/Label".text = tr("BACK")
+	$"VBox/Account/Label".text = tr("ACCOUNTS")
 	
 	cursor = preload("res://Game/Cursor/crossair_black.png")
 	

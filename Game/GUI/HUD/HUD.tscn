@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Game/GUI/HUD/HUD.gd" type="Script" id=1]
 [ext_resource path="res://Game/GUI/HUD/DropOut.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Game/GUI/HUD/Inventory/Inventory.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Game/GUI/HUD/Stats/Stats.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Game/GUI/HUD/MenuPause.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Game/GUI/HUD/DialogPanel.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Animation" id=1]
 
@@ -393,6 +394,8 @@ _sections_unfolded = [ "Material", "Visibility" ]
 
 visible = false
 position = Vector2( 350, 300 )
+
+[node name="DialogPanel" parent="." instance=ExtResource( 11 )]
 
 [node name="AnimationBars" type="AnimationPlayer" parent="."]
 

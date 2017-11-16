@@ -7,6 +7,9 @@ onready var line_edit = $"VBox/Control/Scroll/VBox/NewAccountPanel/Panel/VBox/Li
 var account_panels = []
 
 func _ready():
+	$"VBox/AccountsTitle".text = tr("ACCOUNTS")
+	$"VBox/Back/Label".text = tr("BACK")
+	
 	show_accounts()
 
 func show_accounts():
@@ -48,3 +51,6 @@ func _on_OK_pressed():
 	
 	Persistent.create_account(line_edit.text)
 	line_edit.text = ""
+
+func _on_Back_pressed():
+	get_tree().change_scene("res://Game/MainScreens/MainMenu.tscn")

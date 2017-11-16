@@ -1,5 +1,4 @@
 # Accessory.gd
-#
 
 extends "./Item.gd"
 
