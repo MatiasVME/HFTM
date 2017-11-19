@@ -20,3 +20,7 @@ func new_section():
 	}
 	
 	return section
+	
+	
+func get_dialogue():
+	return dialogue

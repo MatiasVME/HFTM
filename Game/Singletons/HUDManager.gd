@@ -21,7 +21,28 @@ func set_info_panel(item):
 	info_panel.get_node("RequirementsGrid/Vitality").text = str(item.get_requirements().get_vitality())
 	info_panel.get_node("RequirementsGrid/Energy").text = str(item.get_requirements().get_energy())
 	
+
+# Dialog
+#
+
+func set_dialog(dialog):
+	if hud != null:
+		var dialog_panel = hud.get_node("DialogPanel")
+		print("______________________________dialog_panel: ", dialog_panel)
+		dialog_panel.set_current_dialog(dialog)
+	else:
+		if GameGlobals.debug: print("hud es null: ", hud)
+
+func get_dialog():
+	if hud != null:
+		var dialog_panel = hud.get_node("DialogPanel")
+		return dialog_panel.get_current_dialog()
 	
+func start_dialog():
+	if hud != null:
+		var dialog_panel = hud.get_node("DialogPanel")
+		dialog_panel.start_dialog()
+
 # Setters/Getters
 #
 

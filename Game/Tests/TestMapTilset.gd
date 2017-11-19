@@ -13,6 +13,8 @@ onready var item = preload("res://Game/Actors/Items/ItemFigure.tscn")
 func _ready():
 	set_process_input(true)
 	
+	HUDManager.set_hud(HUD) # Esto no se si va :S
+	
 	# en un futuro esto será automático
 	player.set_player_name("Pepito")
 	player2.set_player_name("Pedrito")
