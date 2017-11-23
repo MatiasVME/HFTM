@@ -12,6 +12,9 @@ var bullet_demand = 1 setget set_bullet_demand, get_bullet_demand
 var category = ItemManager.Category.UNSUCCESSFUL setget set_category, get_category
 var shot_type = ItemManager.ShotType.BULLET setget set_shot_type, get_shot_type
 
+# Requerimientos para ser utilizado
+var requirements setget set_requirements, get_requirements
+
 # Getters/Setters
 #
 
@@ -44,3 +47,11 @@ func set_shot_type(_shot_type):
 	
 func get_shot_type():
 	return shot_type
+	
+func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0, level = 0):
+	var class_requirements = load("res://Game/Actors/Items/Attributes.gd")
+	requirements = class_requirements.new(strength, dexterity, vitality,
+			energy)
+
+func get_requirements():
+	return requirements

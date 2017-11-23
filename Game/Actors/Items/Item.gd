@@ -10,9 +10,6 @@ var amount = 1 setget set_amount, get_amount
 # Nivel en el cuál se dropea el item
 var level_drop = 0 setget set_level_drop, get_level_drop
 
-# Requerimientos para ser utilizado
-var requirements setget set_requirements, get_requirements
-	
 func get_id():
 	return self.get_instance_id()
 	
@@ -42,14 +39,6 @@ func set_level_drop(_level_drop):
 	
 func get_level_drop():
 	return level_drop
-	
-func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0, level = 0):
-	var class_requirements = load("res://Game/Actors/Items/Attributes.gd")
-	requirements = class_requirements.new(strength, dexterity, vitality,
-			energy)
-	
-func get_requirements():
-	return requirements
 
 func set_name(_name):
 	name = _name
