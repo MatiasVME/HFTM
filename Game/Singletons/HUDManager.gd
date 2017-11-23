@@ -20,7 +20,6 @@ func set_info_panel(item):
 	info_panel.get_node("RequirementsGrid/Dexterity").text = str(item.get_requirements().get_dexterity())
 	info_panel.get_node("RequirementsGrid/Vitality").text = str(item.get_requirements().get_vitality())
 	info_panel.get_node("RequirementsGrid/Energy").text = str(item.get_requirements().get_energy())
-	
 
 # Dialog
 #
@@ -28,7 +27,6 @@ func set_info_panel(item):
 func set_dialog(dialog):
 	if hud != null:
 		var dialog_panel = hud.get_node("DialogPanel")
-		print("______________________________dialog_panel: ", dialog_panel)
 		dialog_panel.set_current_dialog(dialog)
 	else:
 		if GameGlobals.debug: print("hud es null: ", hud)
@@ -51,3 +49,11 @@ func set_hud(_hud):
 	
 func get_hud():
 	return hud
+	
+func get_drop_out():
+	if hud == null:
+		if GameGlobals.debug: print("HUD es null")
+		return
+	
+	return hud.drop_out
+	

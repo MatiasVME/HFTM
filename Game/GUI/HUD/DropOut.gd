@@ -9,6 +9,7 @@ func drop_data(position, data):
 	
 	map.add_child(data)
 	
+	# Por el momento:
 	var item_pos = focus.global_position
 	item_pos.x = item_pos.x + randi() % 100 - 100
 	item_pos.y = item_pos.y + randi() % 100 - 100

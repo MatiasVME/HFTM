@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+onready var drop_out = $DropOut
+
 onready var inventory = $Inventory
 
 onready var animation_inventory = $AnimationInventory
@@ -119,3 +121,9 @@ func info_panel_show():
 
 func info_panel_hide():
 	animation_info_player.play("info_panel_hide")
+	
+# Setters/Getters
+#
+
+func get_drop_out():
+	return drop_out
