@@ -10,8 +10,7 @@ func add_section(transmitter, text, img):
 	section["Img"] = img
 	
 	dialogue.append(section)
-	
-	
+
 func new_section():
 	var section = {
 		Transmitter = null,
@@ -20,7 +19,6 @@ func new_section():
 	}
 	
 	return section
-	
 	
 func get_dialogue():
 	return dialogue

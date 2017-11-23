@@ -1,8 +1,8 @@
 extends Node
 
-var version = "0.4.0"
+var version = "0.5.0"
 var debug = true
-var music_enable = true
+var music_enable = false
 var sound_enable = true
 
 const RES_X = 1280

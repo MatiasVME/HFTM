@@ -103,6 +103,6 @@ func _on_Timer_timeout():
 
 	dialog_text.text = text_progress
 
-	if current_dialog.size() - 1 == index_dialog and current_text.length() == text_progress.length():
+	if current_dialog.size() == index_dialog and current_text.length() == text_progress.length():
 		is_finish = true
 		timer.stop()
