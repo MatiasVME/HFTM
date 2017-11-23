@@ -14,6 +14,15 @@ var shot_type = ItemManager.ShotType.BULLET setget set_shot_type, get_shot_type
 
 # Requerimientos para ser utilizado
 var requirements setget set_requirements, get_requirements
+# Munición de la arma
+var munition setget set_munition, get_munition
+
+func _init():
+	var class_requirements = load("res://Game/Actors/Items/Attributes.gd")
+	var class_munition = load("res://Game/Actors/Items/Munition.gd")
+	
+	requirements = class_requirements.new(0, 0, 0, 0)
+	munition = class_munition.new()
 
 # Getters/Setters
 #
@@ -48,10 +57,30 @@ func set_shot_type(_shot_type):
 func get_shot_type():
 	return shot_type
 	
-func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0, level = 0):
-	var class_requirements = load("res://Game/Actors/Items/Attributes.gd")
-	requirements = class_requirements.new(strength, dexterity, vitality,
-			energy)
+func set_requirements(strength = 0, dexterity = 0, vitality = 0, energy = 0):
+	requirements.set_strength(strength)
+	requirements.set_dexterity(dexterity)
+	requirements.set_vitality(vitality)
+	requirements.set_energy(energy)
 
 func get_requirements():
 	return requirements
+	
+func set_munition(amount, type):
+	munition.set_amount(amount)
+	munition.set_type(type)
+	
+func set_munition_amount(amount):
+	munition.set_amount(amount)
+	
+func get_munition_amount():
+	return munition.get_amount()
+	
+func set_munition_type(type):
+	munition.set_type(type)
+
+func get_mnition_type():
+	return munition.get_type()
+
+func get_munition():
+	return munition
