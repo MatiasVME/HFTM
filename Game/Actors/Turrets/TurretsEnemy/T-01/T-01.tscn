@@ -1,0 +1,87 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/T-01.gd" type="Script" id=1]
+[ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/turretGreen.png" type="Texture" id=2]
+[ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/turretRed.png" type="Texture" id=3]
+
+[sub_resource type="CircleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 1.84379
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 5.15475
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="T-01" type="KinematicBody2D"]
+
+position = Vector2( 393.85, 376.727 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+test_mode = true
+
+[node name="PacificArea" type="Area2D" parent="."]
+
+scale = Vector2( 500, 500 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PacificArea"]
+
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="RedArea" type="Area2D" parent="."]
+
+scale = Vector2( 100, 100 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedArea"]
+
+shape = SubResource( 1 )
+
+[node name="Body" type="AnimatedSprite" parent="."]
+
+editor/display_folded = true
+scale = Vector2( 5, 5 )
+frames = SubResource( 2 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Canon1" type="Position2D" parent="Body"]
+
+[connection signal="body_entered" from="PacificArea" to="." method="_on_PacificArea_body_entered"]
+
+[connection signal="body_exited" from="PacificArea" to="." method="_on_PacificArea_body_exited"]
+
+[connection signal="body_entered" from="RedArea" to="." method="_on_RedArea_body_entered"]
+
+
