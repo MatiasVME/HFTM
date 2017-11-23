@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Game/Maps/Ambient.res" type="TileSet" id=1]
 [ext_resource path="res://Game/Actors/Stage/Trees/NormalTree/NormalTree.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/T-01.tscn" type="PackedScene" id=3]
 
 [node name="Start" type="Node2D"]
 
@@ -88,5 +89,9 @@ position = Vector2( 352, -2976 )
 [node name="NormalTree11" parent="." instance=ExtResource( 2 )]
 
 position = Vector2( 992, -3488 )
+
+[node name="T-01" parent="." instance=ExtResource( 3 )]
+
+position = Vector2( 427.896, 532.626 )
 
 

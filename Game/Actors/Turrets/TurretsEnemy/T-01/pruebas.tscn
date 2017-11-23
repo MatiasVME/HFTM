@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/T-01.tscn" type="PackedScene" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="T-01" parent="." instance=ExtResource( 1 )]
+
+position = Vector2( 372.595, 382.665 )
+
+
