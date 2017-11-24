@@ -38,9 +38,8 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		if is_finish:
-			animation.play_backwards("show")
-			current_dialog = null
-		
+			stop_dialog()
+			
 		next_dialog()
 
 func start_dialog():
@@ -51,6 +50,18 @@ func start_dialog():
 	animation.play("show")
 	has_increased = true
 	timer.start()
+	
+func stop_dialog():
+	animation.play_backwards("show")
+	current_dialog = null
+	
+	index_dialog = 0
+	index_letter = 0
+	current_text = ""
+	text_progress = ""
+	has_increased = false
+	next_dialog = false
+	is_finish = false
 
 # Es para ver si el index_dialog ha incrementado
 func has_increased():

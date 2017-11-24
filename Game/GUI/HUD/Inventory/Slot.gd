@@ -34,8 +34,8 @@ func drop_data(position, data):
 	var cords = get_item_cords(self.get_name())
 	self.texture_normal = data.get_node("ItemImg").texture
 	InventoryManager.get_current_inventory().add_item(data, cords.x, cords.y)
+	HUDManager.get_drop_out().visible = false
 	
-
 func get_item_cords(node_name):
 	match node_name:
 		"0-0": return Vector2(0,0)
