@@ -66,11 +66,11 @@ func look_at_mouse():
 
 func fire(delta):
 	if camera != null:
-		var mouse_local_pos = camera.get_local_mouse_position()
+		var mouse_global_pos = camera.get_global_mouse_position()
 		
 		if Input.is_action_pressed("right_click"):
 			var i_pistol_bullet = pistol_bullet.instance()
-			i_pistol_bullet.fire(self, mouse_local_pos, delta)
+			i_pistol_bullet.fire(self, mouse_global_pos, delta)
 
 func create_inventory():
 	if player_name != null:
@@ -78,7 +78,7 @@ func create_inventory():
 		InventoryManager.add_inventory(inventory)
 	else:
 		if GameGlobals.debug: print("Para crear un inventario del player se tiene que saber el nombre del jugador primero: ", 
-				player_name)
+			player_name)
 
 # Setters/Getters
 
