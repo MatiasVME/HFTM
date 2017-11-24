@@ -1,7 +1,6 @@
 extends CanvasLayer
 
 onready var drop_out = $DropOut
-
 onready var inventory = $Inventory
 
 onready var animation_inventory = $AnimationInventory
@@ -11,6 +10,7 @@ onready var animation_hud_menu = $"AnimationHUD-Menu"
 onready var animation_photos_mini = $AnimationPhotosMini
 onready var animation_hotbar = $AnimationHotbar
 onready var animation_info_player = $AnimationInfoPanel
+onready var animation_all = $AnimationAll
 
 var bars_show = false
 var photos_mini_show = false
@@ -21,8 +21,6 @@ var stats_show = false
 
 # Inventario anterior (hash)
 var prev_inventory_hash = null
-
-enum HudElement {BARS, PHOTOS_MINI, HOTBAR, HUD_MENU}
 
 func _ready():
 	set_process(true)
@@ -60,25 +58,13 @@ func _input(event):
 		else:
 			stats_show = false
 			animation_stats.play("stats_hide")
-	
-	if GameGlobals.debug: debug_hud(event)
-
-func debug_hud(event):
-	if event.is_action_pressed("1"):
-		hud_show_and_hide(HudElement.BARS)
-	if event.is_action_pressed("2"):
-		hud_show_and_hide(HudElement.PHOTOS_MINI)
-	if event.is_action_pressed("3"):
-		hud_show_and_hide(HudElement.HOTBAR)
-	if event.is_action_pressed("4"):
-		hud_show_and_hide(HudElement.HUD_MENU)
 
 func hud_show_and_hide(_HudElement):
 	match _HudElement:
-		HudElement.BARS: bars_show_and_hide()
-		HudElement.PHOTOS_MINI: photos_mini_show_and_hide()
-		HudElement.HOTBAR: hotbar_show_and_hide()
-		HudElement.HUD_MENU: hud_menu_show_and_hide()
+		HUDManager.HudElement.BARS: bars_show_and_hide()
+		HUDManager.HudElement.PHOTOS_MINI: photos_mini_show_and_hide()
+		HUDManager.HudElement.HOTBAR: hotbar_show_and_hide()
+		HUDManager.HudElement.HUD_MENU: hud_menu_show_and_hide()
 			
 func bars_show_and_hide():
 	if not animation_bars.is_playing():

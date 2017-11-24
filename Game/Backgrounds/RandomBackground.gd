@@ -33,9 +33,6 @@ func _ready():
 	
 	set_process(true)
 	
-	if GameGlobals.debug:
-		set_process_input(true)
-	
 func _process(delta):
 	if tween_lvl1.get_runtime() == 0:
 		animate(texture_lvl1, 0)
@@ -45,16 +42,6 @@ func _process(delta):
 		animate(texture_lvl3, 2)
 	if tween_rand.get_runtime() == 0:
 		animate(texture_rand, 3)
-
-func _input(event):
-	if event.is_action_pressed("1"):
-		rand_img(LVL.L1)
-	if event.is_action_pressed("2"):
-		rand_img(LVL.L2)
-	if event.is_action_pressed("3"):
-		rand_img(LVL.L3)
-	if event.is_action_pressed("4"):
-		rand_img(LVL.RAND)
 
 func rand_img(_LVL):
 	match _LVL:

@@ -69,3 +69,6 @@ func _input(event):
 func _exit_tree():
 	FocusManager.focus = []
 	get_tree().set_pause(false)
+
+func _on_ShowHud_timeout():
+	HUDManager.hud_show_all()

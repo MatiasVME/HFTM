@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Game/GUI/HUD/HUD.gd" type="Script" id=1]
 [ext_resource path="res://Game/GUI/HUD/DropOut.gd" type="Script" id=2]
@@ -324,6 +324,57 @@ tracks/1/keys = {
 "values": [ Vector2( -690, 490 ), Vector2( 0, 490 ) ]
 }
 
+[sub_resource type="Animation" id=15]
+
+resource_name = "show"
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bars:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
+"update": 0,
+"values": [ Vector2( 156.087, -83.0783 ), Vector2( 160, 80 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PhotosMini:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
+"update": 0,
+"values": [ Vector2( 1106.63, -63.179 ), Vector2( 1110, 60 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hotbar:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
+"update": 0,
+"values": [ Vector2( 463.591, 723.464 ), Vector2( 460, 660 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("HUD-Menu:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.25, 0.25 ),
+"update": 0,
+"values": [ Vector2( 1283.35, 496.473 ), Vector2( 1060, 500 ) ]
+}
+
 [node name="HUD" type="CanvasLayer"]
 
 layer = 1
@@ -476,6 +527,17 @@ playback_default_blend_time = 0.0
 root_node = NodePath("..")
 anims/info_panel_hide = SubResource( 13 )
 anims/info_panel_show = SubResource( 14 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="AnimationAll" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/show = SubResource( 15 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
