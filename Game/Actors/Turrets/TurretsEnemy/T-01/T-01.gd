@@ -46,13 +46,13 @@ func test_mode():
 		one_time = true
 
 func _on_PacificArea_body_entered( body ):
-	player = body
 	if body.is_in_group("Player"):
+		player = body
 		state = State.AIM
 
 func _on_RedArea_body_entered( body ):
-	player = body
 	if body.is_in_group("Player"):
+		player = body
 		player_is_here = true
 
 func _on_PacificArea_body_exited(body):

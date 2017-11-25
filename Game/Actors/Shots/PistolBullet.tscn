@@ -35,8 +35,8 @@ tracks/0/keys = {
 [node name="PistolBullet" type="RigidBody2D"]
 
 input_pickable = false
-collision_layer = 2
-collision_mask = 2
+collision_layer = 1
+collision_mask = 1
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -47,7 +47,7 @@ continuous_cd = 0
 contacts_reported = 0
 contact_monitor = false
 sleeping = false
-can_sleep = true
+can_sleep = false
 linear_velocity = Vector2( 0, 0 )
 linear_damp = -1.0
 angular_velocity = 0.0
@@ -70,13 +70,12 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionArea" type="Area2D" parent="."]
 
+editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision_layer = 2
-collision_mask = 2
 audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Collision" ]
@@ -113,6 +112,10 @@ max_distance = 2000.0
 attenuation = 1.0
 bus = "Master"
 area_mask = 1
+
+[connection signal="body_entered" from="." to="." method="_on_PistolBullet_body_entered"]
+
+[connection signal="body_entered" from="CollisionArea" to="." method="_on_CollisionArea_body_entered"]
 
 [connection signal="timeout" from="Destroy" to="." method="_on_Destroy_timeout"]
 
