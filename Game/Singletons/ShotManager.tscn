@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Game/Singletons/ShotManager.gd" type="Script" id=1]
 
-
 [node name="ShotManager" type="Node"]
 
 script = ExtResource( 1 )

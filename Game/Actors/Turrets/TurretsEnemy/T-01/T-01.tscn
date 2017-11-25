@@ -1,20 +1,20 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/T-01.gd" type="Script" id=1]
 [ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/turretGreen.png" type="Texture" id=2]
 [ext_resource path="res://Game/Actors/Turrets/TurretsEnemy/T-01/turretRed.png" type="Texture" id=3]
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 1.84379
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
 radius = 5.15475
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=3]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
@@ -22,6 +22,11 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="CircleShape2D" id=4]
+
+custom_solver_bias = 0.0
+radius = 95.0647
 
 [node name="T-01" type="KinematicBody2D"]
 
@@ -49,7 +54,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PacificArea"]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="RedArea" type="Area2D" parent="."]
@@ -66,17 +71,23 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RedArea"]
 
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Body" type="AnimatedSprite" parent="."]
 
-editor/display_folded = true
 scale = Vector2( 5, 5 )
-frames = SubResource( 2 )
+frames = SubResource( 3 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 
 [node name="Canon1" type="Position2D" parent="Body"]
+
+position = Vector2( 0, -33.9367 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+position = Vector2( 1.19507, 47.7982 )
+shape = SubResource( 4 )
 
 [connection signal="body_entered" from="PacificArea" to="." method="_on_PacificArea_body_entered"]
 
