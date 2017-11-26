@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/robot1-silencer.png-e6ea698fe2e09252db34bc1bec89c57c.stex"
 
+[deps]
+
+source_md5="dacab94ab42f1c1417e7e50d94dc1703"
+
 [params]
 
 compress/mode=0

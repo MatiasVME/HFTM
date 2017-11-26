@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hitman1-gun.png-6d3b5d595cc72fb8b061e4d1b0ad6ec7.stex"
 
+[deps]
+
+source_md5="99d34212d3c7a4f8908f774398faa9cf"
+
 [params]
 
 compress/mode=0

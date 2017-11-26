@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/pistol-bullet.png-a2d554a125aa3dfc008b08ca9961c862.stex"
 
+[deps]
+
+source_md5="858271db9f2574387955783f610ef428"
+
 [params]
 
 compress/mode=0

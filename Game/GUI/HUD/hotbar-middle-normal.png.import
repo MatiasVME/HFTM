@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hotbar-middle-normal.png-7735e588b8168d15784c1c08adadfbcf.stex"
 
+[deps]
+
+source_md5="d0ca217796d384bb2c6c9ce274d4fac5"
+
 [params]
 
 compress/mode=0

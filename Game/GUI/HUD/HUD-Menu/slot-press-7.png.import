@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/slot-press-7.png-412a0683d7115e9e148fb7fa23ec36f8.stex"
 
+[deps]
+
+source_md5="7b1114b4f246ebf63679ba1fdad505ab"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/F-101-Mini.png-289511ae626a22a887904ae376a3a937.stex"
 
+[deps]
+
+source_md5="cbed0989d9ea45cda831dc58bc9676b7"
+
 [params]
 
 compress/mode=0

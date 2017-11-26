@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tilia.png-392a94ee61a594ed50b953ff9208e487.stex"
 
+[deps]
+
+source_md5="e0b72a9c95b29eeb5c7a2e6ccd2da74c"
+
 [params]
 
 compress/mode=0

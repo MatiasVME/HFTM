@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hitman1-machine.png-4a2109547b1d435c6ec03c836e601a66.stex"
 
+[deps]
+
+source_md5="10aa9dd6f4eb23346f40cd0d5e9e9944"
+
 [params]
 
 compress/mode=0

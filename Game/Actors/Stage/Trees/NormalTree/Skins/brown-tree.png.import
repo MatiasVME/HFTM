@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/brown-tree.png-7de2bf9a9a8d991fd964a148fc3fd0d3.stex"
 
+[deps]
+
+source_md5="5aa4705ea7be0759542f636b13695684"
+
 [params]
 
 compress/mode=0

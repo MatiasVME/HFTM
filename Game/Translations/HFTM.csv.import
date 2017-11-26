@@ -3,8 +3,11 @@
 importer="csv_translation"
 type="Translation"
 
-[gen]
+[deps]
+
 files=[ "res://Game/Translations/HFTM.en.translation", "res://Game/Translations/HFTM.es_CL.translation" ]
+
+source_md5="261ed43e1bb8427f35743f5f2ca4739a"
 
 [params]
 

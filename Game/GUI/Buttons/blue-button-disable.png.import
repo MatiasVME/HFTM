@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/blue-button-disable.png-07b21dd93a6c2bcb7e417f073cb3cf9d.stex"
 
+[deps]
+
+source_md5="468eb4b9607e5e54ae6259975d8261c6"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/green-tree.png-ec95952735cfb23043903097f4e94dbe.stex"
 
+[deps]
+
+source_md5="ff690d552fb172720a206c692f3410d7"
+
 [params]
 
 compress/mode=0

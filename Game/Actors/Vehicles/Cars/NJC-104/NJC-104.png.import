@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/NJC-104.png-9a7889ee01b4bb51164956797ecb822c.stex"
 
+[deps]
+
+source_md5="f519fae6844ba8475077e23b1d017062"
+
 [params]
 
 compress/mode=0

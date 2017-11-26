@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/ItemBackgroundMini.png-774b459f46596134f845b55dde6703fc.stex"
 
+[deps]
+
+source_md5="ee990b67d1cdb13a6393a6a166fae693"
+
 [params]
 
 compress/mode=0

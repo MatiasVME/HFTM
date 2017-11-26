@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/MM-10-5.png-3921922e2a2198924d090415d356dee3.stex"
 
+[deps]
+
+source_md5="1775f460c96b4c8a67dd3940eb8f95e8"
+
 [params]
 
 compress/mode=0

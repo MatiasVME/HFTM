@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/slot-normal-8.png-a85163c2a146ec87676dfdcbe8b2b6ba.stex"
 
+[deps]
+
+source_md5="a4768c31dc82e013f390eaba212eed9c"
+
 [params]
 
 compress/mode=0

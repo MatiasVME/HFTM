@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/pistol-bullet.wav-e3bb4472ec0b04322a758585b605e63d.sample"
 
+[deps]
+
+source_md5="22099c378446764f724270becea792f3"
+
 [params]
 
 force/8_bit=false

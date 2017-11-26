@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/grey_panel.png-0e0bc7c06ca1ad8dc7194b6af19e0f4b.stex"
 
+[deps]
+
+source_md5="4e5babd36c3ed5305564507a7b20d997"
+
 [params]
 
 compress/mode=0

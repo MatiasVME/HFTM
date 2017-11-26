@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/heal.png-e39414f92103fa70fb7f858ad194199c.stex"
 
+[deps]
+
+source_md5="6548707e805760b8759207c659b04e99"
+
 [params]
 
 compress/mode=0

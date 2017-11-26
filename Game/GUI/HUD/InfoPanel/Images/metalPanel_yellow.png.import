@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/metalPanel_yellow.png-17f66666e39bd4ab34c628a0570fa221.stex"
 
+[deps]
+
+source_md5="7ff3baec4b6d201d14006e154c8fa6aa"
+
 [params]
 
 compress/mode=0

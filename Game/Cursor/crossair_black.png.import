@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/crossair_black.png-10339c9ec5654e7d9f2609f94748f0e0.stex"
 
+[deps]
+
+source_md5="05b401c646abcb99f54d8616a9ce5623"
+
 [params]
 
 compress/mode=0

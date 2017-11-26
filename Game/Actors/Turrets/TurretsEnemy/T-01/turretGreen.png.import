@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/turretGreen.png-d82f83ae3c79eee4bf918f9d018825cb.stex"
 
+[deps]
+
+source_md5="ab569f0193db16c7c76445f5e4609bf1"
+
 [params]
 
 compress/mode=0

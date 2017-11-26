@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/slot-active-9.png-0a384d5f06c35e733616107fbae06f5f.stex"
 
+[deps]
+
+source_md5="4c42ecea78a615635e5940b73956203d"
+
 [params]
 
 compress/mode=0

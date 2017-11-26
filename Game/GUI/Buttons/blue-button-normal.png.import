@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/blue-button-normal.png-50fb7a4bf5190354809c818a2430c3d9.stex"
 
+[deps]
+
+source_md5="219f5210ff51621f0abe3eb77a329654"
+
 [params]
 
 compress/mode=0

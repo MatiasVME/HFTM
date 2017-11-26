@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/robot1-machine.png-14746fec0a269f46e528f67b45ad82be.stex"
 
+[deps]
+
+source_md5="abb32aa7c30114d32efa422d5a871afc"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hitman1-silencer.png-58c5e6b7d08930c0e5b9a4c6cd6f1514.stex"
 
+[deps]
+
+source_md5="9e09e4e3800a0e907f938af48a76a570"
+
 [params]
 
 compress/mode=0

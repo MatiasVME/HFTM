@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/tile_31.png-eba69e30af0629cb44b6e00ed290f50e.stex"
 
+[deps]
+
+source_md5="4134dee9292d4307953be02b0b81879c"
+
 [params]
 
 compress/mode=0

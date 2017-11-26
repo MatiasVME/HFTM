@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hitman1-reload.png-845f30ad801ceaf272c9e62340626cf5.stex"
 
+[deps]
+
+source_md5="b6b8a8ac7fd621ee61e2c337696b2305"
+
 [params]
 
 compress/mode=0

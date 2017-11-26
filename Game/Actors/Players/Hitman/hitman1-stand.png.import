@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/hitman1-stand.png-e09a1b7bc38a7910d1d9d7b0a456a471.stex"
 
+[deps]
+
+source_md5="2270d70229eefb0670ee40d5d6bbb647"
+
 [params]
 
 compress/mode=0
