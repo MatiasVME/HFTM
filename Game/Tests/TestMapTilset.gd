@@ -26,7 +26,7 @@ func _ready():
 	FocusManager.set_camera(camera)
 	FocusManager.add_player(player)
 	FocusManager.add_player(player2)
-	FocusManager.select_focus(1)
+	FocusManager.select_focus(2)
 	# FocusManager.next_focus()
 	
 	FocusManager.add_vehicle(vehicle, false)

@@ -98,7 +98,6 @@ func deselect_all_players():
 		print(get_tree().get_nodes_in_group("Player"))
 		for player in get_tree().get_nodes_in_group("Player"):
 			player.is_selected = false
-			print("player.is_selected: ", player.is_selected)
 
 # Vehicles
 func add_vehicle(vehicle, is_focusable = false):
@@ -175,3 +174,4 @@ func set_camera(cam):
 	
 func get_camera():
 	return camera
+	
