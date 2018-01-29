@@ -31,11 +31,14 @@ func _ready():
 func _process(delta):
 	if HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_show":
 		info_panel_show()
-	elif not HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_hide":
+		print("hola1")
+	elif not HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_hide" and not animation_info_player.get_current_animation() == "":
+		print("hola2 " + animation_info_player.get_current_animation())
 		info_panel_hide()
-		
-	if InventoryManager.get_current_inventory().has_changed() or InventoryManager.has_changed():
-		inventory.add_inventory_items(InventoryManager.get_current_inventory())
+	
+	if InventoryManager.get_current_inventory() != null:
+		if InventoryManager.get_current_inventory().has_changed() or InventoryManager.has_changed():
+			inventory.add_inventory_items(InventoryManager.get_current_inventory())
 
 func _input(event):
 	if event.is_action_pressed("inventory") and not animation_inventory.is_playing():

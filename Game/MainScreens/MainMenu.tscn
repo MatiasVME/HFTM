@@ -61,6 +61,7 @@ tracks/0/path = NodePath("VBox:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
@@ -72,6 +73,7 @@ tracks/1/path = NodePath("Title:rect_position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
@@ -83,6 +85,7 @@ tracks/2/path = NodePath("Modes/Campaign:rect_position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
+tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 1 ),
@@ -94,6 +97,7 @@ tracks/3/path = NodePath("Modes/Defence:rect_position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
+tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 1 ),
@@ -105,6 +109,7 @@ tracks/4/path = NodePath("Modes/Aventure:rect_position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
+tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 1 ),
@@ -116,6 +121,7 @@ tracks/5/path = NodePath("Modes/DefenceMultiplayer:rect_position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
+tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 0.25 ),
@@ -127,6 +133,7 @@ tracks/6/path = NodePath("Modes/VSMultiplayer:rect_position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
+tracks/6/enabled = true
 tracks/6/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 0.25 ),
@@ -138,6 +145,7 @@ tracks/7/path = NodePath("Modes/AventureMultiplayer:rect_position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
+tracks/7/enabled = true
 tracks/7/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 0.25, 0.25 ),
@@ -149,6 +157,7 @@ tracks/8/path = NodePath("Modes/ModesMultiplayer:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
+tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -160,6 +169,7 @@ tracks/9/path = NodePath("Modes/ModesSolo:modulate")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
+tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -171,6 +181,7 @@ tracks/10/path = NodePath("Modes/ModesTitle:modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
+tracks/10/enabled = true
 tracks/10/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
@@ -182,6 +193,7 @@ tracks/11/path = NodePath("Modes/Back:rect_position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
+tracks/11/enabled = true
 tracks/11/keys = {
 "times": PoolRealArray( 1, 1.5 ),
 "transitions": PoolRealArray( 0.25, 0.25 ),
@@ -193,6 +205,7 @@ tracks/12/path = NodePath("Modes/Separator:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
+tracks/12/enabled = true
 tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5, 1.5 ),
 "transitions": PoolRealArray( 1, 0.25, 0.25 ),
@@ -208,16 +221,16 @@ anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="RandomBackground" parent="." instance=ExtResource( 2 )]
+[node name="RandomBackground" parent="." index="0" instance=ExtResource( 2 )]
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -226,8 +239,8 @@ anchor_bottom = 0.0
 margin_right = 1280.0
 margin_bottom = 260.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
@@ -241,7 +254,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Focus", "Hint", "Margin", "Material", "Mouse", "Rect", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
 
-[node name="VBox" type="VBoxContainer" parent="."]
+[node name="VBox" type="VBoxContainer" parent="." index="2"]
 
 editor/display_folded = true
 anchor_left = 0.5
@@ -253,14 +266,14 @@ margin_top = -132.0
 margin_right = 97.0
 margin_bottom = 132.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 alignment = 0
 _sections_unfolded = [ "Size Flags", "Visibility" ]
 
-[node name="Modes" type="TextureButton" parent="VBox"]
+[node name="Modes" type="TextureButton" parent="VBox" index="0"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -270,8 +283,9 @@ anchor_bottom = 0.0
 margin_right = 194.0
 margin_bottom = 49.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -287,7 +301,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="VBox/Modes"]
+[node name="Label" type="Label" parent="VBox/Modes" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -296,8 +310,8 @@ anchor_bottom = 0.0
 margin_right = 190.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -312,7 +326,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Account" type="TextureButton" parent="VBox"]
+[node name="Account" type="TextureButton" parent="VBox" index="1"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -323,8 +337,9 @@ margin_top = 53.0
 margin_right = 194.0
 margin_bottom = 102.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -340,7 +355,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="VBox/Account"]
+[node name="Label" type="Label" parent="VBox/Account" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -349,8 +364,8 @@ anchor_bottom = 0.0
 margin_right = 190.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -365,7 +380,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Options" type="TextureButton" parent="VBox"]
+[node name="Options" type="TextureButton" parent="VBox" index="2"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -376,8 +391,9 @@ margin_top = 106.0
 margin_right = 194.0
 margin_bottom = 155.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -393,7 +409,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="VBox/Options"]
+[node name="Label" type="Label" parent="VBox/Options" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -402,8 +418,8 @@ anchor_bottom = 0.0
 margin_right = 190.0
 margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -418,7 +434,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Credits" type="TextureButton" parent="VBox"]
+[node name="Credits" type="TextureButton" parent="VBox" index="3"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -429,8 +445,9 @@ margin_top = 159.0
 margin_right = 194.0
 margin_bottom = 208.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -446,7 +463,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="VBox/Credits"]
+[node name="Label" type="Label" parent="VBox/Credits" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -455,8 +472,8 @@ anchor_bottom = 0.0
 margin_right = 190.0
 margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -471,7 +488,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Exit" type="TextureButton" parent="VBox"]
+[node name="Exit" type="TextureButton" parent="VBox" index="4"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -482,8 +499,9 @@ margin_top = 212.0
 margin_right = 194.0
 margin_bottom = 261.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -499,7 +517,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="VBox/Exit"]
+[node name="Label" type="Label" parent="VBox/Exit" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -509,8 +527,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -525,14 +543,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Modes" type="Node2D" parent="."]
+[node name="Modes" type="Node2D" parent="." index="3"]
 
 _sections_unfolded = [ "Visibility" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Campaign" type="TextureButton" parent="Modes"]
+[node name="Campaign" type="TextureButton" parent="Modes" index="0"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -544,8 +562,9 @@ margin_top = 321.0
 margin_right = -78.0
 margin_bottom = 370.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -558,7 +577,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/Campaign"]
+[node name="Label" type="Label" parent="Modes/Campaign" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -568,8 +587,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -581,7 +600,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="Aventure" type="TextureButton" parent="Modes"]
+[node name="Aventure" type="TextureButton" parent="Modes" index="1"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -593,8 +612,8 @@ margin_top = 449.0
 margin_right = -206.0
 margin_bottom = 498.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 disabled = true
@@ -608,7 +627,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/Aventure"]
+[node name="Label" type="Label" parent="Modes/Aventure" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -618,8 +637,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -631,7 +650,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="Defence" type="TextureButton" parent="Modes"]
+[node name="Defence" type="TextureButton" parent="Modes" index="2"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -643,8 +662,8 @@ margin_top = 577.0
 margin_right = -78.0
 margin_bottom = 626.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 disabled = true
@@ -658,7 +677,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/Defence"]
+[node name="Label" type="Label" parent="Modes/Defence" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -668,8 +687,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -681,7 +700,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="VSMultiplayer" type="TextureButton" parent="Modes"]
+[node name="VSMultiplayer" type="TextureButton" parent="Modes" index="3"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -693,8 +712,8 @@ margin_top = 321.0
 margin_right = 1528.0
 margin_bottom = 370.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 disabled = true
@@ -708,7 +727,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/VSMultiplayer"]
+[node name="Label" type="Label" parent="Modes/VSMultiplayer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -718,8 +737,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -734,7 +753,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AventureMultiplayer" type="TextureButton" parent="Modes"]
+[node name="AventureMultiplayer" type="TextureButton" parent="Modes" index="4"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -746,8 +765,8 @@ margin_top = 449.0
 margin_right = 1656.0
 margin_bottom = 498.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 disabled = true
@@ -761,7 +780,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/AventureMultiplayer"]
+[node name="Label" type="Label" parent="Modes/AventureMultiplayer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -771,8 +790,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -787,7 +806,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="DefenceMultiplayer" type="TextureButton" parent="Modes"]
+[node name="DefenceMultiplayer" type="TextureButton" parent="Modes" index="5"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -799,8 +818,8 @@ margin_top = 577.0
 margin_right = 1528.0
 margin_bottom = 626.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 disabled = true
@@ -814,7 +833,7 @@ texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 7 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Material", "Rect", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/DefenceMultiplayer"]
+[node name="Label" type="Label" parent="Modes/DefenceMultiplayer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -824,8 +843,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -840,7 +859,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Separator" type="Sprite" parent="Modes"]
+[node name="Separator" type="Sprite" parent="Modes" index="6"]
 
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 636.909, 359.455 )
@@ -851,7 +870,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ModesTitle" type="Label" parent="Modes"]
+[node name="ModesTitle" type="Label" parent="Modes" index="7"]
 
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0
@@ -862,8 +881,8 @@ margin_top = 51.0
 margin_right = 1216.0
 margin_bottom = 180.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 3 )
@@ -877,7 +896,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Visibility", "custom_colors", "custom_fonts" ]
 
-[node name="ModesSolo" type="Label" parent="Modes"]
+[node name="ModesSolo" type="Label" parent="Modes" index="8"]
 
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0
@@ -888,8 +907,8 @@ margin_top = 174.0
 margin_right = 575.0
 margin_bottom = 303.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 4 )
@@ -903,7 +922,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Visibility", "custom_colors", "custom_fonts" ]
 
-[node name="ModesMultiplayer" type="Label" parent="Modes"]
+[node name="ModesMultiplayer" type="Label" parent="Modes" index="9"]
 
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0
@@ -915,8 +934,8 @@ margin_top = 174.0
 margin_right = 1219.0
 margin_bottom = 303.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 4 )
@@ -930,7 +949,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Visibility", "custom_colors", "custom_fonts" ]
 
-[node name="Back" type="TextureButton" parent="Modes"]
+[node name="Back" type="TextureButton" parent="Modes" index="10"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -942,8 +961,9 @@ margin_top = 763.515
 margin_right = 732.0
 margin_bottom = 812.515
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
@@ -955,7 +975,7 @@ texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Textures", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Label" type="Label" parent="Modes/Back"]
+[node name="Label" type="Label" parent="Modes/Back" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -965,8 +985,8 @@ margin_left = -2.0
 margin_right = 188.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 2 )
@@ -981,7 +1001,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Version" type="Label" parent="."]
+[node name="Version" type="Label" parent="." index="4"]
 
 anchor_left = 1.0
 anchor_top = 1.0
@@ -990,8 +1010,8 @@ anchor_bottom = 1.0
 margin_left = -135.0
 margin_top = -28.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 5 )
@@ -1004,14 +1024,14 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="Animation" type="AnimationPlayer" parent="."]
+[node name="Animation" type="AnimationPlayer" parent="." index="5"]
 
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 1.0
 anims/to_mode = SubResource( 6 )
-playback/active = true
-playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
 

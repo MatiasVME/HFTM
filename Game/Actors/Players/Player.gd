@@ -96,7 +96,7 @@ func create_inventory():
 
 func set_player_name(name):
 	player_name = name
-	inventory.set_owner(name)
+	inventory.set_i_owner(name)
 
 func get_player_name():
 	return player_name

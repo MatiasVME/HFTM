@@ -1,7 +1,7 @@
 extends Node
 
 # Owner es el nombre del player que tiene el inventario
-var owner = null setget set_owner, get_owner
+var i_owner = null setget set_i_owner, get_i_owner
 var has_changed = false
 
 var inventory = [
@@ -69,11 +69,11 @@ func has_changed():
 # Setters/Getters
 #
 
-func set_owner(_owner):
-	owner = _owner
+func set_i_owner(_owner):
+	i_owner = _owner
 	
-func get_owner():
-	return owner
+func get_i_owner():
+	return i_owner
 	
 func get_item(pos_x, pos_y):
 	return inventory[pos_x][pos_y]

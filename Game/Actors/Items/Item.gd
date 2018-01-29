@@ -1,7 +1,7 @@
 extends Node
 
 # Propiedades
-var name = "" setget set_name, get_name
+var item_name = "" setget set_item_name, get_item_name
 var texture setget set_texture, get_texture
 
 var price_buy = 0 setget set_price_buy, get_price_buy
@@ -40,11 +40,11 @@ func set_level_drop(_level_drop):
 func get_level_drop():
 	return level_drop
 
-func set_name(_name):
-	name = _name
+func set_item_name(_name):
+	item_name = _name
 	
-func get_name():
-	return name
+func get_item_name():
+	return item_name
 
 func set_texture(_texture):
 	texture = _texture

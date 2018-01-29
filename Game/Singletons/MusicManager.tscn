@@ -15,18 +15,19 @@ tracks/0/path = NodePath("Melancholic:volume_db")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 3 ),
-"transitions": PoolRealArray( 1, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ -20.0, 0.0 ]
 }
 
-[node name="MusicManager" type="Node"]
+[node name="MusicManager" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
-[node name="Melancholic" type="AudioStreamPlayer" parent="."]
+[node name="Melancholic" type="AudioStreamPlayer" parent="." index="0"]
 
 stream = ExtResource( 2 )
 volume_db = -20.0
@@ -34,7 +35,7 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[node name="SisteViator" type="AudioStreamPlayer" parent="."]
+[node name="SisteViator" type="AudioStreamPlayer" parent="." index="1"]
 
 stream = ExtResource( 3 )
 volume_db = 0.0
@@ -42,14 +43,14 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[node name="Animation" type="AnimationPlayer" parent="."]
+[node name="Animation" type="AnimationPlayer" parent="." index="2"]
 
+root_node = NodePath("..")
+autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 1.0
 anims/first_start = SubResource( 1 )
-playback/active = true
-playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
 

@@ -1,7 +1,7 @@
 extends Node2D
 
 onready var animation = $Animation
-onready var name = $"DialogTop/Name"
+onready var dp_name = $"DialogTop/Name"
 onready var image = $"DialogBottom/Image"
 onready var dialog_text = $"DialogBottom/Text"
 onready var timer = $Timer
@@ -97,7 +97,7 @@ func _on_Timer_timeout():
 	
 	if has_increased:
 		current_text = current_dialog[index_dialog]["Text"]
-		name.text = current_dialog[index_dialog]["Transmitter"]
+		dp_name.text = current_dialog[index_dialog]["Transmitter"]
 		image.texture = current_dialog[index_dialog]["Img"]
 	
 	text_progress += current_text[index_letter]

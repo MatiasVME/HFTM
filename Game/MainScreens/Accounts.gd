@@ -25,7 +25,7 @@ func show_accounts():
 		
 		# Cada panel tiene una referencia a la cuenta a la que pertenece
 		# ya que así se puede eliminar el panel con el botón x.
-		account_panel.set_owner(account)
+		account_panel.set_p_owner(account)
 		
 		var account_data = Persistent.get_account_data(account)
 		
