@@ -230,19 +230,14 @@ func animate(img, num_tween):
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_rand.start()
 	
-
 func _on_TweenLVL1_tween_completed( object, key ):
-	print("completado 1")
 	tween1_is_completed = true
 
 func _on_TweenLVL2_tween_completed( object, key ):
-	print("completado 2")
 	tween2_is_completed = true
 
 func _on_TweenLVL3_tween_completed( object, key ):
-	print("completado 3")
 	tween3_is_completed = true
 
 func _on_TweenRand_tween_completed( object, key ):
-	print("completado 4")
 	tween4_is_completed = true

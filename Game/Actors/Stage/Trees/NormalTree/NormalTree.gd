@@ -12,14 +12,11 @@ var is_talking = false
 func _ready():
 	animation.set_current_animation("show")
 	
-	set_process(true)
-	set_process_input(true)
-	
 func _process(delta):
 	if not animation.is_playing():
-		if player_is_here and animation.get_current_animation() == "show":
-			animation.play("hide")			
-		elif not player_is_here and animation.get_current_animation() == "hide":
+		if player_is_here and animation.assigned_animation == "show":
+			animation.play("hide")
+		elif not player_is_here and animation.assigned_animation == "hide":
 			animation.play("show")
 			
 	if dialog_active and player_is_here and not is_talking:
@@ -28,12 +25,7 @@ func _process(delta):
 func test_mode():
 	if TEST_MODE:
 		var texture_robot = load("res://Game/GUI/HUD/Photos/NB-072-Mini.jpg")
-#		var robot_img = Texture.new()
-#		robot_img.texture = texture_robot
-		
 		var texture_tree = load("res://Game/GUI/HUD/Photos/Tree.png")
-#		var tree_img = Texture.new()
-#		tree_img.texture = texture_tree
 		
 		var dialog = load("res://Game/GUI/HUD/Dialog.gd")
 		var i_dialog = dialog.new()

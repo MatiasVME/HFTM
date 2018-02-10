@@ -7,7 +7,11 @@ type="Translation"
 
 files=[ "res://Game/Translations/HFTM.en.translation", "res://Game/Translations/HFTM.es_CL.translation" ]
 
-source_md5="261ed43e1bb8427f35743f5f2ca4739a"
+source_file="res://Game/Translations/HFTM.csv"
+source_md5="e21fca155251e9baa6772d3df0c1dce6"
+
+dest_files=[ "res://Game/Translations/HFTM.en.translation", "res://Game/Translations/HFTM.es_CL.translation" ]
+dest_md5="bd373404d962c87e278b36a6a5307649"
 
 [params]
 

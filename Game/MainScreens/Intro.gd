@@ -7,8 +7,7 @@ var intro_text = [
 	tr("INTRO_LINE1"),
 	tr("INTRO_LINE2"),
 	tr("INTRO_LINE3"),
-	tr("INTRO_LINE4"),
-	tr("INTRO_LINE5")
+	tr("INTRO_LINE4")
 	]
 var current_text = ""
 var next_step = false

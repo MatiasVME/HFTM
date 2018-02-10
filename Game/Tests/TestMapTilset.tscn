@@ -8,41 +8,44 @@
 [ext_resource path="res://Game/Actors/NPC/MM-10/MM-10.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Game/Camera/MainCamera.tscn" type="PackedScene" id=7]
 
-[node name="TestMapTilset" type="Node2D" groups=[
+[node name="TestMapTilset" type="Node2D" index="0" groups=[
 "Map",
 ]]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause", "Z" ]
 
-[node name="Start" parent="." instance=ExtResource( 2 )]
+[node name="Start" parent="." index="0" instance=ExtResource( 2 )]
 
 _sections_unfolded = [ "Transform" ]
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
+[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 1952, 1280 )
 player_name = null
 
-[node name="Player2" parent="." instance=ExtResource( 3 )]
+[node name="Player2" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 512, 96 )
 player_name = null
 
-[node name="HUD" parent="." instance=ExtResource( 4 )]
+[node name="HUD" parent="." index="3" instance=ExtResource( 4 )]
 
-[node name="NJC-104" parent="." instance=ExtResource( 5 )]
+[node name="NJC-104" parent="." index="4" instance=ExtResource( 5 )]
 
 position = Vector2( 512, -96 )
 
-[node name="MM-10" parent="." instance=ExtResource( 6 )]
+[node name="MM-10" parent="." index="5" instance=ExtResource( 6 )]
 
 position = Vector2( 928, -576 )
 _sections_unfolded = [ "Pause", "Transform" ]
 
-[node name="MainCamera" parent="." instance=ExtResource( 7 )]
+[node name="MainCamera" parent="." index="6" instance=ExtResource( 7 )]
 
-[node name="ShowHud" type="Timer" parent="."]
+offset_v = 0.0
+offset_h = 0.0
+
+[node name="ShowHud" type="Timer" parent="." index="7"]
 
 process_mode = 1
 wait_time = 5.0
