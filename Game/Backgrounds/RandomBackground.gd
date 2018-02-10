@@ -10,6 +10,9 @@ onready var tween_lvl2 = $TweenLVL2
 onready var tween_lvl3 = $TweenLVL3
 onready var tween_rand = $TweenRand
 
+const MAX_TIME = 20
+const MIN_TIME = 10
+
 enum LVL {L1, L2, L3, RAND}
 enum LVL1 {IMG1, IMG2, IMG3, IMG4, IMG5, IMG6}
 enum LVL2 {IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10, IMG11}
@@ -21,6 +24,11 @@ var texture_lvl2
 var texture_lvl3
 var texture_rand
 
+var tween1_is_completed = false
+var tween2_is_completed = false
+var tween3_is_completed = false
+var tween4_is_completed = false # TweenRand
+
 var ot = false
 
 func _ready():
@@ -31,16 +39,18 @@ func _ready():
 	rand_img(LVL.L3)
 	rand_img(LVL.RAND)
 	
-	set_process(true)
-	
 func _process(delta):
-	if tween_lvl1.get_runtime() == 0:
+	if tween1_is_completed:
+		tween1_is_completed = false
 		animate(texture_lvl1, 0)
-	if tween_lvl2.get_runtime() == 0:
+	if tween2_is_completed:
+		tween2_is_completed = false
 		animate(texture_lvl2, 1)
-	if tween_lvl3.get_runtime() == 0:
+	if tween3_is_completed:
+		tween3_is_completed = false
 		animate(texture_lvl3, 2)
-	if tween_rand.get_runtime() == 0:
+	if tween4_is_completed:
+		tween4_is_completed = false
 		animate(texture_rand, 3)
 
 func rand_img(_LVL):
@@ -191,7 +201,7 @@ func animate(img, num_tween):
 	var trans_rand = randi() % 11
 	var ease_rand = randi() % 4
 	var rot_finish_rand = randi() % 1080 + 360
-	var time_rand = randi() % 20 + 10
+	var time_rand = randi() % MAX_TIME + MIN_TIME
 	var modulate_rand = Color(randf(), randf(), randf(), randf())
 	
 	match num_tween:
@@ -219,3 +229,20 @@ func animate(img, num_tween):
 			tween_rand.interpolate_property(img, "modulate",
 					img.modulate, modulate_rand, time_rand, trans_rand, ease_rand)
 			tween_rand.start()
+	
+
+func _on_TweenLVL1_tween_completed( object, key ):
+	print("completado 1")
+	tween1_is_completed = true
+
+func _on_TweenLVL2_tween_completed( object, key ):
+	print("completado 2")
+	tween2_is_completed = true
+
+func _on_TweenLVL3_tween_completed( object, key ):
+	print("completado 3")
+	tween3_is_completed = true
+
+func _on_TweenRand_tween_completed( object, key ):
+	print("completado 4")
+	tween4_is_completed = true

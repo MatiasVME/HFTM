@@ -2,11 +2,11 @@
 
 [ext_resource path="res://Game/Backgrounds/RandomBackground.gd" type="Script" id=1]
 
-[node name="RandomBackground" type="Node2D"]
+[node name="RandomBackground" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -15,58 +15,74 @@ anchor_bottom = 1.0
 margin_right = 1216.0
 margin_bottom = 656.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.0235294, 0.0235294, 0.117647, 1 )
 
-[node name="LVL1" type="Sprite" parent="."]
+[node name="LVL1" type="Sprite" parent="." index="1"]
 
 position = Vector2( 640, 360 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="LVL2" type="Sprite" parent="."]
+[node name="LVL2" type="Sprite" parent="." index="2"]
 
 position = Vector2( 640, 360 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="LVL3" type="Sprite" parent="."]
+[node name="LVL3" type="Sprite" parent="." index="3"]
 
 position = Vector2( 640, 360 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Rand" type="Sprite" parent="."]
+[node name="Rand" type="Sprite" parent="." index="4"]
 
 position = Vector2( 640, 360 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="TweenLVL1" type="Tween" parent="."]
+[node name="TweenLVL1" type="Tween" parent="." index="5"]
 
+repeat = false
 playback_process_mode = 1
+playback_speed = 1.0
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
 
-[node name="TweenLVL2" type="Tween" parent="."]
+[node name="TweenLVL2" type="Tween" parent="." index="6"]
 
+repeat = false
 playback_process_mode = 1
+playback_speed = 1.0
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
 
-[node name="TweenLVL3" type="Tween" parent="."]
+[node name="TweenLVL3" type="Tween" parent="." index="7"]
 
+repeat = false
 playback_process_mode = 1
+playback_speed = 1.0
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
 
-[node name="TweenRand" type="Tween" parent="."]
+[node name="TweenRand" type="Tween" parent="." index="8"]
 
+repeat = false
 playback_process_mode = 1
+playback_speed = 1.0
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
+
+[connection signal="tween_completed" from="TweenLVL1" to="." method="_on_TweenLVL1_tween_completed"]
+
+[connection signal="tween_completed" from="TweenLVL2" to="." method="_on_TweenLVL2_tween_completed"]
+
+[connection signal="tween_completed" from="TweenLVL3" to="." method="_on_TweenLVL3_tween_completed"]
+
+[connection signal="tween_completed" from="TweenRand" to="." method="_on_TweenRand_tween_completed"]
 
 

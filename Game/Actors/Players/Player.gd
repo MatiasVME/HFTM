@@ -30,6 +30,7 @@ func _ready():
 #	InventoryManager.add_inventory(inventory)
 	#InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
 	pass
+	
 
 func _physics_process(delta):
 	if is_selected:

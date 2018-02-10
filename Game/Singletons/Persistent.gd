@@ -119,7 +119,7 @@ func get_data_amount():
 
 # Este método es para obtener la data de una cuenta en específico
 # para uso mas recurrente es mejor utilizar get_current_account_data.
-# Pero si se desea saber la data de otras cuentas es se puede utilizar
+# Pero si se desea saber la data de otras cuentas se puede utilizar
 # este método.
 func get_account_data(account_name):
 	var file = File.new()

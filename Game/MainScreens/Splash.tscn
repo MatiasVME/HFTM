@@ -52,7 +52,6 @@ playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/splash_anim = SubResource( 1 )
 blend_times = [  ]
-autoplay = "splash_anim"
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
