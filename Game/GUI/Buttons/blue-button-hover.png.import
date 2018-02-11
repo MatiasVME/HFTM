@@ -6,7 +6,11 @@ path="res://.import/blue-button-hover.png-aaff8e045803c03cefabac94c81d3670.stex"
 
 [deps]
 
+source_file="res://Game/GUI/Buttons/blue-button-hover.png"
 source_md5="b187fe9088fe7f38da76fd092e7970c4"
+
+dest_files=[ "res://.import/blue-button-hover.png-aaff8e045803c03cefabac94c81d3670.stex" ]
+dest_md5="527bcba88e21febadae965dbd69649af"
 
 [params]
 

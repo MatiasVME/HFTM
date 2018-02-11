@@ -6,7 +6,11 @@ path="res://.import/input.png-ee0c6a0b66ce8c4f9911a79c8133b2b2.stex"
 
 [deps]
 
+source_file="res://Game/GUI/Accounts/input.png"
 source_md5="d3db79e674a824b17a3749e458e4c30b"
+
+dest_files=[ "res://.import/input.png-ee0c6a0b66ce8c4f9911a79c8133b2b2.stex" ]
+dest_md5="15e9b6012a8e0c563b2021438c7ba662"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/NB-072-Full.jpg-96f8cae497c95828c919f71a33622ea9.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Photos/NB-072-Full.jpg"
 source_md5="4461a31fcc25ed6cf81209a1167d1694"
+
+dest_files=[ "res://.import/NB-072-Full.jpg-96f8cae497c95828c919f71a33622ea9.stex" ]
+dest_md5="8928a8ff77a9c7a2df714ebd98374a09"
 
 [params]
 

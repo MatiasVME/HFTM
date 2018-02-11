@@ -6,7 +6,11 @@ path="res://.import/hitman1-silencer.png-58c5e6b7d08930c0e5b9a4c6cd6f1514.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Hitman/hitman1-silencer.png"
 source_md5="9e09e4e3800a0e907f938af48a76a570"
+
+dest_files=[ "res://.import/hitman1-silencer.png-58c5e6b7d08930c0e5b9a4c6cd6f1514.stex" ]
+dest_md5="cb1b4606daea786c369fa09391875aa1"
 
 [params]
 

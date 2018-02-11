@@ -6,7 +6,11 @@ path="res://.import/slot-active-3.png-3fd473954cf38b8d85bdfa60eff607dd.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/HUD-Menu/slot-active-3.png"
 source_md5="e68bd21c542874d98dc5234f8926c9e6"
+
+dest_files=[ "res://.import/slot-active-3.png-3fd473954cf38b8d85bdfa60eff607dd.stex" ]
+dest_md5="3acb8236c693b5a0a0dde9ada45cb48e"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/turretRed.png-5d120f96c431632ea72cb2ebb10a0c5b.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Turrets/TurretsEnemy/T-01/turretRed.png"
 source_md5="79546a409f62737b6502eacfdbf70888"
+
+dest_files=[ "res://.import/turretRed.png-5d120f96c431632ea72cb2ebb10a0c5b.stex" ]
+dest_md5="095ae0c56629a8a62a5dfbea1646d2b1"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/Remaxim - Melancholic.ogg-29da546c68c5b6266129c98ef6ac8b26.o
 
 [deps]
 
+source_file="res://Game/Soundtrack/Remaxim - Melancholic.ogg"
 source_md5="8ec15affc652f87dc120bedf35a3dd54"
+
+dest_files=[ "res://.import/Remaxim - Melancholic.ogg-29da546c68c5b6266129c98ef6ac8b26.oggstr" ]
+dest_md5="ea423a151391ace2a0c3df95ec82ca31"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/hitman1-reload.png-845f30ad801ceaf272c9e62340626cf5.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Hitman/hitman1-reload.png"
 source_md5="b6b8a8ac7fd621ee61e2c337696b2305"
+
+dest_files=[ "res://.import/hitman1-reload.png-845f30ad801ceaf272c9e62340626cf5.stex" ]
+dest_md5="e82d2b09d07c611aaa80710f8e4305cf"
 
 [params]
 

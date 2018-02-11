@@ -6,7 +6,11 @@ path="res://.import/trunk-full.png-f3276e267d3a8cb2d0c650d8bf3febb0.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Stage/Trees/NormalTree/trunk-full.png"
 source_md5="ca0c7ee7bd9eab613cf4a1e552bc3eee"
+
+dest_files=[ "res://.import/trunk-full.png-f3276e267d3a8cb2d0c650d8bf3febb0.stex" ]
+dest_md5="5595926671b68f4bf4c9ad52ebdb7f9f"
 
 [params]
 

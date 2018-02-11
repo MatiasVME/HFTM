@@ -6,7 +6,11 @@ path="res://.import/robot1-hold.png-56fe0e3a00c0f4a0e88b6603cf333c39.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Robot/robot1-hold.png"
 source_md5="38d9965cc8b841f87db24ef5d008bc7e"
+
+dest_files=[ "res://.import/robot1-hold.png-56fe0e3a00c0f4a0e88b6603cf333c39.stex" ]
+dest_md5="b189c377b7ca254bcb0f94d5a55cbd41"
 
 [params]
 

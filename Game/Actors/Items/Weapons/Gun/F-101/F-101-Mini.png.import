@@ -6,7 +6,11 @@ path="res://.import/F-101-Mini.png-289511ae626a22a887904ae376a3a937.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Items/Weapons/Gun/F-101/F-101-Mini.png"
 source_md5="cbed0989d9ea45cda831dc58bc9676b7"
+
+dest_files=[ "res://.import/F-101-Mini.png-289511ae626a22a887904ae376a3a937.stex" ]
+dest_md5="477895548a9288d542f528154d22a526"
 
 [params]
 

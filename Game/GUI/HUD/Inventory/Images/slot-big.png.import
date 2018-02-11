@@ -6,7 +6,11 @@ path="res://.import/slot-big.png-b0be1523f3b9da155c4633163d7f5f87.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Inventory/Images/slot-big.png"
 source_md5="19c317f1a7abc99286b19eb90858c214"
+
+dest_files=[ "res://.import/slot-big.png-b0be1523f3b9da155c4633163d7f5f87.stex" ]
+dest_md5="3613f4eb341c9fc9942cfbbd623dffe5"
 
 [params]
 

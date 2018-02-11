@@ -13,7 +13,7 @@ radius = 18.4908
 custom_solver_bias = 0.0
 radius = 51.7853
 
-[node name="Player" type="KinematicBody2D" groups=[
+[node name="Player" type="KinematicBody2D" index="0" groups=[
 "Player",
 ]]
 
@@ -25,22 +25,22 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z", "collision" ]
 player_name = "none"
 
-[node name="Image" type="Sprite" parent="."]
+[node name="Image" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Gun" type="Position2D" parent="Image"]
+[node name="Gun" type="Position2D" parent="Image" index="0"]
 
 position = Vector2( 26.2977, 10 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Collision" type="CollisionShape2D" parent="."]
+[node name="Collision" type="CollisionShape2D" parent="." index="1"]
 
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Z" ]
 
-[node name="TouchArea" type="Area2D" parent="."]
+[node name="TouchArea" type="Area2D" parent="." index="2"]
 
 editor/display_folded = true
 input_pickable = true
@@ -54,7 +54,7 @@ audio_bus_override = false
 audio_bus_name = "Master"
 _sections_unfolded = [ "Collision" ]
 
-[node name="CollisionShape" type="CollisionShape2D" parent="TouchArea"]
+[node name="CollisionShape" type="CollisionShape2D" parent="TouchArea" index="0"]
 
 shape = SubResource( 2 )
 

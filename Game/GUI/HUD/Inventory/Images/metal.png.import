@@ -6,7 +6,11 @@ path="res://.import/metal.png-d5601e299c37a291c035d48c64397592.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Inventory/Images/metal.png"
 source_md5="9cb30821e2b5c2ca9fc4ef662af31109"
+
+dest_files=[ "res://.import/metal.png-d5601e299c37a291c035d48c64397592.stex" ]
+dest_md5="9e74e50adc2b67418299d61abf4ab7d7"
 
 [params]
 

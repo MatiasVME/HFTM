@@ -6,7 +6,11 @@ path="res://.import/NJC-104.png-9a7889ee01b4bb51164956797ecb822c.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Vehicles/Cars/NJC-104/NJC-104.png"
 source_md5="f519fae6844ba8475077e23b1d017062"
+
+dest_files=[ "res://.import/NJC-104.png-9a7889ee01b4bb51164956797ecb822c.stex" ]
+dest_md5="d448c61c82a6356c3979746839611b42"
 
 [params]
 

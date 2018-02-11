@@ -6,7 +6,11 @@ path="res://.import/Clearside  - Siste Viator.ogg-f7f044595613bd10c72c4f32a0dbf3
 
 [deps]
 
+source_file="res://Game/Soundtrack/Clearside  - Siste Viator.ogg"
 source_md5="9a4180d178249ca71e79151b2302328d"
+
+dest_files=[ "res://.import/Clearside  - Siste Viator.ogg-f7f044595613bd10c72c4f32a0dbf3b7.oggstr" ]
+dest_md5="229f2db25b3af3bdbe2c7457fd2a1279"
 
 [params]
 

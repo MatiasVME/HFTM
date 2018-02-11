@@ -6,7 +6,11 @@ path="res://.import/rand5.png-ac47115fdc2381e51fe4b8ed7a9f5116.stex"
 
 [deps]
 
+source_file="res://Game/Backgrounds/Circles/rand5.png"
 source_md5="86692a01007e6f4a022325c4c4f9ed7d"
+
+dest_files=[ "res://.import/rand5.png-ac47115fdc2381e51fe4b8ed7a9f5116.stex" ]
+dest_md5="056aec7fc0970e066d0c399a89454045"
 
 [params]
 

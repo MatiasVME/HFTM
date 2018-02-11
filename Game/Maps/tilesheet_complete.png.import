@@ -6,7 +6,11 @@ path="res://.import/tilesheet_complete.png-a45744db3c2570302ec269d5e0298eb1.stex
 
 [deps]
 
+source_file="res://Game/Maps/tilesheet_complete.png"
 source_md5="bbd9628ccc0e7734c82ca71591f15c7e"
+
+dest_files=[ "res://.import/tilesheet_complete.png-a45744db3c2570302ec269d5e0298eb1.stex" ]
+dest_md5="0031d6f944348818ce7680b607e9d52e"
 
 [params]
 

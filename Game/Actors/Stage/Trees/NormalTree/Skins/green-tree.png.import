@@ -6,7 +6,11 @@ path="res://.import/green-tree.png-ec95952735cfb23043903097f4e94dbe.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Stage/Trees/NormalTree/Skins/green-tree.png"
 source_md5="ff690d552fb172720a206c692f3410d7"
+
+dest_files=[ "res://.import/green-tree.png-ec95952735cfb23043903097f4e94dbe.stex" ]
+dest_md5="9efd981ea1234df21a32794a463948ea"
 
 [params]
 

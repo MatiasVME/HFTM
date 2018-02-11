@@ -6,7 +6,11 @@ path="res://.import/tilia.png-392a94ee61a594ed50b953ff9208e487.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/tilia.png"
 source_md5="e0b72a9c95b29eeb5c7a2e6ccd2da74c"
+
+dest_files=[ "res://.import/tilia.png-392a94ee61a594ed50b953ff9208e487.stex" ]
+dest_md5="dd9556bdd3ce3d7bcd308221928127f4"
 
 [params]
 

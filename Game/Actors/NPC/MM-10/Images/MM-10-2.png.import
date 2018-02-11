@@ -6,7 +6,11 @@ path="res://.import/MM-10-2.png-31dca4aa6f475ff59a901f1de51df5d5.stex"
 
 [deps]
 
+source_file="res://Game/Actors/NPC/MM-10/Images/MM-10-2.png"
 source_md5="9715f4b3e3f560ce9521af0e6d60e70e"
+
+dest_files=[ "res://.import/MM-10-2.png-31dca4aa6f475ff59a901f1de51df5d5.stex" ]
+dest_md5="7ebac072722a537cc1ec1b6f4ae06e64"
 
 [params]
 

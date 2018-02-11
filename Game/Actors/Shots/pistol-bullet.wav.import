@@ -6,7 +6,11 @@ path="res://.import/pistol-bullet.wav-e3bb4472ec0b04322a758585b605e63d.sample"
 
 [deps]
 
+source_file="res://Game/Actors/Shots/pistol-bullet.wav"
 source_md5="22099c378446764f724270becea792f3"
+
+dest_files=[ "res://.import/pistol-bullet.wav-e3bb4472ec0b04322a758585b605e63d.sample" ]
+dest_md5="a4fbf572ddd26c592d30c85003c99dcd"
 
 [params]
 

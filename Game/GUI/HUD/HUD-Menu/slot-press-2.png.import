@@ -6,7 +6,11 @@ path="res://.import/slot-press-2.png-c205b3fba827b49f9808260ca3379353.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/HUD-Menu/slot-press-2.png"
 source_md5="392889fc839a6b02d717b5d572ce492b"
+
+dest_files=[ "res://.import/slot-press-2.png-c205b3fba827b49f9808260ca3379353.stex" ]
+dest_md5="935b8982fd099a346f4feb90b4774d10"
 
 [params]
 

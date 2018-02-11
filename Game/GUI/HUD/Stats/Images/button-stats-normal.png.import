@@ -6,7 +6,11 @@ path="res://.import/button-stats-normal.png-ee823292c6506580e7bcdb9cbb6f3954.ste
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Stats/Images/button-stats-normal.png"
 source_md5="12d363a802178638feacd767e5f6960f"
+
+dest_files=[ "res://.import/button-stats-normal.png-ee823292c6506580e7bcdb9cbb6f3954.stex" ]
+dest_md5="535269ce58771d626992faf3deb4c639"
 
 [params]
 
