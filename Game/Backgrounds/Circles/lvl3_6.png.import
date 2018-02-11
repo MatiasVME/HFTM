@@ -6,7 +6,11 @@ path="res://.import/lvl3_6.png-69ec8ffce8e11466a03247239d6004f1.stex"
 
 [deps]
 
+source_file="res://Game/Backgrounds/Circles/lvl3_6.png"
 source_md5="31b5997aac4b98686d87bd78b439b5a1"
+
+dest_files=[ "res://.import/lvl3_6.png-69ec8ffce8e11466a03247239d6004f1.stex" ]
+dest_md5="60e2f701495ca690fd6e8803429b4cb8"
 
 [params]
 

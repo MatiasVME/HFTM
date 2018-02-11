@@ -6,7 +6,11 @@ path="res://.import/Background.svg-bd3cd4e78ccfb8c96d37a5799c02a649.stex"
 
 [deps]
 
+source_file="res://Game/Backgrounds/Background.svg"
 source_md5="03ab8948409218317cfecf59f8eaf5b6"
+
+dest_files=[ "res://.import/Background.svg-bd3cd4e78ccfb8c96d37a5799c02a649.stex" ]
+dest_md5="b950227e689965bf4da4f3d7fdade281"
 
 [params]
 

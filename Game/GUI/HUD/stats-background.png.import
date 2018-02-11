@@ -6,7 +6,11 @@ path="res://.import/stats-background.png-370d7be2a4da7fe17fb247ca6b0b2d88.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/stats-background.png"
 source_md5="6a9b4daefdc34205bc53f5c8b6b54e6b"
+
+dest_files=[ "res://.import/stats-background.png-370d7be2a4da7fe17fb247ca6b0b2d88.stex" ]
+dest_md5="36e34a3a69273a88acdd2e735ca9a71e"
 
 [params]
 

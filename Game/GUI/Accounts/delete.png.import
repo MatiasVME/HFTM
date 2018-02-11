@@ -6,7 +6,11 @@ path="res://.import/delete.png-aab31e27751b4d5b87b39cba338aacd6.stex"
 
 [deps]
 
+source_file="res://Game/GUI/Accounts/delete.png"
 source_md5="23a79790fbb1703f121f38e6ba739ceb"
+
+dest_files=[ "res://.import/delete.png-aab31e27751b4d5b87b39cba338aacd6.stex" ]
+dest_md5="47fac14f025a741703f63431cd20c437"
 
 [params]
 

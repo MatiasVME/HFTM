@@ -6,7 +6,11 @@ path="res://.import/brown-tree.png-7de2bf9a9a8d991fd964a148fc3fd0d3.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Stage/Trees/NormalTree/Skins/brown-tree.png"
 source_md5="5aa4705ea7be0759542f636b13695684"
+
+dest_files=[ "res://.import/brown-tree.png-7de2bf9a9a8d991fd964a148fc3fd0d3.stex" ]
+dest_md5="a6850454fd0d4138154fea061c427c43"
 
 [params]
 

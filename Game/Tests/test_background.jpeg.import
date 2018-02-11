@@ -6,7 +6,11 @@ path="res://.import/test_background.jpeg-1ef85f1e659ceef0d1786605befd8c34.stex"
 
 [deps]
 
+source_file="res://Game/Tests/test_background.jpeg"
 source_md5="ec63fb9952ef9454fd2416ac22f5576e"
+
+dest_files=[ "res://.import/test_background.jpeg-1ef85f1e659ceef0d1786605befd8c34.stex" ]
+dest_md5="16aab8db6d113dd4099378ab7452e81e"
 
 [params]
 

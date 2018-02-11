@@ -6,7 +6,11 @@ path="res://.import/write.ogg-4fdb1fb82baf1c220ba7fbf874387c42.oggstr"
 
 [deps]
 
+source_file="res://Game/Sounds/Audio/write.ogg"
 source_md5="0f6000c8975aec2f5ca9f6cb2291832d"
+
+dest_files=[ "res://.import/write.ogg-4fdb1fb82baf1c220ba7fbf874387c42.oggstr" ]
+dest_md5="b79ee96624fe8dfb541d9d39df09ba3c"
 
 [params]
 

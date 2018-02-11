@@ -6,7 +6,11 @@ path="res://.import/level.png-47561c6d3a9c4592a0f5b71cedb16c16.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Stats/Images/level.png"
 source_md5="8cc6abdfd79a199fe4b46705f08750e0"
+
+dest_files=[ "res://.import/level.png-47561c6d3a9c4592a0f5b71cedb16c16.stex" ]
+dest_md5="42633b17dc82a08c89aa1290de4e2036"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/robot1-gun.png-02e184623c90d597a6c205efa8137aa2.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Robot/robot1-gun.png"
 source_md5="811d7d71e8f5a197844758498f8051b3"
+
+dest_files=[ "res://.import/robot1-gun.png-02e184623c90d597a6c205efa8137aa2.stex" ]
+dest_md5="29372e871148f7957b4dc5c24f8c44ce"
 
 [params]
 

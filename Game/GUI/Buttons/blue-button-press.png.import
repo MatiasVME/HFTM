@@ -6,7 +6,11 @@ path="res://.import/blue-button-press.png-01212830122d9066e44eefb32dbc3b98.stex"
 
 [deps]
 
+source_file="res://Game/GUI/Buttons/blue-button-press.png"
 source_md5="45ab941cd08b6edcc1e21456c6c19316"
+
+dest_files=[ "res://.import/blue-button-press.png-01212830122d9066e44eefb32dbc3b98.stex" ]
+dest_md5="69063bb24663f82c9688327bc3429a66"
 
 [params]
 

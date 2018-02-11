@@ -6,7 +6,11 @@ path="res://.import/splash.jpg-6292919d869ed6c799db353bcae9c440.stex"
 
 [deps]
 
+source_file="res://Game/MainScreens/splash.jpg"
 source_md5="839f94a266a5ba68ffa46e29de2869a0"
+
+dest_files=[ "res://.import/splash.jpg-6292919d869ed6c799db353bcae9c440.stex" ]
+dest_md5="46f33cf5b1eae8bc70edb72babf67199"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/ItemBackground.png-c280d34dc9126028e1ac9a84f623ac38.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Items/ItemBackground.png"
 source_md5="fdd31687d6136d8263af0bb430fae544"
+
+dest_files=[ "res://.import/ItemBackground.png-c280d34dc9126028e1ac9a84f623ac38.stex" ]
+dest_md5="1d49e7893b2b37d57e1d369d22dda50b"
 
 [params]
 

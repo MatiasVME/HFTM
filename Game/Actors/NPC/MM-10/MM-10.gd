@@ -64,10 +64,10 @@ func test_mode():
 		one_time = true
 
 func _on_DetectArea_body_entered( body ):
-	player = body
 	
-	if body is KinematicBody2D: 
+	if body is KinematicBody2D:
 		if body.is_in_group("Player"):
+			player = body
 			player_is_here = true
 
 func _on_DetectArea_body_exited( body ):

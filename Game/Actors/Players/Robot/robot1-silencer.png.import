@@ -6,7 +6,11 @@ path="res://.import/robot1-silencer.png-e6ea698fe2e09252db34bc1bec89c57c.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Robot/robot1-silencer.png"
 source_md5="dacab94ab42f1c1417e7e50d94dc1703"
+
+dest_files=[ "res://.import/robot1-silencer.png-e6ea698fe2e09252db34bc1bec89c57c.stex" ]
+dest_md5="fff8144ce2f05b9a5ff126b0074a2546"
 
 [params]
 

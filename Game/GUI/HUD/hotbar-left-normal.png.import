@@ -6,7 +6,11 @@ path="res://.import/hotbar-left-normal.png-bffc54a97a78be01cae73ed97d74dd2b.stex
 
 [deps]
 
+source_file="res://Game/GUI/HUD/hotbar-left-normal.png"
 source_md5="17b8b0ef13d41c3037f22da7032e5660"
+
+dest_files=[ "res://.import/hotbar-left-normal.png-bffc54a97a78be01cae73ed97d74dd2b.stex" ]
+dest_md5="4a7b7a5fc127d364d0c1bb0f67a146a1"
 
 [params]
 

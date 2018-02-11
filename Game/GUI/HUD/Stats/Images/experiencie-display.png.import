@@ -6,7 +6,11 @@ path="res://.import/experiencie-display.png-429eddf771b4ce15b4dc79363fae858c.ste
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Stats/Images/experiencie-display.png"
 source_md5="f692be32e12b0f73a170762e8a5b2461"
+
+dest_files=[ "res://.import/experiencie-display.png-429eddf771b4ce15b4dc79363fae858c.stex" ]
+dest_md5="60b55d89b447ee2c9cc2594d1ced6390"
 
 [params]
 

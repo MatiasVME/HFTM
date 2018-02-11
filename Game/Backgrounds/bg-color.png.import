@@ -6,7 +6,11 @@ path="res://.import/bg-color.png-ad68df9a6145d5f7516c967033849c62.stex"
 
 [deps]
 
+source_file="res://Game/Backgrounds/bg-color.png"
 source_md5="a2da327be47aae6a825980ac11861f2c"
+
+dest_files=[ "res://.import/bg-color.png-ad68df9a6145d5f7516c967033849c62.stex" ]
+dest_md5="bf44b4f288f210d42463a7e49d2a4471"
 
 [params]
 

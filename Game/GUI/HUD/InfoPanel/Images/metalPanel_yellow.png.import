@@ -6,7 +6,11 @@ path="res://.import/metalPanel_yellow.png-17f66666e39bd4ab34c628a0570fa221.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/InfoPanel/Images/metalPanel_yellow.png"
 source_md5="7ff3baec4b6d201d14006e154c8fa6aa"
+
+dest_files=[ "res://.import/metalPanel_yellow.png-17f66666e39bd4ab34c628a0570fa221.stex" ]
+dest_md5="9326b9f471fc70015f3f3fccc36eb897"
 
 [params]
 

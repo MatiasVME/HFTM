@@ -6,7 +6,11 @@ path="res://.import/slot-normal-4.png-fe656a61bd3b6c437bccc3766e5d3d2a.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/HUD-Menu/slot-normal-4.png"
 source_md5="68e32a3e2e59e5ca9a7cd8869fe4787f"
+
+dest_files=[ "res://.import/slot-normal-4.png-fe656a61bd3b6c437bccc3766e5d3d2a.stex" ]
+dest_md5="a3abce98e5693c8343ceacacf57a3b2e"
 
 [params]
 

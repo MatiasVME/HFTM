@@ -6,7 +6,11 @@ path="res://.import/hitman1-hold.png-8fc051217196d46d5e8eb96820a5b35f.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Players/Hitman/hitman1-hold.png"
 source_md5="620f82e3e2a3fde9ded5e609e59e32b3"
+
+dest_files=[ "res://.import/hitman1-hold.png-8fc051217196d46d5e8eb96820a5b35f.stex" ]
+dest_md5="02d280ebfd35549038a6a76a9b5609be"
 
 [params]
 

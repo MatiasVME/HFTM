@@ -6,7 +6,11 @@ path="res://.import/tile_64.png-540d6c0d3c13df8aba2a4084b95a936b.stex"
 
 [deps]
 
+source_file="res://Game/Maps/Tiles/tile_64.png"
 source_md5="2db5cc4ffe9da09d26a49fba6661c07b"
+
+dest_files=[ "res://.import/tile_64.png-540d6c0d3c13df8aba2a4084b95a936b.stex" ]
+dest_md5="71b222c7df0d3442a5d48d8ebe1dcaa2"
 
 [params]
 

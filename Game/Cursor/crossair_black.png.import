@@ -6,7 +6,11 @@ path="res://.import/crossair_black.png-10339c9ec5654e7d9f2609f94748f0e0.stex"
 
 [deps]
 
+source_file="res://Game/Cursor/crossair_black.png"
 source_md5="05b401c646abcb99f54d8616a9ce5623"
+
+dest_files=[ "res://.import/crossair_black.png-10339c9ec5654e7d9f2609f94748f0e0.stex" ]
+dest_md5="9b1ff7b462e415b141358c140b2d9909"
 
 [params]
 

@@ -6,7 +6,11 @@ path="res://.import/D-101.png-594145408b9f8979772bfad696984050.stex"
 
 [deps]
 
+source_file="res://Game/Actors/Items/Weapons/Gun/D-101/D-101.png"
 source_md5="fa37e1439f2c62cc6031b9b4169bd9f3"
+
+dest_files=[ "res://.import/D-101.png-594145408b9f8979772bfad696984050.stex" ]
+dest_md5="52cfd3f7a791f5b64e359dad860a05c8"
 
 [params]
 

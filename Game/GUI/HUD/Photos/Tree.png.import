@@ -6,7 +6,11 @@ path="res://.import/Tree.png-45dfa8dc40095c68a42cae0efe4e4b32.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Photos/Tree.png"
 source_md5="c5545024a08eee01986e9198259d15d7"
+
+dest_files=[ "res://.import/Tree.png-45dfa8dc40095c68a42cae0efe4e4b32.stex" ]
+dest_md5="dbb06afa3acff23ac379eb819b773fd6"
 
 [params]
 

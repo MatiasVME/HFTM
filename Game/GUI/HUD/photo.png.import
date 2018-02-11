@@ -6,7 +6,11 @@ path="res://.import/photo.png-da9dc7044d033e90305fe764ceb38e2a.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/photo.png"
 source_md5="0f09ef2e108b4bcc340240b210bb20a6"
+
+dest_files=[ "res://.import/photo.png-da9dc7044d033e90305fe764ceb38e2a.stex" ]
+dest_md5="2964f89b3984faa37ef9daeb9ec34361"
 
 [params]
 

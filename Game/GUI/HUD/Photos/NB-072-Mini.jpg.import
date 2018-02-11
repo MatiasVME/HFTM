@@ -6,7 +6,11 @@ path="res://.import/NB-072-Mini.jpg-102568079c72cc71ca9a4a948285f0d8.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Photos/NB-072-Mini.jpg"
 source_md5="f38dc6967d451afa633e91b40a625b25"
+
+dest_files=[ "res://.import/NB-072-Mini.jpg-102568079c72cc71ca9a4a948285f0d8.stex" ]
+dest_md5="cb8a5a82e158c1f8bd4ec59e2c5cea80"
 
 [params]
 

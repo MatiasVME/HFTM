@@ -6,7 +6,11 @@ path="res://.import/blue-button-disable.png-07b21dd93a6c2bcb7e417f073cb3cf9d.ste
 
 [deps]
 
+source_file="res://Game/GUI/Buttons/blue-button-disable.png"
 source_md5="468eb4b9607e5e54ae6259975d8261c6"
+
+dest_files=[ "res://.import/blue-button-disable.png-07b21dd93a6c2bcb7e417f073cb3cf9d.stex" ]
+dest_md5="d3e755700ae8165b86a34969fb07c50d"
 
 [params]
 

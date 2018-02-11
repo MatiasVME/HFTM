@@ -6,7 +6,11 @@ path="res://.import/grey_panel.png-0e0bc7c06ca1ad8dc7194b6af19e0f4b.stex"
 
 [deps]
 
+source_file="res://Game/GUI/Accounts/grey_panel.png"
 source_md5="4e5babd36c3ed5305564507a7b20d997"
+
+dest_files=[ "res://.import/grey_panel.png-0e0bc7c06ca1ad8dc7194b6af19e0f4b.stex" ]
+dest_md5="56a07c662ba33eda4d1f712b8c5ae195"
 
 [params]
 

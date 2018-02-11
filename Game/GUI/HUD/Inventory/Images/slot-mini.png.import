@@ -6,7 +6,11 @@ path="res://.import/slot-mini.png-f85c9130f2b4a5d24afd15ee3379fb46.stex"
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Inventory/Images/slot-mini.png"
 source_md5="26f90d2bc7a0328c71c5a1bce7ffdacd"
+
+dest_files=[ "res://.import/slot-mini.png-f85c9130f2b4a5d24afd15ee3379fb46.stex" ]
+dest_md5="2b3377f497f483b7676a055c5b37c53e"
 
 [params]
 

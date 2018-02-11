@@ -6,7 +6,11 @@ path="res://.import/button-stats-press.png-442798cd2551e48504587da67c9c8581.stex
 
 [deps]
 
+source_file="res://Game/GUI/HUD/Stats/Images/button-stats-press.png"
 source_md5="3ad26e62be0b320d3f785d9d05420df8"
+
+dest_files=[ "res://.import/button-stats-press.png-442798cd2551e48504587da67c9c8581.stex" ]
+dest_md5="e2a79f85dbc47307c19ce3b2d9fe43b9"
 
 [params]
 
