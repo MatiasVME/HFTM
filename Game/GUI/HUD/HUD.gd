@@ -29,11 +29,9 @@ func _ready():
 	HUDManager.set_hud(self)
 	
 func _process(delta):
-	if HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_show":
+	if HUDManager.is_active_info_panel and not animation_info_player.assigned_animation == "info_panel_show":
 		info_panel_show()
-		print("hola1")
-	elif not HUDManager.is_active_info_panel and not animation_info_player.get_current_animation() == "info_panel_hide" and not animation_info_player.get_current_animation() == "":
-		print("hola2 " + animation_info_player.get_current_animation())
+	elif not HUDManager.is_active_info_panel and not animation_info_player.assigned_animation == "info_panel_hide" and not animation_info_player.assigned_animation == "":
 		info_panel_hide()
 	
 	if InventoryManager.get_current_inventory() != null:
