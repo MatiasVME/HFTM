@@ -12,15 +12,12 @@ var current_focus_num = 0
 # puede moverse o disparar, etc
 var can_action = false
 var camera = null setget set_camera, get_camera
-# Players o vehículos que pueden tener focus
+# Players o vehículos que pueden tener foco
 var focus = []
 var vehicles = []
 var players = []
 
 const MAX_FOCUS = 4
-
-func _ready():
-	if enable : set_process_input(true)
 
 func _input(event):
 	if event.is_action_pressed("change_player") and enable:
@@ -130,7 +127,7 @@ func remove_vehicle_focus(vehicle):
 	
 	if debug: print("remove_vehicle_focus()-focus:", focus)
 
-# esta función va acá ya que es la camara la que hace focus al
+# Esta función va acá ya que es la camara la que hace focus al
 # vehículo.
 func enter_vehicle(vehicle, player):
 	# buscar si el vehiculo fue añadido

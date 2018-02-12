@@ -8,8 +8,8 @@ onready var touch_area = $TouchArea
 
 var pistol_bullet = preload("res://Game/Actors/Shots/PistolBullet.tscn")
 
-const SPEED = 80
-const MOVEMENT = 2
+const SPEED = 10
+const MOVEMENT = 3
 
 export (String) var player_name = null setget set_player_name, get_player_name
 
@@ -25,13 +25,6 @@ var item = load("res://Game/Actors/Items/ItemFigure.tscn")
 var move
 var player_lives = 20
 
-func _ready():
-#	player_inventory.set_inventory(inventory)
-#	InventoryManager.add_inventory(inventory)
-	#InventoryManager.set_current_inventory(0) # después hay que hacer que sea mas dinámico
-	pass
-	
-
 func _physics_process(delta):
 	if is_selected:
 		move = movement_input(delta)
@@ -45,17 +38,16 @@ func _physics_process(delta):
 			print(player_lives)
 	
 func movement_input(delta):
-	var motion = MOVEMENT * SPEED * delta
 	var local_move = null # Controla las colisiones
 	
 	if Input.is_action_pressed("up"):
-		local_move = move_and_collide(Vector2(0,-motion))
+		local_move = move_and_collide(Vector2(0, -MOVEMENT))
 	if Input.is_action_pressed("down"):
-		local_move = move_and_collide(Vector2(0,motion))
+		local_move = move_and_collide(Vector2(0, MOVEMENT))
 	if Input.is_action_pressed("left"):
-		local_move = move_and_collide(Vector2(-motion, 0))
+		local_move = move_and_collide(Vector2(-MOVEMENT, 0))
 	if Input.is_action_pressed("right"):
-		local_move = move_and_collide(Vector2(motion, 0))
+		local_move = move_and_collide(Vector2(MOVEMENT, 0))
 	
 	return local_move # Nos dice si se encuentra una colision mientras se mueve
 
@@ -74,8 +66,7 @@ func camera_related(delta):
 
 func look_at_mouse():
 	if camera != null:
-		var mouse_global_pos = camera.get_global_mouse_position()
-		img.look_at(mouse_global_pos)
+		img.look_at(camera.get_global_mouse_position())
 
 func fire(delta):
 	if camera != null:

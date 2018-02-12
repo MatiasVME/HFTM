@@ -29,8 +29,6 @@ var tween2_is_completed = false
 var tween3_is_completed = false
 var tween4_is_completed = false # TweenRand
 
-var ot = false
-
 func _ready():
 	randomize()
 	
