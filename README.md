@@ -1,4 +1,4 @@
-# En desarrollo - In development
+# Descontinuado...
 
 # HFTM
 Humanity For The Machine (Game)
